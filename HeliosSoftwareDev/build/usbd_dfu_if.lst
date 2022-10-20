@@ -1,0 +1,454 @@
+ARM GAS  /tmp/ccUmF5lQ.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"usbd_dfu_if.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.MEM_If_Init_FS,"ax",%progbits
+  16              		.align	1
+  17              		.syntax unified
+  18              		.thumb
+  19              		.thumb_func
+  20              		.fpu softvfp
+  22              	MEM_If_Init_FS:
+  23              	.LFB73:
+  24              		.file 1 "USB_DEVICE/App/usbd_dfu_if.c"
+   1:USB_DEVICE/App/usbd_dfu_if.c **** /* USER CODE BEGIN Header */
+   2:USB_DEVICE/App/usbd_dfu_if.c **** /**
+   3:USB_DEVICE/App/usbd_dfu_if.c ****   ******************************************************************************
+   4:USB_DEVICE/App/usbd_dfu_if.c ****   * @file           : usbd_dfu_if.c
+   5:USB_DEVICE/App/usbd_dfu_if.c ****   * @brief          : Usb device for Download Firmware Update.
+   6:USB_DEVICE/App/usbd_dfu_if.c ****   ******************************************************************************
+   7:USB_DEVICE/App/usbd_dfu_if.c ****   * @attention
+   8:USB_DEVICE/App/usbd_dfu_if.c ****   *
+   9:USB_DEVICE/App/usbd_dfu_if.c ****   * Copyright (c) 2022 STMicroelectronics.
+  10:USB_DEVICE/App/usbd_dfu_if.c ****   * All rights reserved.
+  11:USB_DEVICE/App/usbd_dfu_if.c ****   *
+  12:USB_DEVICE/App/usbd_dfu_if.c ****   * This software is licensed under terms that can be found in the LICENSE file
+  13:USB_DEVICE/App/usbd_dfu_if.c ****   * in the root directory of this software component.
+  14:USB_DEVICE/App/usbd_dfu_if.c ****   * If no LICENSE file comes with this software, it is provided AS-IS.
+  15:USB_DEVICE/App/usbd_dfu_if.c ****   *
+  16:USB_DEVICE/App/usbd_dfu_if.c ****   ******************************************************************************
+  17:USB_DEVICE/App/usbd_dfu_if.c ****   */
+  18:USB_DEVICE/App/usbd_dfu_if.c **** /* USER CODE END Header */
+  19:USB_DEVICE/App/usbd_dfu_if.c **** 
+  20:USB_DEVICE/App/usbd_dfu_if.c **** /* Includes ------------------------------------------------------------------*/
+  21:USB_DEVICE/App/usbd_dfu_if.c **** #include "usbd_dfu_if.h"
+  22:USB_DEVICE/App/usbd_dfu_if.c **** 
+  23:USB_DEVICE/App/usbd_dfu_if.c **** /* USER CODE BEGIN INCLUDE */
+  24:USB_DEVICE/App/usbd_dfu_if.c **** 
+  25:USB_DEVICE/App/usbd_dfu_if.c **** /* USER CODE END INCLUDE */
+  26:USB_DEVICE/App/usbd_dfu_if.c **** 
+  27:USB_DEVICE/App/usbd_dfu_if.c **** /* Private typedef -----------------------------------------------------------*/
+  28:USB_DEVICE/App/usbd_dfu_if.c **** /* Private define ------------------------------------------------------------*/
+  29:USB_DEVICE/App/usbd_dfu_if.c **** /* Private macro -------------------------------------------------------------*/
+  30:USB_DEVICE/App/usbd_dfu_if.c **** 
+  31:USB_DEVICE/App/usbd_dfu_if.c **** /* USER CODE BEGIN PV */
+  32:USB_DEVICE/App/usbd_dfu_if.c **** /* Private variables ---------------------------------------------------------*/
+  33:USB_DEVICE/App/usbd_dfu_if.c **** 
+  34:USB_DEVICE/App/usbd_dfu_if.c **** /* USER CODE END PV */
+ARM GAS  /tmp/ccUmF5lQ.s 			page 2
+
+
+  35:USB_DEVICE/App/usbd_dfu_if.c **** 
+  36:USB_DEVICE/App/usbd_dfu_if.c **** /** @addtogroup STM32_USB_OTG_DEVICE_LIBRARY
+  37:USB_DEVICE/App/usbd_dfu_if.c ****   * @brief Usb device.
+  38:USB_DEVICE/App/usbd_dfu_if.c ****   * @{
+  39:USB_DEVICE/App/usbd_dfu_if.c ****   */
+  40:USB_DEVICE/App/usbd_dfu_if.c **** 
+  41:USB_DEVICE/App/usbd_dfu_if.c **** /** @defgroup USBD_DFU
+  42:USB_DEVICE/App/usbd_dfu_if.c ****   * @brief Usb DFU device module.
+  43:USB_DEVICE/App/usbd_dfu_if.c ****   * @{
+  44:USB_DEVICE/App/usbd_dfu_if.c ****   */
+  45:USB_DEVICE/App/usbd_dfu_if.c **** 
+  46:USB_DEVICE/App/usbd_dfu_if.c **** /** @defgroup USBD_DFU_Private_TypesDefinitions
+  47:USB_DEVICE/App/usbd_dfu_if.c ****   * @brief Private types.
+  48:USB_DEVICE/App/usbd_dfu_if.c ****   * @{
+  49:USB_DEVICE/App/usbd_dfu_if.c ****   */
+  50:USB_DEVICE/App/usbd_dfu_if.c **** 
+  51:USB_DEVICE/App/usbd_dfu_if.c **** /* USER CODE BEGIN PRIVATE_TYPES */
+  52:USB_DEVICE/App/usbd_dfu_if.c **** 
+  53:USB_DEVICE/App/usbd_dfu_if.c **** /* USER CODE END PRIVATE_TYPES */
+  54:USB_DEVICE/App/usbd_dfu_if.c **** 
+  55:USB_DEVICE/App/usbd_dfu_if.c **** /**
+  56:USB_DEVICE/App/usbd_dfu_if.c ****   * @}
+  57:USB_DEVICE/App/usbd_dfu_if.c ****   */
+  58:USB_DEVICE/App/usbd_dfu_if.c **** 
+  59:USB_DEVICE/App/usbd_dfu_if.c **** /** @defgroup USBD_DFU_Private_Defines
+  60:USB_DEVICE/App/usbd_dfu_if.c ****   * @brief Private defines.
+  61:USB_DEVICE/App/usbd_dfu_if.c ****   * @{
+  62:USB_DEVICE/App/usbd_dfu_if.c ****   */
+  63:USB_DEVICE/App/usbd_dfu_if.c **** 
+  64:USB_DEVICE/App/usbd_dfu_if.c **** #define FLASH_DESC_STR      "@Internal Flash   /0x08000000/03*016Ka,01*016Kg,01*064Kg,07*128Kg,04*0
+  65:USB_DEVICE/App/usbd_dfu_if.c **** 
+  66:USB_DEVICE/App/usbd_dfu_if.c **** /* USER CODE BEGIN PRIVATE_DEFINES */
+  67:USB_DEVICE/App/usbd_dfu_if.c **** 
+  68:USB_DEVICE/App/usbd_dfu_if.c **** /* USER CODE END PRIVATE_DEFINES */
+  69:USB_DEVICE/App/usbd_dfu_if.c **** 
+  70:USB_DEVICE/App/usbd_dfu_if.c **** /**
+  71:USB_DEVICE/App/usbd_dfu_if.c ****   * @}
+  72:USB_DEVICE/App/usbd_dfu_if.c ****   */
+  73:USB_DEVICE/App/usbd_dfu_if.c **** 
+  74:USB_DEVICE/App/usbd_dfu_if.c **** /** @defgroup USBD_DFU_Private_Macros
+  75:USB_DEVICE/App/usbd_dfu_if.c ****   * @brief Private macros.
+  76:USB_DEVICE/App/usbd_dfu_if.c ****   * @{
+  77:USB_DEVICE/App/usbd_dfu_if.c ****   */
+  78:USB_DEVICE/App/usbd_dfu_if.c **** 
+  79:USB_DEVICE/App/usbd_dfu_if.c **** /* USER CODE BEGIN PRIVATE_MACRO */
+  80:USB_DEVICE/App/usbd_dfu_if.c **** 
+  81:USB_DEVICE/App/usbd_dfu_if.c **** /* USER CODE END PRIVATE_MACRO */
+  82:USB_DEVICE/App/usbd_dfu_if.c **** 
+  83:USB_DEVICE/App/usbd_dfu_if.c **** /**
+  84:USB_DEVICE/App/usbd_dfu_if.c ****   * @}
+  85:USB_DEVICE/App/usbd_dfu_if.c ****   */
+  86:USB_DEVICE/App/usbd_dfu_if.c **** 
+  87:USB_DEVICE/App/usbd_dfu_if.c **** /** @defgroup USBD_DFU_Private_Variables
+  88:USB_DEVICE/App/usbd_dfu_if.c ****   * @brief Private variables.
+  89:USB_DEVICE/App/usbd_dfu_if.c ****   * @{
+  90:USB_DEVICE/App/usbd_dfu_if.c ****   */
+  91:USB_DEVICE/App/usbd_dfu_if.c **** 
+ARM GAS  /tmp/ccUmF5lQ.s 			page 3
+
+
+  92:USB_DEVICE/App/usbd_dfu_if.c **** /* USER CODE BEGIN PRIVATE_VARIABLES */
+  93:USB_DEVICE/App/usbd_dfu_if.c **** 
+  94:USB_DEVICE/App/usbd_dfu_if.c **** /* USER CODE END PRIVATE_VARIABLES */
+  95:USB_DEVICE/App/usbd_dfu_if.c **** 
+  96:USB_DEVICE/App/usbd_dfu_if.c **** /**
+  97:USB_DEVICE/App/usbd_dfu_if.c ****   * @}
+  98:USB_DEVICE/App/usbd_dfu_if.c ****   */
+  99:USB_DEVICE/App/usbd_dfu_if.c **** 
+ 100:USB_DEVICE/App/usbd_dfu_if.c **** /** @defgroup USBD_DFU_Exported_Variables
+ 101:USB_DEVICE/App/usbd_dfu_if.c ****   * @brief Public variables.
+ 102:USB_DEVICE/App/usbd_dfu_if.c ****   * @{
+ 103:USB_DEVICE/App/usbd_dfu_if.c ****   */
+ 104:USB_DEVICE/App/usbd_dfu_if.c **** 
+ 105:USB_DEVICE/App/usbd_dfu_if.c **** extern USBD_HandleTypeDef hUsbDeviceFS;
+ 106:USB_DEVICE/App/usbd_dfu_if.c **** 
+ 107:USB_DEVICE/App/usbd_dfu_if.c **** /* USER CODE BEGIN EXPORTED_VARIABLES */
+ 108:USB_DEVICE/App/usbd_dfu_if.c **** 
+ 109:USB_DEVICE/App/usbd_dfu_if.c **** /* USER CODE END EXPORTED_VARIABLES */
+ 110:USB_DEVICE/App/usbd_dfu_if.c **** 
+ 111:USB_DEVICE/App/usbd_dfu_if.c **** /**
+ 112:USB_DEVICE/App/usbd_dfu_if.c ****   * @}
+ 113:USB_DEVICE/App/usbd_dfu_if.c ****   */
+ 114:USB_DEVICE/App/usbd_dfu_if.c **** 
+ 115:USB_DEVICE/App/usbd_dfu_if.c **** /** @defgroup USBD_DFU_Private_FunctionPrototypes
+ 116:USB_DEVICE/App/usbd_dfu_if.c ****   * @brief Private functions declaration.
+ 117:USB_DEVICE/App/usbd_dfu_if.c ****   * @{
+ 118:USB_DEVICE/App/usbd_dfu_if.c ****   */
+ 119:USB_DEVICE/App/usbd_dfu_if.c **** 
+ 120:USB_DEVICE/App/usbd_dfu_if.c **** static uint16_t MEM_If_Init_FS(void);
+ 121:USB_DEVICE/App/usbd_dfu_if.c **** static uint16_t MEM_If_Erase_FS(uint32_t Add);
+ 122:USB_DEVICE/App/usbd_dfu_if.c **** static uint16_t MEM_If_Write_FS(uint8_t *src, uint8_t *dest, uint32_t Len);
+ 123:USB_DEVICE/App/usbd_dfu_if.c **** static uint8_t *MEM_If_Read_FS(uint8_t *src, uint8_t *dest, uint32_t Len);
+ 124:USB_DEVICE/App/usbd_dfu_if.c **** static uint16_t MEM_If_DeInit_FS(void);
+ 125:USB_DEVICE/App/usbd_dfu_if.c **** static uint16_t MEM_If_GetStatus_FS(uint32_t Add, uint8_t Cmd, uint8_t *buffer);
+ 126:USB_DEVICE/App/usbd_dfu_if.c **** 
+ 127:USB_DEVICE/App/usbd_dfu_if.c **** /* USER CODE BEGIN PRIVATE_FUNCTIONS_DECLARATION */
+ 128:USB_DEVICE/App/usbd_dfu_if.c **** 
+ 129:USB_DEVICE/App/usbd_dfu_if.c **** /* USER CODE END PRIVATE_FUNCTIONS_DECLARATION */
+ 130:USB_DEVICE/App/usbd_dfu_if.c **** 
+ 131:USB_DEVICE/App/usbd_dfu_if.c **** /**
+ 132:USB_DEVICE/App/usbd_dfu_if.c ****   * @}
+ 133:USB_DEVICE/App/usbd_dfu_if.c ****   */
+ 134:USB_DEVICE/App/usbd_dfu_if.c **** 
+ 135:USB_DEVICE/App/usbd_dfu_if.c **** #if defined ( __ICCARM__ ) /* IAR Compiler */
+ 136:USB_DEVICE/App/usbd_dfu_if.c ****   #pragma data_alignment=4
+ 137:USB_DEVICE/App/usbd_dfu_if.c **** #endif
+ 138:USB_DEVICE/App/usbd_dfu_if.c **** __ALIGN_BEGIN USBD_DFU_MediaTypeDef USBD_DFU_fops_FS __ALIGN_END =
+ 139:USB_DEVICE/App/usbd_dfu_if.c **** {
+ 140:USB_DEVICE/App/usbd_dfu_if.c ****    (uint8_t*)FLASH_DESC_STR,
+ 141:USB_DEVICE/App/usbd_dfu_if.c ****     MEM_If_Init_FS,
+ 142:USB_DEVICE/App/usbd_dfu_if.c ****     MEM_If_DeInit_FS,
+ 143:USB_DEVICE/App/usbd_dfu_if.c ****     MEM_If_Erase_FS,
+ 144:USB_DEVICE/App/usbd_dfu_if.c ****     MEM_If_Write_FS,
+ 145:USB_DEVICE/App/usbd_dfu_if.c ****     MEM_If_Read_FS,
+ 146:USB_DEVICE/App/usbd_dfu_if.c ****     MEM_If_GetStatus_FS
+ 147:USB_DEVICE/App/usbd_dfu_if.c **** };
+ 148:USB_DEVICE/App/usbd_dfu_if.c **** 
+ARM GAS  /tmp/ccUmF5lQ.s 			page 4
+
+
+ 149:USB_DEVICE/App/usbd_dfu_if.c **** /* Private functions ---------------------------------------------------------*/
+ 150:USB_DEVICE/App/usbd_dfu_if.c **** /**
+ 151:USB_DEVICE/App/usbd_dfu_if.c ****   * @brief  Memory initialization routine.
+ 152:USB_DEVICE/App/usbd_dfu_if.c ****   * @retval USBD_OK if operation is successful, MAL_FAIL else.
+ 153:USB_DEVICE/App/usbd_dfu_if.c ****   */
+ 154:USB_DEVICE/App/usbd_dfu_if.c **** uint16_t MEM_If_Init_FS(void)
+ 155:USB_DEVICE/App/usbd_dfu_if.c **** {
+  25              		.loc 1 155 0
+  26              		.cfi_startproc
+  27              		@ args = 0, pretend = 0, frame = 0
+  28              		@ frame_needed = 0, uses_anonymous_args = 0
+  29              		@ link register save eliminated.
+ 156:USB_DEVICE/App/usbd_dfu_if.c ****   /* USER CODE BEGIN 0 */
+ 157:USB_DEVICE/App/usbd_dfu_if.c ****   return (USBD_OK);
+ 158:USB_DEVICE/App/usbd_dfu_if.c ****   /* USER CODE END 0 */
+ 159:USB_DEVICE/App/usbd_dfu_if.c **** }
+  30              		.loc 1 159 0
+  31 0000 0020     		movs	r0, #0
+  32 0002 7047     		bx	lr
+  33              		.cfi_endproc
+  34              	.LFE73:
+  36              		.section	.text.MEM_If_DeInit_FS,"ax",%progbits
+  37              		.align	1
+  38              		.syntax unified
+  39              		.thumb
+  40              		.thumb_func
+  41              		.fpu softvfp
+  43              	MEM_If_DeInit_FS:
+  44              	.LFB74:
+ 160:USB_DEVICE/App/usbd_dfu_if.c **** 
+ 161:USB_DEVICE/App/usbd_dfu_if.c **** /**
+ 162:USB_DEVICE/App/usbd_dfu_if.c ****   * @brief  De-Initializes Memory
+ 163:USB_DEVICE/App/usbd_dfu_if.c ****   * @retval USBD_OK if operation is successful, MAL_FAIL else
+ 164:USB_DEVICE/App/usbd_dfu_if.c ****   */
+ 165:USB_DEVICE/App/usbd_dfu_if.c **** uint16_t MEM_If_DeInit_FS(void)
+ 166:USB_DEVICE/App/usbd_dfu_if.c **** {
+  45              		.loc 1 166 0
+  46              		.cfi_startproc
+  47              		@ args = 0, pretend = 0, frame = 0
+  48              		@ frame_needed = 0, uses_anonymous_args = 0
+  49              		@ link register save eliminated.
+ 167:USB_DEVICE/App/usbd_dfu_if.c ****   /* USER CODE BEGIN 1 */
+ 168:USB_DEVICE/App/usbd_dfu_if.c ****   return (USBD_OK);
+ 169:USB_DEVICE/App/usbd_dfu_if.c ****   /* USER CODE END 1 */
+ 170:USB_DEVICE/App/usbd_dfu_if.c **** }
+  50              		.loc 1 170 0
+  51 0000 0020     		movs	r0, #0
+  52 0002 7047     		bx	lr
+  53              		.cfi_endproc
+  54              	.LFE74:
+  56              		.section	.text.MEM_If_Erase_FS,"ax",%progbits
+  57              		.align	1
+  58              		.syntax unified
+  59              		.thumb
+  60              		.thumb_func
+  61              		.fpu softvfp
+  63              	MEM_If_Erase_FS:
+ARM GAS  /tmp/ccUmF5lQ.s 			page 5
+
+
+  64              	.LFB75:
+ 171:USB_DEVICE/App/usbd_dfu_if.c **** 
+ 172:USB_DEVICE/App/usbd_dfu_if.c **** /**
+ 173:USB_DEVICE/App/usbd_dfu_if.c ****   * @brief  Erase sector.
+ 174:USB_DEVICE/App/usbd_dfu_if.c ****   * @param  Add: Address of sector to be erased.
+ 175:USB_DEVICE/App/usbd_dfu_if.c ****   * @retval 0 if operation is successful, MAL_FAIL else.
+ 176:USB_DEVICE/App/usbd_dfu_if.c ****   */
+ 177:USB_DEVICE/App/usbd_dfu_if.c **** uint16_t MEM_If_Erase_FS(uint32_t Add)
+ 178:USB_DEVICE/App/usbd_dfu_if.c **** {
+  65              		.loc 1 178 0
+  66              		.cfi_startproc
+  67              		@ args = 0, pretend = 0, frame = 0
+  68              		@ frame_needed = 0, uses_anonymous_args = 0
+  69              		@ link register save eliminated.
+  70              	.LVL0:
+ 179:USB_DEVICE/App/usbd_dfu_if.c ****   /* USER CODE BEGIN 2 */
+ 180:USB_DEVICE/App/usbd_dfu_if.c **** 
+ 181:USB_DEVICE/App/usbd_dfu_if.c ****   return (USBD_OK);
+ 182:USB_DEVICE/App/usbd_dfu_if.c ****   /* USER CODE END 2 */
+ 183:USB_DEVICE/App/usbd_dfu_if.c **** }
+  71              		.loc 1 183 0
+  72 0000 0020     		movs	r0, #0
+  73              	.LVL1:
+  74 0002 7047     		bx	lr
+  75              		.cfi_endproc
+  76              	.LFE75:
+  78              		.section	.text.MEM_If_Write_FS,"ax",%progbits
+  79              		.align	1
+  80              		.syntax unified
+  81              		.thumb
+  82              		.thumb_func
+  83              		.fpu softvfp
+  85              	MEM_If_Write_FS:
+  86              	.LFB76:
+ 184:USB_DEVICE/App/usbd_dfu_if.c **** 
+ 185:USB_DEVICE/App/usbd_dfu_if.c **** /**
+ 186:USB_DEVICE/App/usbd_dfu_if.c ****   * @brief  Memory write routine.
+ 187:USB_DEVICE/App/usbd_dfu_if.c ****   * @param  src: Pointer to the source buffer. Address to be written to.
+ 188:USB_DEVICE/App/usbd_dfu_if.c ****   * @param  dest: Pointer to the destination buffer.
+ 189:USB_DEVICE/App/usbd_dfu_if.c ****   * @param  Len: Number of data to be written (in bytes).
+ 190:USB_DEVICE/App/usbd_dfu_if.c ****   * @retval USBD_OK if operation is successful, MAL_FAIL else.
+ 191:USB_DEVICE/App/usbd_dfu_if.c ****   */
+ 192:USB_DEVICE/App/usbd_dfu_if.c **** uint16_t MEM_If_Write_FS(uint8_t *src, uint8_t *dest, uint32_t Len)
+ 193:USB_DEVICE/App/usbd_dfu_if.c **** {
+  87              		.loc 1 193 0
+  88              		.cfi_startproc
+  89              		@ args = 0, pretend = 0, frame = 0
+  90              		@ frame_needed = 0, uses_anonymous_args = 0
+  91              		@ link register save eliminated.
+  92              	.LVL2:
+ 194:USB_DEVICE/App/usbd_dfu_if.c ****   /* USER CODE BEGIN 3 */
+ 195:USB_DEVICE/App/usbd_dfu_if.c ****   return (USBD_OK);
+ 196:USB_DEVICE/App/usbd_dfu_if.c ****   /* USER CODE END 3 */
+ 197:USB_DEVICE/App/usbd_dfu_if.c **** }
+  93              		.loc 1 197 0
+  94 0000 0020     		movs	r0, #0
+  95              	.LVL3:
+ARM GAS  /tmp/ccUmF5lQ.s 			page 6
+
+
+  96 0002 7047     		bx	lr
+  97              		.cfi_endproc
+  98              	.LFE76:
+ 100              		.section	.text.MEM_If_Read_FS,"ax",%progbits
+ 101              		.align	1
+ 102              		.syntax unified
+ 103              		.thumb
+ 104              		.thumb_func
+ 105              		.fpu softvfp
+ 107              	MEM_If_Read_FS:
+ 108              	.LFB77:
+ 198:USB_DEVICE/App/usbd_dfu_if.c **** 
+ 199:USB_DEVICE/App/usbd_dfu_if.c **** /**
+ 200:USB_DEVICE/App/usbd_dfu_if.c ****   * @brief  Memory read routine.
+ 201:USB_DEVICE/App/usbd_dfu_if.c ****   * @param  src: Pointer to the source buffer. Address to be written to.
+ 202:USB_DEVICE/App/usbd_dfu_if.c ****   * @param  dest: Pointer to the destination buffer.
+ 203:USB_DEVICE/App/usbd_dfu_if.c ****   * @param  Len: Number of data to be read (in bytes).
+ 204:USB_DEVICE/App/usbd_dfu_if.c ****   * @retval Pointer to the physical address where data should be read.
+ 205:USB_DEVICE/App/usbd_dfu_if.c ****   */
+ 206:USB_DEVICE/App/usbd_dfu_if.c **** uint8_t *MEM_If_Read_FS(uint8_t *src, uint8_t *dest, uint32_t Len)
+ 207:USB_DEVICE/App/usbd_dfu_if.c **** {
+ 109              		.loc 1 207 0
+ 110              		.cfi_startproc
+ 111              		@ args = 0, pretend = 0, frame = 0
+ 112              		@ frame_needed = 0, uses_anonymous_args = 0
+ 113              		@ link register save eliminated.
+ 114              	.LVL4:
+ 208:USB_DEVICE/App/usbd_dfu_if.c ****   /* Return a valid address to avoid HardFault */
+ 209:USB_DEVICE/App/usbd_dfu_if.c ****   /* USER CODE BEGIN 4 */
+ 210:USB_DEVICE/App/usbd_dfu_if.c ****   return (uint8_t*)(USBD_OK);
+ 211:USB_DEVICE/App/usbd_dfu_if.c ****   /* USER CODE END 4 */
+ 212:USB_DEVICE/App/usbd_dfu_if.c **** }
+ 115              		.loc 1 212 0
+ 116 0000 0020     		movs	r0, #0
+ 117              	.LVL5:
+ 118 0002 7047     		bx	lr
+ 119              		.cfi_endproc
+ 120              	.LFE77:
+ 122              		.section	.text.MEM_If_GetStatus_FS,"ax",%progbits
+ 123              		.align	1
+ 124              		.syntax unified
+ 125              		.thumb
+ 126              		.thumb_func
+ 127              		.fpu softvfp
+ 129              	MEM_If_GetStatus_FS:
+ 130              	.LFB78:
+ 213:USB_DEVICE/App/usbd_dfu_if.c **** 
+ 214:USB_DEVICE/App/usbd_dfu_if.c **** /**
+ 215:USB_DEVICE/App/usbd_dfu_if.c ****   * @brief  Get status routine
+ 216:USB_DEVICE/App/usbd_dfu_if.c ****   * @param  Add: Address to be read from
+ 217:USB_DEVICE/App/usbd_dfu_if.c ****   * @param  Cmd: Number of data to be read (in bytes)
+ 218:USB_DEVICE/App/usbd_dfu_if.c ****   * @param  buffer: used for returning the time necessary for a program or an erase operation
+ 219:USB_DEVICE/App/usbd_dfu_if.c ****   * @retval USBD_OK if operation is successful
+ 220:USB_DEVICE/App/usbd_dfu_if.c ****   */
+ 221:USB_DEVICE/App/usbd_dfu_if.c **** uint16_t MEM_If_GetStatus_FS(uint32_t Add, uint8_t Cmd, uint8_t *buffer)
+ 222:USB_DEVICE/App/usbd_dfu_if.c **** {
+ 131              		.loc 1 222 0
+ARM GAS  /tmp/ccUmF5lQ.s 			page 7
+
+
+ 132              		.cfi_startproc
+ 133              		@ args = 0, pretend = 0, frame = 0
+ 134              		@ frame_needed = 0, uses_anonymous_args = 0
+ 135              		@ link register save eliminated.
+ 136              	.LVL6:
+ 223:USB_DEVICE/App/usbd_dfu_if.c ****   /* USER CODE BEGIN 5 */
+ 224:USB_DEVICE/App/usbd_dfu_if.c ****   switch (Cmd)
+ 225:USB_DEVICE/App/usbd_dfu_if.c ****   {
+ 226:USB_DEVICE/App/usbd_dfu_if.c ****     case DFU_MEDIA_PROGRAM:
+ 227:USB_DEVICE/App/usbd_dfu_if.c **** 
+ 228:USB_DEVICE/App/usbd_dfu_if.c ****     break;
+ 229:USB_DEVICE/App/usbd_dfu_if.c **** 
+ 230:USB_DEVICE/App/usbd_dfu_if.c ****     case DFU_MEDIA_ERASE:
+ 231:USB_DEVICE/App/usbd_dfu_if.c ****     default:
+ 232:USB_DEVICE/App/usbd_dfu_if.c **** 
+ 233:USB_DEVICE/App/usbd_dfu_if.c ****     break;
+ 234:USB_DEVICE/App/usbd_dfu_if.c ****   }
+ 235:USB_DEVICE/App/usbd_dfu_if.c ****   return (USBD_OK);
+ 236:USB_DEVICE/App/usbd_dfu_if.c ****   /* USER CODE END 5 */
+ 237:USB_DEVICE/App/usbd_dfu_if.c **** }
+ 137              		.loc 1 237 0
+ 138 0000 0020     		movs	r0, #0
+ 139              	.LVL7:
+ 140 0002 7047     		bx	lr
+ 141              		.cfi_endproc
+ 142              	.LFE78:
+ 144              		.global	USBD_DFU_fops_FS
+ 145              		.section	.data.USBD_DFU_fops_FS,"aw",%progbits
+ 146              		.align	2
+ 149              	USBD_DFU_fops_FS:
+ 150 0000 00000000 		.word	.LC0
+ 151 0004 00000000 		.word	MEM_If_Init_FS
+ 152 0008 00000000 		.word	MEM_If_DeInit_FS
+ 153 000c 00000000 		.word	MEM_If_Erase_FS
+ 154 0010 00000000 		.word	MEM_If_Write_FS
+ 155 0014 00000000 		.word	MEM_If_Read_FS
+ 156 0018 00000000 		.word	MEM_If_GetStatus_FS
+ 157              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 158              		.align	2
+ 159              	.LC0:
+ 160 0000 40496E74 		.ascii	"@Internal Flash   /0x08000000/03*016Ka,01*016Kg,01*"
+ 160      65726E61 
+ 160      6C20466C 
+ 160      61736820 
+ 160      20202F30 
+ 161 0033 3036344B 		.ascii	"064Kg,07*128Kg,04*016Kg,01*064Kg,07*128Kg\000"
+ 161      672C3037 
+ 161      2A313238 
+ 161      4B672C30 
+ 161      342A3031 
+ 162              		.text
+ 163              	.Letext0:
+ 164              		.file 2 "/opt/gcc4mbed/gcc-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h"
+ 165              		.file 3 "/opt/gcc4mbed/gcc-arm-none-eabi/arm-none-eabi/include/sys/lock.h"
+ 166              		.file 4 "/opt/gcc4mbed/gcc-arm-none-eabi/arm-none-eabi/include/sys/_types.h"
+ 167              		.file 5 "/opt/gcc4mbed/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/6.3.1/include/stddef.h"
+ 168              		.file 6 "/opt/gcc4mbed/gcc-arm-none-eabi/arm-none-eabi/include/sys/reent.h"
+ARM GAS  /tmp/ccUmF5lQ.s 			page 8
+
+
+ 169              		.file 7 "/opt/gcc4mbed/gcc-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h"
+ 170              		.file 8 "/opt/gcc4mbed/gcc-arm-none-eabi/arm-none-eabi/include/stdlib.h"
+ 171              		.file 9 "Drivers/CMSIS/Include/core_cm3.h"
+ 172              		.file 10 "Drivers/CMSIS/Device/ST/STM32L1xx/Include/system_stm32l1xx.h"
+ 173              		.file 11 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal.h"
+ 174              		.file 12 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h"
+ 175              		.file 13 "Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc/usbd_dfu.h"
+ 176              		.file 14 "USB_DEVICE/App/usbd_dfu_if.h"
+ARM GAS  /tmp/ccUmF5lQ.s 			page 9
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 usbd_dfu_if.c
+     /tmp/ccUmF5lQ.s:16     .text.MEM_If_Init_FS:0000000000000000 $t
+     /tmp/ccUmF5lQ.s:22     .text.MEM_If_Init_FS:0000000000000000 MEM_If_Init_FS
+     /tmp/ccUmF5lQ.s:37     .text.MEM_If_DeInit_FS:0000000000000000 $t
+     /tmp/ccUmF5lQ.s:43     .text.MEM_If_DeInit_FS:0000000000000000 MEM_If_DeInit_FS
+     /tmp/ccUmF5lQ.s:57     .text.MEM_If_Erase_FS:0000000000000000 $t
+     /tmp/ccUmF5lQ.s:63     .text.MEM_If_Erase_FS:0000000000000000 MEM_If_Erase_FS
+     /tmp/ccUmF5lQ.s:79     .text.MEM_If_Write_FS:0000000000000000 $t
+     /tmp/ccUmF5lQ.s:85     .text.MEM_If_Write_FS:0000000000000000 MEM_If_Write_FS
+     /tmp/ccUmF5lQ.s:101    .text.MEM_If_Read_FS:0000000000000000 $t
+     /tmp/ccUmF5lQ.s:107    .text.MEM_If_Read_FS:0000000000000000 MEM_If_Read_FS
+     /tmp/ccUmF5lQ.s:123    .text.MEM_If_GetStatus_FS:0000000000000000 $t
+     /tmp/ccUmF5lQ.s:129    .text.MEM_If_GetStatus_FS:0000000000000000 MEM_If_GetStatus_FS
+     /tmp/ccUmF5lQ.s:149    .data.USBD_DFU_fops_FS:0000000000000000 USBD_DFU_fops_FS
+     /tmp/ccUmF5lQ.s:146    .data.USBD_DFU_fops_FS:0000000000000000 $d
+     /tmp/ccUmF5lQ.s:158    .rodata.str1.4:0000000000000000 $d
+                     .debug_frame:0000000000000010 $d
+
+NO UNDEFINED SYMBOLS
