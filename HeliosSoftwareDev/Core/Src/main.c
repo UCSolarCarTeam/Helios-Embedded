@@ -28,7 +28,7 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
+#define CAN_TX_TASK_QUEUE 1 //sending one message
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -51,9 +51,19 @@ const osThreadAttr_t defaultTask_attributes = {
   .priority = (osPriority_t) osPriorityNormal,
 };
 /* USER CODE BEGIN PV */
+//Queues
+osMessageQueueId_t canTxTaskQueue;
 
 //Threads
-osThreadId_t CanTxTaskHandle;
+osThreadId_t canTxTaskHandle;
+
+// Thread Attributes
+const osThreadAttr_t canTxTaskHandle_attribute =
+{
+    .name = "canTxTask",
+    .priority = (osPriority_t) osPriorityAboveNormal1,
+    .stack_size = 128 * 4
+};
 
 /* USER CODE END PV */
 
@@ -122,6 +132,7 @@ int main(void)
 
   /* USER CODE BEGIN RTOS_QUEUES */
   /* add queues, ... */
+    canTxTaskQueue = osMessageQueueNew(CAN_TX_TASK_QUEUE, sizeof(canTxTaskQueueData), NULL);
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
