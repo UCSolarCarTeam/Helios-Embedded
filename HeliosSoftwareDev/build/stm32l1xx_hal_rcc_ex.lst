@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccW66J8h.s 			page 1
+ARM GAS  /tmp/ccvH80v8.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccW66J8h.s 			page 1
   31:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c **** #ifdef HAL_RCC_MODULE_ENABLED
   32:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c **** 
   33:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c **** /** @defgroup RCCEx RCCEx
-ARM GAS  /tmp/ccW66J8h.s 			page 2
+ARM GAS  /tmp/ccvH80v8.s 			page 2
 
 
   34:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****   * @brief RCC Extension HAL module driver
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccW66J8h.s 			page 1
   88:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****   * @retval HAL status
   89:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****   * @note   If HAL_ERROR returned, first switch-OFF HSE clock oscillator with @ref HAL_RCC_OscConfi
   90:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****   *         to possibly update HSE divider.
-ARM GAS  /tmp/ccW66J8h.s 			page 3
+ARM GAS  /tmp/ccvH80v8.s 			page 3
 
 
   91:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****   */
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccW66J8h.s 			page 1
  120:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****     FlagStatus       pwrclkchanged = RESET;
  121:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c **** 
  122:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****     /* As soon as function is called to change RTC clock source, activation of the
-ARM GAS  /tmp/ccW66J8h.s 			page 4
+ARM GAS  /tmp/ccvH80v8.s 			page 4
 
 
  123:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****        power domain is done. */
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccW66J8h.s 			page 1
  147:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c **** 
  148:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****     /* Check if user wants to change HSE RTC prescaler whereas HSE is enabled */
  149:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****     temp_reg = (RCC->CR & RCC_CR_RTCPRE);
-ARM GAS  /tmp/ccW66J8h.s 			page 5
+ARM GAS  /tmp/ccvH80v8.s 			page 5
 
 
   79              		.loc 1 149 0
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccW66J8h.s 			page 1
  112              	.L10:
  171:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c **** #if defined(LCD)
  172:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****       || ((temp_reg != (PeriphClkInit->LCDClockSelection & RCC_CSR_RTCSEL)) \
-ARM GAS  /tmp/ccW66J8h.s 			page 6
+ARM GAS  /tmp/ccvH80v8.s 			page 6
 
 
  113              		.loc 1 172 0
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccW66J8h.s 			page 1
  197:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****           {
  198:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****             return HAL_TIMEOUT;
  199:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****           }
-ARM GAS  /tmp/ccW66J8h.s 			page 7
+ARM GAS  /tmp/ccvH80v8.s 			page 7
 
 
  200:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****         }
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccW66J8h.s 			page 1
  180 00e0 002D     		cmp	r5, #0
  181 00e2 48D1     		bne	.L34
  182              	.LBE2:
-ARM GAS  /tmp/ccW66J8h.s 			page 8
+ARM GAS  /tmp/ccvH80v8.s 			page 8
 
 
  217:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****     {
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccW66J8h.s 			page 1
  143:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****         }
  225              		.loc 1 143 0
  226 0112 0320     		movs	r0, #3
-ARM GAS  /tmp/ccW66J8h.s 			page 9
+ARM GAS  /tmp/ccvH80v8.s 			page 9
 
 
  227 0114 E7E7     		b	.L2
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccW66J8h.s 			page 1
  273 0154 0A68     		ldr	r2, [r1]
  274 0156 22F0C042 		bic	r2, r2, #1610612736
  275 015a 03F0C043 		and	r3, r3, #1610612736
-ARM GAS  /tmp/ccW66J8h.s 			page 10
+ARM GAS  /tmp/ccvH80v8.s 			page 10
 
 
  276 015e 1343     		orrs	r3, r3, r2
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccW66J8h.s 			page 1
  225:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c **** /**
  226:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****   * @brief  Get the PeriphClkInit according to the internal RCC configuration registers.
  227:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****   * @param  PeriphClkInit pointer to an RCC_PeriphCLKInitTypeDef structure that
-ARM GAS  /tmp/ccW66J8h.s 			page 11
+ARM GAS  /tmp/ccvH80v8.s 			page 11
 
 
  228:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****   *         returns the configuration information for the Extended Peripherals clocks(RTC/LCD clock
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccW66J8h.s 			page 1
  251:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****   }
  355              		.loc 1 251 0
  356 001a 034A     		ldr	r2, .L40
-ARM GAS  /tmp/ccW66J8h.s 			page 12
+ARM GAS  /tmp/ccvH80v8.s 			page 12
 
 
  357 001c 1268     		ldr	r2, [r2]
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccW66J8h.s 			page 1
  277:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****   {
  278:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****   case RCC_PERIPHCLK_RTC:
  279:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c **** #if defined(LCD)
-ARM GAS  /tmp/ccW66J8h.s 			page 13
+ARM GAS  /tmp/ccvH80v8.s 			page 13
 
 
  280:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****   case RCC_PERIPHCLK_LCD:
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccW66J8h.s 			page 1
  418 0032 7047     		bx	lr
  419              	.L60:
  270:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****   uint32_t srcclk;
-ARM GAS  /tmp/ccW66J8h.s 			page 14
+ARM GAS  /tmp/ccvH80v8.s 			page 14
 
 
  420              		.loc 1 270 0
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccW66J8h.s 			page 1
  318:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****               break;
  319:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****             }
  320:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****             case RCC_RTC_HSE_DIV_4:   /* HSE DIV4 has been selected  */
-ARM GAS  /tmp/ccW66J8h.s 			page 15
+ARM GAS  /tmp/ccvH80v8.s 			page 15
 
 
  321:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****             {
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccW66J8h.s 			page 1
  343:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c **** 
  344:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****   return(frequency);
  345:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c **** }
-ARM GAS  /tmp/ccW66J8h.s 			page 16
+ARM GAS  /tmp/ccvH80v8.s 			page 16
 
 
  484              		.loc 1 345 0
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccW66J8h.s 			page 1
  524              		.section	.text.HAL_RCCEx_DisableLSECSS,"ax",%progbits
  525              		.align	1
  526              		.global	HAL_RCCEx_DisableLSECSS
-ARM GAS  /tmp/ccW66J8h.s 			page 17
+ARM GAS  /tmp/ccvH80v8.s 			page 17
 
 
  527              		.syntax unified
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccW66J8h.s 			page 1
  380:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c **** }
  381:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c **** 
  382:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c **** /**
-ARM GAS  /tmp/ccW66J8h.s 			page 18
+ARM GAS  /tmp/ccvH80v8.s 			page 18
 
 
  383:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****   * @brief  Enable the LSE Clock Security System IT & corresponding EXTI line.
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccW66J8h.s 			page 1
  608              	HAL_RCCEx_LSECSS_Callback:
  609              	.LFB79:
  398:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c **** }
-ARM GAS  /tmp/ccW66J8h.s 			page 19
+ARM GAS  /tmp/ccvH80v8.s 			page 19
 
 
  399:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c **** 
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccW66J8h.s 			page 1
  639              		.loc 1 407 0
  640 0002 064B     		ldr	r3, .L79
  641 0004 DB68     		ldr	r3, [r3, #12]
-ARM GAS  /tmp/ccW66J8h.s 			page 20
+ARM GAS  /tmp/ccvH80v8.s 			page 20
 
 
  642 0006 13F0400F 		tst	r3, #64
@@ -1176,34 +1176,34 @@ ARM GAS  /tmp/ccW66J8h.s 			page 1
  672              		.file 8 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_def.h"
  673              		.file 9 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_rcc_ex.h"
  674              		.file 10 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal.h"
-ARM GAS  /tmp/ccW66J8h.s 			page 21
+ARM GAS  /tmp/ccvH80v8.s 			page 21
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32l1xx_hal_rcc_ex.c
-     /tmp/ccW66J8h.s:16     .text.HAL_RCCEx_PeriphCLKConfig:0000000000000000 $t
-     /tmp/ccW66J8h.s:23     .text.HAL_RCCEx_PeriphCLKConfig:0000000000000000 HAL_RCCEx_PeriphCLKConfig
-     /tmp/ccW66J8h.s:312    .text.HAL_RCCEx_PeriphCLKConfig:0000000000000188 $d
-     /tmp/ccW66J8h.s:319    .text.HAL_RCCEx_GetPeriphCLKConfig:0000000000000000 $t
-     /tmp/ccW66J8h.s:326    .text.HAL_RCCEx_GetPeriphCLKConfig:0000000000000000 HAL_RCCEx_GetPeriphCLKConfig
-     /tmp/ccW66J8h.s:366    .text.HAL_RCCEx_GetPeriphCLKConfig:0000000000000028 $d
-     /tmp/ccW66J8h.s:371    .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000000 $t
-     /tmp/ccW66J8h.s:378    .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000000 HAL_RCCEx_GetPeriphCLKFreq
-     /tmp/ccW66J8h.s:489    .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000088 $d
-     /tmp/ccW66J8h.s:498    .text.HAL_RCCEx_EnableLSECSS:0000000000000000 $t
-     /tmp/ccW66J8h.s:505    .text.HAL_RCCEx_EnableLSECSS:0000000000000000 HAL_RCCEx_EnableLSECSS
-     /tmp/ccW66J8h.s:520    .text.HAL_RCCEx_EnableLSECSS:0000000000000008 $d
-     /tmp/ccW66J8h.s:525    .text.HAL_RCCEx_DisableLSECSS:0000000000000000 $t
-     /tmp/ccW66J8h.s:532    .text.HAL_RCCEx_DisableLSECSS:0000000000000000 HAL_RCCEx_DisableLSECSS
-     /tmp/ccW66J8h.s:552    .text.HAL_RCCEx_DisableLSECSS:0000000000000014 $d
-     /tmp/ccW66J8h.s:558    .text.HAL_RCCEx_EnableLSECSS_IT:0000000000000000 $t
-     /tmp/ccW66J8h.s:565    .text.HAL_RCCEx_EnableLSECSS_IT:0000000000000000 HAL_RCCEx_EnableLSECSS_IT
-     /tmp/ccW66J8h.s:594    .text.HAL_RCCEx_EnableLSECSS_IT:0000000000000024 $d
-     /tmp/ccW66J8h.s:601    .text.HAL_RCCEx_LSECSS_Callback:0000000000000000 $t
-     /tmp/ccW66J8h.s:608    .text.HAL_RCCEx_LSECSS_Callback:0000000000000000 HAL_RCCEx_LSECSS_Callback
-     /tmp/ccW66J8h.s:620    .text.HAL_RCCEx_LSECSS_IRQHandler:0000000000000000 $t
-     /tmp/ccW66J8h.s:627    .text.HAL_RCCEx_LSECSS_IRQHandler:0000000000000000 HAL_RCCEx_LSECSS_IRQHandler
-     /tmp/ccW66J8h.s:659    .text.HAL_RCCEx_LSECSS_IRQHandler:000000000000001c $d
+     /tmp/ccvH80v8.s:16     .text.HAL_RCCEx_PeriphCLKConfig:0000000000000000 $t
+     /tmp/ccvH80v8.s:23     .text.HAL_RCCEx_PeriphCLKConfig:0000000000000000 HAL_RCCEx_PeriphCLKConfig
+     /tmp/ccvH80v8.s:312    .text.HAL_RCCEx_PeriphCLKConfig:0000000000000188 $d
+     /tmp/ccvH80v8.s:319    .text.HAL_RCCEx_GetPeriphCLKConfig:0000000000000000 $t
+     /tmp/ccvH80v8.s:326    .text.HAL_RCCEx_GetPeriphCLKConfig:0000000000000000 HAL_RCCEx_GetPeriphCLKConfig
+     /tmp/ccvH80v8.s:366    .text.HAL_RCCEx_GetPeriphCLKConfig:0000000000000028 $d
+     /tmp/ccvH80v8.s:371    .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000000 $t
+     /tmp/ccvH80v8.s:378    .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000000 HAL_RCCEx_GetPeriphCLKFreq
+     /tmp/ccvH80v8.s:489    .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000088 $d
+     /tmp/ccvH80v8.s:498    .text.HAL_RCCEx_EnableLSECSS:0000000000000000 $t
+     /tmp/ccvH80v8.s:505    .text.HAL_RCCEx_EnableLSECSS:0000000000000000 HAL_RCCEx_EnableLSECSS
+     /tmp/ccvH80v8.s:520    .text.HAL_RCCEx_EnableLSECSS:0000000000000008 $d
+     /tmp/ccvH80v8.s:525    .text.HAL_RCCEx_DisableLSECSS:0000000000000000 $t
+     /tmp/ccvH80v8.s:532    .text.HAL_RCCEx_DisableLSECSS:0000000000000000 HAL_RCCEx_DisableLSECSS
+     /tmp/ccvH80v8.s:552    .text.HAL_RCCEx_DisableLSECSS:0000000000000014 $d
+     /tmp/ccvH80v8.s:558    .text.HAL_RCCEx_EnableLSECSS_IT:0000000000000000 $t
+     /tmp/ccvH80v8.s:565    .text.HAL_RCCEx_EnableLSECSS_IT:0000000000000000 HAL_RCCEx_EnableLSECSS_IT
+     /tmp/ccvH80v8.s:594    .text.HAL_RCCEx_EnableLSECSS_IT:0000000000000024 $d
+     /tmp/ccvH80v8.s:601    .text.HAL_RCCEx_LSECSS_Callback:0000000000000000 $t
+     /tmp/ccvH80v8.s:608    .text.HAL_RCCEx_LSECSS_Callback:0000000000000000 HAL_RCCEx_LSECSS_Callback
+     /tmp/ccvH80v8.s:620    .text.HAL_RCCEx_LSECSS_IRQHandler:0000000000000000 $t
+     /tmp/ccvH80v8.s:627    .text.HAL_RCCEx_LSECSS_IRQHandler:0000000000000000 HAL_RCCEx_LSECSS_IRQHandler
+     /tmp/ccvH80v8.s:659    .text.HAL_RCCEx_LSECSS_IRQHandler:000000000000001c $d
                      .debug_frame:0000000000000010 $d
 
 UNDEFINED SYMBOLS

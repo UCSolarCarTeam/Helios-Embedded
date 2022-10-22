@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccoztUio.s 			page 1
+ARM GAS  /tmp/cc25CREp.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccoztUio.s 			page 1
   31:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   *
   32:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   ******************************************************************************
   33:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   */
-ARM GAS  /tmp/ccoztUio.s 			page 2
+ARM GAS  /tmp/cc25CREp.s 			page 2
 
 
   34:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccoztUio.s 			page 1
   88:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   */
   89:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** 
   90:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** /* Exported functions --------------------------------------------------------*/
-ARM GAS  /tmp/ccoztUio.s 			page 3
+ARM GAS  /tmp/cc25CREp.s 			page 3
 
 
   91:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** /** @defgroup HAL_Exported_Functions HAL Exported Functions
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccoztUio.s 			page 1
  145:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** #if (PREFETCH_ENABLE != 0)
  146:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   __HAL_FLASH_PREFETCH_BUFFER_ENABLE();
  147:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** #endif /* PREFETCH_ENABLE */
-ARM GAS  /tmp/ccoztUio.s 			page 4
+ARM GAS  /tmp/cc25CREp.s 			page 4
 
 
  148:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccoztUio.s 			page 1
   30              		@ link register save eliminated.
   31 0000 7047     		bx	lr
   32              		.cfi_endproc
-ARM GAS  /tmp/ccoztUio.s 			page 5
+ARM GAS  /tmp/cc25CREp.s 			page 5
 
 
   33              	.LFE74:
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccoztUio.s 			page 1
   77 0008 9A61     		str	r2, [r3, #24]
  177:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** 
   78              		.loc 1 177 0
-ARM GAS  /tmp/ccoztUio.s 			page 6
+ARM GAS  /tmp/cc25CREp.s 			page 6
 
 
   79 000a 0024     		movs	r4, #0
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccoztUio.s 			page 1
  226:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   *       implementation  in user file.
  227:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   * @param TickPriority Tick interrupt priority.
  228:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   * @retval HAL status
-ARM GAS  /tmp/ccoztUio.s 			page 7
+ARM GAS  /tmp/cc25CREp.s 			page 7
 
 
  229:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   */
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccoztUio.s 			page 1
  135 000e 4FF47A70 		mov	r0, #1000
  136              	.LVL4:
  137 0012 B0FBF3F3 		udiv	r3, r0, r3
-ARM GAS  /tmp/ccoztUio.s 			page 8
+ARM GAS  /tmp/cc25CREp.s 			page 8
 
 
  138 0016 0C4A     		ldr	r2, .L18+4
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccoztUio.s 			page 1
  182              		.align	1
  183              		.global	HAL_Init
  184              		.syntax unified
-ARM GAS  /tmp/ccoztUio.s 			page 9
+ARM GAS  /tmp/cc25CREp.s 			page 9
 
 
  185              		.thumb
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccoztUio.s 			page 1
  236              	.LFB77:
  263:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** 
  264:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** /**
-ARM GAS  /tmp/ccoztUio.s 			page 10
+ARM GAS  /tmp/cc25CREp.s 			page 10
 
 
  265:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   * @}
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccoztUio.s 			page 1
  255              		.cfi_endproc
  256              	.LFE77:
  258              		.section	.text.HAL_GetTick,"ax",%progbits
-ARM GAS  /tmp/ccoztUio.s 			page 11
+ARM GAS  /tmp/cc25CREp.s 			page 11
 
 
  259              		.align	1
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccoztUio.s 			page 1
  297              		@ args = 0, pretend = 0, frame = 0
  298              		@ frame_needed = 0, uses_anonymous_args = 0
  299              		@ link register save eliminated.
-ARM GAS  /tmp/ccoztUio.s 			page 12
+ARM GAS  /tmp/cc25CREp.s 			page 12
 
 
  320:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   return uwTickPrio;
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccoztUio.s 			page 1
  338:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****     prevTickFreq = uwTickFreq;
  339:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** 
  340:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****     /* Update uwTickFreq global variable used by HAL_InitTick() */
-ARM GAS  /tmp/ccoztUio.s 			page 13
+ARM GAS  /tmp/cc25CREp.s 			page 13
 
 
  341:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****     uwTickFreq = Freq;
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccoztUio.s 			page 1
  379              	.LFB81:
  355:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** 
  356:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** /**
-ARM GAS  /tmp/ccoztUio.s 			page 14
+ARM GAS  /tmp/cc25CREp.s 			page 14
 
 
  357:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   * @brief Return tick frequency.
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccoztUio.s 			page 1
  415              		.cfi_offset 4, -12
  416              		.cfi_offset 5, -8
  417              		.cfi_offset 14, -4
-ARM GAS  /tmp/ccoztUio.s 			page 15
+ARM GAS  /tmp/cc25CREp.s 			page 15
 
 
  418 0002 0446     		mov	r4, r0
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccoztUio.s 			page 1
  393:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   * @brief Suspend the Tick increment.
  394:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   * @note In the default implementation , SysTick timer is the source of time base. It is
  395:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   *       used to generate interrupts at regular time intervals. Once HAL_SuspendTick()
-ARM GAS  /tmp/ccoztUio.s 			page 16
+ARM GAS  /tmp/cc25CREp.s 			page 16
 
 
  396:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   *       is called, the SysTick interrupt will be disabled and so Tick increment
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccoztUio.s 			page 1
  491              		@ link register save eliminated.
  420:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   /* Enable SysTick Interrupt */
  421:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   SET_BIT(SysTick->CTRL,SysTick_CTRL_TICKINT_Msk);
-ARM GAS  /tmp/ccoztUio.s 			page 17
+ARM GAS  /tmp/cc25CREp.s 			page 17
 
 
  492              		.loc 1 421 0
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccoztUio.s 			page 1
  432:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** 
  433:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** /**
  434:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   * @brief Return the device revision identifier.
-ARM GAS  /tmp/ccoztUio.s 			page 18
+ARM GAS  /tmp/cc25CREp.s 			page 18
 
 
  435:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   * @retval Device revision identifier
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccoztUio.s 			page 1
  581              	.L62:
  582 000c 002004E0 		.word	-536600576
  583              		.cfi_endproc
-ARM GAS  /tmp/ccoztUio.s 			page 19
+ARM GAS  /tmp/cc25CREp.s 			page 19
 
 
  584              	.LFE87:
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccoztUio.s 			page 1
  626              		@ link register save eliminated.
  466:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   return(READ_REG(*((uint32_t *)(UID_BASE + 0x4U))));
  467:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** }
-ARM GAS  /tmp/ccoztUio.s 			page 20
+ARM GAS  /tmp/cc25CREp.s 			page 20
 
 
  627              		.loc 1 467 0
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccoztUio.s 			page 1
  479:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   * @}
  480:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   */
  481:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** 
-ARM GAS  /tmp/ccoztUio.s 			page 21
+ARM GAS  /tmp/cc25CREp.s 			page 21
 
 
  482:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** /** @defgroup HAL_Exported_Functions_Group3 DBGMCU Peripheral Control functions
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccoztUio.s 			page 1
  510:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   */
  511:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** void HAL_DBGMCU_DisableDBGSleepMode(void)
  512:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** {
-ARM GAS  /tmp/ccoztUio.s 			page 22
+ARM GAS  /tmp/cc25CREp.s 			page 22
 
 
  702              		.loc 1 512 0
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccoztUio.s 			page 1
  749              		.align	1
  750              		.global	HAL_DBGMCU_DisableDBGStopMode
  751              		.syntax unified
-ARM GAS  /tmp/ccoztUio.s 			page 23
+ARM GAS  /tmp/cc25CREp.s 			page 23
 
 
  752              		.thumb
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccoztUio.s 			page 1
  791              		.loc 1 540 0
  792 0000 024A     		ldr	r2, .L86
  793 0002 5368     		ldr	r3, [r2, #4]
-ARM GAS  /tmp/ccoztUio.s 			page 24
+ARM GAS  /tmp/cc25CREp.s 			page 24
 
 
  794 0004 43F00403 		orr	r3, r3, #4
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccoztUio.s 			page 1
  844              		.set	.LANCHOR1,. + 0
  847              	uwTickPrio:
  848 0000 10000000 		.word	16
-ARM GAS  /tmp/ccoztUio.s 			page 25
+ARM GAS  /tmp/cc25CREp.s 			page 25
 
 
  849              		.text
@@ -1451,91 +1451,91 @@ ARM GAS  /tmp/ccoztUio.s 			page 1
  856              		.file 7 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_def.h"
  857              		.file 8 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal.h"
  858              		.file 9 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_cortex.h"
-ARM GAS  /tmp/ccoztUio.s 			page 26
+ARM GAS  /tmp/cc25CREp.s 			page 26
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32l1xx_hal.c
-     /tmp/ccoztUio.s:16     .text.HAL_MspInit:0000000000000000 $t
-     /tmp/ccoztUio.s:23     .text.HAL_MspInit:0000000000000000 HAL_MspInit
-     /tmp/ccoztUio.s:36     .text.HAL_MspDeInit:0000000000000000 $t
-     /tmp/ccoztUio.s:43     .text.HAL_MspDeInit:0000000000000000 HAL_MspDeInit
-     /tmp/ccoztUio.s:55     .text.HAL_DeInit:0000000000000000 $t
-     /tmp/ccoztUio.s:62     .text.HAL_DeInit:0000000000000000 HAL_DeInit
-     /tmp/ccoztUio.s:98     .text.HAL_DeInit:0000000000000020 $d
-     /tmp/ccoztUio.s:103    .text.HAL_InitTick:0000000000000000 $t
-     /tmp/ccoztUio.s:110    .text.HAL_InitTick:0000000000000000 HAL_InitTick
-     /tmp/ccoztUio.s:175    .text.HAL_InitTick:0000000000000044 $d
-     /tmp/ccoztUio.s:182    .text.HAL_Init:0000000000000000 $t
-     /tmp/ccoztUio.s:189    .text.HAL_Init:0000000000000000 HAL_Init
-     /tmp/ccoztUio.s:228    .text.HAL_IncTick:0000000000000000 $t
-     /tmp/ccoztUio.s:235    .text.HAL_IncTick:0000000000000000 HAL_IncTick
-     /tmp/ccoztUio.s:253    .text.HAL_IncTick:0000000000000010 $d
+     /tmp/cc25CREp.s:16     .text.HAL_MspInit:0000000000000000 $t
+     /tmp/cc25CREp.s:23     .text.HAL_MspInit:0000000000000000 HAL_MspInit
+     /tmp/cc25CREp.s:36     .text.HAL_MspDeInit:0000000000000000 $t
+     /tmp/cc25CREp.s:43     .text.HAL_MspDeInit:0000000000000000 HAL_MspDeInit
+     /tmp/cc25CREp.s:55     .text.HAL_DeInit:0000000000000000 $t
+     /tmp/cc25CREp.s:62     .text.HAL_DeInit:0000000000000000 HAL_DeInit
+     /tmp/cc25CREp.s:98     .text.HAL_DeInit:0000000000000020 $d
+     /tmp/cc25CREp.s:103    .text.HAL_InitTick:0000000000000000 $t
+     /tmp/cc25CREp.s:110    .text.HAL_InitTick:0000000000000000 HAL_InitTick
+     /tmp/cc25CREp.s:175    .text.HAL_InitTick:0000000000000044 $d
+     /tmp/cc25CREp.s:182    .text.HAL_Init:0000000000000000 $t
+     /tmp/cc25CREp.s:189    .text.HAL_Init:0000000000000000 HAL_Init
+     /tmp/cc25CREp.s:228    .text.HAL_IncTick:0000000000000000 $t
+     /tmp/cc25CREp.s:235    .text.HAL_IncTick:0000000000000000 HAL_IncTick
+     /tmp/cc25CREp.s:253    .text.HAL_IncTick:0000000000000010 $d
                             *COM*:0000000000000004 uwTick
-     /tmp/ccoztUio.s:259    .text.HAL_GetTick:0000000000000000 $t
-     /tmp/ccoztUio.s:266    .text.HAL_GetTick:0000000000000000 HAL_GetTick
-     /tmp/ccoztUio.s:281    .text.HAL_GetTick:0000000000000008 $d
-     /tmp/ccoztUio.s:286    .text.HAL_GetTickPrio:0000000000000000 $t
-     /tmp/ccoztUio.s:293    .text.HAL_GetTickPrio:0000000000000000 HAL_GetTickPrio
-     /tmp/ccoztUio.s:307    .text.HAL_GetTickPrio:0000000000000008 $d
-     /tmp/ccoztUio.s:312    .text.HAL_SetTickFreq:0000000000000000 $t
-     /tmp/ccoztUio.s:319    .text.HAL_SetTickFreq:0000000000000000 HAL_SetTickFreq
-     /tmp/ccoztUio.s:365    .text.HAL_SetTickFreq:0000000000000024 $d
-     /tmp/ccoztUio.s:371    .text.HAL_GetTickFreq:0000000000000000 $t
-     /tmp/ccoztUio.s:378    .text.HAL_GetTickFreq:0000000000000000 HAL_GetTickFreq
-     /tmp/ccoztUio.s:392    .text.HAL_GetTickFreq:0000000000000008 $d
-     /tmp/ccoztUio.s:397    .text.HAL_Delay:0000000000000000 $t
-     /tmp/ccoztUio.s:404    .text.HAL_Delay:0000000000000000 HAL_Delay
-     /tmp/ccoztUio.s:445    .text.HAL_Delay:0000000000000024 $d
-     /tmp/ccoztUio.s:450    .text.HAL_SuspendTick:0000000000000000 $t
-     /tmp/ccoztUio.s:457    .text.HAL_SuspendTick:0000000000000000 HAL_SuspendTick
-     /tmp/ccoztUio.s:473    .text.HAL_SuspendTick:000000000000000c $d
-     /tmp/ccoztUio.s:478    .text.HAL_ResumeTick:0000000000000000 $t
-     /tmp/ccoztUio.s:485    .text.HAL_ResumeTick:0000000000000000 HAL_ResumeTick
-     /tmp/ccoztUio.s:501    .text.HAL_ResumeTick:000000000000000c $d
-     /tmp/ccoztUio.s:506    .text.HAL_GetHalVersion:0000000000000000 $t
-     /tmp/ccoztUio.s:513    .text.HAL_GetHalVersion:0000000000000000 HAL_GetHalVersion
-     /tmp/ccoztUio.s:526    .text.HAL_GetHalVersion:0000000000000004 $d
-     /tmp/ccoztUio.s:531    .text.HAL_GetREVID:0000000000000000 $t
-     /tmp/ccoztUio.s:538    .text.HAL_GetREVID:0000000000000000 HAL_GetREVID
-     /tmp/ccoztUio.s:554    .text.HAL_GetREVID:0000000000000008 $d
-     /tmp/ccoztUio.s:559    .text.HAL_GetDEVID:0000000000000000 $t
-     /tmp/ccoztUio.s:566    .text.HAL_GetDEVID:0000000000000000 HAL_GetDEVID
-     /tmp/ccoztUio.s:582    .text.HAL_GetDEVID:000000000000000c $d
-     /tmp/ccoztUio.s:587    .text.HAL_GetUIDw0:0000000000000000 $t
-     /tmp/ccoztUio.s:594    .text.HAL_GetUIDw0:0000000000000000 HAL_GetUIDw0
-     /tmp/ccoztUio.s:608    .text.HAL_GetUIDw0:0000000000000008 $d
-     /tmp/ccoztUio.s:613    .text.HAL_GetUIDw1:0000000000000000 $t
-     /tmp/ccoztUio.s:620    .text.HAL_GetUIDw1:0000000000000000 HAL_GetUIDw1
-     /tmp/ccoztUio.s:634    .text.HAL_GetUIDw1:0000000000000008 $d
-     /tmp/ccoztUio.s:639    .text.HAL_GetUIDw2:0000000000000000 $t
-     /tmp/ccoztUio.s:646    .text.HAL_GetUIDw2:0000000000000000 HAL_GetUIDw2
-     /tmp/ccoztUio.s:660    .text.HAL_GetUIDw2:0000000000000008 $d
-ARM GAS  /tmp/ccoztUio.s 			page 27
+     /tmp/cc25CREp.s:259    .text.HAL_GetTick:0000000000000000 $t
+     /tmp/cc25CREp.s:266    .text.HAL_GetTick:0000000000000000 HAL_GetTick
+     /tmp/cc25CREp.s:281    .text.HAL_GetTick:0000000000000008 $d
+     /tmp/cc25CREp.s:286    .text.HAL_GetTickPrio:0000000000000000 $t
+     /tmp/cc25CREp.s:293    .text.HAL_GetTickPrio:0000000000000000 HAL_GetTickPrio
+     /tmp/cc25CREp.s:307    .text.HAL_GetTickPrio:0000000000000008 $d
+     /tmp/cc25CREp.s:312    .text.HAL_SetTickFreq:0000000000000000 $t
+     /tmp/cc25CREp.s:319    .text.HAL_SetTickFreq:0000000000000000 HAL_SetTickFreq
+     /tmp/cc25CREp.s:365    .text.HAL_SetTickFreq:0000000000000024 $d
+     /tmp/cc25CREp.s:371    .text.HAL_GetTickFreq:0000000000000000 $t
+     /tmp/cc25CREp.s:378    .text.HAL_GetTickFreq:0000000000000000 HAL_GetTickFreq
+     /tmp/cc25CREp.s:392    .text.HAL_GetTickFreq:0000000000000008 $d
+     /tmp/cc25CREp.s:397    .text.HAL_Delay:0000000000000000 $t
+     /tmp/cc25CREp.s:404    .text.HAL_Delay:0000000000000000 HAL_Delay
+     /tmp/cc25CREp.s:445    .text.HAL_Delay:0000000000000024 $d
+     /tmp/cc25CREp.s:450    .text.HAL_SuspendTick:0000000000000000 $t
+     /tmp/cc25CREp.s:457    .text.HAL_SuspendTick:0000000000000000 HAL_SuspendTick
+     /tmp/cc25CREp.s:473    .text.HAL_SuspendTick:000000000000000c $d
+     /tmp/cc25CREp.s:478    .text.HAL_ResumeTick:0000000000000000 $t
+     /tmp/cc25CREp.s:485    .text.HAL_ResumeTick:0000000000000000 HAL_ResumeTick
+     /tmp/cc25CREp.s:501    .text.HAL_ResumeTick:000000000000000c $d
+     /tmp/cc25CREp.s:506    .text.HAL_GetHalVersion:0000000000000000 $t
+     /tmp/cc25CREp.s:513    .text.HAL_GetHalVersion:0000000000000000 HAL_GetHalVersion
+     /tmp/cc25CREp.s:526    .text.HAL_GetHalVersion:0000000000000004 $d
+     /tmp/cc25CREp.s:531    .text.HAL_GetREVID:0000000000000000 $t
+     /tmp/cc25CREp.s:538    .text.HAL_GetREVID:0000000000000000 HAL_GetREVID
+     /tmp/cc25CREp.s:554    .text.HAL_GetREVID:0000000000000008 $d
+     /tmp/cc25CREp.s:559    .text.HAL_GetDEVID:0000000000000000 $t
+     /tmp/cc25CREp.s:566    .text.HAL_GetDEVID:0000000000000000 HAL_GetDEVID
+     /tmp/cc25CREp.s:582    .text.HAL_GetDEVID:000000000000000c $d
+     /tmp/cc25CREp.s:587    .text.HAL_GetUIDw0:0000000000000000 $t
+     /tmp/cc25CREp.s:594    .text.HAL_GetUIDw0:0000000000000000 HAL_GetUIDw0
+     /tmp/cc25CREp.s:608    .text.HAL_GetUIDw0:0000000000000008 $d
+     /tmp/cc25CREp.s:613    .text.HAL_GetUIDw1:0000000000000000 $t
+     /tmp/cc25CREp.s:620    .text.HAL_GetUIDw1:0000000000000000 HAL_GetUIDw1
+     /tmp/cc25CREp.s:634    .text.HAL_GetUIDw1:0000000000000008 $d
+     /tmp/cc25CREp.s:639    .text.HAL_GetUIDw2:0000000000000000 $t
+     /tmp/cc25CREp.s:646    .text.HAL_GetUIDw2:0000000000000000 HAL_GetUIDw2
+     /tmp/cc25CREp.s:660    .text.HAL_GetUIDw2:0000000000000008 $d
+ARM GAS  /tmp/cc25CREp.s 			page 27
 
 
-     /tmp/ccoztUio.s:665    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000000000000 $t
-     /tmp/ccoztUio.s:672    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000000000000 HAL_DBGMCU_EnableDBGSleepMode
-     /tmp/ccoztUio.s:688    .text.HAL_DBGMCU_EnableDBGSleepMode:000000000000000c $d
-     /tmp/ccoztUio.s:693    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000000000000 $t
-     /tmp/ccoztUio.s:700    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000000000000 HAL_DBGMCU_DisableDBGSleepMode
-     /tmp/ccoztUio.s:716    .text.HAL_DBGMCU_DisableDBGSleepMode:000000000000000c $d
-     /tmp/ccoztUio.s:721    .text.HAL_DBGMCU_EnableDBGStopMode:0000000000000000 $t
-     /tmp/ccoztUio.s:728    .text.HAL_DBGMCU_EnableDBGStopMode:0000000000000000 HAL_DBGMCU_EnableDBGStopMode
-     /tmp/ccoztUio.s:744    .text.HAL_DBGMCU_EnableDBGStopMode:000000000000000c $d
-     /tmp/ccoztUio.s:749    .text.HAL_DBGMCU_DisableDBGStopMode:0000000000000000 $t
-     /tmp/ccoztUio.s:756    .text.HAL_DBGMCU_DisableDBGStopMode:0000000000000000 HAL_DBGMCU_DisableDBGStopMode
-     /tmp/ccoztUio.s:772    .text.HAL_DBGMCU_DisableDBGStopMode:000000000000000c $d
-     /tmp/ccoztUio.s:777    .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000000000000 $t
-     /tmp/ccoztUio.s:784    .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000000000000 HAL_DBGMCU_EnableDBGStandbyMode
-     /tmp/ccoztUio.s:800    .text.HAL_DBGMCU_EnableDBGStandbyMode:000000000000000c $d
-     /tmp/ccoztUio.s:805    .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000000000000 $t
-     /tmp/ccoztUio.s:812    .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000000000000 HAL_DBGMCU_DisableDBGStandbyMode
-     /tmp/ccoztUio.s:828    .text.HAL_DBGMCU_DisableDBGStandbyMode:000000000000000c $d
-     /tmp/ccoztUio.s:840    .data.uwTickFreq:0000000000000000 uwTickFreq
-     /tmp/ccoztUio.s:847    .data.uwTickPrio:0000000000000000 uwTickPrio
-     /tmp/ccoztUio.s:836    .data.uwTickFreq:0000000000000000 $d
-     /tmp/ccoztUio.s:843    .data.uwTickPrio:0000000000000000 $d
+     /tmp/cc25CREp.s:665    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000000000000 $t
+     /tmp/cc25CREp.s:672    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000000000000 HAL_DBGMCU_EnableDBGSleepMode
+     /tmp/cc25CREp.s:688    .text.HAL_DBGMCU_EnableDBGSleepMode:000000000000000c $d
+     /tmp/cc25CREp.s:693    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000000000000 $t
+     /tmp/cc25CREp.s:700    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000000000000 HAL_DBGMCU_DisableDBGSleepMode
+     /tmp/cc25CREp.s:716    .text.HAL_DBGMCU_DisableDBGSleepMode:000000000000000c $d
+     /tmp/cc25CREp.s:721    .text.HAL_DBGMCU_EnableDBGStopMode:0000000000000000 $t
+     /tmp/cc25CREp.s:728    .text.HAL_DBGMCU_EnableDBGStopMode:0000000000000000 HAL_DBGMCU_EnableDBGStopMode
+     /tmp/cc25CREp.s:744    .text.HAL_DBGMCU_EnableDBGStopMode:000000000000000c $d
+     /tmp/cc25CREp.s:749    .text.HAL_DBGMCU_DisableDBGStopMode:0000000000000000 $t
+     /tmp/cc25CREp.s:756    .text.HAL_DBGMCU_DisableDBGStopMode:0000000000000000 HAL_DBGMCU_DisableDBGStopMode
+     /tmp/cc25CREp.s:772    .text.HAL_DBGMCU_DisableDBGStopMode:000000000000000c $d
+     /tmp/cc25CREp.s:777    .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000000000000 $t
+     /tmp/cc25CREp.s:784    .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000000000000 HAL_DBGMCU_EnableDBGStandbyMode
+     /tmp/cc25CREp.s:800    .text.HAL_DBGMCU_EnableDBGStandbyMode:000000000000000c $d
+     /tmp/cc25CREp.s:805    .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000000000000 $t
+     /tmp/cc25CREp.s:812    .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000000000000 HAL_DBGMCU_DisableDBGStandbyMode
+     /tmp/cc25CREp.s:828    .text.HAL_DBGMCU_DisableDBGStandbyMode:000000000000000c $d
+     /tmp/cc25CREp.s:840    .data.uwTickFreq:0000000000000000 uwTickFreq
+     /tmp/cc25CREp.s:847    .data.uwTickPrio:0000000000000000 uwTickPrio
+     /tmp/cc25CREp.s:836    .data.uwTickFreq:0000000000000000 $d
+     /tmp/cc25CREp.s:843    .data.uwTickPrio:0000000000000000 $d
                      .debug_frame:0000000000000010 $d
 
 UNDEFINED SYMBOLS

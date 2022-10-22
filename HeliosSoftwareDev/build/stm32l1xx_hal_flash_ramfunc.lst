@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccm5GNyi.s 			page 1
+ARM GAS  /tmp/cc7l1d6Z.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
   32:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****   *
   33:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****   * <h2><center>&copy; Copyright (c) 2017 STMicroelectronics.
   34:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****   * All rights reserved.</center></h2>
-ARM GAS  /tmp/ccm5GNyi.s 			page 2
+ARM GAS  /tmp/cc7l1d6Z.s 			page 2
 
 
   35:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****   *
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
   89:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c **** 
   90:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c **** /* Private functions ---------------------------------------------------------*/
   91:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****  
-ARM GAS  /tmp/ccm5GNyi.s 			page 3
+ARM GAS  /tmp/cc7l1d6Z.s 			page 3
 
 
   92:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c **** /** @defgroup FLASH_RAMFUNC_Exported_Functions FLASH RAM Exported Functions
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  146:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c **** 
  147:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c **** #if defined(FLASH_PECR_PARALLBANK)
  148:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c **** /**
-ARM GAS  /tmp/ccm5GNyi.s 			page 4
+ARM GAS  /tmp/cc7l1d6Z.s 			page 4
 
 
  149:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****   * @brief  Erases a specified 2 pages in program memory in parallel.
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  203:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****   * @param  Address2: specifies the second address to be written in the second bank
  204:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****   *        (BANK2). This parameter should be between FLASH_BANK2_BASE and (FLASH_BANK2_END - FLASH_
  205:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****   * @param  pBuffer2: pointer to the buffer containing the data to be  written 
-ARM GAS  /tmp/ccm5GNyi.s 			page 5
+ARM GAS  /tmp/cc7l1d6Z.s 			page 5
 
 
  206:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****   *         to the second half page in the second bank.
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  260:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****       count ++;  
  261:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****     }
  262:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****     
-ARM GAS  /tmp/ccm5GNyi.s 			page 6
+ARM GAS  /tmp/cc7l1d6Z.s 			page 6
 
 
  263:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****     /* Wait for last operation to be completed */
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  317:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****     __disable_irq();
  318:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c **** 
  319:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****     /* Proceed to program the new half page */
-ARM GAS  /tmp/ccm5GNyi.s 			page 7
+ARM GAS  /tmp/cc7l1d6Z.s 			page 7
 
 
  320:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****     SET_BIT(FLASH->PECR, FLASH_PECR_FPRG);
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  374:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c **** @elif STM32L152xBA
  375:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****   *            @arg @ref HAL_FLASH_ERROR_RD      FLASH Read Protection error flag (PCROP)
  376:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c **** @elif STM32L100xC
-ARM GAS  /tmp/ccm5GNyi.s 			page 8
+ARM GAS  /tmp/cc7l1d6Z.s 			page 8
 
 
  377:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****   *            @arg @ref HAL_FLASH_ERROR_RD      FLASH Read Protection error flag (PCROP)
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  431:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****   HAL_StatusTypeDef status = HAL_OK;
  432:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****   
  433:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****   /* Wait for last operation to be completed */
-ARM GAS  /tmp/ccm5GNyi.s 			page 9
+ARM GAS  /tmp/cc7l1d6Z.s 			page 9
 
 
  434:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****   status = FLASHRAM_WaitForLastOperation(FLASH_TIMEOUT_VALUE);
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  488:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c **** __RAM_FUNC HAL_StatusTypeDef HAL_FLASHEx_DATAEEPROM_ProgramDoubleWord(uint32_t Address, uint64_t Da
  489:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c **** {
  490:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****   uint32_t primask_bit;
-ARM GAS  /tmp/ccm5GNyi.s 			page 10
+ARM GAS  /tmp/cc7l1d6Z.s 			page 10
 
 
  491:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****   HAL_StatusTypeDef status = HAL_OK;
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
   26              		.cfi_startproc
   27              		@ args = 0, pretend = 0, frame = 0
   28              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/ccm5GNyi.s 			page 11
+ARM GAS  /tmp/cc7l1d6Z.s 			page 11
 
 
   29              		@ link register save eliminated.
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
   68 003e 42F00402 		orr	r2, r2, #4
   69 0042 4A61     		str	r2, [r1, #20]
  559:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****     flags |= FLASH_FLAG_OPTVERR;
-ARM GAS  /tmp/ccm5GNyi.s 			page 12
+ARM GAS  /tmp/cc7l1d6Z.s 			page 12
 
 
   70              		.loc 1 559 0
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  101              	.L7:
  102 006c 003C0240 		.word	1073888256
  103 0070 00000000 		.word	pFlash
-ARM GAS  /tmp/ccm5GNyi.s 			page 13
+ARM GAS  /tmp/cc7l1d6Z.s 			page 13
 
 
  104              		.cfi_endproc
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  599:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****     if(Timeout == 0x00U)
  141              		.loc 1 599 0 is_stmt 1
  142 0088 08B9     		cbnz	r0, .L19
-ARM GAS  /tmp/ccm5GNyi.s 			page 14
+ARM GAS  /tmp/cc7l1d6Z.s 			page 14
 
 
  600:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****     {
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  619:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****      __HAL_FLASH_GET_FLAG(FLASH_FLAG_PGAERR))
  176              		.loc 1 619 0
  177 00bc 054B     		ldr	r3, .L20
-ARM GAS  /tmp/ccm5GNyi.s 			page 15
+ARM GAS  /tmp/cc7l1d6Z.s 			page 15
 
 
  178 00be 9B69     		ldr	r3, [r3, #24]
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  222 00e0 9A60     		str	r2, [r3, #8]
  223 00e2 1A68     		ldr	r2, [r3]
  224 00e4 42F01002 		orr	r2, r2, #16
-ARM GAS  /tmp/ccm5GNyi.s 			page 16
+ARM GAS  /tmp/cc7l1d6Z.s 			page 16
 
 
  225 00e8 1A60     		str	r2, [r3]
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  278              		.fpu softvfp
  280              	HAL_FLASHEx_EraseParallelPage:
  281              	.LFB74:
-ARM GAS  /tmp/ccm5GNyi.s 			page 17
+ARM GAS  /tmp/cc7l1d6Z.s 			page 17
 
 
  166:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****   HAL_StatusTypeDef status = HAL_OK;
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  182:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****  
  328              		.loc 1 182 0
  329 0154 2B60     		str	r3, [r5]
-ARM GAS  /tmp/ccm5GNyi.s 			page 18
+ARM GAS  /tmp/cc7l1d6Z.s 			page 18
 
 
  185:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c **** 
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  381 0186 0D46     		mov	r5, r1
  382 0188 1646     		mov	r6, r2
  383 018a 1C46     		mov	r4, r3
-ARM GAS  /tmp/ccm5GNyi.s 			page 19
+ARM GAS  /tmp/cc7l1d6Z.s 			page 19
 
 
  384              	.LVL24:
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
   40:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __ASM
   41:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __ASM                                  __asm
   42:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  /tmp/ccm5GNyi.s 			page 20
+ARM GAS  /tmp/cc7l1d6Z.s 			page 20
 
 
   43:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __INLINE
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
   97:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
   98:Drivers/CMSIS/Include/cmsis_gcc.h ****   __PACKED_STRUCT T_UINT32_WRITE { uint32_t v; };
   99:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
-ARM GAS  /tmp/ccm5GNyi.s 			page 21
+ARM GAS  /tmp/cc7l1d6Z.s 			page 21
 
 
  100:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT32_WRITE(addr, val)    (void)((((struct T_UINT32_WRITE *)(void *)(addr))-
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  154:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  155:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, control" : "=r" (result) );
  156:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
-ARM GAS  /tmp/ccm5GNyi.s 			page 22
+ARM GAS  /tmp/cc7l1d6Z.s 			page 22
 
 
  157:Drivers/CMSIS/Include/cmsis_gcc.h **** }
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  211:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  212:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  213:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  /tmp/ccm5GNyi.s 			page 23
+ARM GAS  /tmp/cc7l1d6Z.s 			page 23
 
 
  214:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  268:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  269:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
  270:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  /tmp/ccm5GNyi.s 			page 24
+ARM GAS  /tmp/cc7l1d6Z.s 			page 24
 
 
  271:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  325:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  326:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  327:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Main Stack Pointer
-ARM GAS  /tmp/ccm5GNyi.s 			page 25
+ARM GAS  /tmp/cc7l1d6Z.s 			page 25
 
 
  328:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the Main Stack Pointer (MSP).
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  382:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_PRIMASK(void)
  383:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  384:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
-ARM GAS  /tmp/ccm5GNyi.s 			page 26
+ARM GAS  /tmp/cc7l1d6Z.s 			page 26
 
 
  385:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  441              		.loc 1 251 0
  442 01c6 0133     		adds	r3, r3, #1
  443              	.LVL30:
-ARM GAS  /tmp/ccm5GNyi.s 			page 27
+ARM GAS  /tmp/cc7l1d6Z.s 			page 27
 
 
  444              	.L36:
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  389:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  390:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  391:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
-ARM GAS  /tmp/ccm5GNyi.s 			page 28
+ARM GAS  /tmp/cc7l1d6Z.s 			page 28
 
 
  392:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  519              		.loc 1 305 0
  520              		.cfi_startproc
  521              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccm5GNyi.s 			page 29
+ARM GAS  /tmp/cc7l1d6Z.s 			page 29
 
 
  522              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  570 0232 5A68     		ldr	r2, [r3, #4]
  571 0234 42F00802 		orr	r2, r2, #8
  572 0238 5A60     		str	r2, [r3, #4]
-ARM GAS  /tmp/ccm5GNyi.s 			page 30
+ARM GAS  /tmp/cc7l1d6Z.s 			page 30
 
 
  307:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****   HAL_StatusTypeDef status = HAL_OK;
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  619              	.LBE37:
  620              	.LBE36:
  344:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c **** 
-ARM GAS  /tmp/ccm5GNyi.s 			page 31
+ARM GAS  /tmp/cc7l1d6Z.s 			page 31
 
 
  621              		.loc 1 344 0
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  675              	.LVL58:
  676 0284 70B5     		push	{r4, r5, r6, lr}
  677              	.LCFI4:
-ARM GAS  /tmp/ccm5GNyi.s 			page 32
+ARM GAS  /tmp/cc7l1d6Z.s 			page 32
 
 
  678              		.cfi_def_cfa_offset 16
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  726 02a6 6360     		str	r3, [r4, #4]
  447:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****    
  727              		.loc 1 447 0
-ARM GAS  /tmp/ccm5GNyi.s 			page 33
+ARM GAS  /tmp/cc7l1d6Z.s 			page 33
 
 
  728 02a8 6368     		ldr	r3, [r4, #4]
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  779              	.LFB79:
  489:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_flash_ramfunc.c ****   uint32_t primask_bit;
  780              		.loc 1 489 0
-ARM GAS  /tmp/ccm5GNyi.s 			page 34
+ARM GAS  /tmp/cc7l1d6Z.s 			page 34
 
 
  781              		.cfi_startproc
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  830              	@ 0 "" 2
  831              		.thumb
  832              		.syntax unified
-ARM GAS  /tmp/ccm5GNyi.s 			page 35
+ARM GAS  /tmp/cc7l1d6Z.s 			page 35
 
 
  833              	.LBE47:
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  880              		.cfi_endproc
  881              	.LFE79:
  883              		.text
-ARM GAS  /tmp/ccm5GNyi.s 			page 36
+ARM GAS  /tmp/cc7l1d6Z.s 			page 36
 
 
  884              	.Letext0:
@@ -2110,41 +2110,41 @@ ARM GAS  /tmp/ccm5GNyi.s 			page 1
  890              		.file 8 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_def.h"
  891              		.file 9 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_flash.h"
  892              		.file 10 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal.h"
-ARM GAS  /tmp/ccm5GNyi.s 			page 37
+ARM GAS  /tmp/cc7l1d6Z.s 			page 37
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32l1xx_hal_flash_ramfunc.c
-     /tmp/ccm5GNyi.s:16     .RamFunc:0000000000000000 $t
-     /tmp/ccm5GNyi.s:22     .RamFunc:0000000000000000 FLASHRAM_SetErrorCode
-     /tmp/ccm5GNyi.s:102    .RamFunc:000000000000006c $d
-     /tmp/ccm5GNyi.s:107    .RamFunc:0000000000000074 $t
-     /tmp/ccm5GNyi.s:113    .RamFunc:0000000000000074 FLASHRAM_WaitForLastOperation
-     /tmp/ccm5GNyi.s:199    .RamFunc:00000000000000d4 $d
-     /tmp/ccm5GNyi.s:203    .RamFunc:00000000000000d8 $t
-     /tmp/ccm5GNyi.s:210    .RamFunc:00000000000000d8 HAL_FLASHEx_EnableRunPowerDown
-     /tmp/ccm5GNyi.s:232    .RamFunc:00000000000000f0 $d
-     /tmp/ccm5GNyi.s:238    .RamFunc:00000000000000fc $t
-     /tmp/ccm5GNyi.s:245    .RamFunc:00000000000000fc HAL_FLASHEx_DisableRunPowerDown
-     /tmp/ccm5GNyi.s:267    .RamFunc:0000000000000114 $d
-     /tmp/ccm5GNyi.s:273    .RamFunc:0000000000000120 $t
-     /tmp/ccm5GNyi.s:280    .RamFunc:0000000000000120 HAL_FLASHEx_EraseParallelPage
-     /tmp/ccm5GNyi.s:353    .RamFunc:000000000000017c $d
-     /tmp/ccm5GNyi.s:357    .RamFunc:0000000000000180 $t
-     /tmp/ccm5GNyi.s:364    .RamFunc:0000000000000180 HAL_FLASHEx_ProgramParallelHalfPage
-     /tmp/ccm5GNyi.s:506    .RamFunc:000000000000020c $d
-     /tmp/ccm5GNyi.s:510    .RamFunc:0000000000000210 $t
-     /tmp/ccm5GNyi.s:517    .RamFunc:0000000000000210 HAL_FLASHEx_HalfPageProgram
-     /tmp/ccm5GNyi.s:628    .RamFunc:0000000000000270 $d
-     /tmp/ccm5GNyi.s:632    .RamFunc:0000000000000274 $t
-     /tmp/ccm5GNyi.s:639    .RamFunc:0000000000000274 HAL_FLASHEx_GetError
-     /tmp/ccm5GNyi.s:658    .RamFunc:0000000000000280 $d
-     /tmp/ccm5GNyi.s:662    .RamFunc:0000000000000284 $t
-     /tmp/ccm5GNyi.s:669    .RamFunc:0000000000000284 HAL_FLASHEx_DATAEEPROM_EraseDoubleWord
-     /tmp/ccm5GNyi.s:765    .RamFunc:00000000000002d8 $d
-     /tmp/ccm5GNyi.s:771    .RamFunc:00000000000002dc $t
-     /tmp/ccm5GNyi.s:778    .RamFunc:00000000000002dc HAL_FLASHEx_DATAEEPROM_ProgramDoubleWord
-     /tmp/ccm5GNyi.s:877    .RamFunc:0000000000000338 $d
+     /tmp/cc7l1d6Z.s:16     .RamFunc:0000000000000000 $t
+     /tmp/cc7l1d6Z.s:22     .RamFunc:0000000000000000 FLASHRAM_SetErrorCode
+     /tmp/cc7l1d6Z.s:102    .RamFunc:000000000000006c $d
+     /tmp/cc7l1d6Z.s:107    .RamFunc:0000000000000074 $t
+     /tmp/cc7l1d6Z.s:113    .RamFunc:0000000000000074 FLASHRAM_WaitForLastOperation
+     /tmp/cc7l1d6Z.s:199    .RamFunc:00000000000000d4 $d
+     /tmp/cc7l1d6Z.s:203    .RamFunc:00000000000000d8 $t
+     /tmp/cc7l1d6Z.s:210    .RamFunc:00000000000000d8 HAL_FLASHEx_EnableRunPowerDown
+     /tmp/cc7l1d6Z.s:232    .RamFunc:00000000000000f0 $d
+     /tmp/cc7l1d6Z.s:238    .RamFunc:00000000000000fc $t
+     /tmp/cc7l1d6Z.s:245    .RamFunc:00000000000000fc HAL_FLASHEx_DisableRunPowerDown
+     /tmp/cc7l1d6Z.s:267    .RamFunc:0000000000000114 $d
+     /tmp/cc7l1d6Z.s:273    .RamFunc:0000000000000120 $t
+     /tmp/cc7l1d6Z.s:280    .RamFunc:0000000000000120 HAL_FLASHEx_EraseParallelPage
+     /tmp/cc7l1d6Z.s:353    .RamFunc:000000000000017c $d
+     /tmp/cc7l1d6Z.s:357    .RamFunc:0000000000000180 $t
+     /tmp/cc7l1d6Z.s:364    .RamFunc:0000000000000180 HAL_FLASHEx_ProgramParallelHalfPage
+     /tmp/cc7l1d6Z.s:506    .RamFunc:000000000000020c $d
+     /tmp/cc7l1d6Z.s:510    .RamFunc:0000000000000210 $t
+     /tmp/cc7l1d6Z.s:517    .RamFunc:0000000000000210 HAL_FLASHEx_HalfPageProgram
+     /tmp/cc7l1d6Z.s:628    .RamFunc:0000000000000270 $d
+     /tmp/cc7l1d6Z.s:632    .RamFunc:0000000000000274 $t
+     /tmp/cc7l1d6Z.s:639    .RamFunc:0000000000000274 HAL_FLASHEx_GetError
+     /tmp/cc7l1d6Z.s:658    .RamFunc:0000000000000280 $d
+     /tmp/cc7l1d6Z.s:662    .RamFunc:0000000000000284 $t
+     /tmp/cc7l1d6Z.s:669    .RamFunc:0000000000000284 HAL_FLASHEx_DATAEEPROM_EraseDoubleWord
+     /tmp/cc7l1d6Z.s:765    .RamFunc:00000000000002d8 $d
+     /tmp/cc7l1d6Z.s:771    .RamFunc:00000000000002dc $t
+     /tmp/cc7l1d6Z.s:778    .RamFunc:00000000000002dc HAL_FLASHEx_DATAEEPROM_ProgramDoubleWord
+     /tmp/cc7l1d6Z.s:877    .RamFunc:0000000000000338 $d
                      .debug_frame:0000000000000010 $d
 
 UNDEFINED SYMBOLS

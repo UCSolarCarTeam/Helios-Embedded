@@ -52,6 +52,9 @@ const osThreadAttr_t defaultTask_attributes = {
 };
 /* USER CODE BEGIN PV */
 
+//Threads
+osThreadId_t CanTxTaskHandle;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
