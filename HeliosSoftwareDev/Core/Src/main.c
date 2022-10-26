@@ -23,12 +23,11 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "SendCanTask.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-#define CAN_TX_TASK_QUEUE 1 //sending one message
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -51,16 +50,14 @@ const osThreadAttr_t defaultTask_attributes = {
   .priority = (osPriority_t) osPriorityNormal,
 };
 /* USER CODE BEGIN PV */
-//Queues
-osMessageQueueId_t canTxTaskQueue;
 
 //Threads
-osThreadId_t canTxTaskHandle;
+osThreadId_t sendCanTaskHandle;
 
 // Thread Attributes
-const osThreadAttr_t canTxTaskHandle_attribute =
+const osThreadAttr_t sendCanTaskHandle_attributes =
 {
-    .name = "canTxTask",
+    .name = "sendCanTask",
     .priority = (osPriority_t) osPriorityAboveNormal1,
     .stack_size = 128 * 4
 };
@@ -132,7 +129,6 @@ int main(void)
 
   /* USER CODE BEGIN RTOS_QUEUES */
   /* add queues, ... */
-    canTxTaskQueue = osMessageQueueNew(CAN_TX_TASK_QUEUE, sizeof(canTxTaskQueueData), NULL);
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
@@ -141,6 +137,7 @@ int main(void)
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
+  sendCanTaskHandle = osThreadNew(sendCanTask, NULL, &sendCanTaskHandle_attributes);
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_EVENTS */

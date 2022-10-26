@@ -1,0 +1,63 @@
+ARM GAS  /tmp/cchb2BCO.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"SendCanTask.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.sendCanTask,"ax",%progbits
+  16              		.align	1
+  17              		.global	sendCanTask
+  18              		.syntax unified
+  19              		.thumb
+  20              		.thumb_func
+  21              		.fpu softvfp
+  23              	sendCanTask:
+  24              	.LFB0:
+  25              		.file 1 "Core/Src/Tasks/SendCanTask.c"
+   1:Core/Src/Tasks/SendCanTask.c **** #include "SendCanTask.h"
+   2:Core/Src/Tasks/SendCanTask.c **** 
+   3:Core/Src/Tasks/SendCanTask.c **** void sendCanTask(void* arg) {
+  26              		.loc 1 3 0
+  27              		.cfi_startproc
+  28              		@ Volatile: function does not return.
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31              	.LVL0:
+  32 0000 08B5     		push	{r3, lr}
+  33              	.LCFI0:
+  34              		.cfi_def_cfa_offset 8
+  35              		.cfi_offset 3, -8
+  36              		.cfi_offset 14, -4
+   4:Core/Src/Tasks/SendCanTask.c ****     // SPI_HandleTypeDef spiModule;
+   5:Core/Src/Tasks/SendCanTask.c ****     HAL_SPI_Transmit();
+  37              		.loc 1 5 0
+  38 0002 FFF7FEFF 		bl	HAL_SPI_Transmit
+  39              	.LVL1:
+  40              	.L2:
+  41 0006 FEE7     		b	.L2
+  42              		.cfi_endproc
+  43              	.LFE0:
+  45              		.text
+  46              	.Letext0:
+ARM GAS  /tmp/cchb2BCO.s 			page 2
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 SendCanTask.c
+     /tmp/cchb2BCO.s:16     .text.sendCanTask:0000000000000000 $t
+     /tmp/cchb2BCO.s:23     .text.sendCanTask:0000000000000000 sendCanTask
+                     .debug_frame:0000000000000010 $d
+
+UNDEFINED SYMBOLS
+HAL_SPI_Transmit

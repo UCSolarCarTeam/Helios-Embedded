@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccXVIDUX.s 			page 1
+ARM GAS  /tmp/ccoKTK9c.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccXVIDUX.s 			page 1
   31:Core/Src/stm32l1xx_hal_msp.c **** 
   32:Core/Src/stm32l1xx_hal_msp.c **** /* Private define ------------------------------------------------------------*/
   33:Core/Src/stm32l1xx_hal_msp.c **** /* USER CODE BEGIN Define */
-ARM GAS  /tmp/ccXVIDUX.s 			page 2
+ARM GAS  /tmp/ccoKTK9c.s 			page 2
 
 
   34:Core/Src/stm32l1xx_hal_msp.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccXVIDUX.s 			page 1
   44 0010 02F00042 		and	r2, r2, #-2147483648
   45 0014 0192     		str	r2, [sp, #4]
   46 0016 019A     		ldr	r2, [sp, #4]
-ARM GAS  /tmp/ccXVIDUX.s 			page 3
+ARM GAS  /tmp/ccoKTK9c.s 			page 3
 
 
   47              	.LBE2:
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccXVIDUX.s 			page 1
   91              		.thumb
   92              		.thumb_func
   93              		.fpu softvfp
-ARM GAS  /tmp/ccXVIDUX.s 			page 4
+ARM GAS  /tmp/ccoKTK9c.s 			page 4
 
 
   95              	HAL_SPI_MspInit:
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccXVIDUX.s 			page 1
  107:Core/Src/stm32l1xx_hal_msp.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
  108:Core/Src/stm32l1xx_hal_msp.c ****     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
  109:Core/Src/stm32l1xx_hal_msp.c ****     GPIO_InitStruct.Alternate = GPIO_AF5_SPI1;
-ARM GAS  /tmp/ccXVIDUX.s 			page 5
+ARM GAS  /tmp/ccoKTK9c.s 			page 5
 
 
  110:Core/Src/stm32l1xx_hal_msp.c ****     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccXVIDUX.s 			page 1
  109:Core/Src/stm32l1xx_hal_msp.c ****     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
  164              		.loc 1 109 0
  165 0052 0523     		movs	r3, #5
-ARM GAS  /tmp/ccXVIDUX.s 			page 6
+ARM GAS  /tmp/ccoKTK9c.s 			page 6
 
 
  166 0054 0793     		str	r3, [sp, #28]
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccXVIDUX.s 			page 1
  211              	.LVL8:
  212              	.L14:
  128:Core/Src/stm32l1xx_hal_msp.c ****   {
-ARM GAS  /tmp/ccXVIDUX.s 			page 7
+ARM GAS  /tmp/ccoKTK9c.s 			page 7
 
 
  129:Core/Src/stm32l1xx_hal_msp.c ****   /* USER CODE BEGIN SPI1_MspDeInit 0 */
@@ -414,20 +414,20 @@ ARM GAS  /tmp/ccXVIDUX.s 			page 1
  245              		.file 10 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_spi.h"
  246              		.file 11 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal.h"
  247              		.file 12 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_cortex.h"
-ARM GAS  /tmp/ccXVIDUX.s 			page 8
+ARM GAS  /tmp/ccoKTK9c.s 			page 8
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32l1xx_hal_msp.c
-     /tmp/ccXVIDUX.s:16     .text.HAL_MspInit:0000000000000000 $t
-     /tmp/ccXVIDUX.s:23     .text.HAL_MspInit:0000000000000000 HAL_MspInit
-     /tmp/ccXVIDUX.s:83     .text.HAL_MspInit:0000000000000050 $d
-     /tmp/ccXVIDUX.s:88     .text.HAL_SPI_MspInit:0000000000000000 $t
-     /tmp/ccXVIDUX.s:95     .text.HAL_SPI_MspInit:0000000000000000 HAL_SPI_MspInit
-     /tmp/ccXVIDUX.s:178    .text.HAL_SPI_MspInit:0000000000000060 $d
-     /tmp/ccXVIDUX.s:184    .text.HAL_SPI_MspDeInit:0000000000000000 $t
-     /tmp/ccXVIDUX.s:191    .text.HAL_SPI_MspDeInit:0000000000000000 HAL_SPI_MspDeInit
-     /tmp/ccXVIDUX.s:229    .text.HAL_SPI_MspDeInit:0000000000000020 $d
+     /tmp/ccoKTK9c.s:16     .text.HAL_MspInit:0000000000000000 $t
+     /tmp/ccoKTK9c.s:23     .text.HAL_MspInit:0000000000000000 HAL_MspInit
+     /tmp/ccoKTK9c.s:83     .text.HAL_MspInit:0000000000000050 $d
+     /tmp/ccoKTK9c.s:88     .text.HAL_SPI_MspInit:0000000000000000 $t
+     /tmp/ccoKTK9c.s:95     .text.HAL_SPI_MspInit:0000000000000000 HAL_SPI_MspInit
+     /tmp/ccoKTK9c.s:178    .text.HAL_SPI_MspInit:0000000000000060 $d
+     /tmp/ccoKTK9c.s:184    .text.HAL_SPI_MspDeInit:0000000000000000 $t
+     /tmp/ccoKTK9c.s:191    .text.HAL_SPI_MspDeInit:0000000000000000 HAL_SPI_MspDeInit
+     /tmp/ccoKTK9c.s:229    .text.HAL_SPI_MspDeInit:0000000000000020 $d
                      .debug_frame:0000000000000010 $d
 
 UNDEFINED SYMBOLS

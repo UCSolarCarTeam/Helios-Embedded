@@ -41,6 +41,7 @@ Core/Src/freertos.c \
 Core/Src/stm32l1xx_it.c \
 Core/Src/stm32l1xx_hal_msp.c \
 Core/Src/stm32l1xx_hal_timebase_tim.c \
+Core/Src/Tasks/SendCanTask.c \
 USB_DEVICE/App/usb_device.c \
 USB_DEVICE/App/usbd_desc.c \
 USB_DEVICE/App/usbd_dfu_if.c \
@@ -136,6 +137,7 @@ AS_INCLUDES =  \
 # C includes
 C_INCLUDES =  \
 -ICore/Inc \
+-ICore/Inc/Tasks \
 -IUSB_DEVICE/App \
 -IUSB_DEVICE/Target \
 -IDrivers/STM32L1xx_HAL_Driver/Inc \
