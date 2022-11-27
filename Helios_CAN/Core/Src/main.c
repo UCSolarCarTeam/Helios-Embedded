@@ -34,6 +34,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define CAN_INTERRUPT_QUEUE_COUNT 3 // anticipate 2 sudden messages + 1 for extra room
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -69,6 +70,8 @@ const osThreadAttr_t blueSwitchTask_attributes = {
   .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityNormal,
 };
+
+osMessageQueueId_t CANInterruptQueue;
 
 uint8_t blueStatus = 0;
 uint8_t greenStatus = 0;
@@ -142,7 +145,7 @@ int main(void)
   /* USER CODE END RTOS_TIMERS */
 
   /* USER CODE BEGIN RTOS_QUEUES */
-  /* add queues, ... */
+  CANInterruptQueue = osMessageQueueNew(CAN_INTERRUPT_QUEUE_COUNT, sizeof(uint16_t), NULL);
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
@@ -329,34 +332,7 @@ static void MX_GPIO_Init(void)
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
-	uint32_t ID = 0;
-	uint8_t DLC = 0;
-	uint8_t data[8] = {0};
-
-	//if (osMutexWait(SPIMutexHandle, 0) == osOK)
-	{
-		if(GPIO_Pin == CAN_RX0BF_Pin)
-		{
-			receiveCANMessage(0, &ID, &DLC, data);
-		}
-		else
-		{
-			receiveCANMessage(1, &ID, &DLC, data);
-		}
-	}
-
-	//osMutexRelease(SPIMutexHandle);
-
-	if(ID == 0xCCCCCCC)
-	{
-		blueStatus = data[0];
-		HAL_GPIO_TogglePin(LED_BLUE_GPIO_Port, LED_BLUE_Pin);
-	}
-	else
-	{
-		greenStatus = data[0];
-		HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
-	}
+	osMessageQueuePut(CANInterruptQueue, &GPIO_Pin, 0, TASK_QUEUE_TIMEOUT);
 }
 /* USER CODE END 4 */
 

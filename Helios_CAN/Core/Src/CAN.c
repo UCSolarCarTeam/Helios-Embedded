@@ -196,3 +196,38 @@ void receiveCANMessage(uint8_t channel, uint32_t* ID, uint8_t* DLC, uint8_t* dat
 
 	return;
 }
+
+void CANRXInterruptTask(void const* arg)
+{
+	uint16_t GPIO_Pin = 0;
+	osMessageQueueGet(CANInterruptQueue, &GPIO_Pin, 0, osWaitForever);
+
+	uint32_t ID = 0;
+	uint8_t DLC = 0;
+	uint8_t data[8] = {0};
+
+	if (osMutexWait(SPIMutexHandle, 0) == osOK)
+	{
+		if(GPIO_Pin == CAN_RX0BF_Pin)
+		{
+			receiveCANMessage(0, &ID, &DLC, data);
+		}
+		else
+		{
+			receiveCANMessage(1, &ID, &DLC, data);
+		}
+	}
+
+	osMutexRelease(SPIMutexHandle);
+
+	if(ID == 0xCCCCCCC)
+	{
+		blueStatus = data[0];
+		HAL_GPIO_TogglePin(LED_BLUE_GPIO_Port, LED_BLUE_Pin);
+	}
+	else
+	{
+		greenStatus = data[0];
+		HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
+	}
+}
