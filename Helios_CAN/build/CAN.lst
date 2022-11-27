@@ -1,30 +1,32 @@
-ARM GAS  /tmp/cczqHYjX.s 			page 1
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cckCNfl6.s 			page 1
 
 
    1              		.cpu cortex-m3
-   2              		.eabi_attribute 20, 1
-   3              		.eabi_attribute 21, 1
-   4              		.eabi_attribute 23, 3
-   5              		.eabi_attribute 24, 1
-   6              		.eabi_attribute 25, 1
-   7              		.eabi_attribute 26, 1
-   8              		.eabi_attribute 30, 1
-   9              		.eabi_attribute 34, 1
-  10              		.eabi_attribute 18, 4
-  11              		.file	"CAN.c"
-  12              		.text
-  13              	.Ltext0:
-  14              		.cfi_sections	.debug_frame
-  15              		.section	.text.CAN_IC_READ_REGISTER,"ax",%progbits
-  16              		.align	1
-  17              		.global	CAN_IC_READ_REGISTER
-  18              		.syntax unified
-  19              		.thumb
-  20              		.thumb_func
-  21              		.fpu softvfp
-  23              	CAN_IC_READ_REGISTER:
-  24              	.LFB72:
-  25              		.file 1 "Core/Src/CAN.c"
+   2              		.arch armv7-m
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.file	"CAN.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.CAN_IC_READ_REGISTER,"ax",%progbits
+  18              		.align	1
+  19              		.global	CAN_IC_READ_REGISTER
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  24              	CAN_IC_READ_REGISTER:
+  25              	.LVL0:
+  26              	.LFB72:
+  27              		.file 1 "Core/Src/CAN.c"
    1:Core/Src/CAN.c **** #include "CAN.h"
    2:Core/Src/CAN.c **** 
    3:Core/Src/CAN.c **** /**
@@ -35,93 +37,98 @@ ARM GAS  /tmp/cczqHYjX.s 			page 1
    8:Core/Src/CAN.c ****  */
    9:Core/Src/CAN.c **** void CAN_IC_READ_REGISTER(uint8_t address, uint8_t* buffer)
   10:Core/Src/CAN.c **** {
-  26              		.loc 1 10 0
-  27              		.cfi_startproc
-  28              		@ args = 0, pretend = 0, frame = 8
-  29              		@ frame_needed = 0, uses_anonymous_args = 0
-  30              	.LVL0:
-  31 0000 70B5     		push	{r4, r5, r6, lr}
-  32              	.LCFI0:
-  33              		.cfi_def_cfa_offset 16
-  34              		.cfi_offset 4, -16
-  35              		.cfi_offset 5, -12
-  36              		.cfi_offset 6, -8
-  37              		.cfi_offset 14, -4
-  38 0002 82B0     		sub	sp, sp, #8
-  39              	.LCFI1:
-  40              		.cfi_def_cfa_offset 24
-  41 0004 0E46     		mov	r6, r1
+  28              		.loc 1 10 1 view -0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 8
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		.loc 1 10 1 is_stmt 0 view .LVU1
+  33 0000 70B5     		push	{r4, r5, r6, lr}
+  34              	.LCFI0:
+  35              		.cfi_def_cfa_offset 16
+  36              		.cfi_offset 4, -16
+  37              		.cfi_offset 5, -12
+  38              		.cfi_offset 6, -8
+  39              		.cfi_offset 14, -4
+  40 0002 82B0     		sub	sp, sp, #8
+  41              	.LCFI1:
+  42              		.cfi_def_cfa_offset 24
+  43 0004 0C46     		mov	r4, r1
   11:Core/Src/CAN.c **** 	uint8_t packet[3] = {0x03, address};
-  42              		.loc 1 11 0
-  43 0006 0022     		movs	r2, #0
-  44 0008 8DF80620 		strb	r2, [sp, #6]
-  45 000c 0323     		movs	r3, #3
-  46 000e 8DF80430 		strb	r3, [sp, #4]
-  47 0012 8DF80500 		strb	r0, [sp, #5]
-ARM GAS  /tmp/cczqHYjX.s 			page 2
+  44              		.loc 1 11 2 is_stmt 1 view .LVU2
+  45              		.loc 1 11 10 is_stmt 0 view .LVU3
+  46 0006 0022     		movs	r2, #0
+  47 0008 ADF80420 		strh	r2, [sp, #4]	@ movhi
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cckCNfl6.s 			page 2
 
 
+  48 000c 8DF80620 		strb	r2, [sp, #6]
+  49 0010 0323     		movs	r3, #3
+  50 0012 8DF80430 		strb	r3, [sp, #4]
+  51 0016 8DF80500 		strb	r0, [sp, #5]
   12:Core/Src/CAN.c **** 
-  13:Core/Src/CAN.c **** 	HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_RESET);
-  48              		.loc 1 13 0
-  49 0016 0C4C     		ldr	r4, .L3
-  50 0018 1021     		movs	r1, #16
-  51              	.LVL1:
-  52 001a 2046     		mov	r0, r4
-  53              	.LVL2:
-  54 001c FFF7FEFF 		bl	HAL_GPIO_WritePin
-  55              	.LVL3:
-  14:Core/Src/CAN.c **** 	HAL_SPI_Transmit(&hspi1, packet, 2, 100U);
-  56              		.loc 1 14 0
-  57 0020 0A4D     		ldr	r5, .L3+4
-  58 0022 6423     		movs	r3, #100
-  59 0024 0222     		movs	r2, #2
-  60 0026 01A9     		add	r1, sp, #4
-  61 0028 2846     		mov	r0, r5
-  62 002a FFF7FEFF 		bl	HAL_SPI_Transmit
-  63              	.LVL4:
-  15:Core/Src/CAN.c **** 	HAL_SPI_Receive(&hspi1, buffer, 1, 100U);
-  64              		.loc 1 15 0
-  65 002e 6423     		movs	r3, #100
-  66 0030 0122     		movs	r2, #1
-  67 0032 3146     		mov	r1, r6
-  68 0034 2846     		mov	r0, r5
-  69 0036 FFF7FEFF 		bl	HAL_SPI_Receive
-  70              	.LVL5:
-  16:Core/Src/CAN.c **** 	HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_SET);
-  71              		.loc 1 16 0
-  72 003a 0122     		movs	r2, #1
-  73 003c 1021     		movs	r1, #16
-  74 003e 2046     		mov	r0, r4
-  75 0040 FFF7FEFF 		bl	HAL_GPIO_WritePin
-  76              	.LVL6:
+  13:Core/Src/CAN.c **** 	HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_RESET); //set CS pin low
+  52              		.loc 1 13 2 is_stmt 1 view .LVU4
+  53 001a 0C4D     		ldr	r5, .L3
+  54 001c 1021     		movs	r1, #16
+  55              	.LVL1:
+  56              		.loc 1 13 2 is_stmt 0 view .LVU5
+  57 001e 2846     		mov	r0, r5
+  58              	.LVL2:
+  59              		.loc 1 13 2 view .LVU6
+  60 0020 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  61              	.LVL3:
+  14:Core/Src/CAN.c **** 	HAL_SPI_Transmit(&hspi1, packet, 2, 100U); //transmit
+  62              		.loc 1 14 2 is_stmt 1 view .LVU7
+  63 0024 0A4E     		ldr	r6, .L3+4
+  64 0026 6423     		movs	r3, #100
+  65 0028 0222     		movs	r2, #2
+  66 002a 01A9     		add	r1, sp, #4
+  67 002c 3046     		mov	r0, r6
+  68 002e FFF7FEFF 		bl	HAL_SPI_Transmit
+  69              	.LVL4:
+  15:Core/Src/CAN.c **** 	HAL_SPI_Receive(&hspi1, buffer, 1, 100U); //receive register contents
+  70              		.loc 1 15 2 view .LVU8
+  71 0032 6423     		movs	r3, #100
+  72 0034 0122     		movs	r2, #1
+  73 0036 2146     		mov	r1, r4
+  74 0038 3046     		mov	r0, r6
+  75 003a FFF7FEFF 		bl	HAL_SPI_Receive
+  76              	.LVL5:
+  16:Core/Src/CAN.c **** 	HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_SET); //set CS pin high
+  77              		.loc 1 16 2 view .LVU9
+  78 003e 0122     		movs	r2, #1
+  79 0040 1021     		movs	r1, #16
+  80 0042 2846     		mov	r0, r5
+  81 0044 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  82              	.LVL6:
   17:Core/Src/CAN.c **** }
-  77              		.loc 1 17 0
-  78 0044 02B0     		add	sp, sp, #8
-  79              	.LCFI2:
-  80              		.cfi_def_cfa_offset 16
-  81              		@ sp needed
-  82 0046 70BD     		pop	{r4, r5, r6, pc}
-  83              	.LVL7:
-  84              	.L4:
-  85              		.align	2
-  86              	.L3:
-  87 0048 00000240 		.word	1073872896
-  88 004c 00000000 		.word	hspi1
-  89              		.cfi_endproc
-  90              	.LFE72:
-  92              		.section	.text.CAN_IC_WRITE_REGISTER_BITWISE,"ax",%progbits
-  93              		.align	1
-  94              		.global	CAN_IC_WRITE_REGISTER_BITWISE
-  95              		.syntax unified
-  96              		.thumb
-  97              		.thumb_func
-  98              		.fpu softvfp
- 100              	CAN_IC_WRITE_REGISTER_BITWISE:
-ARM GAS  /tmp/cczqHYjX.s 			page 3
+  83              		.loc 1 17 1 is_stmt 0 view .LVU10
+  84 0048 02B0     		add	sp, sp, #8
+  85              	.LCFI2:
+  86              		.cfi_def_cfa_offset 16
+  87              		@ sp needed
+  88 004a 70BD     		pop	{r4, r5, r6, pc}
+  89              	.LVL7:
+  90              	.L4:
+  91              		.loc 1 17 1 view .LVU11
+  92              		.align	2
+  93              	.L3:
+  94 004c 00000240 		.word	1073872896
+  95 0050 00000000 		.word	hspi1
+  96              		.cfi_endproc
+  97              	.LFE72:
+  99              		.section	.text.CAN_IC_WRITE_REGISTER_BITWISE,"ax",%progbits
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cckCNfl6.s 			page 3
 
 
- 101              	.LFB73:
+ 100              		.align	1
+ 101              		.global	CAN_IC_WRITE_REGISTER_BITWISE
+ 102              		.syntax unified
+ 103              		.thumb
+ 104              		.thumb_func
+ 106              	CAN_IC_WRITE_REGISTER_BITWISE:
+ 107              	.LVL8:
+ 108              	.LFB73:
   18:Core/Src/CAN.c **** 
   19:Core/Src/CAN.c **** /**
   20:Core/Src/CAN.c ****  * @brief write to a spicific series of bits in a register in CAN IC
@@ -132,79 +139,83 @@ ARM GAS  /tmp/cczqHYjX.s 			page 1
   25:Core/Src/CAN.c ****  */
   26:Core/Src/CAN.c **** void CAN_IC_WRITE_REGISTER_BITWISE(uint8_t address, uint8_t mask, uint8_t value)
   27:Core/Src/CAN.c **** {
- 102              		.loc 1 27 0
- 103              		.cfi_startproc
- 104              		@ args = 0, pretend = 0, frame = 8
- 105              		@ frame_needed = 0, uses_anonymous_args = 0
- 106              	.LVL8:
- 107 0000 10B5     		push	{r4, lr}
- 108              	.LCFI3:
- 109              		.cfi_def_cfa_offset 8
- 110              		.cfi_offset 4, -8
- 111              		.cfi_offset 14, -4
- 112 0002 82B0     		sub	sp, sp, #8
- 113              	.LCFI4:
- 114              		.cfi_def_cfa_offset 16
+ 109              		.loc 1 27 1 is_stmt 1 view -0
+ 110              		.cfi_startproc
+ 111              		@ args = 0, pretend = 0, frame = 8
+ 112              		@ frame_needed = 0, uses_anonymous_args = 0
+ 113              		.loc 1 27 1 is_stmt 0 view .LVU13
+ 114 0000 10B5     		push	{r4, lr}
+ 115              	.LCFI3:
+ 116              		.cfi_def_cfa_offset 8
+ 117              		.cfi_offset 4, -8
+ 118              		.cfi_offset 14, -4
+ 119 0002 82B0     		sub	sp, sp, #8
+ 120              	.LCFI4:
+ 121              		.cfi_def_cfa_offset 16
   28:Core/Src/CAN.c **** 	uint8_t packet[4] = {0x05, address, mask, value};
- 115              		.loc 1 28 0
- 116 0004 0523     		movs	r3, #5
- 117 0006 8DF80430 		strb	r3, [sp, #4]
- 118 000a 8DF80500 		strb	r0, [sp, #5]
- 119 000e 8DF80610 		strb	r1, [sp, #6]
- 120 0012 8DF80720 		strb	r2, [sp, #7]
+ 122              		.loc 1 28 2 is_stmt 1 view .LVU14
+ 123              		.loc 1 28 10 is_stmt 0 view .LVU15
+ 124 0004 0523     		movs	r3, #5
+ 125 0006 8DF80430 		strb	r3, [sp, #4]
+ 126 000a 8DF80500 		strb	r0, [sp, #5]
+ 127 000e 8DF80610 		strb	r1, [sp, #6]
+ 128 0012 8DF80720 		strb	r2, [sp, #7]
   29:Core/Src/CAN.c **** 
-  30:Core/Src/CAN.c **** 	HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_RESET);
- 121              		.loc 1 30 0
- 122 0016 0A4C     		ldr	r4, .L7
- 123 0018 0022     		movs	r2, #0
- 124              	.LVL9:
- 125 001a 1021     		movs	r1, #16
- 126              	.LVL10:
- 127 001c 2046     		mov	r0, r4
- 128              	.LVL11:
- 129 001e FFF7FEFF 		bl	HAL_GPIO_WritePin
- 130              	.LVL12:
-  31:Core/Src/CAN.c **** 	HAL_SPI_Transmit(&hspi1, packet, 4, 100U);
- 131              		.loc 1 31 0
- 132 0022 6423     		movs	r3, #100
- 133 0024 0422     		movs	r2, #4
- 134 0026 0DEB0201 		add	r1, sp, r2
- 135 002a 0648     		ldr	r0, .L7+4
- 136 002c FFF7FEFF 		bl	HAL_SPI_Transmit
- 137              	.LVL13:
-  32:Core/Src/CAN.c **** 	HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_SET);
- 138              		.loc 1 32 0
- 139 0030 0122     		movs	r2, #1
- 140 0032 1021     		movs	r1, #16
- 141 0034 2046     		mov	r0, r4
- 142 0036 FFF7FEFF 		bl	HAL_GPIO_WritePin
-ARM GAS  /tmp/cczqHYjX.s 			page 4
+  30:Core/Src/CAN.c **** 	HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_RESET); //set CS pin low
+ 129              		.loc 1 30 2 is_stmt 1 view .LVU16
+ 130 0016 0A4C     		ldr	r4, .L7
+ 131 0018 0022     		movs	r2, #0
+ 132              	.LVL9:
+ 133              		.loc 1 30 2 is_stmt 0 view .LVU17
+ 134 001a 1021     		movs	r1, #16
+ 135              	.LVL10:
+ 136              		.loc 1 30 2 view .LVU18
+ 137 001c 2046     		mov	r0, r4
+ 138              	.LVL11:
+ 139              		.loc 1 30 2 view .LVU19
+ 140 001e FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 141              	.LVL12:
+  31:Core/Src/CAN.c **** 	HAL_SPI_Transmit(&hspi1, packet, 4, 100U); //transmit
+ 142              		.loc 1 31 2 is_stmt 1 view .LVU20
+ 143 0022 6423     		movs	r3, #100
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cckCNfl6.s 			page 4
 
 
- 143              	.LVL14:
+ 144 0024 0422     		movs	r2, #4
+ 145 0026 0DEB0201 		add	r1, sp, r2
+ 146 002a 0648     		ldr	r0, .L7+4
+ 147 002c FFF7FEFF 		bl	HAL_SPI_Transmit
+ 148              	.LVL13:
+  32:Core/Src/CAN.c **** 	HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_SET); //set CS pin high
+ 149              		.loc 1 32 2 view .LVU21
+ 150 0030 0122     		movs	r2, #1
+ 151 0032 1021     		movs	r1, #16
+ 152 0034 2046     		mov	r0, r4
+ 153 0036 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 154              	.LVL14:
   33:Core/Src/CAN.c **** }
- 144              		.loc 1 33 0
- 145 003a 02B0     		add	sp, sp, #8
- 146              	.LCFI5:
- 147              		.cfi_def_cfa_offset 8
- 148              		@ sp needed
- 149 003c 10BD     		pop	{r4, pc}
- 150              	.L8:
- 151 003e 00BF     		.align	2
- 152              	.L7:
- 153 0040 00000240 		.word	1073872896
- 154 0044 00000000 		.word	hspi1
- 155              		.cfi_endproc
- 156              	.LFE73:
- 158              		.section	.text.CAN_IC_WRITE_REGISTER,"ax",%progbits
- 159              		.align	1
- 160              		.global	CAN_IC_WRITE_REGISTER
- 161              		.syntax unified
- 162              		.thumb
- 163              		.thumb_func
- 164              		.fpu softvfp
- 166              	CAN_IC_WRITE_REGISTER:
- 167              	.LFB74:
+ 155              		.loc 1 33 1 is_stmt 0 view .LVU22
+ 156 003a 02B0     		add	sp, sp, #8
+ 157              	.LCFI5:
+ 158              		.cfi_def_cfa_offset 8
+ 159              		@ sp needed
+ 160 003c 10BD     		pop	{r4, pc}
+ 161              	.L8:
+ 162 003e 00BF     		.align	2
+ 163              	.L7:
+ 164 0040 00000240 		.word	1073872896
+ 165 0044 00000000 		.word	hspi1
+ 166              		.cfi_endproc
+ 167              	.LFE73:
+ 169              		.section	.text.CAN_IC_WRITE_REGISTER,"ax",%progbits
+ 170              		.align	1
+ 171              		.global	CAN_IC_WRITE_REGISTER
+ 172              		.syntax unified
+ 173              		.thumb
+ 174              		.thumb_func
+ 176              	CAN_IC_WRITE_REGISTER:
+ 177              	.LVL15:
+ 178              	.LFB74:
   34:Core/Src/CAN.c **** 
   35:Core/Src/CAN.c **** /**
   36:Core/Src/CAN.c ****  * @brief write to registry in CAN IC
@@ -214,77 +225,82 @@ ARM GAS  /tmp/cczqHYjX.s 			page 1
   40:Core/Src/CAN.c ****  */
   41:Core/Src/CAN.c **** void CAN_IC_WRITE_REGISTER(uint8_t address, uint8_t value)
   42:Core/Src/CAN.c **** {
- 168              		.loc 1 42 0
- 169              		.cfi_startproc
- 170              		@ args = 0, pretend = 0, frame = 8
- 171              		@ frame_needed = 0, uses_anonymous_args = 0
- 172              	.LVL15:
- 173 0000 10B5     		push	{r4, lr}
- 174              	.LCFI6:
- 175              		.cfi_def_cfa_offset 8
- 176              		.cfi_offset 4, -8
- 177              		.cfi_offset 14, -4
- 178 0002 82B0     		sub	sp, sp, #8
- 179              	.LCFI7:
- 180              		.cfi_def_cfa_offset 16
+ 179              		.loc 1 42 1 is_stmt 1 view -0
+ 180              		.cfi_startproc
+ 181              		@ args = 0, pretend = 0, frame = 8
+ 182              		@ frame_needed = 0, uses_anonymous_args = 0
+ 183              		.loc 1 42 1 is_stmt 0 view .LVU24
+ 184 0000 10B5     		push	{r4, lr}
+ 185              	.LCFI6:
+ 186              		.cfi_def_cfa_offset 8
+ 187              		.cfi_offset 4, -8
+ 188              		.cfi_offset 14, -4
+ 189 0002 82B0     		sub	sp, sp, #8
+ 190              	.LCFI7:
+ 191              		.cfi_def_cfa_offset 16
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cckCNfl6.s 			page 5
+
+
   43:Core/Src/CAN.c **** 	uint8_t packet[3] = {0x02, address, value};
- 181              		.loc 1 43 0
- 182 0004 0223     		movs	r3, #2
- 183 0006 8DF80430 		strb	r3, [sp, #4]
- 184 000a 8DF80500 		strb	r0, [sp, #5]
- 185 000e 8DF80610 		strb	r1, [sp, #6]
+ 192              		.loc 1 43 2 is_stmt 1 view .LVU25
+ 193              		.loc 1 43 10 is_stmt 0 view .LVU26
+ 194 0004 0223     		movs	r3, #2
+ 195 0006 8DF80430 		strb	r3, [sp, #4]
+ 196 000a 8DF80500 		strb	r0, [sp, #5]
+ 197 000e 8DF80610 		strb	r1, [sp, #6]
   44:Core/Src/CAN.c **** 
-  45:Core/Src/CAN.c **** 	HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_RESET);
- 186              		.loc 1 45 0
- 187 0012 094C     		ldr	r4, .L11
- 188 0014 0022     		movs	r2, #0
-ARM GAS  /tmp/cczqHYjX.s 			page 5
-
-
- 189 0016 1021     		movs	r1, #16
- 190              	.LVL16:
- 191 0018 2046     		mov	r0, r4
- 192              	.LVL17:
- 193 001a FFF7FEFF 		bl	HAL_GPIO_WritePin
- 194              	.LVL18:
-  46:Core/Src/CAN.c **** 	HAL_SPI_Transmit(&hspi1, packet, 3, 100U);
- 195              		.loc 1 46 0
- 196 001e 6423     		movs	r3, #100
- 197 0020 0322     		movs	r2, #3
- 198 0022 01A9     		add	r1, sp, #4
- 199 0024 0548     		ldr	r0, .L11+4
- 200 0026 FFF7FEFF 		bl	HAL_SPI_Transmit
- 201              	.LVL19:
-  47:Core/Src/CAN.c **** 	HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_SET);
- 202              		.loc 1 47 0
- 203 002a 0122     		movs	r2, #1
- 204 002c 1021     		movs	r1, #16
- 205 002e 2046     		mov	r0, r4
- 206 0030 FFF7FEFF 		bl	HAL_GPIO_WritePin
- 207              	.LVL20:
+  45:Core/Src/CAN.c **** 	HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_RESET); //set CS pin low
+ 198              		.loc 1 45 2 is_stmt 1 view .LVU27
+ 199 0012 094C     		ldr	r4, .L11
+ 200 0014 0022     		movs	r2, #0
+ 201 0016 1021     		movs	r1, #16
+ 202              	.LVL16:
+ 203              		.loc 1 45 2 is_stmt 0 view .LVU28
+ 204 0018 2046     		mov	r0, r4
+ 205              	.LVL17:
+ 206              		.loc 1 45 2 view .LVU29
+ 207 001a FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 208              	.LVL18:
+  46:Core/Src/CAN.c **** 	HAL_SPI_Transmit(&hspi1, packet, 3, 100U);	//transmit
+ 209              		.loc 1 46 2 is_stmt 1 view .LVU30
+ 210 001e 6423     		movs	r3, #100
+ 211 0020 0322     		movs	r2, #3
+ 212 0022 01A9     		add	r1, sp, #4
+ 213 0024 0548     		ldr	r0, .L11+4
+ 214 0026 FFF7FEFF 		bl	HAL_SPI_Transmit
+ 215              	.LVL19:
+  47:Core/Src/CAN.c **** 	HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_SET); //set CS pin high
+ 216              		.loc 1 47 2 view .LVU31
+ 217 002a 0122     		movs	r2, #1
+ 218 002c 1021     		movs	r1, #16
+ 219 002e 2046     		mov	r0, r4
+ 220 0030 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 221              	.LVL20:
   48:Core/Src/CAN.c **** }
- 208              		.loc 1 48 0
- 209 0034 02B0     		add	sp, sp, #8
- 210              	.LCFI8:
- 211              		.cfi_def_cfa_offset 8
- 212              		@ sp needed
- 213 0036 10BD     		pop	{r4, pc}
- 214              	.L12:
- 215              		.align	2
- 216              	.L11:
- 217 0038 00000240 		.word	1073872896
- 218 003c 00000000 		.word	hspi1
- 219              		.cfi_endproc
- 220              	.LFE74:
- 222              		.section	.text.ConfigureCANSPI,"ax",%progbits
- 223              		.align	1
- 224              		.global	ConfigureCANSPI
- 225              		.syntax unified
- 226              		.thumb
- 227              		.thumb_func
- 228              		.fpu softvfp
- 230              	ConfigureCANSPI:
- 231              	.LFB75:
+ 222              		.loc 1 48 1 is_stmt 0 view .LVU32
+ 223 0034 02B0     		add	sp, sp, #8
+ 224              	.LCFI8:
+ 225              		.cfi_def_cfa_offset 8
+ 226              		@ sp needed
+ 227 0036 10BD     		pop	{r4, pc}
+ 228              	.L12:
+ 229              		.align	2
+ 230              	.L11:
+ 231 0038 00000240 		.word	1073872896
+ 232 003c 00000000 		.word	hspi1
+ 233              		.cfi_endproc
+ 234              	.LFE74:
+ 236              		.section	.text.ConfigureCANSPI,"ax",%progbits
+ 237              		.align	1
+ 238              		.global	ConfigureCANSPI
+ 239              		.syntax unified
+ 240              		.thumb
+ 241              		.thumb_func
+ 243              	ConfigureCANSPI:
+ 244              	.LFB75:
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cckCNfl6.s 			page 6
+
+
   49:Core/Src/CAN.c **** 
   50:Core/Src/CAN.c **** /**
   51:Core/Src/CAN.c ****   * @brief configure CAN IC through SPI
@@ -295,532 +311,887 @@ ARM GAS  /tmp/cczqHYjX.s 			page 1
   56:Core/Src/CAN.c ****   */
   57:Core/Src/CAN.c **** void ConfigureCANSPI(void)
   58:Core/Src/CAN.c **** {
- 232              		.loc 1 58 0
- 233              		.cfi_startproc
- 234              		@ args = 0, pretend = 0, frame = 8
-ARM GAS  /tmp/cczqHYjX.s 			page 6
-
-
- 235              		@ frame_needed = 0, uses_anonymous_args = 0
- 236 0000 30B5     		push	{r4, r5, lr}
- 237              	.LCFI9:
- 238              		.cfi_def_cfa_offset 12
- 239              		.cfi_offset 4, -12
- 240              		.cfi_offset 5, -8
- 241              		.cfi_offset 14, -4
- 242 0002 83B0     		sub	sp, sp, #12
- 243              	.LCFI10:
- 244              		.cfi_def_cfa_offset 24
+ 245              		.loc 1 58 1 is_stmt 1 view -0
+ 246              		.cfi_startproc
+ 247              		@ args = 0, pretend = 0, frame = 8
+ 248              		@ frame_needed = 0, uses_anonymous_args = 0
+ 249 0000 10B5     		push	{r4, lr}
+ 250              	.LCFI9:
+ 251              		.cfi_def_cfa_offset 8
+ 252              		.cfi_offset 4, -8
+ 253              		.cfi_offset 14, -4
+ 254 0002 82B0     		sub	sp, sp, #8
+ 255              	.LCFI10:
+ 256              		.cfi_def_cfa_offset 16
   59:Core/Src/CAN.c **** 	uint8_t resetCommand = 0xa0; //instruction to reset IC to default
- 245              		.loc 1 59 0
- 246 0004 02AC     		add	r4, sp, #8
- 247 0006 A023     		movs	r3, #160
- 248 0008 04F8013D 		strb	r3, [r4, #-1]!
- 249              	.LVL21:
+ 257              		.loc 1 59 2 view .LVU34
+ 258              		.loc 1 59 10 is_stmt 0 view .LVU35
+ 259 0004 A023     		movs	r3, #160
+ 260 0006 8DF80730 		strb	r3, [sp, #7]
   60:Core/Src/CAN.c **** 	uint8_t CNF1 = 0x00; //BRP = 0 to make tq = 250ns and a SJW of 1Tq
-  61:Core/Src/CAN.c **** 	uint8_t CNF2 = 0x98; //PRSEG = 0, PHSEG1 = 3, SAM = 0, BTLMODE = 1
+ 261              		.loc 1 60 2 is_stmt 1 view .LVU36
+ 262              	.LVL21:
+  61:Core/Src/CAN.c **** 	uint8_t CNF2 = 0xd8; //PRSEG = 0, PHSEG1 = 3, SAM = 0, BTLMODE = 1
+ 263              		.loc 1 61 2 view .LVU37
   62:Core/Src/CAN.c **** 	uint8_t CNF3 = 0x01; //WAFKIL disabled, PHSEG2 = 2 (BTL enabled) but PHSEG = 1 makes it backwards 
+ 264              		.loc 1 62 2 view .LVU38
   63:Core/Src/CAN.c **** 
   64:Core/Src/CAN.c **** 	HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_RESET);
- 250              		.loc 1 64 0
- 251 000c 174D     		ldr	r5, .L15
- 252 000e 0022     		movs	r2, #0
- 253 0010 1021     		movs	r1, #16
- 254 0012 2846     		mov	r0, r5
- 255 0014 FFF7FEFF 		bl	HAL_GPIO_WritePin
- 256              	.LVL22:
+ 265              		.loc 1 64 2 view .LVU39
+ 266 000a 1E4C     		ldr	r4, .L15
+ 267 000c 0022     		movs	r2, #0
+ 268 000e 1021     		movs	r1, #16
+ 269 0010 2046     		mov	r0, r4
+ 270 0012 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 271              	.LVL22:
   65:Core/Src/CAN.c **** 	HAL_SPI_Transmit(&hspi1, &resetCommand, 1, 100U);  //reset IC to default
- 257              		.loc 1 65 0
- 258 0018 6423     		movs	r3, #100
- 259 001a 0122     		movs	r2, #1
- 260 001c 2146     		mov	r1, r4
- 261 001e 1448     		ldr	r0, .L15+4
- 262 0020 FFF7FEFF 		bl	HAL_SPI_Transmit
- 263              	.LVL23:
+ 272              		.loc 1 65 2 view .LVU40
+ 273 0016 6423     		movs	r3, #100
+ 274 0018 0122     		movs	r2, #1
+ 275 001a 0DF10701 		add	r1, sp, #7
+ 276 001e 1A48     		ldr	r0, .L15+4
+ 277 0020 FFF7FEFF 		bl	HAL_SPI_Transmit
+ 278              	.LVL23:
   66:Core/Src/CAN.c **** 	HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_SET);
- 264              		.loc 1 66 0
- 265 0024 0122     		movs	r2, #1
- 266 0026 1021     		movs	r1, #16
- 267 0028 2846     		mov	r0, r5
- 268 002a FFF7FEFF 		bl	HAL_GPIO_WritePin
- 269              	.LVL24:
+ 279              		.loc 1 66 2 view .LVU41
+ 280 0024 0122     		movs	r2, #1
+ 281 0026 1021     		movs	r1, #16
+ 282 0028 2046     		mov	r0, r4
+ 283 002a FFF7FEFF 		bl	HAL_GPIO_WritePin
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cckCNfl6.s 			page 7
+
+
+ 284              	.LVL24:
   67:Core/Src/CAN.c **** 
   68:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(0x0f, 0x80); //Ensure IC is in configuration mode
- 270              		.loc 1 68 0
- 271 002e 8021     		movs	r1, #128
- 272 0030 0F20     		movs	r0, #15
- 273 0032 FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
- 274              	.LVL25:
+ 285              		.loc 1 68 2 view .LVU42
+ 286 002e 8021     		movs	r1, #128
+ 287 0030 0F20     		movs	r0, #15
+ 288 0032 FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
+ 289              	.LVL25:
   69:Core/Src/CAN.c **** 
   70:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(0x2a, CNF1); //configure CNF1
- 275              		.loc 1 70 0
- 276 0036 0021     		movs	r1, #0
- 277 0038 2A20     		movs	r0, #42
- 278 003a FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
- 279              	.LVL26:
-ARM GAS  /tmp/cczqHYjX.s 			page 7
-
-
+ 290              		.loc 1 70 2 view .LVU43
+ 291 0036 0021     		movs	r1, #0
+ 292 0038 2A20     		movs	r0, #42
+ 293 003a FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
+ 294              	.LVL26:
   71:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(0x29, CNF2); //configure CNF2
- 280              		.loc 1 71 0
- 281 003e 9821     		movs	r1, #152
- 282 0040 2920     		movs	r0, #41
- 283 0042 FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
- 284              	.LVL27:
+ 295              		.loc 1 71 2 view .LVU44
+ 296 003e D821     		movs	r1, #216
+ 297 0040 2920     		movs	r0, #41
+ 298 0042 FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
+ 299              	.LVL27:
   72:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(0x28, CNF3); //configure CNF3
- 285              		.loc 1 72 0
- 286 0046 0121     		movs	r1, #1
- 287 0048 2820     		movs	r0, #40
- 288 004a FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
- 289              	.LVL28:
+ 300              		.loc 1 72 2 view .LVU45
+ 301 0046 0121     		movs	r1, #1
+ 302 0048 2820     		movs	r0, #40
+ 303 004a FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
+ 304              	.LVL28:
   73:Core/Src/CAN.c **** 
-  74:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(0x2b, 0xff); //configure interrupts, currently enable them all
- 290              		.loc 1 74 0
- 291 004e FF21     		movs	r1, #255
- 292 0050 2B20     		movs	r0, #43
- 293 0052 FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
- 294              	.LVL29:
-  75:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(0x2C, 0x00); //clear INTE flags
- 295              		.loc 1 75 0
- 296 0056 0021     		movs	r1, #0
- 297 0058 2C20     		movs	r0, #44
- 298 005a FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
- 299              	.LVL30:
+  74:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(0x2b, 0xff); //configure interrupts, currently enable error and and wakeup I
+ 305              		.loc 1 74 2 view .LVU46
+ 306 004e FF21     		movs	r1, #255
+ 307 0050 2B20     		movs	r0, #43
+ 308 0052 FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
+ 309              	.LVL29:
+  75:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(0x2c, 0x00); //clear INTE flags
+ 310              		.loc 1 75 2 view .LVU47
+ 311 0056 0021     		movs	r1, #0
+ 312 0058 2C20     		movs	r0, #44
+ 313 005a FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
+ 314              	.LVL30:
   76:Core/Src/CAN.c **** 									   //this should be a bit-wise clear in any other case to avoid unintentionally clearing f
   77:Core/Src/CAN.c **** 
-  78:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(0x0f, 0x04); //Put IC in normal operation mode with CLKOUT pin enable and 1:
- 300              		.loc 1 78 0
- 301 005e 0421     		movs	r1, #4
- 302 0060 0F20     		movs	r0, #15
- 303 0062 FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
- 304              	.LVL31:
-  79:Core/Src/CAN.c **** }
- 305              		.loc 1 79 0
- 306 0066 03B0     		add	sp, sp, #12
- 307              	.LCFI11:
- 308              		.cfi_def_cfa_offset 12
- 309              		@ sp needed
- 310 0068 30BD     		pop	{r4, r5, pc}
- 311              	.L16:
- 312 006a 00BF     		.align	2
- 313              	.L15:
- 314 006c 00000240 		.word	1073872896
- 315 0070 00000000 		.word	hspi1
- 316              		.cfi_endproc
- 317              	.LFE75:
- 319              		.section	.text.sendCANMessage,"ax",%progbits
- 320              		.align	1
- 321              		.global	sendCANMessage
- 322              		.syntax unified
- 323              		.thumb
- 324              		.thumb_func
- 325              		.fpu softvfp
- 327              	sendCANMessage:
- 328              	.LFB76:
-  80:Core/Src/CAN.c **** 
-ARM GAS  /tmp/cczqHYjX.s 			page 8
+  78:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(0x0c, 0x0f); //set up RX0BF and RX1BF as interrupt pins
+ 315              		.loc 1 78 2 view .LVU48
+ 316 005e 0F21     		movs	r1, #15
+ 317 0060 0C20     		movs	r0, #12
+ 318 0062 FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
+ 319              	.LVL31:
+  79:Core/Src/CAN.c **** 
+  80:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(0x60, 0x60); //accept any message on buffer 0
+ 320              		.loc 1 80 2 view .LVU49
+ 321 0066 6021     		movs	r1, #96
+ 322 0068 0846     		mov	r0, r1
+ 323 006a FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
+ 324              	.LVL32:
+  81:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(0x70, 0x60); //accept any message on buffer 1
+ 325              		.loc 1 81 2 view .LVU50
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cckCNfl6.s 			page 8
 
 
-  81:Core/Src/CAN.c **** /**
-  82:Core/Src/CAN.c ****   * @brief send CAN message
-  83:Core/Src/CAN.c ****   * @param None
-  84:Core/Src/CAN.c ****   * @retval None
-  85:Core/Src/CAN.c ****   */
-  86:Core/Src/CAN.c **** void sendCANMessage(uint8_t channel, uint16_t ID, uint8_t DLC, uint8_t* data)
-  87:Core/Src/CAN.c **** {
- 329              		.loc 1 87 0
- 330              		.cfi_startproc
- 331              		@ args = 0, pretend = 0, frame = 8
- 332              		@ frame_needed = 0, uses_anonymous_args = 0
- 333              	.LVL32:
- 334 0000 2DE9F041 		push	{r4, r5, r6, r7, r8, lr}
- 335              	.LCFI12:
- 336              		.cfi_def_cfa_offset 24
- 337              		.cfi_offset 4, -24
- 338              		.cfi_offset 5, -20
- 339              		.cfi_offset 6, -16
- 340              		.cfi_offset 7, -12
- 341              		.cfi_offset 8, -8
- 342              		.cfi_offset 14, -4
- 343 0004 82B0     		sub	sp, sp, #8
- 344              	.LCFI13:
- 345              		.cfi_def_cfa_offset 32
- 346 0006 1646     		mov	r6, r2
- 347 0008 1F46     		mov	r7, r3
-  88:Core/Src/CAN.c **** 	uint8_t initialBufferAddress = 0x20 + 16*(channel); //0x30 for channel 1, 0x40 for channel 2, 0x50
- 348              		.loc 1 88 0
- 349 000a 00F10208 		add	r8, r0, #2
- 350 000e 4FEA0818 		lsl	r8, r8, #4
- 351 0012 5FFA88F8 		uxtb	r8, r8
- 352              	.LVL33:
-  89:Core/Src/CAN.c **** 
-  90:Core/Src/CAN.c **** 	uint8_t sendCommand = 0x81; //instruction to send CAN message on buffer 1
- 353              		.loc 1 90 0
- 354 0016 8123     		movs	r3, #129
- 355              	.LVL34:
- 356 0018 8DF80730 		strb	r3, [sp, #7]
+ 326 006e 6021     		movs	r1, #96
+ 327 0070 7020     		movs	r0, #112
+ 328 0072 FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
+ 329              	.LVL33:
+  82:Core/Src/CAN.c **** 
+  83:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(0x0f, 0x04); //Put IC in normal operation mode with CLKOUT pin enable and 1:
+ 330              		.loc 1 83 2 view .LVU51
+ 331 0076 0421     		movs	r1, #4
+ 332 0078 0F20     		movs	r0, #15
+ 333 007a FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
+ 334              	.LVL34:
+  84:Core/Src/CAN.c **** }
+ 335              		.loc 1 84 1 is_stmt 0 view .LVU52
+ 336 007e 02B0     		add	sp, sp, #8
+ 337              	.LCFI11:
+ 338              		.cfi_def_cfa_offset 8
+ 339              		@ sp needed
+ 340 0080 10BD     		pop	{r4, pc}
+ 341              	.L16:
+ 342 0082 00BF     		.align	2
+ 343              	.L15:
+ 344 0084 00000240 		.word	1073872896
+ 345 0088 00000000 		.word	hspi1
+ 346              		.cfi_endproc
+ 347              	.LFE75:
+ 349              		.section	.text.sendCANMessage,"ax",%progbits
+ 350              		.align	1
+ 351              		.global	sendCANMessage
+ 352              		.syntax unified
+ 353              		.thumb
+ 354              		.thumb_func
+ 356              	sendCANMessage:
  357              	.LVL35:
-  91:Core/Src/CAN.c **** 
-  92:Core/Src/CAN.c **** 	uint8_t TXBNSIDH = (ID & 0b11111111000) >> 3;
-  93:Core/Src/CAN.c **** 	uint8_t TXBNSIDL = ((ID & 0b111) << 5);
- 358              		.loc 1 93 0
- 359 001c 4C01     		lsls	r4, r1, #5
- 360 001e E4B2     		uxtb	r4, r4
- 361              	.LVL36:
-  94:Core/Src/CAN.c **** 	uint8_t TXBNDLC = DLC & 0x0f;
- 362              		.loc 1 94 0
- 363 0020 02F00F05 		and	r5, r2, #15
- 364              	.LVL37:
-  95:Core/Src/CAN.c **** 
-  96:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 1, TXBNSIDH); // SD 10-3
- 365              		.loc 1 96 0
- 366 0024 08F10100 		add	r0, r8, #1
- 367              	.LVL38:
- 368 0028 C1F3C701 		ubfx	r1, r1, #3, #8
- 369              	.LVL39:
-ARM GAS  /tmp/cczqHYjX.s 			page 9
+ 358              	.LFB76:
+  85:Core/Src/CAN.c **** 
+  86:Core/Src/CAN.c **** /**
+  87:Core/Src/CAN.c ****   * @brief send CAN message
+  88:Core/Src/CAN.c ****   * @param None
+  89:Core/Src/CAN.c ****   * @retval None
+  90:Core/Src/CAN.c ****   */
+  91:Core/Src/CAN.c **** void sendCANMessage(uint8_t channel, uint16_t ID, uint8_t DLC, uint8_t* data)
+  92:Core/Src/CAN.c **** {
+ 359              		.loc 1 92 1 is_stmt 1 view -0
+ 360              		.cfi_startproc
+ 361              		@ args = 0, pretend = 0, frame = 8
+ 362              		@ frame_needed = 0, uses_anonymous_args = 0
+ 363              		.loc 1 92 1 is_stmt 0 view .LVU54
+ 364 0000 2DE9F041 		push	{r4, r5, r6, r7, r8, lr}
+ 365              	.LCFI12:
+ 366              		.cfi_def_cfa_offset 24
+ 367              		.cfi_offset 4, -24
+ 368              		.cfi_offset 5, -20
+ 369              		.cfi_offset 6, -16
+ 370              		.cfi_offset 7, -12
+ 371              		.cfi_offset 8, -8
+ 372              		.cfi_offset 14, -4
+ 373 0004 82B0     		sub	sp, sp, #8
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cckCNfl6.s 			page 9
 
 
- 370 002c C0B2     		uxtb	r0, r0
- 371 002e FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
- 372              	.LVL40:
-  97:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 2, TXBNSIDL); //SD 2-0
- 373              		.loc 1 97 0
- 374 0032 08F10200 		add	r0, r8, #2
- 375 0036 2146     		mov	r1, r4
- 376 0038 00F0FE00 		and	r0, r0, #254
- 377 003c FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
- 378              	.LVL41:
-  98:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 5, TXBNDLC);  //DLC
- 379              		.loc 1 98 0
- 380 0040 08F10500 		add	r0, r8, #5
- 381 0044 2946     		mov	r1, r5
- 382 0046 C0B2     		uxtb	r0, r0
- 383 0048 FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
- 384              	.LVL42:
-  99:Core/Src/CAN.c **** 
- 100:Core/Src/CAN.c **** 	uint8_t initialDataBufferAddress = initialBufferAddress + 6;
- 385              		.loc 1 100 0
- 386 004c 08F10605 		add	r5, r8, #6
- 387              	.LVL43:
- 388 0050 EDB2     		uxtb	r5, r5
- 389              	.LVL44:
- 390              	.LBB2:
- 101:Core/Src/CAN.c **** 	for(int i = 0; i < DLC; i++)
- 391              		.loc 1 101 0
- 392 0052 0024     		movs	r4, #0
- 393              	.LVL45:
- 394 0054 05E0     		b	.L18
- 395              	.LVL46:
- 396              	.L19:
- 102:Core/Src/CAN.c **** 	{
- 103:Core/Src/CAN.c **** 		CAN_IC_WRITE_REGISTER(initialDataBufferAddress + i, data[i]); //write to relevant data registers
- 397              		.loc 1 103 0 discriminator 3
- 398 0056 2819     		adds	r0, r5, r4
- 399 0058 395D     		ldrb	r1, [r7, r4]	@ zero_extendqisi2
- 400 005a C0B2     		uxtb	r0, r0
- 401 005c FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
- 402              	.LVL47:
- 101:Core/Src/CAN.c **** 	for(int i = 0; i < DLC; i++)
- 403              		.loc 1 101 0 discriminator 3
- 404 0060 0134     		adds	r4, r4, #1
- 405              	.LVL48:
- 406              	.L18:
- 101:Core/Src/CAN.c **** 	for(int i = 0; i < DLC; i++)
- 407              		.loc 1 101 0 is_stmt 0 discriminator 1
- 408 0062 B442     		cmp	r4, r6
- 409 0064 F7DB     		blt	.L19
- 410              	.LBE2:
- 104:Core/Src/CAN.c **** 	}
- 105:Core/Src/CAN.c **** 
- 106:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER_BITWISE(initialBufferAddress, 0x02, 0x02); //set transmit buffer priority to
- 411              		.loc 1 106 0 is_stmt 1
- 412 0066 0222     		movs	r2, #2
- 413 0068 1146     		mov	r1, r2
- 414 006a 4046     		mov	r0, r8
-ARM GAS  /tmp/cczqHYjX.s 			page 10
+ 374              	.LCFI13:
+ 375              		.cfi_def_cfa_offset 32
+ 376 0006 1546     		mov	r5, r2
+ 377 0008 9846     		mov	r8, r3
+  93:Core/Src/CAN.c **** 	uint8_t initialBufferAddress = 0x20 + 16*(channel); //0x30 for channel 1, 0x40 for channel 2, 0x50
+ 378              		.loc 1 93 2 is_stmt 1 view .LVU55
+ 379              		.loc 1 93 10 is_stmt 0 view .LVU56
+ 380 000a 861C     		adds	r6, r0, #2
+ 381 000c 3601     		lsls	r6, r6, #4
+ 382 000e F6B2     		uxtb	r6, r6
+ 383              	.LVL36:
+  94:Core/Src/CAN.c **** 
+  95:Core/Src/CAN.c **** 	uint8_t sendCommand = 0x81; //instruction to send CAN message on buffer 1
+ 384              		.loc 1 95 2 is_stmt 1 view .LVU57
+ 385              		.loc 1 95 10 is_stmt 0 view .LVU58
+ 386 0010 8123     		movs	r3, #129
+ 387              	.LVL37:
+ 388              		.loc 1 95 10 view .LVU59
+ 389 0012 8DF80730 		strb	r3, [sp, #7]
+  96:Core/Src/CAN.c **** 
+  97:Core/Src/CAN.c **** 	uint8_t TXBNSIDH = (ID & 0b11111111000) >> 3;
+ 390              		.loc 1 97 2 is_stmt 1 view .LVU60
+ 391              	.LVL38:
+  98:Core/Src/CAN.c **** 	uint8_t TXBNSIDL = ((ID & 0b111) << 5);
+ 392              		.loc 1 98 2 view .LVU61
+ 393              		.loc 1 98 35 is_stmt 0 view .LVU62
+ 394 0016 4C01     		lsls	r4, r1, #5
+ 395              		.loc 1 98 10 view .LVU63
+ 396 0018 E4B2     		uxtb	r4, r4
+ 397              	.LVL39:
+  99:Core/Src/CAN.c **** 	uint8_t TXBNDLC = DLC & 0x0f;
+ 398              		.loc 1 99 2 is_stmt 1 view .LVU64
+ 399              		.loc 1 99 10 is_stmt 0 view .LVU65
+ 400 001a 02F00F07 		and	r7, r2, #15
+ 401              	.LVL40:
+ 100:Core/Src/CAN.c **** 
+ 101:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 1, TXBNSIDH); // SD 10-3
+ 402              		.loc 1 101 2 is_stmt 1 view .LVU66
+ 403 001e 701C     		adds	r0, r6, #1
+ 404              	.LVL41:
+ 405              		.loc 1 101 2 is_stmt 0 view .LVU67
+ 406 0020 C1F3C701 		ubfx	r1, r1, #3, #8
+ 407              	.LVL42:
+ 408              		.loc 1 101 2 view .LVU68
+ 409 0024 C0B2     		uxtb	r0, r0
+ 410 0026 FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
+ 411              	.LVL43:
+ 102:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 2, TXBNSIDL); //SD 2-0
+ 412              		.loc 1 102 2 is_stmt 1 view .LVU69
+ 413 002a B01C     		adds	r0, r6, #2
+ 414 002c 2146     		mov	r1, r4
+ 415 002e 00F0FE00 		and	r0, r0, #254
+ 416 0032 FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
+ 417              	.LVL44:
+ 103:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 5, TXBNDLC);  //DLC
+ 418              		.loc 1 103 2 view .LVU70
+ 419 0036 701D     		adds	r0, r6, #5
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cckCNfl6.s 			page 10
 
 
- 415 006c FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER_BITWISE
- 416              	.LVL49:
- 107:Core/Src/CAN.c **** 
- 108:Core/Src/CAN.c **** 	HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_RESET);
- 417              		.loc 1 108 0
- 418 0070 0A4C     		ldr	r4, .L21
- 419              	.LVL50:
- 420 0072 0022     		movs	r2, #0
- 421 0074 1021     		movs	r1, #16
- 422 0076 2046     		mov	r0, r4
- 423 0078 FFF7FEFF 		bl	HAL_GPIO_WritePin
- 424              	.LVL51:
- 109:Core/Src/CAN.c **** 	HAL_SPI_Transmit(&hspi1, &sendCommand, 1, 100U);  //Send command to transmit
- 425              		.loc 1 109 0
- 426 007c 6423     		movs	r3, #100
- 427 007e 0122     		movs	r2, #1
- 428 0080 0DF10701 		add	r1, sp, #7
- 429 0084 0648     		ldr	r0, .L21+4
- 430 0086 FFF7FEFF 		bl	HAL_SPI_Transmit
- 431              	.LVL52:
- 110:Core/Src/CAN.c **** 	HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_SET);
- 432              		.loc 1 110 0
- 433 008a 0122     		movs	r2, #1
- 434 008c 1021     		movs	r1, #16
- 435 008e 2046     		mov	r0, r4
- 436 0090 FFF7FEFF 		bl	HAL_GPIO_WritePin
- 437              	.LVL53:
- 111:Core/Src/CAN.c **** }
- 438              		.loc 1 111 0
- 439 0094 02B0     		add	sp, sp, #8
- 440              	.LCFI14:
- 441              		.cfi_def_cfa_offset 24
- 442              		@ sp needed
- 443 0096 BDE8F081 		pop	{r4, r5, r6, r7, r8, pc}
- 444              	.LVL54:
- 445              	.L22:
- 446 009a 00BF     		.align	2
- 447              	.L21:
- 448 009c 00000240 		.word	1073872896
- 449 00a0 00000000 		.word	hspi1
- 450              		.cfi_endproc
- 451              	.LFE76:
- 453              		.section	.text.sendExtendedCANMessage,"ax",%progbits
- 454              		.align	1
- 455              		.global	sendExtendedCANMessage
- 456              		.syntax unified
- 457              		.thumb
- 458              		.thumb_func
- 459              		.fpu softvfp
- 461              	sendExtendedCANMessage:
- 462              	.LFB77:
+ 420 0038 3946     		mov	r1, r7
+ 421 003a C0B2     		uxtb	r0, r0
+ 422 003c FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
+ 423              	.LVL45:
+ 104:Core/Src/CAN.c **** 
+ 105:Core/Src/CAN.c **** 	uint8_t initialDataBufferAddress = initialBufferAddress + 6;
+ 424              		.loc 1 105 2 view .LVU71
+ 425              		.loc 1 105 10 is_stmt 0 view .LVU72
+ 426 0040 B71D     		adds	r7, r6, #6
+ 427              	.LVL46:
+ 428              		.loc 1 105 10 view .LVU73
+ 429 0042 FFB2     		uxtb	r7, r7
+ 430              	.LVL47:
+ 106:Core/Src/CAN.c **** 	for(int i = 0; i < DLC; i++)
+ 431              		.loc 1 106 2 is_stmt 1 view .LVU74
+ 432              	.LBB2:
+ 433              		.loc 1 106 6 view .LVU75
+ 434              		.loc 1 106 10 is_stmt 0 view .LVU76
+ 435 0044 0024     		movs	r4, #0
+ 436              	.LVL48:
+ 437              		.loc 1 106 2 view .LVU77
+ 438 0046 06E0     		b	.L18
+ 439              	.LVL49:
+ 440              	.L19:
+ 107:Core/Src/CAN.c **** 	{
+ 108:Core/Src/CAN.c **** 		CAN_IC_WRITE_REGISTER(initialDataBufferAddress + i, data[i]); //write to relevant data registers
+ 441              		.loc 1 108 3 is_stmt 1 discriminator 3 view .LVU78
+ 442 0048 3819     		adds	r0, r7, r4
+ 443 004a 18F80410 		ldrb	r1, [r8, r4]	@ zero_extendqisi2
+ 444 004e C0B2     		uxtb	r0, r0
+ 445 0050 FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
+ 446              	.LVL50:
+ 106:Core/Src/CAN.c **** 	for(int i = 0; i < DLC; i++)
+ 447              		.loc 1 106 26 discriminator 3 view .LVU79
+ 106:Core/Src/CAN.c **** 	for(int i = 0; i < DLC; i++)
+ 448              		.loc 1 106 27 is_stmt 0 discriminator 3 view .LVU80
+ 449 0054 0134     		adds	r4, r4, #1
+ 450              	.LVL51:
+ 451              	.L18:
+ 106:Core/Src/CAN.c **** 	for(int i = 0; i < DLC; i++)
+ 452              		.loc 1 106 17 is_stmt 1 discriminator 1 view .LVU81
+ 106:Core/Src/CAN.c **** 	for(int i = 0; i < DLC; i++)
+ 453              		.loc 1 106 2 is_stmt 0 discriminator 1 view .LVU82
+ 454 0056 A542     		cmp	r5, r4
+ 455 0058 F6DC     		bgt	.L19
+ 456              	.LBE2:
+ 109:Core/Src/CAN.c **** 	}
+ 110:Core/Src/CAN.c **** 
+ 111:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER_BITWISE(initialBufferAddress, 0x02, 0x02); //set transmit buffer priority to
+ 457              		.loc 1 111 2 is_stmt 1 view .LVU83
+ 458 005a 0222     		movs	r2, #2
+ 459 005c 1146     		mov	r1, r2
+ 460 005e 3046     		mov	r0, r6
+ 461 0060 FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER_BITWISE
+ 462              	.LVL52:
  112:Core/Src/CAN.c **** 
- 113:Core/Src/CAN.c **** /**
- 114:Core/Src/CAN.c ****   * @brief send CAN message
- 115:Core/Src/CAN.c ****   * @param None
- 116:Core/Src/CAN.c ****   * @retval None
- 117:Core/Src/CAN.c ****   */
-ARM GAS  /tmp/cczqHYjX.s 			page 11
+ 113:Core/Src/CAN.c **** 	HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_RESET);
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cckCNfl6.s 			page 11
 
 
- 118:Core/Src/CAN.c **** void sendExtendedCANMessage(uint8_t channel, uint64_t ID, uint8_t DLC, uint8_t* data)
- 119:Core/Src/CAN.c **** {
- 463              		.loc 1 119 0
- 464              		.cfi_startproc
- 465              		@ args = 8, pretend = 0, frame = 8
- 466              		@ frame_needed = 0, uses_anonymous_args = 0
- 467              	.LVL55:
- 468 0000 2DE9F047 		push	{r4, r5, r6, r7, r8, r9, r10, lr}
- 469              	.LCFI15:
- 470              		.cfi_def_cfa_offset 32
- 471              		.cfi_offset 4, -32
- 472              		.cfi_offset 5, -28
- 473              		.cfi_offset 6, -24
- 474              		.cfi_offset 7, -20
- 475              		.cfi_offset 8, -16
- 476              		.cfi_offset 9, -12
- 477              		.cfi_offset 10, -8
- 478              		.cfi_offset 14, -4
- 479 0004 82B0     		sub	sp, sp, #8
- 480              	.LCFI16:
- 481              		.cfi_def_cfa_offset 40
- 482 0006 9DF82860 		ldrb	r6, [sp, #40]	@ zero_extendqisi2
- 483 000a DDF82C80 		ldr	r8, [sp, #44]
- 120:Core/Src/CAN.c **** 	uint8_t initialBufferAddress = 0x20 + 16*(channel); //0x30 for channel 1, 0x40 for channel 2, 0x50
- 484              		.loc 1 120 0
- 485 000e 871C     		adds	r7, r0, #2
- 486 0010 3F01     		lsls	r7, r7, #4
- 487 0012 FFB2     		uxtb	r7, r7
- 488              	.LVL56:
- 121:Core/Src/CAN.c **** 
- 122:Core/Src/CAN.c **** 	uint8_t sendCommand = 0x81; //instruction to send CAN message on buffer 1
- 489              		.loc 1 122 0
- 490 0014 8123     		movs	r3, #129
- 491 0016 8DF80730 		strb	r3, [sp, #7]
- 123:Core/Src/CAN.c **** 
- 124:Core/Src/CAN.c **** 	uint8_t TXBNEID0 = ID & 0xff;
- 492              		.loc 1 124 0
- 493 001a D5B2     		uxtb	r5, r2
- 494              	.LVL57:
- 125:Core/Src/CAN.c **** 	uint8_t TXBNEID8 = (ID >> 8) & 0xff;
- 495              		.loc 1 125 0
- 496 001c C2F30729 		ubfx	r9, r2, #8, #8
- 497              	.LVL58:
- 126:Core/Src/CAN.c **** 	uint8_t TXBNSIDH = (ID >> 21) & 0xff;
- 127:Core/Src/CAN.c **** 	uint8_t TXBNSIDL = ((ID >> 18) & 0x07) | 0b00001000 | ((ID >> 16) & 0x03);
- 498              		.loc 1 127 0
- 499 0020 C2F38244 		ubfx	r4, r2, #18, #3
- 500 0024 C2F30143 		ubfx	r3, r2, #16, #2
- 501 0028 1C43     		orrs	r4, r4, r3
- 502 002a 44F00804 		orr	r4, r4, #8
- 503              	.LVL59:
- 128:Core/Src/CAN.c **** 	uint8_t TXBNDLC = DLC & 0x0f;
- 504              		.loc 1 128 0
- 505 002e 06F00F0A 		and	r10, r6, #15
- 506              	.LVL60:
- 129:Core/Src/CAN.c **** 
- 130:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 1, TXBNSIDH); // SD 10-3
-ARM GAS  /tmp/cczqHYjX.s 			page 12
+ 463              		.loc 1 113 2 view .LVU84
+ 464 0064 0A4C     		ldr	r4, .L21
+ 465              	.LVL53:
+ 466              		.loc 1 113 2 is_stmt 0 view .LVU85
+ 467 0066 0022     		movs	r2, #0
+ 468 0068 1021     		movs	r1, #16
+ 469 006a 2046     		mov	r0, r4
+ 470 006c FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 471              	.LVL54:
+ 114:Core/Src/CAN.c **** 	HAL_SPI_Transmit(&hspi1, &sendCommand, 1, 100U);  //Send command to transmit
+ 472              		.loc 1 114 2 is_stmt 1 view .LVU86
+ 473 0070 6423     		movs	r3, #100
+ 474 0072 0122     		movs	r2, #1
+ 475 0074 0DF10701 		add	r1, sp, #7
+ 476 0078 0648     		ldr	r0, .L21+4
+ 477 007a FFF7FEFF 		bl	HAL_SPI_Transmit
+ 478              	.LVL55:
+ 115:Core/Src/CAN.c **** 	HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_SET);
+ 479              		.loc 1 115 2 view .LVU87
+ 480 007e 0122     		movs	r2, #1
+ 481 0080 1021     		movs	r1, #16
+ 482 0082 2046     		mov	r0, r4
+ 483 0084 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 484              	.LVL56:
+ 116:Core/Src/CAN.c **** }
+ 485              		.loc 1 116 1 is_stmt 0 view .LVU88
+ 486 0088 02B0     		add	sp, sp, #8
+ 487              	.LCFI14:
+ 488              		.cfi_def_cfa_offset 24
+ 489              		@ sp needed
+ 490 008a BDE8F081 		pop	{r4, r5, r6, r7, r8, pc}
+ 491              	.LVL57:
+ 492              	.L22:
+ 493              		.loc 1 116 1 view .LVU89
+ 494 008e 00BF     		.align	2
+ 495              	.L21:
+ 496 0090 00000240 		.word	1073872896
+ 497 0094 00000000 		.word	hspi1
+ 498              		.cfi_endproc
+ 499              	.LFE76:
+ 501              		.section	.text.sendExtendedCANMessage,"ax",%progbits
+ 502              		.align	1
+ 503              		.global	sendExtendedCANMessage
+ 504              		.syntax unified
+ 505              		.thumb
+ 506              		.thumb_func
+ 508              	sendExtendedCANMessage:
+ 509              	.LVL58:
+ 510              	.LFB77:
+ 117:Core/Src/CAN.c **** 
+ 118:Core/Src/CAN.c **** /**
+ 119:Core/Src/CAN.c ****   * @brief send CAN message with extended identifier
+ 120:Core/Src/CAN.c ****   * @param None
+ 121:Core/Src/CAN.c ****   * @retval None
+ 122:Core/Src/CAN.c ****   */
+ 123:Core/Src/CAN.c **** void sendExtendedCANMessage(uint8_t channel, uint64_t ID, uint8_t DLC, uint8_t* data)
+ 124:Core/Src/CAN.c **** {
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cckCNfl6.s 			page 12
 
 
- 507              		.loc 1 130 0
- 508 0032 781C     		adds	r0, r7, #1
- 509              	.LVL61:
- 510 0034 C2F34751 		ubfx	r1, r2, #21, #8
- 511 0038 C0B2     		uxtb	r0, r0
- 512 003a FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
- 513              	.LVL62:
- 131:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 2, TXBNSIDL); //SD 2-0, ED 17-16
- 514              		.loc 1 131 0
- 515 003e B81C     		adds	r0, r7, #2
- 516 0040 2146     		mov	r1, r4
- 517 0042 00F0FE00 		and	r0, r0, #254
- 518 0046 FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
- 519              	.LVL63:
- 132:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 3, TXBNEID8); //ED 15-8
- 520              		.loc 1 132 0
- 521 004a F81C     		adds	r0, r7, #3
- 522 004c 4946     		mov	r1, r9
- 523 004e C0B2     		uxtb	r0, r0
- 524 0050 FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
- 525              	.LVL64:
- 133:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 4, TXBNEID0); //ED 7-0
- 526              		.loc 1 133 0
- 527 0054 381D     		adds	r0, r7, #4
- 528 0056 2946     		mov	r1, r5
- 529 0058 00F0FC00 		and	r0, r0, #252
- 530 005c FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
- 531              	.LVL65:
- 134:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 5, TXBNDLC);  //DLC
- 532              		.loc 1 134 0
- 533 0060 781D     		adds	r0, r7, #5
- 534 0062 5146     		mov	r1, r10
- 535 0064 C0B2     		uxtb	r0, r0
- 536 0066 FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
- 537              	.LVL66:
- 135:Core/Src/CAN.c **** 
- 136:Core/Src/CAN.c **** 	uint8_t initialDataBufferAddress = initialBufferAddress + 6;
- 538              		.loc 1 136 0
- 539 006a BD1D     		adds	r5, r7, #6
- 540              	.LVL67:
- 541 006c EDB2     		uxtb	r5, r5
- 542              	.LVL68:
- 543              	.LBB3:
- 137:Core/Src/CAN.c **** 	for(int i = 0; i < DLC; i++)
- 544              		.loc 1 137 0
- 545 006e 0024     		movs	r4, #0
- 546              	.LVL69:
- 547 0070 06E0     		b	.L24
- 548              	.LVL70:
- 549              	.L25:
- 138:Core/Src/CAN.c **** 	{
- 139:Core/Src/CAN.c **** 		CAN_IC_WRITE_REGISTER(initialDataBufferAddress + i, data[i]); //write to relevant data registers
- 550              		.loc 1 139 0 discriminator 3
- 551 0072 2819     		adds	r0, r5, r4
- 552 0074 18F80410 		ldrb	r1, [r8, r4]	@ zero_extendqisi2
- 553 0078 C0B2     		uxtb	r0, r0
- 554 007a FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
-ARM GAS  /tmp/cczqHYjX.s 			page 13
+ 511              		.loc 1 124 1 is_stmt 1 view -0
+ 512              		.cfi_startproc
+ 513              		@ args = 8, pretend = 0, frame = 8
+ 514              		@ frame_needed = 0, uses_anonymous_args = 0
+ 515              		.loc 1 124 1 is_stmt 0 view .LVU91
+ 516 0000 2DE9F047 		push	{r4, r5, r6, r7, r8, r9, r10, lr}
+ 517              	.LCFI15:
+ 518              		.cfi_def_cfa_offset 32
+ 519              		.cfi_offset 4, -32
+ 520              		.cfi_offset 5, -28
+ 521              		.cfi_offset 6, -24
+ 522              		.cfi_offset 7, -20
+ 523              		.cfi_offset 8, -16
+ 524              		.cfi_offset 9, -12
+ 525              		.cfi_offset 10, -8
+ 526              		.cfi_offset 14, -4
+ 527 0004 82B0     		sub	sp, sp, #8
+ 528              	.LCFI16:
+ 529              		.cfi_def_cfa_offset 40
+ 530 0006 9DF82870 		ldrb	r7, [sp, #40]	@ zero_extendqisi2
+ 531 000a DDF82C80 		ldr	r8, [sp, #44]
+ 125:Core/Src/CAN.c **** 	uint8_t initialBufferAddress = 0x30 + 16*(channel); //0x30 for channel 1, 0x40 for channel 2, 0x50
+ 532              		.loc 1 125 2 is_stmt 1 view .LVU92
+ 533              		.loc 1 125 10 is_stmt 0 view .LVU93
+ 534 000e C51C     		adds	r5, r0, #3
+ 535 0010 2D01     		lsls	r5, r5, #4
+ 536 0012 EDB2     		uxtb	r5, r5
+ 537              	.LVL59:
+ 126:Core/Src/CAN.c **** 
+ 127:Core/Src/CAN.c **** 	uint8_t sendCommand = 0x80 +  (1 << channel); //instruction to send CAN message on channel
+ 538              		.loc 1 127 2 is_stmt 1 view .LVU94
+ 539              		.loc 1 127 35 is_stmt 0 view .LVU95
+ 540 0014 0121     		movs	r1, #1
+ 541 0016 8140     		lsls	r1, r1, r0
+ 542              		.loc 1 127 29 view .LVU96
+ 543 0018 8039     		subs	r1, r1, #128
+ 544              		.loc 1 127 10 view .LVU97
+ 545 001a 8DF80710 		strb	r1, [sp, #7]
+ 128:Core/Src/CAN.c **** 
+ 129:Core/Src/CAN.c **** 	uint8_t TXBNEID0 = ID & 0xff;
+ 546              		.loc 1 129 2 is_stmt 1 view .LVU98
+ 547              		.loc 1 129 10 is_stmt 0 view .LVU99
+ 548 001e D6B2     		uxtb	r6, r2
+ 549              	.LVL60:
+ 130:Core/Src/CAN.c **** 	uint8_t TXBNEID8 = (ID >> 8) & 0xff;
+ 550              		.loc 1 130 2 is_stmt 1 view .LVU100
+ 551              		.loc 1 130 10 is_stmt 0 view .LVU101
+ 552 0020 C2F30729 		ubfx	r9, r2, #8, #8
+ 553              	.LVL61:
+ 131:Core/Src/CAN.c **** 	uint8_t TXBNSIDL = (((ID >> 18) & 0x07) << 5) | 0b00001000 | ((ID >> 16) & 0x03);
+ 554              		.loc 1 131 2 is_stmt 1 view .LVU102
+ 555              		.loc 1 131 27 is_stmt 0 view .LVU103
+ 556 0024 900C     		lsrs	r0, r2, #18
+ 557              	.LVL62:
+ 558              		.loc 1 131 27 view .LVU104
+ 559 0026 40EA8330 		orr	r0, r0, r3, lsl #14
+ 560              		.loc 1 131 42 view .LVU105
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cckCNfl6.s 			page 13
 
 
- 555              	.LVL71:
- 137:Core/Src/CAN.c **** 	for(int i = 0; i < DLC; i++)
- 556              		.loc 1 137 0 discriminator 3
- 557 007e 0134     		adds	r4, r4, #1
- 558              	.LVL72:
- 559              	.L24:
- 137:Core/Src/CAN.c **** 	for(int i = 0; i < DLC; i++)
- 560              		.loc 1 137 0 is_stmt 0 discriminator 1
- 561 0080 B442     		cmp	r4, r6
- 562 0082 F6DB     		blt	.L25
- 563              	.LBE3:
- 140:Core/Src/CAN.c **** 	}
- 141:Core/Src/CAN.c **** 
- 142:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER_BITWISE(initialBufferAddress, 0x02, 0x02); //set transmit buffer priority to
- 564              		.loc 1 142 0 is_stmt 1
- 565 0084 0222     		movs	r2, #2
- 566 0086 1146     		mov	r1, r2
- 567 0088 3846     		mov	r0, r7
- 568 008a FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER_BITWISE
- 569              	.LVL73:
- 143:Core/Src/CAN.c **** 
- 144:Core/Src/CAN.c **** 	HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_RESET);
- 570              		.loc 1 144 0
- 571 008e 0A4C     		ldr	r4, .L27
- 572              	.LVL74:
- 573 0090 0022     		movs	r2, #0
- 574 0092 1021     		movs	r1, #16
- 575 0094 2046     		mov	r0, r4
- 576 0096 FFF7FEFF 		bl	HAL_GPIO_WritePin
- 577              	.LVL75:
- 145:Core/Src/CAN.c **** 	HAL_SPI_Transmit(&hspi1, &sendCommand, 1, 100U);  //Send command to transmit
- 578              		.loc 1 145 0
- 579 009a 6423     		movs	r3, #100
- 580 009c 0122     		movs	r2, #1
- 581 009e 0DF10701 		add	r1, sp, #7
- 582 00a2 0648     		ldr	r0, .L27+4
- 583 00a4 FFF7FEFF 		bl	HAL_SPI_Transmit
- 584              	.LVL76:
- 146:Core/Src/CAN.c **** 	HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_SET);
- 585              		.loc 1 146 0
- 586 00a8 0122     		movs	r2, #1
- 587 00aa 1021     		movs	r1, #16
- 588 00ac 2046     		mov	r0, r4
- 589 00ae FFF7FEFF 		bl	HAL_GPIO_WritePin
- 590              	.LVL77:
- 147:Core/Src/CAN.c **** }
- 591              		.loc 1 147 0
- 592 00b2 02B0     		add	sp, sp, #8
- 593              	.LCFI17:
- 594              		.cfi_def_cfa_offset 32
- 595              		@ sp needed
- 596 00b4 BDE8F087 		pop	{r4, r5, r6, r7, r8, r9, r10, pc}
- 597              	.LVL78:
- 598              	.L28:
- 599              		.align	2
- 600              	.L27:
- 601 00b8 00000240 		.word	1073872896
-ARM GAS  /tmp/cczqHYjX.s 			page 14
+ 561 002a 4401     		lsls	r4, r0, #5
+ 562 002c E4B2     		uxtb	r4, r4
+ 563              		.loc 1 131 75 view .LVU106
+ 564 002e C2F30140 		ubfx	r0, r2, #16, #2
+ 565              		.loc 1 131 61 view .LVU107
+ 566 0032 0443     		orrs	r4, r4, r0
+ 567              		.loc 1 131 10 view .LVU108
+ 568 0034 44F00804 		orr	r4, r4, #8
+ 569              	.LVL63:
+ 132:Core/Src/CAN.c **** 	uint8_t TXBNSIDH = (ID >> 21) & 0xff;
+ 570              		.loc 1 132 2 is_stmt 1 view .LVU109
+ 133:Core/Src/CAN.c **** 	uint8_t TXBNDLC = DLC & 0x0f;
+ 571              		.loc 1 133 2 view .LVU110
+ 572              		.loc 1 133 10 is_stmt 0 view .LVU111
+ 573 0038 07F00F0A 		and	r10, r7, #15
+ 574              	.LVL64:
+ 134:Core/Src/CAN.c **** 
+ 135:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 1, TXBNSIDH); // SD 10-3
+ 575              		.loc 1 135 2 is_stmt 1 view .LVU112
+ 576 003c 681C     		adds	r0, r5, #1
+ 577 003e C2F34751 		ubfx	r1, r2, #21, #8
+ 578 0042 C0B2     		uxtb	r0, r0
+ 579 0044 FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
+ 580              	.LVL65:
+ 136:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 2, TXBNSIDL); //SD 2-0, ED 17-16
+ 581              		.loc 1 136 2 view .LVU113
+ 582 0048 A81C     		adds	r0, r5, #2
+ 583 004a 2146     		mov	r1, r4
+ 584 004c 00F0FE00 		and	r0, r0, #254
+ 585 0050 FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
+ 586              	.LVL66:
+ 137:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 3, TXBNEID8); //ED 15-8
+ 587              		.loc 1 137 2 view .LVU114
+ 588 0054 E81C     		adds	r0, r5, #3
+ 589 0056 4946     		mov	r1, r9
+ 590 0058 C0B2     		uxtb	r0, r0
+ 591 005a FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
+ 592              	.LVL67:
+ 138:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 4, TXBNEID0); //ED 7-0
+ 593              		.loc 1 138 2 view .LVU115
+ 594 005e 281D     		adds	r0, r5, #4
+ 595 0060 3146     		mov	r1, r6
+ 596 0062 00F0FC00 		and	r0, r0, #252
+ 597 0066 FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
+ 598              	.LVL68:
+ 139:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 5, TXBNDLC);  //DLC
+ 599              		.loc 1 139 2 view .LVU116
+ 600 006a 681D     		adds	r0, r5, #5
+ 601 006c 5146     		mov	r1, r10
+ 602 006e C0B2     		uxtb	r0, r0
+ 603 0070 FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
+ 604              	.LVL69:
+ 140:Core/Src/CAN.c **** 
+ 141:Core/Src/CAN.c **** 	uint8_t initialDataBufferAddress = initialBufferAddress + 6;
+ 605              		.loc 1 141 2 view .LVU117
+ 606              		.loc 1 141 10 is_stmt 0 view .LVU118
+ 607 0074 AE1D     		adds	r6, r5, #6
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cckCNfl6.s 			page 14
 
 
- 602 00bc 00000000 		.word	hspi1
- 603              		.cfi_endproc
- 604              	.LFE77:
- 606              		.text
- 607              	.Letext0:
- 608              		.file 2 "/opt/gcc4mbed/gcc-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h"
- 609              		.file 3 "/opt/gcc4mbed/gcc-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h"
- 610              		.file 4 "Drivers/CMSIS/Include/core_cm3.h"
- 611              		.file 5 "Drivers/CMSIS/Device/ST/STM32L1xx/Include/system_stm32l1xx.h"
- 612              		.file 6 "Drivers/CMSIS/Device/ST/STM32L1xx/Include/stm32l152xe.h"
- 613              		.file 7 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_def.h"
- 614              		.file 8 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_gpio.h"
- 615              		.file 9 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_dma.h"
- 616              		.file 10 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_spi.h"
- 617              		.file 11 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal.h"
- 618              		.file 12 "Core/Inc/CAN.h"
-ARM GAS  /tmp/cczqHYjX.s 			page 15
+ 608              	.LVL70:
+ 609              		.loc 1 141 10 view .LVU119
+ 610 0076 F6B2     		uxtb	r6, r6
+ 611              	.LVL71:
+ 142:Core/Src/CAN.c **** 	for(int i = 0; i < DLC; i++)
+ 612              		.loc 1 142 2 is_stmt 1 view .LVU120
+ 613              	.LBB3:
+ 614              		.loc 1 142 6 view .LVU121
+ 615              		.loc 1 142 10 is_stmt 0 view .LVU122
+ 616 0078 0024     		movs	r4, #0
+ 617              	.LVL72:
+ 618              		.loc 1 142 2 view .LVU123
+ 619 007a 06E0     		b	.L24
+ 620              	.LVL73:
+ 621              	.L25:
+ 143:Core/Src/CAN.c **** 	{
+ 144:Core/Src/CAN.c **** 		CAN_IC_WRITE_REGISTER(initialDataBufferAddress + i, data[i]); //write to relevant data registers
+ 622              		.loc 1 144 3 is_stmt 1 discriminator 3 view .LVU124
+ 623 007c 3019     		adds	r0, r6, r4
+ 624 007e 18F80410 		ldrb	r1, [r8, r4]	@ zero_extendqisi2
+ 625 0082 C0B2     		uxtb	r0, r0
+ 626 0084 FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER
+ 627              	.LVL74:
+ 142:Core/Src/CAN.c **** 	for(int i = 0; i < DLC; i++)
+ 628              		.loc 1 142 26 discriminator 3 view .LVU125
+ 142:Core/Src/CAN.c **** 	for(int i = 0; i < DLC; i++)
+ 629              		.loc 1 142 27 is_stmt 0 discriminator 3 view .LVU126
+ 630 0088 0134     		adds	r4, r4, #1
+ 631              	.LVL75:
+ 632              	.L24:
+ 142:Core/Src/CAN.c **** 	for(int i = 0; i < DLC; i++)
+ 633              		.loc 1 142 17 is_stmt 1 discriminator 1 view .LVU127
+ 142:Core/Src/CAN.c **** 	for(int i = 0; i < DLC; i++)
+ 634              		.loc 1 142 2 is_stmt 0 discriminator 1 view .LVU128
+ 635 008a A742     		cmp	r7, r4
+ 636 008c F6DC     		bgt	.L25
+ 637              	.LBE3:
+ 145:Core/Src/CAN.c **** 	}
+ 146:Core/Src/CAN.c **** 
+ 147:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER_BITWISE(initialBufferAddress, 0x02, 0x02); //set transmit buffer priority to
+ 638              		.loc 1 147 2 is_stmt 1 view .LVU129
+ 639 008e 0222     		movs	r2, #2
+ 640 0090 1146     		mov	r1, r2
+ 641 0092 2846     		mov	r0, r5
+ 642 0094 FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER_BITWISE
+ 643              	.LVL76:
+ 148:Core/Src/CAN.c **** 
+ 149:Core/Src/CAN.c **** 	HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_RESET);
+ 644              		.loc 1 149 2 view .LVU130
+ 645 0098 0A4C     		ldr	r4, .L27
+ 646              	.LVL77:
+ 647              		.loc 1 149 2 is_stmt 0 view .LVU131
+ 648 009a 0022     		movs	r2, #0
+ 649 009c 1021     		movs	r1, #16
+ 650 009e 2046     		mov	r0, r4
+ 651 00a0 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 652              	.LVL78:
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cckCNfl6.s 			page 15
+
+
+ 150:Core/Src/CAN.c **** 	HAL_SPI_Transmit(&hspi1, &sendCommand, 1, 100U);  //Send command to transmit
+ 653              		.loc 1 150 2 is_stmt 1 view .LVU132
+ 654 00a4 6423     		movs	r3, #100
+ 655 00a6 0122     		movs	r2, #1
+ 656 00a8 0DF10701 		add	r1, sp, #7
+ 657 00ac 0648     		ldr	r0, .L27+4
+ 658 00ae FFF7FEFF 		bl	HAL_SPI_Transmit
+ 659              	.LVL79:
+ 151:Core/Src/CAN.c **** 	HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_SET);
+ 660              		.loc 1 151 2 view .LVU133
+ 661 00b2 0122     		movs	r2, #1
+ 662 00b4 1021     		movs	r1, #16
+ 663 00b6 2046     		mov	r0, r4
+ 664 00b8 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 665              	.LVL80:
+ 152:Core/Src/CAN.c **** }
+ 666              		.loc 1 152 1 is_stmt 0 view .LVU134
+ 667 00bc 02B0     		add	sp, sp, #8
+ 668              	.LCFI17:
+ 669              		.cfi_def_cfa_offset 32
+ 670              		@ sp needed
+ 671 00be BDE8F087 		pop	{r4, r5, r6, r7, r8, r9, r10, pc}
+ 672              	.LVL81:
+ 673              	.L28:
+ 674              		.loc 1 152 1 view .LVU135
+ 675 00c2 00BF     		.align	2
+ 676              	.L27:
+ 677 00c4 00000240 		.word	1073872896
+ 678 00c8 00000000 		.word	hspi1
+ 679              		.cfi_endproc
+ 680              	.LFE77:
+ 682              		.section	.text.receiveCANMessage,"ax",%progbits
+ 683              		.align	1
+ 684              		.global	receiveCANMessage
+ 685              		.syntax unified
+ 686              		.thumb
+ 687              		.thumb_func
+ 689              	receiveCANMessage:
+ 690              	.LVL82:
+ 691              	.LFB78:
+ 153:Core/Src/CAN.c **** 
+ 154:Core/Src/CAN.c **** 
+ 155:Core/Src/CAN.c **** 
+ 156:Core/Src/CAN.c **** /**
+ 157:Core/Src/CAN.c ****   * @brief Receive CAN message
+ 158:Core/Src/CAN.c ****   * @param None
+ 159:Core/Src/CAN.c ****   * @retval None
+ 160:Core/Src/CAN.c ****   */
+ 161:Core/Src/CAN.c **** void receiveCANMessage(uint8_t channel, uint32_t* ID, uint8_t* DLC, uint8_t* data)
+ 162:Core/Src/CAN.c **** {
+ 692              		.loc 1 162 1 is_stmt 1 view -0
+ 693              		.cfi_startproc
+ 694              		@ args = 0, pretend = 0, frame = 8
+ 695              		@ frame_needed = 0, uses_anonymous_args = 0
+ 696              		.loc 1 162 1 is_stmt 0 view .LVU137
+ 697 0000 2DE9F043 		push	{r4, r5, r6, r7, r8, r9, lr}
+ 698              	.LCFI18:
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cckCNfl6.s 			page 16
+
+
+ 699              		.cfi_def_cfa_offset 28
+ 700              		.cfi_offset 4, -28
+ 701              		.cfi_offset 5, -24
+ 702              		.cfi_offset 6, -20
+ 703              		.cfi_offset 7, -16
+ 704              		.cfi_offset 8, -12
+ 705              		.cfi_offset 9, -8
+ 706              		.cfi_offset 14, -4
+ 707 0004 83B0     		sub	sp, sp, #12
+ 708              	.LCFI19:
+ 709              		.cfi_def_cfa_offset 40
+ 710 0006 8046     		mov	r8, r0
+ 711 0008 0C46     		mov	r4, r1
+ 712 000a 1746     		mov	r7, r2
+ 713 000c 1D46     		mov	r5, r3
+ 163:Core/Src/CAN.c **** 	uint8_t initialBufferAddress = 0x60 + 16*(channel); //0x60 for channel 1, 0x70 for channel 2
+ 714              		.loc 1 163 2 is_stmt 1 view .LVU138
+ 715              		.loc 1 163 10 is_stmt 0 view .LVU139
+ 716 000e 861D     		adds	r6, r0, #6
+ 717 0010 3601     		lsls	r6, r6, #4
+ 718 0012 F6B2     		uxtb	r6, r6
+ 719              	.LVL83:
+ 164:Core/Src/CAN.c **** 
+ 165:Core/Src/CAN.c **** 	uint8_t RXBNSIDH = 0;
+ 720              		.loc 1 165 2 is_stmt 1 view .LVU140
+ 721              		.loc 1 165 10 is_stmt 0 view .LVU141
+ 722 0014 0023     		movs	r3, #0
+ 723              	.LVL84:
+ 724              		.loc 1 165 10 view .LVU142
+ 725 0016 8DF80730 		strb	r3, [sp, #7]
+ 166:Core/Src/CAN.c **** 	uint8_t RXBNSIDL = 0;
+ 726              		.loc 1 166 2 is_stmt 1 view .LVU143
+ 727              		.loc 1 166 10 is_stmt 0 view .LVU144
+ 728 001a 8DF80630 		strb	r3, [sp, #6]
+ 167:Core/Src/CAN.c **** 	uint8_t RXBDLC = 0;
+ 729              		.loc 1 167 2 is_stmt 1 view .LVU145
+ 730              		.loc 1 167 10 is_stmt 0 view .LVU146
+ 731 001e 8DF80530 		strb	r3, [sp, #5]
+ 168:Core/Src/CAN.c **** 
+ 169:Core/Src/CAN.c **** 	CAN_IC_READ_REGISTER(initialBufferAddress + 1, &RXBNSIDH); // SD 10-3
+ 732              		.loc 1 169 2 is_stmt 1 view .LVU147
+ 733 0022 701C     		adds	r0, r6, #1
+ 734              	.LVL85:
+ 735              		.loc 1 169 2 is_stmt 0 view .LVU148
+ 736 0024 0DF10701 		add	r1, sp, #7
+ 737              	.LVL86:
+ 738              		.loc 1 169 2 view .LVU149
+ 739 0028 C0B2     		uxtb	r0, r0
+ 740 002a FFF7FEFF 		bl	CAN_IC_READ_REGISTER
+ 741              	.LVL87:
+ 170:Core/Src/CAN.c **** 	CAN_IC_READ_REGISTER(initialBufferAddress + 2, &RXBNSIDL); //SD 2-0, IDE, ED 17-16
+ 742              		.loc 1 170 2 is_stmt 1 view .LVU150
+ 743 002e B01C     		adds	r0, r6, #2
+ 744 0030 0DF10601 		add	r1, sp, #6
+ 745 0034 00F0FE00 		and	r0, r0, #254
+ 746 0038 FFF7FEFF 		bl	CAN_IC_READ_REGISTER
+ 747              	.LVL88:
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cckCNfl6.s 			page 17
+
+
+ 171:Core/Src/CAN.c **** 	CAN_IC_READ_REGISTER(initialBufferAddress + 5, &RXBDLC); //DLC
+ 748              		.loc 1 171 2 view .LVU151
+ 749 003c 701D     		adds	r0, r6, #5
+ 750 003e 0DF10501 		add	r1, sp, #5
+ 751 0042 C0B2     		uxtb	r0, r0
+ 752 0044 FFF7FEFF 		bl	CAN_IC_READ_REGISTER
+ 753              	.LVL89:
+ 172:Core/Src/CAN.c **** 
+ 173:Core/Src/CAN.c **** 	if(RXBNSIDL & 0x08)
+ 754              		.loc 1 173 2 view .LVU152
+ 755              		.loc 1 173 14 is_stmt 0 view .LVU153
+ 756 0048 9DF80630 		ldrb	r3, [sp, #6]	@ zero_extendqisi2
+ 757              		.loc 1 173 4 view .LVU154
+ 758 004c 13F0080F 		tst	r3, #8
+ 759 0050 0ED1     		bne	.L35
+ 174:Core/Src/CAN.c **** 	{
+ 175:Core/Src/CAN.c **** 		uint8_t RXBNEID8 = 0;
+ 176:Core/Src/CAN.c **** 		uint8_t RXBNEID0 = 0;
+ 177:Core/Src/CAN.c **** 
+ 178:Core/Src/CAN.c **** 		CAN_IC_READ_REGISTER(initialBufferAddress + 3, &RXBNEID8); //ED 15-8
+ 179:Core/Src/CAN.c **** 		CAN_IC_READ_REGISTER(initialBufferAddress + 4, &RXBNEID0); //ED 7-0
+ 180:Core/Src/CAN.c **** 
+ 181:Core/Src/CAN.c **** 		*ID = (RXBNSIDH << 21) | (((RXBNSIDL >> 5) & 0x07) << 18) | ((RXBNSIDL & 0x03) << 16) | (RXBNEID8
+ 182:Core/Src/CAN.c **** 	} else
+ 183:Core/Src/CAN.c **** 	{
+ 184:Core/Src/CAN.c **** 		*ID = (RXBNSIDH << 3) | (RXBNSIDL >> 5);
+ 760              		.loc 1 184 3 is_stmt 1 view .LVU155
+ 761              		.loc 1 184 19 is_stmt 0 view .LVU156
+ 762 0052 9DF80720 		ldrb	r2, [sp, #7]	@ zero_extendqisi2
+ 763              		.loc 1 184 37 view .LVU157
+ 764 0056 5B09     		lsrs	r3, r3, #5
+ 765              		.loc 1 184 25 view .LVU158
+ 766 0058 43EAC203 		orr	r3, r3, r2, lsl #3
+ 767              		.loc 1 184 7 view .LVU159
+ 768 005c 2360     		str	r3, [r4]
+ 769              	.L31:
+ 185:Core/Src/CAN.c **** 	}
+ 186:Core/Src/CAN.c **** 
+ 187:Core/Src/CAN.c **** 	*DLC = RXBDLC & 0x0f;
+ 770              		.loc 1 187 2 is_stmt 1 view .LVU160
+ 771              		.loc 1 187 16 is_stmt 0 view .LVU161
+ 772 005e 9DF80530 		ldrb	r3, [sp, #5]	@ zero_extendqisi2
+ 773 0062 03F00F03 		and	r3, r3, #15
+ 774              		.loc 1 187 7 view .LVU162
+ 775 0066 3B70     		strb	r3, [r7]
+ 188:Core/Src/CAN.c **** 
+ 189:Core/Src/CAN.c **** 	uint8_t initialDataBufferAddress = initialBufferAddress + 6;
+ 776              		.loc 1 189 2 is_stmt 1 view .LVU163
+ 777              		.loc 1 189 10 is_stmt 0 view .LVU164
+ 778 0068 0636     		adds	r6, r6, #6
+ 779              	.LVL90:
+ 780              		.loc 1 189 10 view .LVU165
+ 781 006a F6B2     		uxtb	r6, r6
+ 782              	.LVL91:
+ 190:Core/Src/CAN.c **** 	for(int i = 0; i < *DLC; i++)
+ 783              		.loc 1 190 2 is_stmt 1 view .LVU166
+ 784              	.LBB4:
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cckCNfl6.s 			page 18
+
+
+ 785              		.loc 1 190 6 view .LVU167
+ 786              		.loc 1 190 10 is_stmt 0 view .LVU168
+ 787 006c 0024     		movs	r4, #0
+ 788              	.LVL92:
+ 789              		.loc 1 190 2 view .LVU169
+ 790 006e 2EE0     		b	.L32
+ 791              	.LVL93:
+ 792              	.L35:
+ 793              		.loc 1 190 2 view .LVU170
+ 794              	.LBE4:
+ 795              	.LBB5:
+ 175:Core/Src/CAN.c **** 		uint8_t RXBNEID0 = 0;
+ 796              		.loc 1 175 3 is_stmt 1 view .LVU171
+ 175:Core/Src/CAN.c **** 		uint8_t RXBNEID0 = 0;
+ 797              		.loc 1 175 11 is_stmt 0 view .LVU172
+ 798 0070 0023     		movs	r3, #0
+ 799 0072 8DF80330 		strb	r3, [sp, #3]
+ 176:Core/Src/CAN.c **** 
+ 800              		.loc 1 176 3 is_stmt 1 view .LVU173
+ 176:Core/Src/CAN.c **** 
+ 801              		.loc 1 176 11 is_stmt 0 view .LVU174
+ 802 0076 8DF80430 		strb	r3, [sp, #4]
+ 178:Core/Src/CAN.c **** 		CAN_IC_READ_REGISTER(initialBufferAddress + 4, &RXBNEID0); //ED 7-0
+ 803              		.loc 1 178 3 is_stmt 1 view .LVU175
+ 804 007a F01C     		adds	r0, r6, #3
+ 805 007c 0DF10301 		add	r1, sp, #3
+ 806 0080 C0B2     		uxtb	r0, r0
+ 807 0082 FFF7FEFF 		bl	CAN_IC_READ_REGISTER
+ 808              	.LVL94:
+ 179:Core/Src/CAN.c **** 
+ 809              		.loc 1 179 3 view .LVU176
+ 810 0086 301D     		adds	r0, r6, #4
+ 811 0088 01A9     		add	r1, sp, #4
+ 812 008a 00F0FC00 		and	r0, r0, #252
+ 813 008e FFF7FEFF 		bl	CAN_IC_READ_REGISTER
+ 814              	.LVL95:
+ 181:Core/Src/CAN.c **** 	} else
+ 815              		.loc 1 181 3 view .LVU177
+ 181:Core/Src/CAN.c **** 	} else
+ 816              		.loc 1 181 19 is_stmt 0 view .LVU178
+ 817 0092 9DF80710 		ldrb	r1, [sp, #7]	@ zero_extendqisi2
+ 181:Core/Src/CAN.c **** 	} else
+ 818              		.loc 1 181 54 view .LVU179
+ 819 0096 9DF80620 		ldrb	r2, [sp, #6]	@ zero_extendqisi2
+ 820 009a 5309     		lsrs	r3, r2, #5
+ 821 009c 9B04     		lsls	r3, r3, #18
+ 181:Core/Src/CAN.c **** 	} else
+ 822              		.loc 1 181 26 view .LVU180
+ 823 009e 43EA4153 		orr	r3, r3, r1, lsl #21
+ 181:Core/Src/CAN.c **** 	} else
+ 824              		.loc 1 181 82 view .LVU181
+ 825 00a2 1204     		lsls	r2, r2, #16
+ 826 00a4 02F44032 		and	r2, r2, #196608
+ 181:Core/Src/CAN.c **** 	} else
+ 827              		.loc 1 181 61 view .LVU182
+ 828 00a8 1343     		orrs	r3, r3, r2
+ 181:Core/Src/CAN.c **** 	} else
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cckCNfl6.s 			page 19
+
+
+ 829              		.loc 1 181 101 view .LVU183
+ 830 00aa 9DF80320 		ldrb	r2, [sp, #3]	@ zero_extendqisi2
+ 181:Core/Src/CAN.c **** 	} else
+ 831              		.loc 1 181 89 view .LVU184
+ 832 00ae 43EA0223 		orr	r3, r3, r2, lsl #8
+ 181:Core/Src/CAN.c **** 	} else
+ 833              		.loc 1 181 107 view .LVU185
+ 834 00b2 9DF80420 		ldrb	r2, [sp, #4]	@ zero_extendqisi2
+ 835 00b6 1343     		orrs	r3, r3, r2
+ 181:Core/Src/CAN.c **** 	} else
+ 836              		.loc 1 181 7 view .LVU186
+ 837 00b8 2360     		str	r3, [r4]
+ 838              	.LBE5:
+ 839 00ba D0E7     		b	.L31
+ 840              	.LVL96:
+ 841              	.L33:
+ 842              	.LBB6:
+ 191:Core/Src/CAN.c **** 	{
+ 192:Core/Src/CAN.c **** 		CAN_IC_READ_REGISTER(initialDataBufferAddress + i, (data++)); //read from relevant data registers
+ 843              		.loc 1 192 3 is_stmt 1 discriminator 3 view .LVU187
+ 844 00bc 05F10109 		add	r9, r5, #1
+ 845              	.LVL97:
+ 846              		.loc 1 192 3 is_stmt 0 discriminator 3 view .LVU188
+ 847 00c0 3019     		adds	r0, r6, r4
+ 848 00c2 2946     		mov	r1, r5
+ 849 00c4 C0B2     		uxtb	r0, r0
+ 850 00c6 FFF7FEFF 		bl	CAN_IC_READ_REGISTER
+ 851              	.LVL98:
+ 190:Core/Src/CAN.c **** 	{
+ 852              		.loc 1 190 27 is_stmt 1 discriminator 3 view .LVU189
+ 190:Core/Src/CAN.c **** 	{
+ 853              		.loc 1 190 28 is_stmt 0 discriminator 3 view .LVU190
+ 854 00ca 0134     		adds	r4, r4, #1
+ 855              	.LVL99:
+ 856              		.loc 1 192 3 discriminator 3 view .LVU191
+ 857 00cc 4D46     		mov	r5, r9
+ 858              	.LVL100:
+ 859              	.L32:
+ 190:Core/Src/CAN.c **** 	{
+ 860              		.loc 1 190 17 is_stmt 1 discriminator 1 view .LVU192
+ 190:Core/Src/CAN.c **** 	{
+ 861              		.loc 1 190 21 is_stmt 0 discriminator 1 view .LVU193
+ 862 00ce 3B78     		ldrb	r3, [r7]	@ zero_extendqisi2
+ 190:Core/Src/CAN.c **** 	{
+ 863              		.loc 1 190 2 discriminator 1 view .LVU194
+ 864 00d0 A342     		cmp	r3, r4
+ 865 00d2 F3DC     		bgt	.L33
+ 190:Core/Src/CAN.c **** 	{
+ 866              		.loc 1 190 2 discriminator 1 view .LVU195
+ 867              	.LBE6:
+ 193:Core/Src/CAN.c **** 	}
+ 194:Core/Src/CAN.c **** 
+ 195:Core/Src/CAN.c **** 	CAN_IC_WRITE_REGISTER_BITWISE(0x2c, channel + 1, channel + 1); //clear interrupts
+ 868              		.loc 1 195 2 is_stmt 1 view .LVU196
+ 869 00d4 08F10101 		add	r1, r8, #1
+ 870 00d8 C9B2     		uxtb	r1, r1
+ 871 00da 0A46     		mov	r2, r1
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cckCNfl6.s 			page 20
+
+
+ 872 00dc 2C20     		movs	r0, #44
+ 873 00de FFF7FEFF 		bl	CAN_IC_WRITE_REGISTER_BITWISE
+ 874              	.LVL101:
+ 196:Core/Src/CAN.c **** 
+ 197:Core/Src/CAN.c **** 	return;
+ 875              		.loc 1 197 2 view .LVU197
+ 198:Core/Src/CAN.c **** }
+ 876              		.loc 1 198 1 is_stmt 0 view .LVU198
+ 877 00e2 03B0     		add	sp, sp, #12
+ 878              	.LCFI20:
+ 879              		.cfi_def_cfa_offset 28
+ 880              		@ sp needed
+ 881 00e4 BDE8F083 		pop	{r4, r5, r6, r7, r8, r9, pc}
+ 882              		.loc 1 198 1 view .LVU199
+ 883              		.cfi_endproc
+ 884              	.LFE78:
+ 886              		.text
+ 887              	.Letext0:
+ 888              		.file 2 "c:\\st\\stm32cubeide_1.10.1\\stm32cubeide\\plugins\\com.st.stm32cube.ide.mcu.externaltool
+ 889              		.file 3 "c:\\st\\stm32cubeide_1.10.1\\stm32cubeide\\plugins\\com.st.stm32cube.ide.mcu.externaltool
+ 890              		.file 4 "Drivers/CMSIS/Device/ST/STM32L1xx/Include/stm32l152xe.h"
+ 891              		.file 5 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_def.h"
+ 892              		.file 6 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_gpio.h"
+ 893              		.file 7 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_dma.h"
+ 894              		.file 8 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_spi.h"
+ 895              		.file 9 "Core/Inc/CAN.h"
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cckCNfl6.s 			page 21
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 CAN.c
-     /tmp/cczqHYjX.s:16     .text.CAN_IC_READ_REGISTER:0000000000000000 $t
-     /tmp/cczqHYjX.s:23     .text.CAN_IC_READ_REGISTER:0000000000000000 CAN_IC_READ_REGISTER
-     /tmp/cczqHYjX.s:87     .text.CAN_IC_READ_REGISTER:0000000000000048 $d
-     /tmp/cczqHYjX.s:93     .text.CAN_IC_WRITE_REGISTER_BITWISE:0000000000000000 $t
-     /tmp/cczqHYjX.s:100    .text.CAN_IC_WRITE_REGISTER_BITWISE:0000000000000000 CAN_IC_WRITE_REGISTER_BITWISE
-     /tmp/cczqHYjX.s:153    .text.CAN_IC_WRITE_REGISTER_BITWISE:0000000000000040 $d
-     /tmp/cczqHYjX.s:159    .text.CAN_IC_WRITE_REGISTER:0000000000000000 $t
-     /tmp/cczqHYjX.s:166    .text.CAN_IC_WRITE_REGISTER:0000000000000000 CAN_IC_WRITE_REGISTER
-     /tmp/cczqHYjX.s:217    .text.CAN_IC_WRITE_REGISTER:0000000000000038 $d
-     /tmp/cczqHYjX.s:223    .text.ConfigureCANSPI:0000000000000000 $t
-     /tmp/cczqHYjX.s:230    .text.ConfigureCANSPI:0000000000000000 ConfigureCANSPI
-     /tmp/cczqHYjX.s:314    .text.ConfigureCANSPI:000000000000006c $d
-     /tmp/cczqHYjX.s:320    .text.sendCANMessage:0000000000000000 $t
-     /tmp/cczqHYjX.s:327    .text.sendCANMessage:0000000000000000 sendCANMessage
-     /tmp/cczqHYjX.s:448    .text.sendCANMessage:000000000000009c $d
-     /tmp/cczqHYjX.s:454    .text.sendExtendedCANMessage:0000000000000000 $t
-     /tmp/cczqHYjX.s:461    .text.sendExtendedCANMessage:0000000000000000 sendExtendedCANMessage
-     /tmp/cczqHYjX.s:601    .text.sendExtendedCANMessage:00000000000000b8 $d
-                     .debug_frame:0000000000000010 $d
+C:\Users\marce\AppData\Local\Temp\cckCNfl6.s:18     .text.CAN_IC_READ_REGISTER:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cckCNfl6.s:24     .text.CAN_IC_READ_REGISTER:0000000000000000 CAN_IC_READ_REGISTER
+C:\Users\marce\AppData\Local\Temp\cckCNfl6.s:94     .text.CAN_IC_READ_REGISTER:000000000000004c $d
+C:\Users\marce\AppData\Local\Temp\cckCNfl6.s:100    .text.CAN_IC_WRITE_REGISTER_BITWISE:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cckCNfl6.s:106    .text.CAN_IC_WRITE_REGISTER_BITWISE:0000000000000000 CAN_IC_WRITE_REGISTER_BITWISE
+C:\Users\marce\AppData\Local\Temp\cckCNfl6.s:164    .text.CAN_IC_WRITE_REGISTER_BITWISE:0000000000000040 $d
+C:\Users\marce\AppData\Local\Temp\cckCNfl6.s:170    .text.CAN_IC_WRITE_REGISTER:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cckCNfl6.s:176    .text.CAN_IC_WRITE_REGISTER:0000000000000000 CAN_IC_WRITE_REGISTER
+C:\Users\marce\AppData\Local\Temp\cckCNfl6.s:231    .text.CAN_IC_WRITE_REGISTER:0000000000000038 $d
+C:\Users\marce\AppData\Local\Temp\cckCNfl6.s:237    .text.ConfigureCANSPI:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cckCNfl6.s:243    .text.ConfigureCANSPI:0000000000000000 ConfigureCANSPI
+C:\Users\marce\AppData\Local\Temp\cckCNfl6.s:344    .text.ConfigureCANSPI:0000000000000084 $d
+C:\Users\marce\AppData\Local\Temp\cckCNfl6.s:350    .text.sendCANMessage:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cckCNfl6.s:356    .text.sendCANMessage:0000000000000000 sendCANMessage
+C:\Users\marce\AppData\Local\Temp\cckCNfl6.s:496    .text.sendCANMessage:0000000000000090 $d
+C:\Users\marce\AppData\Local\Temp\cckCNfl6.s:502    .text.sendExtendedCANMessage:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cckCNfl6.s:508    .text.sendExtendedCANMessage:0000000000000000 sendExtendedCANMessage
+C:\Users\marce\AppData\Local\Temp\cckCNfl6.s:677    .text.sendExtendedCANMessage:00000000000000c4 $d
+C:\Users\marce\AppData\Local\Temp\cckCNfl6.s:683    .text.receiveCANMessage:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cckCNfl6.s:689    .text.receiveCANMessage:0000000000000000 receiveCANMessage
 
 UNDEFINED SYMBOLS
 HAL_GPIO_WritePin

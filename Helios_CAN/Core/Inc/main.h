@@ -59,6 +59,21 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define SPI1_CS_Pin GPIO_PIN_4
 #define SPI1_CS_GPIO_Port GPIOA
+#define CANINT_Pin GPIO_PIN_4
+#define CANINT_GPIO_Port GPIOC
+#define CAN_RX0BF_Pin GPIO_PIN_5
+#define CAN_RX0BF_GPIO_Port GPIOC
+#define CAN_RX0BF_EXTI_IRQn EXTI9_5_IRQn
+#define CAN_RX1BF_Pin GPIO_PIN_0
+#define CAN_RX1BF_GPIO_Port GPIOB
+#define GND_Pin GPIO_PIN_12
+#define GND_GPIO_Port GPIOB
+#define VDD_Pin GPIO_PIN_13
+#define VDD_GPIO_Port GPIOB
+#define BLUE_SWITCH_Pin GPIO_PIN_8
+#define BLUE_SWITCH_GPIO_Port GPIOC
+#define GREEN_SWITCH_Pin GPIO_PIN_9
+#define GREEN_SWITCH_GPIO_Port GPIOC
 #define LED_BLUE_Pin GPIO_PIN_10
 #define LED_BLUE_GPIO_Port GPIOC
 #define LED_GREEN_Pin GPIO_PIN_11

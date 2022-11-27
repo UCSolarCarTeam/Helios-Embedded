@@ -9,5 +9,6 @@ void CAN_IC_WRITE_REGISTER(uint8_t address, uint8_t value);
 void ConfigureCANSPI(void);
 void sendCANMessage(uint8_t channel, uint16_t ID, uint8_t DLC, uint8_t* data);
 void sendExtendedCANMessage(uint8_t channel, uint64_t ID, uint8_t DLC, uint8_t* data);
+void receiveCANMessage(uint8_t channel, uint32_t* ID, uint8_t* DLC, uint8_t* data);
 
 extern SPI_HandleTypeDef hspi1;

@@ -1,30 +1,31 @@
-ARM GAS  /tmp/cc9UWPO9.s 			page 1
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cc66elHh.s 			page 1
 
 
    1              		.cpu cortex-m3
-   2              		.eabi_attribute 20, 1
-   3              		.eabi_attribute 21, 1
-   4              		.eabi_attribute 23, 3
-   5              		.eabi_attribute 24, 1
-   6              		.eabi_attribute 25, 1
-   7              		.eabi_attribute 26, 1
-   8              		.eabi_attribute 30, 1
-   9              		.eabi_attribute 34, 1
-  10              		.eabi_attribute 18, 4
-  11              		.file	"stm32l1xx_it.c"
-  12              		.text
-  13              	.Ltext0:
-  14              		.cfi_sections	.debug_frame
-  15              		.section	.text.NMI_Handler,"ax",%progbits
-  16              		.align	1
-  17              		.global	NMI_Handler
-  18              		.syntax unified
-  19              		.thumb
-  20              		.thumb_func
-  21              		.fpu softvfp
-  23              	NMI_Handler:
-  24              	.LFB72:
-  25              		.file 1 "Core/Src/stm32l1xx_it.c"
+   2              		.arch armv7-m
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.file	"stm32l1xx_it.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.NMI_Handler,"ax",%progbits
+  18              		.align	1
+  19              		.global	NMI_Handler
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  24              	NMI_Handler:
+  25              	.LFB72:
+  26              		.file 1 "Core/Src/stm32l1xx_it.c"
    1:Core/Src/stm32l1xx_it.c **** /* USER CODE BEGIN Header */
    2:Core/Src/stm32l1xx_it.c **** /**
    3:Core/Src/stm32l1xx_it.c ****   ******************************************************************************
@@ -57,10 +58,10 @@ ARM GAS  /tmp/cc9UWPO9.s 			page 1
   30:Core/Src/stm32l1xx_it.c **** /* USER CODE END TD */
   31:Core/Src/stm32l1xx_it.c **** 
   32:Core/Src/stm32l1xx_it.c **** /* Private define ------------------------------------------------------------*/
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cc66elHh.s 			page 2
+
+
   33:Core/Src/stm32l1xx_it.c **** /* USER CODE BEGIN PD */
-ARM GAS  /tmp/cc9UWPO9.s 			page 2
-
-
   34:Core/Src/stm32l1xx_it.c **** 
   35:Core/Src/stm32l1xx_it.c **** /* USER CODE END PD */
   36:Core/Src/stm32l1xx_it.c **** 
@@ -99,35 +100,38 @@ ARM GAS  /tmp/cc9UWPO9.s 			page 1
   69:Core/Src/stm32l1xx_it.c ****   */
   70:Core/Src/stm32l1xx_it.c **** void NMI_Handler(void)
   71:Core/Src/stm32l1xx_it.c **** {
-  26              		.loc 1 71 0
-  27              		.cfi_startproc
-  28              		@ Volatile: function does not return.
-  29              		@ args = 0, pretend = 0, frame = 0
-  30              		@ frame_needed = 0, uses_anonymous_args = 0
-  31              		@ link register save eliminated.
-  32              	.L2:
-  33 0000 FEE7     		b	.L2
-  34              		.cfi_endproc
-  35              	.LFE72:
-  37              		.section	.text.HardFault_Handler,"ax",%progbits
-  38              		.align	1
-  39              		.global	HardFault_Handler
-  40              		.syntax unified
-  41              		.thumb
-  42              		.thumb_func
-  43              		.fpu softvfp
-  45              	HardFault_Handler:
-  46              	.LFB73:
-ARM GAS  /tmp/cc9UWPO9.s 			page 3
-
-
+  27              		.loc 1 71 1 view -0
+  28              		.cfi_startproc
+  29              		@ Volatile: function does not return.
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  33              	.L2:
   72:Core/Src/stm32l1xx_it.c ****   /* USER CODE BEGIN NonMaskableInt_IRQn 0 */
   73:Core/Src/stm32l1xx_it.c **** 
   74:Core/Src/stm32l1xx_it.c ****   /* USER CODE END NonMaskableInt_IRQn 0 */
   75:Core/Src/stm32l1xx_it.c ****   /* USER CODE BEGIN NonMaskableInt_IRQn 1 */
   76:Core/Src/stm32l1xx_it.c ****   while (1)
+  34              		.loc 1 76 3 discriminator 1 view .LVU1
   77:Core/Src/stm32l1xx_it.c ****   {
   78:Core/Src/stm32l1xx_it.c ****   }
+  35              		.loc 1 78 3 discriminator 1 view .LVU2
+  76:Core/Src/stm32l1xx_it.c ****   {
+  36              		.loc 1 76 9 discriminator 1 view .LVU3
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cc66elHh.s 			page 3
+
+
+  37 0000 FEE7     		b	.L2
+  38              		.cfi_endproc
+  39              	.LFE72:
+  41              		.section	.text.HardFault_Handler,"ax",%progbits
+  42              		.align	1
+  43              		.global	HardFault_Handler
+  44              		.syntax unified
+  45              		.thumb
+  46              		.thumb_func
+  48              	HardFault_Handler:
+  49              	.LFB73:
   79:Core/Src/stm32l1xx_it.c ****   /* USER CODE END NonMaskableInt_IRQn 1 */
   80:Core/Src/stm32l1xx_it.c **** }
   81:Core/Src/stm32l1xx_it.c **** 
@@ -136,33 +140,36 @@ ARM GAS  /tmp/cc9UWPO9.s 			page 1
   84:Core/Src/stm32l1xx_it.c ****   */
   85:Core/Src/stm32l1xx_it.c **** void HardFault_Handler(void)
   86:Core/Src/stm32l1xx_it.c **** {
-  47              		.loc 1 86 0
-  48              		.cfi_startproc
-  49              		@ Volatile: function does not return.
-  50              		@ args = 0, pretend = 0, frame = 0
-  51              		@ frame_needed = 0, uses_anonymous_args = 0
-  52              		@ link register save eliminated.
-  53              	.L4:
-  54 0000 FEE7     		b	.L4
-  55              		.cfi_endproc
-  56              	.LFE73:
-  58              		.section	.text.MemManage_Handler,"ax",%progbits
-  59              		.align	1
-  60              		.global	MemManage_Handler
-  61              		.syntax unified
-  62              		.thumb
-  63              		.thumb_func
-  64              		.fpu softvfp
-  66              	MemManage_Handler:
-  67              	.LFB74:
+  50              		.loc 1 86 1 view -0
+  51              		.cfi_startproc
+  52              		@ Volatile: function does not return.
+  53              		@ args = 0, pretend = 0, frame = 0
+  54              		@ frame_needed = 0, uses_anonymous_args = 0
+  55              		@ link register save eliminated.
+  56              	.L4:
   87:Core/Src/stm32l1xx_it.c ****   /* USER CODE BEGIN HardFault_IRQn 0 */
   88:Core/Src/stm32l1xx_it.c **** 
   89:Core/Src/stm32l1xx_it.c ****   /* USER CODE END HardFault_IRQn 0 */
   90:Core/Src/stm32l1xx_it.c ****   while (1)
+  57              		.loc 1 90 3 discriminator 1 view .LVU5
   91:Core/Src/stm32l1xx_it.c ****   {
   92:Core/Src/stm32l1xx_it.c ****     /* USER CODE BEGIN W1_HardFault_IRQn 0 */
   93:Core/Src/stm32l1xx_it.c ****     /* USER CODE END W1_HardFault_IRQn 0 */
   94:Core/Src/stm32l1xx_it.c ****   }
+  58              		.loc 1 94 3 discriminator 1 view .LVU6
+  90:Core/Src/stm32l1xx_it.c ****   {
+  59              		.loc 1 90 9 discriminator 1 view .LVU7
+  60 0000 FEE7     		b	.L4
+  61              		.cfi_endproc
+  62              	.LFE73:
+  64              		.section	.text.MemManage_Handler,"ax",%progbits
+  65              		.align	1
+  66              		.global	MemManage_Handler
+  67              		.syntax unified
+  68              		.thumb
+  69              		.thumb_func
+  71              	MemManage_Handler:
+  72              	.LFB74:
   95:Core/Src/stm32l1xx_it.c **** }
   96:Core/Src/stm32l1xx_it.c **** 
   97:Core/Src/stm32l1xx_it.c **** /**
@@ -170,36 +177,39 @@ ARM GAS  /tmp/cc9UWPO9.s 			page 1
   99:Core/Src/stm32l1xx_it.c ****   */
  100:Core/Src/stm32l1xx_it.c **** void MemManage_Handler(void)
  101:Core/Src/stm32l1xx_it.c **** {
-  68              		.loc 1 101 0
-  69              		.cfi_startproc
-  70              		@ Volatile: function does not return.
-  71              		@ args = 0, pretend = 0, frame = 0
-  72              		@ frame_needed = 0, uses_anonymous_args = 0
-  73              		@ link register save eliminated.
-  74              	.L6:
-  75 0000 FEE7     		b	.L6
-ARM GAS  /tmp/cc9UWPO9.s 			page 4
+  73              		.loc 1 101 1 view -0
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cc66elHh.s 			page 4
 
 
-  76              		.cfi_endproc
-  77              	.LFE74:
-  79              		.section	.text.BusFault_Handler,"ax",%progbits
-  80              		.align	1
-  81              		.global	BusFault_Handler
-  82              		.syntax unified
-  83              		.thumb
-  84              		.thumb_func
-  85              		.fpu softvfp
-  87              	BusFault_Handler:
-  88              	.LFB75:
+  74              		.cfi_startproc
+  75              		@ Volatile: function does not return.
+  76              		@ args = 0, pretend = 0, frame = 0
+  77              		@ frame_needed = 0, uses_anonymous_args = 0
+  78              		@ link register save eliminated.
+  79              	.L6:
  102:Core/Src/stm32l1xx_it.c ****   /* USER CODE BEGIN MemoryManagement_IRQn 0 */
  103:Core/Src/stm32l1xx_it.c **** 
  104:Core/Src/stm32l1xx_it.c ****   /* USER CODE END MemoryManagement_IRQn 0 */
  105:Core/Src/stm32l1xx_it.c ****   while (1)
+  80              		.loc 1 105 3 discriminator 1 view .LVU9
  106:Core/Src/stm32l1xx_it.c ****   {
  107:Core/Src/stm32l1xx_it.c ****     /* USER CODE BEGIN W1_MemoryManagement_IRQn 0 */
  108:Core/Src/stm32l1xx_it.c ****     /* USER CODE END W1_MemoryManagement_IRQn 0 */
  109:Core/Src/stm32l1xx_it.c ****   }
+  81              		.loc 1 109 3 discriminator 1 view .LVU10
+ 105:Core/Src/stm32l1xx_it.c ****   {
+  82              		.loc 1 105 9 discriminator 1 view .LVU11
+  83 0000 FEE7     		b	.L6
+  84              		.cfi_endproc
+  85              	.LFE74:
+  87              		.section	.text.BusFault_Handler,"ax",%progbits
+  88              		.align	1
+  89              		.global	BusFault_Handler
+  90              		.syntax unified
+  91              		.thumb
+  92              		.thumb_func
+  94              	BusFault_Handler:
+  95              	.LFB75:
  110:Core/Src/stm32l1xx_it.c **** }
  111:Core/Src/stm32l1xx_it.c **** 
  112:Core/Src/stm32l1xx_it.c **** /**
@@ -207,70 +217,76 @@ ARM GAS  /tmp/cc9UWPO9.s 			page 1
  114:Core/Src/stm32l1xx_it.c ****   */
  115:Core/Src/stm32l1xx_it.c **** void BusFault_Handler(void)
  116:Core/Src/stm32l1xx_it.c **** {
-  89              		.loc 1 116 0
-  90              		.cfi_startproc
-  91              		@ Volatile: function does not return.
-  92              		@ args = 0, pretend = 0, frame = 0
-  93              		@ frame_needed = 0, uses_anonymous_args = 0
-  94              		@ link register save eliminated.
-  95              	.L8:
-  96 0000 FEE7     		b	.L8
-  97              		.cfi_endproc
-  98              	.LFE75:
- 100              		.section	.text.UsageFault_Handler,"ax",%progbits
- 101              		.align	1
- 102              		.global	UsageFault_Handler
- 103              		.syntax unified
- 104              		.thumb
- 105              		.thumb_func
- 106              		.fpu softvfp
- 108              	UsageFault_Handler:
- 109              	.LFB76:
+  96              		.loc 1 116 1 view -0
+  97              		.cfi_startproc
+  98              		@ Volatile: function does not return.
+  99              		@ args = 0, pretend = 0, frame = 0
+ 100              		@ frame_needed = 0, uses_anonymous_args = 0
+ 101              		@ link register save eliminated.
+ 102              	.L8:
  117:Core/Src/stm32l1xx_it.c ****   /* USER CODE BEGIN BusFault_IRQn 0 */
  118:Core/Src/stm32l1xx_it.c **** 
  119:Core/Src/stm32l1xx_it.c ****   /* USER CODE END BusFault_IRQn 0 */
  120:Core/Src/stm32l1xx_it.c ****   while (1)
+ 103              		.loc 1 120 3 discriminator 1 view .LVU13
  121:Core/Src/stm32l1xx_it.c ****   {
  122:Core/Src/stm32l1xx_it.c ****     /* USER CODE BEGIN W1_BusFault_IRQn 0 */
  123:Core/Src/stm32l1xx_it.c ****     /* USER CODE END W1_BusFault_IRQn 0 */
  124:Core/Src/stm32l1xx_it.c ****   }
+ 104              		.loc 1 124 3 discriminator 1 view .LVU14
+ 120:Core/Src/stm32l1xx_it.c ****   {
+ 105              		.loc 1 120 9 discriminator 1 view .LVU15
+ 106 0000 FEE7     		b	.L8
+ 107              		.cfi_endproc
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cc66elHh.s 			page 5
+
+
+ 108              	.LFE75:
+ 110              		.section	.text.UsageFault_Handler,"ax",%progbits
+ 111              		.align	1
+ 112              		.global	UsageFault_Handler
+ 113              		.syntax unified
+ 114              		.thumb
+ 115              		.thumb_func
+ 117              	UsageFault_Handler:
+ 118              	.LFB76:
  125:Core/Src/stm32l1xx_it.c **** }
  126:Core/Src/stm32l1xx_it.c **** 
  127:Core/Src/stm32l1xx_it.c **** /**
  128:Core/Src/stm32l1xx_it.c ****   * @brief This function handles Undefined instruction or illegal state.
-ARM GAS  /tmp/cc9UWPO9.s 			page 5
-
-
  129:Core/Src/stm32l1xx_it.c ****   */
  130:Core/Src/stm32l1xx_it.c **** void UsageFault_Handler(void)
  131:Core/Src/stm32l1xx_it.c **** {
- 110              		.loc 1 131 0
- 111              		.cfi_startproc
- 112              		@ Volatile: function does not return.
- 113              		@ args = 0, pretend = 0, frame = 0
- 114              		@ frame_needed = 0, uses_anonymous_args = 0
- 115              		@ link register save eliminated.
- 116              	.L10:
- 117 0000 FEE7     		b	.L10
- 118              		.cfi_endproc
- 119              	.LFE76:
- 121              		.section	.text.DebugMon_Handler,"ax",%progbits
- 122              		.align	1
- 123              		.global	DebugMon_Handler
- 124              		.syntax unified
- 125              		.thumb
- 126              		.thumb_func
- 127              		.fpu softvfp
- 129              	DebugMon_Handler:
- 130              	.LFB77:
+ 119              		.loc 1 131 1 view -0
+ 120              		.cfi_startproc
+ 121              		@ Volatile: function does not return.
+ 122              		@ args = 0, pretend = 0, frame = 0
+ 123              		@ frame_needed = 0, uses_anonymous_args = 0
+ 124              		@ link register save eliminated.
+ 125              	.L10:
  132:Core/Src/stm32l1xx_it.c ****   /* USER CODE BEGIN UsageFault_IRQn 0 */
  133:Core/Src/stm32l1xx_it.c **** 
  134:Core/Src/stm32l1xx_it.c ****   /* USER CODE END UsageFault_IRQn 0 */
  135:Core/Src/stm32l1xx_it.c ****   while (1)
+ 126              		.loc 1 135 3 discriminator 1 view .LVU17
  136:Core/Src/stm32l1xx_it.c ****   {
  137:Core/Src/stm32l1xx_it.c ****     /* USER CODE BEGIN W1_UsageFault_IRQn 0 */
  138:Core/Src/stm32l1xx_it.c ****     /* USER CODE END W1_UsageFault_IRQn 0 */
  139:Core/Src/stm32l1xx_it.c ****   }
+ 127              		.loc 1 139 3 discriminator 1 view .LVU18
+ 135:Core/Src/stm32l1xx_it.c ****   {
+ 128              		.loc 1 135 9 discriminator 1 view .LVU19
+ 129 0000 FEE7     		b	.L10
+ 130              		.cfi_endproc
+ 131              	.LFE76:
+ 133              		.section	.text.DebugMon_Handler,"ax",%progbits
+ 134              		.align	1
+ 135              		.global	DebugMon_Handler
+ 136              		.syntax unified
+ 137              		.thumb
+ 138              		.thumb_func
+ 140              	DebugMon_Handler:
+ 141              	.LFB77:
  140:Core/Src/stm32l1xx_it.c **** }
  141:Core/Src/stm32l1xx_it.c **** 
  142:Core/Src/stm32l1xx_it.c **** /**
@@ -278,33 +294,33 @@ ARM GAS  /tmp/cc9UWPO9.s 			page 1
  144:Core/Src/stm32l1xx_it.c ****   */
  145:Core/Src/stm32l1xx_it.c **** void DebugMon_Handler(void)
  146:Core/Src/stm32l1xx_it.c **** {
- 131              		.loc 1 146 0
- 132              		.cfi_startproc
- 133              		@ args = 0, pretend = 0, frame = 0
- 134              		@ frame_needed = 0, uses_anonymous_args = 0
- 135              		@ link register save eliminated.
- 136 0000 7047     		bx	lr
- 137              		.cfi_endproc
- 138              	.LFE77:
- 140              		.section	.text.TIM2_IRQHandler,"ax",%progbits
- 141              		.align	1
- 142              		.global	TIM2_IRQHandler
- 143              		.syntax unified
- 144              		.thumb
- 145              		.thumb_func
- 146              		.fpu softvfp
- 148              	TIM2_IRQHandler:
- 149              	.LFB78:
+ 142              		.loc 1 146 1 view -0
+ 143              		.cfi_startproc
+ 144              		@ args = 0, pretend = 0, frame = 0
+ 145              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cc66elHh.s 			page 6
+
+
+ 146              		@ link register save eliminated.
  147:Core/Src/stm32l1xx_it.c ****   /* USER CODE BEGIN DebugMonitor_IRQn 0 */
  148:Core/Src/stm32l1xx_it.c **** 
  149:Core/Src/stm32l1xx_it.c ****   /* USER CODE END DebugMonitor_IRQn 0 */
-ARM GAS  /tmp/cc9UWPO9.s 			page 6
-
-
  150:Core/Src/stm32l1xx_it.c ****   /* USER CODE BEGIN DebugMonitor_IRQn 1 */
  151:Core/Src/stm32l1xx_it.c **** 
  152:Core/Src/stm32l1xx_it.c ****   /* USER CODE END DebugMonitor_IRQn 1 */
  153:Core/Src/stm32l1xx_it.c **** }
+ 147              		.loc 1 153 1 view .LVU21
+ 148 0000 7047     		bx	lr
+ 149              		.cfi_endproc
+ 150              	.LFE77:
+ 152              		.section	.text.EXTI9_5_IRQHandler,"ax",%progbits
+ 153              		.align	1
+ 154              		.global	EXTI9_5_IRQHandler
+ 155              		.syntax unified
+ 156              		.thumb
+ 157              		.thumb_func
+ 159              	EXTI9_5_IRQHandler:
+ 160              	.LFB78:
  154:Core/Src/stm32l1xx_it.c **** 
  155:Core/Src/stm32l1xx_it.c **** /******************************************************************************/
  156:Core/Src/stm32l1xx_it.c **** /* STM32L1xx Peripheral Interrupt Handlers                                    */
@@ -314,68 +330,114 @@ ARM GAS  /tmp/cc9UWPO9.s 			page 1
  160:Core/Src/stm32l1xx_it.c **** /******************************************************************************/
  161:Core/Src/stm32l1xx_it.c **** 
  162:Core/Src/stm32l1xx_it.c **** /**
- 163:Core/Src/stm32l1xx_it.c ****   * @brief This function handles TIM2 global interrupt.
+ 163:Core/Src/stm32l1xx_it.c ****   * @brief This function handles EXTI line[9:5] interrupts.
  164:Core/Src/stm32l1xx_it.c ****   */
- 165:Core/Src/stm32l1xx_it.c **** void TIM2_IRQHandler(void)
+ 165:Core/Src/stm32l1xx_it.c **** void EXTI9_5_IRQHandler(void)
  166:Core/Src/stm32l1xx_it.c **** {
- 150              		.loc 1 166 0
- 151              		.cfi_startproc
- 152              		@ args = 0, pretend = 0, frame = 0
- 153              		@ frame_needed = 0, uses_anonymous_args = 0
- 154              		.loc 1 166 0
- 155 0000 08B5     		push	{r3, lr}
- 156              	.LCFI0:
- 157              		.cfi_def_cfa_offset 8
- 158              		.cfi_offset 3, -8
- 159              		.cfi_offset 14, -4
- 167:Core/Src/stm32l1xx_it.c ****   /* USER CODE BEGIN TIM2_IRQn 0 */
+ 161              		.loc 1 166 1 view -0
+ 162              		.cfi_startproc
+ 163              		@ args = 0, pretend = 0, frame = 0
+ 164              		@ frame_needed = 0, uses_anonymous_args = 0
+ 165 0000 08B5     		push	{r3, lr}
+ 166              	.LCFI0:
+ 167              		.cfi_def_cfa_offset 8
+ 168              		.cfi_offset 3, -8
+ 169              		.cfi_offset 14, -4
+ 167:Core/Src/stm32l1xx_it.c ****   /* USER CODE BEGIN EXTI9_5_IRQn 0 */
  168:Core/Src/stm32l1xx_it.c **** 
- 169:Core/Src/stm32l1xx_it.c ****   /* USER CODE END TIM2_IRQn 0 */
- 170:Core/Src/stm32l1xx_it.c ****   HAL_TIM_IRQHandler(&htim2);
- 160              		.loc 1 170 0
- 161 0002 0248     		ldr	r0, .L14
- 162 0004 FFF7FEFF 		bl	HAL_TIM_IRQHandler
- 163              	.LVL0:
- 164 0008 08BD     		pop	{r3, pc}
- 165              	.L15:
- 166 000a 00BF     		.align	2
- 167              	.L14:
- 168 000c 00000000 		.word	htim2
- 169              		.cfi_endproc
- 170              	.LFE78:
- 172              		.text
- 173              	.Letext0:
- 174              		.file 2 "/opt/gcc4mbed/gcc-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h"
- 175              		.file 3 "/opt/gcc4mbed/gcc-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h"
- 176              		.file 4 "Drivers/CMSIS/Include/core_cm3.h"
- 177              		.file 5 "Drivers/CMSIS/Device/ST/STM32L1xx/Include/system_stm32l1xx.h"
- 178              		.file 6 "Drivers/CMSIS/Device/ST/STM32L1xx/Include/stm32l152xe.h"
- 179              		.file 7 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_def.h"
- 180              		.file 8 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_dma.h"
- 181              		.file 9 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_tim.h"
- 182              		.file 10 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal.h"
-ARM GAS  /tmp/cc9UWPO9.s 			page 7
+ 169:Core/Src/stm32l1xx_it.c ****   /* USER CODE END EXTI9_5_IRQn 0 */
+ 170:Core/Src/stm32l1xx_it.c ****   HAL_GPIO_EXTI_IRQHandler(CAN_RX0BF_Pin);
+ 170              		.loc 1 170 3 view .LVU23
+ 171 0002 2020     		movs	r0, #32
+ 172 0004 FFF7FEFF 		bl	HAL_GPIO_EXTI_IRQHandler
+ 173              	.LVL0:
+ 171:Core/Src/stm32l1xx_it.c ****   /* USER CODE BEGIN EXTI9_5_IRQn 1 */
+ 172:Core/Src/stm32l1xx_it.c **** 
+ 173:Core/Src/stm32l1xx_it.c ****   /* USER CODE END EXTI9_5_IRQn 1 */
+ 174:Core/Src/stm32l1xx_it.c **** }
+ 174              		.loc 1 174 1 is_stmt 0 view .LVU24
+ 175 0008 08BD     		pop	{r3, pc}
+ 176              		.cfi_endproc
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cc66elHh.s 			page 7
+
+
+ 177              	.LFE78:
+ 179              		.section	.text.TIM2_IRQHandler,"ax",%progbits
+ 180              		.align	1
+ 181              		.global	TIM2_IRQHandler
+ 182              		.syntax unified
+ 183              		.thumb
+ 184              		.thumb_func
+ 186              	TIM2_IRQHandler:
+ 187              	.LFB79:
+ 175:Core/Src/stm32l1xx_it.c **** 
+ 176:Core/Src/stm32l1xx_it.c **** /**
+ 177:Core/Src/stm32l1xx_it.c ****   * @brief This function handles TIM2 global interrupt.
+ 178:Core/Src/stm32l1xx_it.c ****   */
+ 179:Core/Src/stm32l1xx_it.c **** void TIM2_IRQHandler(void)
+ 180:Core/Src/stm32l1xx_it.c **** {
+ 188              		.loc 1 180 1 is_stmt 1 view -0
+ 189              		.cfi_startproc
+ 190              		@ args = 0, pretend = 0, frame = 0
+ 191              		@ frame_needed = 0, uses_anonymous_args = 0
+ 192 0000 08B5     		push	{r3, lr}
+ 193              	.LCFI1:
+ 194              		.cfi_def_cfa_offset 8
+ 195              		.cfi_offset 3, -8
+ 196              		.cfi_offset 14, -4
+ 181:Core/Src/stm32l1xx_it.c ****   /* USER CODE BEGIN TIM2_IRQn 0 */
+ 182:Core/Src/stm32l1xx_it.c **** 
+ 183:Core/Src/stm32l1xx_it.c ****   /* USER CODE END TIM2_IRQn 0 */
+ 184:Core/Src/stm32l1xx_it.c ****   HAL_TIM_IRQHandler(&htim2);
+ 197              		.loc 1 184 3 view .LVU26
+ 198 0002 0248     		ldr	r0, .L16
+ 199 0004 FFF7FEFF 		bl	HAL_TIM_IRQHandler
+ 200              	.LVL1:
+ 185:Core/Src/stm32l1xx_it.c ****   /* USER CODE BEGIN TIM2_IRQn 1 */
+ 186:Core/Src/stm32l1xx_it.c **** 
+ 187:Core/Src/stm32l1xx_it.c ****   /* USER CODE END TIM2_IRQn 1 */
+ 188:Core/Src/stm32l1xx_it.c **** }
+ 201              		.loc 1 188 1 is_stmt 0 view .LVU27
+ 202 0008 08BD     		pop	{r3, pc}
+ 203              	.L17:
+ 204 000a 00BF     		.align	2
+ 205              	.L16:
+ 206 000c 00000000 		.word	htim2
+ 207              		.cfi_endproc
+ 208              	.LFE79:
+ 210              		.text
+ 211              	.Letext0:
+ 212              		.file 2 "c:\\st\\stm32cubeide_1.10.1\\stm32cubeide\\plugins\\com.st.stm32cube.ide.mcu.externaltool
+ 213              		.file 3 "c:\\st\\stm32cubeide_1.10.1\\stm32cubeide\\plugins\\com.st.stm32cube.ide.mcu.externaltool
+ 214              		.file 4 "Drivers/CMSIS/Device/ST/STM32L1xx/Include/stm32l152xe.h"
+ 215              		.file 5 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_def.h"
+ 216              		.file 6 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_dma.h"
+ 217              		.file 7 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_tim.h"
+ 218              		.file 8 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_gpio.h"
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cc66elHh.s 			page 8
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32l1xx_it.c
-     /tmp/cc9UWPO9.s:16     .text.NMI_Handler:0000000000000000 $t
-     /tmp/cc9UWPO9.s:23     .text.NMI_Handler:0000000000000000 NMI_Handler
-     /tmp/cc9UWPO9.s:38     .text.HardFault_Handler:0000000000000000 $t
-     /tmp/cc9UWPO9.s:45     .text.HardFault_Handler:0000000000000000 HardFault_Handler
-     /tmp/cc9UWPO9.s:59     .text.MemManage_Handler:0000000000000000 $t
-     /tmp/cc9UWPO9.s:66     .text.MemManage_Handler:0000000000000000 MemManage_Handler
-     /tmp/cc9UWPO9.s:80     .text.BusFault_Handler:0000000000000000 $t
-     /tmp/cc9UWPO9.s:87     .text.BusFault_Handler:0000000000000000 BusFault_Handler
-     /tmp/cc9UWPO9.s:101    .text.UsageFault_Handler:0000000000000000 $t
-     /tmp/cc9UWPO9.s:108    .text.UsageFault_Handler:0000000000000000 UsageFault_Handler
-     /tmp/cc9UWPO9.s:122    .text.DebugMon_Handler:0000000000000000 $t
-     /tmp/cc9UWPO9.s:129    .text.DebugMon_Handler:0000000000000000 DebugMon_Handler
-     /tmp/cc9UWPO9.s:141    .text.TIM2_IRQHandler:0000000000000000 $t
-     /tmp/cc9UWPO9.s:148    .text.TIM2_IRQHandler:0000000000000000 TIM2_IRQHandler
-     /tmp/cc9UWPO9.s:168    .text.TIM2_IRQHandler:000000000000000c $d
-                     .debug_frame:0000000000000010 $d
+C:\Users\marce\AppData\Local\Temp\cc66elHh.s:18     .text.NMI_Handler:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cc66elHh.s:24     .text.NMI_Handler:0000000000000000 NMI_Handler
+C:\Users\marce\AppData\Local\Temp\cc66elHh.s:42     .text.HardFault_Handler:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cc66elHh.s:48     .text.HardFault_Handler:0000000000000000 HardFault_Handler
+C:\Users\marce\AppData\Local\Temp\cc66elHh.s:65     .text.MemManage_Handler:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cc66elHh.s:71     .text.MemManage_Handler:0000000000000000 MemManage_Handler
+C:\Users\marce\AppData\Local\Temp\cc66elHh.s:88     .text.BusFault_Handler:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cc66elHh.s:94     .text.BusFault_Handler:0000000000000000 BusFault_Handler
+C:\Users\marce\AppData\Local\Temp\cc66elHh.s:111    .text.UsageFault_Handler:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cc66elHh.s:117    .text.UsageFault_Handler:0000000000000000 UsageFault_Handler
+C:\Users\marce\AppData\Local\Temp\cc66elHh.s:134    .text.DebugMon_Handler:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cc66elHh.s:140    .text.DebugMon_Handler:0000000000000000 DebugMon_Handler
+C:\Users\marce\AppData\Local\Temp\cc66elHh.s:153    .text.EXTI9_5_IRQHandler:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cc66elHh.s:159    .text.EXTI9_5_IRQHandler:0000000000000000 EXTI9_5_IRQHandler
+C:\Users\marce\AppData\Local\Temp\cc66elHh.s:180    .text.TIM2_IRQHandler:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cc66elHh.s:186    .text.TIM2_IRQHandler:0000000000000000 TIM2_IRQHandler
+C:\Users\marce\AppData\Local\Temp\cc66elHh.s:206    .text.TIM2_IRQHandler:000000000000000c $d
 
 UNDEFINED SYMBOLS
+HAL_GPIO_EXTI_IRQHandler
 HAL_TIM_IRQHandler
 htim2

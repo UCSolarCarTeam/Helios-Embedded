@@ -1,0 +1,143 @@
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccKBRZPq.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.arch armv7-m
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.file	"GreenSwitchTask.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.greenSwitchTask,"ax",%progbits
+  18              		.align	1
+  19              		.global	greenSwitchTask
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  24              	greenSwitchTask:
+  25              	.LVL0:
+  26              	.LFB76:
+  27              		.file 1 "Core/Src/GreenSwitchTask.c"
+   1:Core/Src/GreenSwitchTask.c **** /*
+   2:Core/Src/GreenSwitchTask.c ****  * GreenSwitchTask.c
+   3:Core/Src/GreenSwitchTask.c ****  *
+   4:Core/Src/GreenSwitchTask.c ****  *  Created on: Nov. 23, 2022
+   5:Core/Src/GreenSwitchTask.c ****  *      Author: marce
+   6:Core/Src/GreenSwitchTask.c ****  */
+   7:Core/Src/GreenSwitchTask.c **** 
+   8:Core/Src/GreenSwitchTask.c **** #include "GreenSwitchTask.h"
+   9:Core/Src/GreenSwitchTask.c **** 
+  10:Core/Src/GreenSwitchTask.c **** static const uint32_t GREEN_LED_EXID = 0xBBBBBBB;
+  11:Core/Src/GreenSwitchTask.c **** 
+  12:Core/Src/GreenSwitchTask.c **** void greenSwitchTask(void const* arg)
+  13:Core/Src/GreenSwitchTask.c **** {
+  28              		.loc 1 13 1 view -0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		.loc 1 13 1 is_stmt 0 view .LVU1
+  33 0000 10B5     		push	{r4, lr}
+  34              	.LCFI0:
+  35              		.cfi_def_cfa_offset 8
+  36              		.cfi_offset 4, -8
+  37              		.cfi_offset 14, -4
+  14:Core/Src/GreenSwitchTask.c ****     //One time osDelayUntil initialization
+  15:Core/Src/GreenSwitchTask.c ****     uint32_t prevWakeTime = osKernelSysTick();
+  38              		.loc 1 15 5 is_stmt 1 view .LVU2
+  39              		.loc 1 15 29 is_stmt 0 view .LVU3
+  40 0002 FFF7FEFF 		bl	osKernelGetSysTimerCount
+  41              	.LVL1:
+  16:Core/Src/GreenSwitchTask.c **** 
+  17:Core/Src/GreenSwitchTask.c ****     uint8_t data[1] = {0x3};
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccKBRZPq.s 			page 2
+
+
+  42              		.loc 1 17 5 is_stmt 1 view .LVU4
+  43              	.L4:
+  18:Core/Src/GreenSwitchTask.c **** 
+  19:Core/Src/GreenSwitchTask.c ****     for (;;)
+  44              		.loc 1 19 5 view .LVU5
+  20:Core/Src/GreenSwitchTask.c ****     {
+  21:Core/Src/GreenSwitchTask.c **** 
+  22:Core/Src/GreenSwitchTask.c ****     	osDelay(10);
+  45              		.loc 1 22 6 view .LVU6
+  46 0006 0A20     		movs	r0, #10
+  47 0008 FFF7FEFF 		bl	osDelay
+  48              	.LVL2:
+  23:Core/Src/GreenSwitchTask.c ****     	if (HAL_GPIO_ReadPin(GREEN_SWITCH_GPIO_Port, GREEN_SWITCH_Pin)) {
+  49              		.loc 1 23 6 view .LVU7
+  50              		.loc 1 23 10 is_stmt 0 view .LVU8
+  51 000c 4FF40071 		mov	r1, #512
+  52 0010 0548     		ldr	r0, .L6
+  53 0012 FFF7FEFF 		bl	HAL_GPIO_ReadPin
+  54              	.LVL3:
+  24:Core/Src/GreenSwitchTask.c ****     		data[0] = 0x3;
+  25:Core/Src/GreenSwitchTask.c ****     	} else {
+  26:Core/Src/GreenSwitchTask.c ****     		data[0] = 0x0;
+  27:Core/Src/GreenSwitchTask.c ****     	}
+  28:Core/Src/GreenSwitchTask.c **** 
+  29:Core/Src/GreenSwitchTask.c ****     	if (osMutexWait(SPIMutexHandle, 0) == osOK) {
+  55              		.loc 1 29 6 is_stmt 1 view .LVU9
+  56              		.loc 1 29 10 is_stmt 0 view .LVU10
+  57 0016 054C     		ldr	r4, .L6+4
+  58 0018 0021     		movs	r1, #0
+  59 001a 2068     		ldr	r0, [r4]
+  60 001c FFF7FEFF 		bl	osMutexAcquire
+  61              	.LVL4:
+  30:Core/Src/GreenSwitchTask.c **** 			//sendExtendedCANMessage(1, GREEN_LED_EXID, 1, data);
+  31:Core/Src/GreenSwitchTask.c **** 		}
+  62              		.loc 1 31 3 is_stmt 1 view .LVU11
+  32:Core/Src/GreenSwitchTask.c **** 
+  33:Core/Src/GreenSwitchTask.c ****     	osMutexRelease(SPIMutexHandle);
+  63              		.loc 1 33 6 view .LVU12
+  64 0020 2068     		ldr	r0, [r4]
+  65 0022 FFF7FEFF 		bl	osMutexRelease
+  66              	.LVL5:
+  19:Core/Src/GreenSwitchTask.c ****     {
+  67              		.loc 1 19 11 view .LVU13
+  22:Core/Src/GreenSwitchTask.c ****     	if (HAL_GPIO_ReadPin(GREEN_SWITCH_GPIO_Port, GREEN_SWITCH_Pin)) {
+  68              		.loc 1 22 6 is_stmt 0 view .LVU14
+  69 0026 EEE7     		b	.L4
+  70              	.L7:
+  71              		.align	2
+  72              	.L6:
+  73 0028 00080240 		.word	1073874944
+  74 002c 00000000 		.word	SPIMutexHandle
+  75              		.cfi_endproc
+  76              	.LFE76:
+  78              		.text
+  79              	.Letext0:
+  80              		.file 2 "c:\\st\\stm32cubeide_1.10.1\\stm32cubeide\\plugins\\com.st.stm32cube.ide.mcu.externaltool
+  81              		.file 3 "c:\\st\\stm32cubeide_1.10.1\\stm32cubeide\\plugins\\com.st.stm32cube.ide.mcu.externaltool
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccKBRZPq.s 			page 3
+
+
+  82              		.file 4 "Drivers/CMSIS/Device/ST/STM32L1xx/Include/stm32l152xe.h"
+  83              		.file 5 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_gpio.h"
+  84              		.file 6 "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h"
+  85              		.file 7 "Core/Inc/GreenSwitchTask.h"
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccKBRZPq.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 GreenSwitchTask.c
+C:\Users\marce\AppData\Local\Temp\ccKBRZPq.s:18     .text.greenSwitchTask:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccKBRZPq.s:24     .text.greenSwitchTask:0000000000000000 greenSwitchTask
+C:\Users\marce\AppData\Local\Temp\ccKBRZPq.s:73     .text.greenSwitchTask:0000000000000028 $d
+
+UNDEFINED SYMBOLS
+osKernelGetSysTimerCount
+osDelay
+HAL_GPIO_ReadPin
+osMutexAcquire
+osMutexRelease
+SPIMutexHandle
