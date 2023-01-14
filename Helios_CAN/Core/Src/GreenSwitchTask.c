@@ -18,7 +18,6 @@ void greenSwitchTask(void const* arg)
 
     for (;;)
     {
-
     	osDelay(10);
     	if (HAL_GPIO_ReadPin(GREEN_SWITCH_GPIO_Port, GREEN_SWITCH_Pin)) {
     		data[0] = 0x3;
@@ -27,7 +26,7 @@ void greenSwitchTask(void const* arg)
     	}
 
     	if (osMutexWait(SPIMutexHandle, 0) == osOK) {
-			//sendExtendedCANMessage(1, GREEN_LED_EXID, 1, data);
+			sendExtendedCANMessage(1, GREEN_LED_EXID, 1, data);
 		}
 
     	osMutexRelease(SPIMutexHandle);

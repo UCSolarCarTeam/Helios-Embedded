@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
   30:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
   31:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****      -@-   In Memory-to-Memory transfer mode, Circular mode is not allowed.
   32:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****      *** Polling mode IO operation ***
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 2
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 2
 
 
   33:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****      =================================
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
   87:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****   * @{
   88:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****   */
   89:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 3
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 3
 
 
   90:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** /** @defgroup DMA DMA
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  144:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** {
  145:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****   uint32_t tmp;
  146:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 4
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 4
 
 
  147:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****   /* Check the DMA handle allocation */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  201:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****   /* Write to DMA Channel CR register */
  202:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****   hdma->Instance->CCR = tmp;
  203:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 5
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 5
 
 
  204:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****   /* Initialise the error code */
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  258:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****   /* Reset DMA Channel CR register */
  259:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****   hdma->Instance->CCR = 0U;
  260:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 6
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 6
 
 
  261:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****   /* Clear all flags */
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  315:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** {
  316:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****   HAL_StatusTypeDef status = HAL_OK;
  317:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 7
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 7
 
 
  318:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****   /* Check the parameters */
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  372:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
  373:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****     /* Disable the peripheral */
  374:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****     __HAL_DMA_DISABLE(hdma);
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 8
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 8
 
 
  375:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  429:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****     __HAL_DMA_DISABLE_IT(hdma, (DMA_IT_TC | DMA_IT_HT | DMA_IT_TE));
  430:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
  431:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****     /* Disable the channel */
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 9
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 9
 
 
  432:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****     __HAL_DMA_DISABLE(hdma);
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  486:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****   }
  487:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****   return status;
  488:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** }
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 10
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 10
 
 
  489:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  543:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****       hdma->ErrorCode = HAL_DMA_ERROR_TE;
  544:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
  545:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****       /* Change the DMA state */
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 11
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 11
 
 
  546:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****       hdma->State= HAL_DMA_STATE_READY;
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  600:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** {
  601:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****   uint32_t flag_it = hdma->DmaBaseAddress->ISR;
  602:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****   uint32_t source_it = hdma->Instance->CCR;
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 12
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 12
 
 
  603:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  657:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****     /* A hardware clear of its EN bits is performed */
  658:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****     /* Disable ALL DMA IT */
  659:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****     __HAL_DMA_DISABLE_IT(hdma, (DMA_IT_TC | DMA_IT_HT | DMA_IT_TE));
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 13
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 13
 
 
  660:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  714:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
  715:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****      case  HAL_DMA_XFER_ERROR_CB_ID:
  716:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****            hdma->XferErrorCallback = pCallback;
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 14
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 14
 
 
  717:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****            break;
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  771:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****            hdma->XferAbortCallback = NULL;
  772:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****            break;
  773:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 15
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 15
 
 
  774:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****     case   HAL_DMA_XFER_ALL_CB_ID:
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  828:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****   return hdma->State;
  829:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** }
  830:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 16
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 16
 
 
  831:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** /**
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
   45              		.loc 1 866 30 view .LVU6
   46 000e D0F83CC0 		ldr	ip, [r0, #60]
   47 0012 CCF80440 		str	r4, [ip, #4]
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 17
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 17
 
 
  867:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
   79              	.LVL3:
   80              	.L5:
   81              	.LCFI2:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 18
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 18
 
 
   82              		.cfi_restore_state
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  125              		.loc 1 155 3 view .LVU32
  156:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****   assert_param(IS_DMA_MEMORY_INC_STATE(hdma->Init.MemInc));
  126              		.loc 1 156 3 view .LVU33
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 19
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 19
 
 
  157:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****   assert_param(IS_DMA_PERIPHERAL_DATA_SIZE(hdma->Init.PeriphDataAlignment));
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  162              		.loc 1 188 7 is_stmt 0 view .LVU52
  163 002a 0168     		ldr	r1, [r0]
  164              	.LVL7:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 20
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 20
 
 
  191:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****                       DMA_CCR_MINC  | DMA_CCR_PINC    | DMA_CCR_CIRC   |
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  208:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
  203              		.loc 1 208 3 is_stmt 1 view .LVU69
  208:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 21
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 21
 
 
  204              		.loc 1 208 15 is_stmt 0 view .LVU70
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  245              		.loc 1 150 12 view .LVU83
  246 007a 0120     		movs	r0, #1
  247              	.LVL13:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 22
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 22
 
 
  214:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  242:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****     hdma->DmaBaseAddress = DMA1;
  295              		.loc 1 242 5 is_stmt 1 view .LVU93
  242:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****     hdma->DmaBaseAddress = DMA1;
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 23
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 23
 
 
  296              		.loc 1 242 53 is_stmt 0 view .LVU94
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  333              		.loc 1 266 30 is_stmt 0 view .LVU111
  334 0040 D862     		str	r0, [r3, #44]
  267:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****   hdma->XferAbortCallback = NULL;
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 24
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 24
 
 
  335              		.loc 1 267 3 is_stmt 1 view .LVU112
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  370              		.loc 1 249 5 is_stmt 1 view .LVU131
  249:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****   }
  371              		.loc 1 249 26 is_stmt 0 view .LVU132
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 25
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 25
 
 
  372 0062 074A     		ldr	r2, .L22+20
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  322:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
  421              		.loc 1 322 3 view .LVU140
  422 0004 90F82000 		ldrb	r0, [r0, #32]	@ zero_extendqisi2
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 26
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 26
 
 
  423              	.LVL22:
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  460              		.loc 1 328 21 is_stmt 0 view .LVU157
  461 002c 0025     		movs	r5, #0
  462 002e A563     		str	r5, [r4, #56]
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 27
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 27
 
 
  331:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  511              		.loc 1 359 3 is_stmt 1 view .LVU165
  512              	.LVL30:
  362:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 28
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 28
 
 
  513              		.loc 1 362 3 view .LVU166
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  550              		.loc 1 370 17 is_stmt 0 view .LVU183
  551 0026 0220     		movs	r0, #2
  552 0028 84F82100 		strb	r0, [r4, #33]
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 29
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 29
 
 
  371:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  595 006e 1360     		str	r3, [r2]
  596 0070 EDE7     		b	.L34
  597              	.LVL37:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 30
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 30
 
 
  598              	.L35:
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  424:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****   }
  641              		.loc 1 424 12 view .LVU209
  642 0016 7047     		bx	lr
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 31
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 31
 
 
  643              	.LVL40:
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  681              		.cfi_endproc
  682              	.LFE76:
  684              		.section	.text.HAL_DMA_Abort_IT,"ax",%progbits
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 32
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 32
 
 
  685              		.align	1
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  467:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
  728              		.loc 1 467 5 is_stmt 1 view .LVU238
  729 0014 0268     		ldr	r2, [r0]
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 33
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 33
 
 
  730 0016 1368     		ldr	r3, [r2]
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  767 0048 0020     		movs	r0, #0
  768 004a E2E7     		b	.L43
  769              	.LVL48:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 34
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 34
 
 
  770              	.L44:
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  815 0010 0423     		movs	r3, #4
  816 0012 8363     		str	r3, [r0, #56]
  507:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****     return HAL_ERROR;
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 35
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 35
 
 
  817              		.loc 1 507 5 is_stmt 1 view .LVU267
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  531:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
  855              		.loc 1 531 3 is_stmt 1 view .LVU284
  531:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 36
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 36
 
 
  856              		.loc 1 531 15 is_stmt 0 view .LVU285
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  893              		.loc 1 556 26 view .LVU302
  894 006a A0EB0800 		sub	r0, r0, r8
  556:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****       {
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 37
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 37
 
 
  895              		.loc 1 556 9 view .LVU303
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  527:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****   }
  933              		.loc 1 527 33 is_stmt 0 view .LVU320
  934 0092 066C     		ldr	r6, [r0, #64]
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 38
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 38
 
 
  527:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****   }
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  970              		.loc 1 575 56 is_stmt 0 view .LVU339
  971 00b8 236C     		ldr	r3, [r4, #64]
  575:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 39
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 39
 
 
  972              		.loc 1 575 70 view .LVU340
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  1014              	HAL_DMA_IRQHandler:
  1015              	.LVL62:
  1016              	.LFB79:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 40
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 40
 
 
  600:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****   uint32_t flag_it = hdma->DmaBaseAddress->ISR;
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  608:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****     {
  1056              		.loc 1 608 23 is_stmt 0 view .LVU370
  1057 001e 2368     		ldr	r3, [r4]
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 41
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 41
 
 
  608:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****     {
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  1096              		.loc 1 627 11 view .LVU386
  1097 0048 0A42     		tst	r2, r1
  1098 004a 1CD0     		beq	.L67
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 42
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 42
 
 
  627:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****   {
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  646:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****     {
  1136              		.loc 1 646 12 is_stmt 0 view .LVU404
  1137 007c 836A     		ldr	r3, [r0, #40]
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 43
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 43
 
 
  646:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****     {
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  1176              		.loc 1 665 21 is_stmt 0 view .LVU420
  1177 00ae 8263     		str	r2, [r0, #56]
  668:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 44
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 44
 
 
  1178              		.loc 1 668 5 is_stmt 1 view .LVU421
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  1220              		.loc 1 701 3 view .LVU435
  701:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
  1221              		.loc 1 701 3 view .LVU436
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 45
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 45
 
 
  1222 0002 90F82000 		ldrb	r0, [r0, #32]	@ zero_extendqisi2
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  1262 002f 0B       		.byte	(.L73-.L74)/2
  1263              		.p2align 1
  1264              	.L77:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 46
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 46
 
 
  708:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****            break;
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  1299 0046 E9E7     		b	.L72
  1300              	.L78:
  701:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 47
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 47
 
 
  1301              		.loc 1 701 3 view .LVU471
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  788:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****   }
  1345              		.loc 1 788 12 view .LVU484
  1346 001a 0120     		movs	r0, #1
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 48
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 48
 
 
  1347              	.L83:
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  1387              	.L87:
  767:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****            break;
  1388              		.loc 1 767 12 view .LVU499
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 49
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 49
 
 
  767:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_dma.c ****            break;
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  1428              		.align	1
  1429              		.global	HAL_DMA_GetState
  1430              		.syntax unified
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 50
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 50
 
 
  1431              		.thumb
@@ -2997,44 +2997,44 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 1
  1480              		.file 5 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_def.h"
  1481              		.file 6 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_dma.h"
  1482              		.file 7 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal.h"
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s 			page 51
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s 			page 51
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32l1xx_hal_dma.c
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:18     .text.DMA_SetConfig:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:23     .text.DMA_SetConfig:0000000000000000 DMA_SetConfig
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:99     .text.HAL_DMA_Init:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:105    .text.HAL_DMA_Init:0000000000000000 HAL_DMA_Init
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:253    .text.HAL_DMA_Init:0000000000000080 $d
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:263    .text.HAL_DMA_DeInit:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:269    .text.HAL_DMA_DeInit:0000000000000000 HAL_DMA_DeInit
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:385    .text.HAL_DMA_DeInit:000000000000006c $d
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:395    .text.HAL_DMA_Start:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:401    .text.HAL_DMA_Start:0000000000000000 HAL_DMA_Start
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:489    .text.HAL_DMA_Start_IT:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:495    .text.HAL_DMA_Start_IT:0000000000000000 HAL_DMA_Start_IT
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:606    .text.HAL_DMA_Abort:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:612    .text.HAL_DMA_Abort:0000000000000000 HAL_DMA_Abort
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:685    .text.HAL_DMA_Abort_IT:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:691    .text.HAL_DMA_Abort_IT:0000000000000000 HAL_DMA_Abort_IT
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:780    .text.HAL_DMA_PollForTransfer:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:786    .text.HAL_DMA_PollForTransfer:0000000000000000 HAL_DMA_PollForTransfer
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:1008   .text.HAL_DMA_IRQHandler:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:1014   .text.HAL_DMA_IRQHandler:0000000000000000 HAL_DMA_IRQHandler
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:1202   .text.HAL_DMA_RegisterCallback:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:1208   .text.HAL_DMA_RegisterCallback:0000000000000000 HAL_DMA_RegisterCallback
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:1259   .text.HAL_DMA_RegisterCallback:000000000000002c $d
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:1263   .text.HAL_DMA_RegisterCallback:0000000000000030 $t
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:1309   .text.HAL_DMA_UnRegisterCallback:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:1315   .text.HAL_DMA_UnRegisterCallback:0000000000000000 HAL_DMA_UnRegisterCallback
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:1364   .text.HAL_DMA_UnRegisterCallback:000000000000002c $d
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:1428   .text.HAL_DMA_GetState:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:1434   .text.HAL_DMA_GetState:0000000000000000 HAL_DMA_GetState
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:1452   .text.HAL_DMA_GetError:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:1458   .text.HAL_DMA_GetError:0000000000000000 HAL_DMA_GetError
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:1369   .text.HAL_DMA_UnRegisterCallback:0000000000000031 $d
-C:\Users\marce\AppData\Local\Temp\ccjQqqbs.s:1369   .text.HAL_DMA_UnRegisterCallback:0000000000000032 $t
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:18     .text.DMA_SetConfig:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:23     .text.DMA_SetConfig:0000000000000000 DMA_SetConfig
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:99     .text.HAL_DMA_Init:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:105    .text.HAL_DMA_Init:0000000000000000 HAL_DMA_Init
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:253    .text.HAL_DMA_Init:0000000000000080 $d
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:263    .text.HAL_DMA_DeInit:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:269    .text.HAL_DMA_DeInit:0000000000000000 HAL_DMA_DeInit
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:385    .text.HAL_DMA_DeInit:000000000000006c $d
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:395    .text.HAL_DMA_Start:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:401    .text.HAL_DMA_Start:0000000000000000 HAL_DMA_Start
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:489    .text.HAL_DMA_Start_IT:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:495    .text.HAL_DMA_Start_IT:0000000000000000 HAL_DMA_Start_IT
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:606    .text.HAL_DMA_Abort:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:612    .text.HAL_DMA_Abort:0000000000000000 HAL_DMA_Abort
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:685    .text.HAL_DMA_Abort_IT:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:691    .text.HAL_DMA_Abort_IT:0000000000000000 HAL_DMA_Abort_IT
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:780    .text.HAL_DMA_PollForTransfer:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:786    .text.HAL_DMA_PollForTransfer:0000000000000000 HAL_DMA_PollForTransfer
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:1008   .text.HAL_DMA_IRQHandler:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:1014   .text.HAL_DMA_IRQHandler:0000000000000000 HAL_DMA_IRQHandler
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:1202   .text.HAL_DMA_RegisterCallback:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:1208   .text.HAL_DMA_RegisterCallback:0000000000000000 HAL_DMA_RegisterCallback
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:1259   .text.HAL_DMA_RegisterCallback:000000000000002c $d
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:1263   .text.HAL_DMA_RegisterCallback:0000000000000030 $t
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:1309   .text.HAL_DMA_UnRegisterCallback:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:1315   .text.HAL_DMA_UnRegisterCallback:0000000000000000 HAL_DMA_UnRegisterCallback
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:1364   .text.HAL_DMA_UnRegisterCallback:000000000000002c $d
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:1428   .text.HAL_DMA_GetState:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:1434   .text.HAL_DMA_GetState:0000000000000000 HAL_DMA_GetState
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:1452   .text.HAL_DMA_GetError:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:1458   .text.HAL_DMA_GetError:0000000000000000 HAL_DMA_GetError
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:1369   .text.HAL_DMA_UnRegisterCallback:0000000000000031 $d
+C:\Users\marce\AppData\Local\Temp\ccLFDq3y.s:1369   .text.HAL_DMA_UnRegisterCallback:0000000000000032 $t
 
 UNDEFINED SYMBOLS
 HAL_GetTick

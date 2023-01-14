@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 1
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczGalmb.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 1
   29:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****   */
   30:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c **** 
   31:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c **** #ifdef HAL_RCC_MODULE_ENABLED
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 2
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczGalmb.s 			page 2
 
 
   32:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 1
   86:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****   * @param  PeriphClkInit pointer to an RCC_PeriphCLKInitTypeDef structure that
   87:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****   *         contains the configuration information for the Extended Peripherals clocks(RTC/LCD cloc
   88:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****   * @retval HAL status
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 3
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczGalmb.s 			page 3
 
 
   89:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****   * @note   If HAL_ERROR returned, first switch-OFF HSE clock oscillator with @ref HAL_RCC_OscConfi
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 1
  114:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****     if(((PeriphClkInit->PeriphClockSelection) & RCC_PERIPHCLK_LCD) == RCC_PERIPHCLK_LCD)
   56              		.loc 1 114 5 view .LVU10
  115:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****     {
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 4
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczGalmb.s 			page 4
 
 
  116:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****       assert_param(IS_RCC_RTCCLKSOURCE(PeriphClkInit->LCDClockSelection));
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 1
   95 0038 5FD0     		beq	.L24
   96              	.LVL4:
   97              	.L4:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 5
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczGalmb.s 			page 5
 
 
  132:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****     {
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 1
  162:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****         }
  163:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****       }
  164:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****     }
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 6
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczGalmb.s 			page 6
 
 
  165:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 1
  162              		.loc 1 178 16 view .LVU53
  163 0086 23F44030 		bic	r0, r3, #196608
  164              	.LVL10:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 7
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczGalmb.s 			page 7
 
 
  179:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c **** 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 1
  191 00aa 03F44032 		and	r2, r3, #196608
  192 00ae B2F5403F 		cmp	r2, #196608
  193 00b2 54D0     		beq	.L28
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 8
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczGalmb.s 			page 8
 
 
  194              	.L15:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 1
  236 00ec 23F08053 		bic	r3, r3, #268435456
  237 00f0 5362     		str	r3, [r2, #36]
  238              	.LBE2:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 9
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczGalmb.s 			page 9
 
 
  219:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****     }
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 1
  277              		.loc 1 141 27 view .LVU94
  278 0118 801B     		subs	r0, r0, r6
  141:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****         {
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 10
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczGalmb.s 			page 10
 
 
  279              		.loc 1 141 11 view .LVU95
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 1
  194:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****         {
  320              		.loc 1 194 9 is_stmt 1 view .LVU109
  321              	.L12:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 11
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczGalmb.s 			page 11
 
 
  194:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****         {
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 1
  212:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****     }
  365              		.loc 1 212 7 is_stmt 0 discriminator 1 view .LVU121
  366              	.LBE4:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 12
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczGalmb.s 			page 12
 
 
  367              		.loc 1 222 10 view .LVU122
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 1
  407              		.loc 1 238 3 is_stmt 1 view .LVU128
  408              		.loc 1 238 39 is_stmt 0 view .LVU129
  409 0004 0323     		movs	r3, #3
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 13
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczGalmb.s 			page 13
 
 
  410 0006 0360     		str	r3, [r0]
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 1
  443              	.LVL34:
  251:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****   }
  444              		.loc 1 251 38 view .LVU144
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 14
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczGalmb.s 			page 14
 
 
  445 0028 4360     		str	r3, [r0, #4]
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 1
  480              	.LVL37:
  270:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****   uint32_t srcclk;
  481              		.loc 1 270 12 view .LVU152
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 15
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczGalmb.s 			page 15
 
 
  482 0008 7047     		bx	lr
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 1
  507              		.loc 1 289 9 is_stmt 1 view .LVU163
  289:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****         {
  508              		.loc 1 289 13 is_stmt 0 view .LVU164
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 16
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczGalmb.s 			page 16
 
 
  509 0028 144B     		ldr	r3, .L54
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 1
  519 0032 7047     		bx	lr
  520              	.LVL41:
  521              	.L50:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 17
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczGalmb.s 			page 17
 
 
  297:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****         {
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 1
  562              	.L53:
  322:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****               break;
  563              		.loc 1 322 25 view .LVU182
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 18
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczGalmb.s 			page 18
 
 
  564 006a 0648     		ldr	r0, .L54+8
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 1
  362:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_rcc_ex.c ****   *(__IO uint32_t *) CSR_LSECSSON_BB = (uint32_t)ENABLE;
  602              		.loc 1 362 3 view .LVU186
  603              		.loc 1 362 38 is_stmt 0 view .LVU187
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 19
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczGalmb.s 			page 19
 
 
  604 0000 024B     		ldr	r3, .L57
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 1
  642              	.L61:
  643              		.align	2
  644              	.L60:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 20
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczGalmb.s 			page 20
 
 
  645 0014 00004742 		.word	1111949312
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 1
  683              		.loc 1 398 1 is_stmt 0 view .LVU200
  684 0024 7047     		bx	lr
  685              	.L64:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 21
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczGalmb.s 			page 21
 
 
  686 0026 00BF     		.align	2
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 1
  715              		.global	HAL_RCCEx_LSECSS_IRQHandler
  716              		.syntax unified
  717              		.thumb
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 22
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczGalmb.s 			page 22
 
 
  718              		.thumb_func
@@ -1316,34 +1316,34 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 1
  764              		.file 6 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_def.h"
  765              		.file 7 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_rcc_ex.h"
  766              		.file 8 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal.h"
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s 			page 23
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczGalmb.s 			page 23
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32l1xx_hal_rcc_ex.c
-C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s:18     .text.HAL_RCCEx_PeriphCLKConfig:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s:24     .text.HAL_RCCEx_PeriphCLKConfig:0000000000000000 HAL_RCCEx_PeriphCLKConfig
-C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s:381    .text.HAL_RCCEx_PeriphCLKConfig:000000000000018c $d
-C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s:388    .text.HAL_RCCEx_GetPeriphCLKConfig:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s:394    .text.HAL_RCCEx_GetPeriphCLKConfig:0000000000000000 HAL_RCCEx_GetPeriphCLKConfig
-C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s:450    .text.HAL_RCCEx_GetPeriphCLKConfig:000000000000002c $d
-C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s:455    .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s:461    .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000000 HAL_RCCEx_GetPeriphCLKFreq
-C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s:580    .text.HAL_RCCEx_GetPeriphCLKFreq:000000000000007c $d
-C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s:589    .text.HAL_RCCEx_EnableLSECSS:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s:595    .text.HAL_RCCEx_EnableLSECSS:0000000000000000 HAL_RCCEx_EnableLSECSS
-C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s:612    .text.HAL_RCCEx_EnableLSECSS:000000000000000c $d
-C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s:617    .text.HAL_RCCEx_DisableLSECSS:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s:623    .text.HAL_RCCEx_DisableLSECSS:0000000000000000 HAL_RCCEx_DisableLSECSS
-C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s:645    .text.HAL_RCCEx_DisableLSECSS:0000000000000014 $d
-C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s:651    .text.HAL_RCCEx_EnableLSECSS_IT:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s:657    .text.HAL_RCCEx_EnableLSECSS_IT:0000000000000000 HAL_RCCEx_EnableLSECSS_IT
-C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s:688    .text.HAL_RCCEx_EnableLSECSS_IT:0000000000000028 $d
-C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s:695    .text.HAL_RCCEx_LSECSS_Callback:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s:701    .text.HAL_RCCEx_LSECSS_Callback:0000000000000000 HAL_RCCEx_LSECSS_Callback
-C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s:714    .text.HAL_RCCEx_LSECSS_IRQHandler:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s:720    .text.HAL_RCCEx_LSECSS_IRQHandler:0000000000000000 HAL_RCCEx_LSECSS_IRQHandler
-C:\Users\marce\AppData\Local\Temp\cc7gX0jB.s:754    .text.HAL_RCCEx_LSECSS_IRQHandler:000000000000001c $d
+C:\Users\marce\AppData\Local\Temp\cczGalmb.s:18     .text.HAL_RCCEx_PeriphCLKConfig:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cczGalmb.s:24     .text.HAL_RCCEx_PeriphCLKConfig:0000000000000000 HAL_RCCEx_PeriphCLKConfig
+C:\Users\marce\AppData\Local\Temp\cczGalmb.s:381    .text.HAL_RCCEx_PeriphCLKConfig:000000000000018c $d
+C:\Users\marce\AppData\Local\Temp\cczGalmb.s:388    .text.HAL_RCCEx_GetPeriphCLKConfig:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cczGalmb.s:394    .text.HAL_RCCEx_GetPeriphCLKConfig:0000000000000000 HAL_RCCEx_GetPeriphCLKConfig
+C:\Users\marce\AppData\Local\Temp\cczGalmb.s:450    .text.HAL_RCCEx_GetPeriphCLKConfig:000000000000002c $d
+C:\Users\marce\AppData\Local\Temp\cczGalmb.s:455    .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cczGalmb.s:461    .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000000 HAL_RCCEx_GetPeriphCLKFreq
+C:\Users\marce\AppData\Local\Temp\cczGalmb.s:580    .text.HAL_RCCEx_GetPeriphCLKFreq:000000000000007c $d
+C:\Users\marce\AppData\Local\Temp\cczGalmb.s:589    .text.HAL_RCCEx_EnableLSECSS:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cczGalmb.s:595    .text.HAL_RCCEx_EnableLSECSS:0000000000000000 HAL_RCCEx_EnableLSECSS
+C:\Users\marce\AppData\Local\Temp\cczGalmb.s:612    .text.HAL_RCCEx_EnableLSECSS:000000000000000c $d
+C:\Users\marce\AppData\Local\Temp\cczGalmb.s:617    .text.HAL_RCCEx_DisableLSECSS:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cczGalmb.s:623    .text.HAL_RCCEx_DisableLSECSS:0000000000000000 HAL_RCCEx_DisableLSECSS
+C:\Users\marce\AppData\Local\Temp\cczGalmb.s:645    .text.HAL_RCCEx_DisableLSECSS:0000000000000014 $d
+C:\Users\marce\AppData\Local\Temp\cczGalmb.s:651    .text.HAL_RCCEx_EnableLSECSS_IT:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cczGalmb.s:657    .text.HAL_RCCEx_EnableLSECSS_IT:0000000000000000 HAL_RCCEx_EnableLSECSS_IT
+C:\Users\marce\AppData\Local\Temp\cczGalmb.s:688    .text.HAL_RCCEx_EnableLSECSS_IT:0000000000000028 $d
+C:\Users\marce\AppData\Local\Temp\cczGalmb.s:695    .text.HAL_RCCEx_LSECSS_Callback:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cczGalmb.s:701    .text.HAL_RCCEx_LSECSS_Callback:0000000000000000 HAL_RCCEx_LSECSS_Callback
+C:\Users\marce\AppData\Local\Temp\cczGalmb.s:714    .text.HAL_RCCEx_LSECSS_IRQHandler:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cczGalmb.s:720    .text.HAL_RCCEx_LSECSS_IRQHandler:0000000000000000 HAL_RCCEx_LSECSS_IRQHandler
+C:\Users\marce\AppData\Local\Temp\cczGalmb.s:754    .text.HAL_RCCEx_LSECSS_IRQHandler:000000000000001c $d
 
 UNDEFINED SYMBOLS
 HAL_GetTick

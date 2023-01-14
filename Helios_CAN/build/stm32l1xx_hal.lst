@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 1
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 1
   30:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   *                        opensource.org/licenses/BSD-3-Clause
   31:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   *
   32:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   ******************************************************************************
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 2
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 2
 
 
   33:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 1
   87:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   * @}
   88:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   */
   89:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 3
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 3
 
 
   90:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** /* Exported functions --------------------------------------------------------*/
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 1
  144:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   /* Configure Flash prefetch */
  145:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** #if (PREFETCH_ENABLE != 0)
  146:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   __HAL_FLASH_PREFETCH_BUFFER_ENABLE();
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 4
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 4
 
 
  147:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** #endif /* PREFETCH_ENABLE */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 1
   30              		@ frame_needed = 0, uses_anonymous_args = 0
   31              		@ link register save eliminated.
  198:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   /* NOTE : This function should not be modified, when the callback is needed,
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 5
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 5
 
 
  199:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****             the HAL_MspInit could be implemented in the user file
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 1
   74              		.loc 1 176 3 view .LVU5
   75 0002 074B     		ldr	r3, .L5
   76 0004 4FF0FF32 		mov	r2, #-1
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 6
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 6
 
 
   77 0008 9A61     		str	r2, [r3, #24]
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 1
  225:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   *       The function is declared as __weak  to be overwritten  in case of other
  226:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   *       implementation  in user file.
  227:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   * @param TickPriority Tick interrupt priority.
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 7
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 7
 
 
  228:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   * @retval HAL status
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 1
  231:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   HAL_StatusTypeDef  status = HAL_OK;
  132              		.loc 1 231 1 view .LVU22
  133 000a 10B5     		push	{r4, lr}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 8
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 8
 
 
  134              	.LCFI1:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 1
  175              		.loc 1 252 14 view .LVU35
  176 0040 0120     		movs	r0, #1
  177              	.L8:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 9
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 9
 
 
  178              	.LVL7:
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 1
  226              	.L21:
  227              	.LVL12:
  164:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** }
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 10
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 10
 
 
  228              		.loc 1 164 3 is_stmt 1 view .LVU46
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 1
  292:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   * @note In the default implementation, this variable is incremented each 1ms
  293:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   *       in SysTick ISR.
  294:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****  * @note This function is declared as __weak to be overwritten in case of other
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 11
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 11
 
 
  295:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   *      implementations in user file.
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 1
  291 0000 014B     		ldr	r3, .L29
  292 0002 1868     		ldr	r0, [r3]
  312:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** }
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 12
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 12
 
 
  293              		.loc 1 312 1 view .LVU57
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 1
  326:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   * @retval HAL status
  327:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   */
  328:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** HAL_StatusTypeDef HAL_SetTickFreq(uint32_t Freq)
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 13
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 13
 
 
  329:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** {
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 1
  365 000c 10BD     		pop	{r4, pc}
  366              	.LVL18:
  367              	.L38:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 14
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 14
 
 
  338:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 1
  407              		.cfi_startproc
  408              		@ args = 0, pretend = 0, frame = 0
  409              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 15
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 15
 
 
  410              		@ link register save eliminated.
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 1
  449              	.LVL22:
  450              		.loc 1 378 24 view .LVU89
  451 0008 0546     		mov	r5, r0
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 16
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 16
 
 
  452              	.LVL23:
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 1
  491              		.thumb
  492              		.thumb_func
  494              	HAL_SuspendTick:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 17
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 17
 
 
  495              	.LFB83:
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 1
  522              		@ args = 0, pretend = 0, frame = 0
  523              		@ frame_needed = 0, uses_anonymous_args = 0
  524              		@ link register save eliminated.
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 18
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 18
 
 
  420:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   /* Enable SysTick Interrupt */
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 1
  434:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   * @brief Return the device revision identifier.
  435:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   * @retval Device revision identifier
  436:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****   */
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 19
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 19
 
 
  437:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** uint32_t HAL_GetREVID(void)
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 1
  612 000c 002004E0 		.word	-536600576
  613              		.cfi_endproc
  614              	.LFE87:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 20
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 20
 
 
  616              		.section	.text.HAL_GetUIDw0,"ax",%progbits
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 1
  656              		.loc 1 466 3 view .LVU124
  467:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** }
  657              		.loc 1 467 1 is_stmt 0 view .LVU125
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 21
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 21
 
 
  658 0000 014B     		ldr	r3, .L65
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 1
  481:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** 
  482:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** /** @defgroup HAL_Exported_Functions_Group3 DBGMCU Peripheral Control functions
  483:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****  *  @brief    DBGMCU Peripheral Control functions
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 22
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 22
 
 
  484:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c ****  *
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 1
  512:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** {
  731              		.loc 1 512 1 is_stmt 1 view -0
  732              		.cfi_startproc
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 23
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 23
 
 
  733              		@ args = 0, pretend = 0, frame = 0
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 1
  779              		.align	1
  780              		.global	HAL_DBGMCU_DisableDBGStopMode
  781              		.syntax unified
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 24
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 24
 
 
  782              		.thumb
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 1
  822 0002 5368     		ldr	r3, [r2, #4]
  823 0004 43F00403 		orr	r3, r3, #4
  824 0008 5360     		str	r3, [r2, #4]
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 25
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 25
 
 
  541:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal.c **** }
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 1
  874              		.set	.LANCHOR0,. + 0
  877              	uwTickFreq:
  878 0000 01000000 		.word	1
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 26
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 26
 
 
  879              		.section	.data.uwTickPrio,"aw"
@@ -1516,90 +1516,90 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 1
  893              		.file 7 "Drivers/CMSIS/Device/ST/STM32L1xx/Include/system_stm32l1xx.h"
  894              		.file 8 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal.h"
  895              		.file 9 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_cortex.h"
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 27
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 27
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32l1xx_hal.c
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:18     .text.HAL_MspInit:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:24     .text.HAL_MspInit:0000000000000000 HAL_MspInit
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:38     .text.HAL_MspDeInit:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:44     .text.HAL_MspDeInit:0000000000000000 HAL_MspDeInit
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:57     .text.HAL_DeInit:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:63     .text.HAL_DeInit:0000000000000000 HAL_DeInit
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:99     .text.HAL_DeInit:0000000000000020 $d
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:104    .text.HAL_InitTick:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:110    .text.HAL_InitTick:0000000000000000 HAL_InitTick
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:187    .text.HAL_InitTick:0000000000000044 $d
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:194    .text.HAL_Init:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:200    .text.HAL_Init:0000000000000000 HAL_Init
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:244    .text.HAL_IncTick:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:250    .text.HAL_IncTick:0000000000000000 HAL_IncTick
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:270    .text.HAL_IncTick:0000000000000010 $d
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:276    .text.HAL_GetTick:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:282    .text.HAL_GetTick:0000000000000000 HAL_GetTick
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:298    .text.HAL_GetTick:0000000000000008 $d
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:303    .text.HAL_GetTickPrio:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:309    .text.HAL_GetTickPrio:0000000000000000 HAL_GetTickPrio
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:324    .text.HAL_GetTickPrio:0000000000000008 $d
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:329    .text.HAL_SetTickFreq:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:335    .text.HAL_SetTickFreq:0000000000000000 HAL_SetTickFreq
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:392    .text.HAL_SetTickFreq:0000000000000024 $d
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:398    .text.HAL_GetTickFreq:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:404    .text.HAL_GetTickFreq:0000000000000000 HAL_GetTickFreq
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:419    .text.HAL_GetTickFreq:0000000000000008 $d
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:424    .text.HAL_Delay:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:430    .text.HAL_Delay:0000000000000000 HAL_Delay
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:483    .text.HAL_Delay:0000000000000024 $d
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:488    .text.HAL_SuspendTick:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:494    .text.HAL_SuspendTick:0000000000000000 HAL_SuspendTick
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:512    .text.HAL_ResumeTick:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:518    .text.HAL_ResumeTick:0000000000000000 HAL_ResumeTick
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:536    .text.HAL_GetHalVersion:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:542    .text.HAL_GetHalVersion:0000000000000000 HAL_GetHalVersion
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:556    .text.HAL_GetHalVersion:0000000000000004 $d
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:561    .text.HAL_GetREVID:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:567    .text.HAL_GetREVID:0000000000000000 HAL_GetREVID
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:584    .text.HAL_GetREVID:0000000000000008 $d
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:589    .text.HAL_GetDEVID:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:595    .text.HAL_GetDEVID:0000000000000000 HAL_GetDEVID
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:612    .text.HAL_GetDEVID:000000000000000c $d
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:617    .text.HAL_GetUIDw0:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:623    .text.HAL_GetUIDw0:0000000000000000 HAL_GetUIDw0
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:638    .text.HAL_GetUIDw0:0000000000000008 $d
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:643    .text.HAL_GetUIDw1:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:649    .text.HAL_GetUIDw1:0000000000000000 HAL_GetUIDw1
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:664    .text.HAL_GetUIDw1:0000000000000008 $d
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:669    .text.HAL_GetUIDw2:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:675    .text.HAL_GetUIDw2:0000000000000000 HAL_GetUIDw2
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:690    .text.HAL_GetUIDw2:0000000000000008 $d
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:695    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:701    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000000000000 HAL_DBGMCU_EnableDBGSleepMode
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:718    .text.HAL_DBGMCU_EnableDBGSleepMode:000000000000000c $d
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s 			page 28
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:18     .text.HAL_MspInit:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:24     .text.HAL_MspInit:0000000000000000 HAL_MspInit
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:38     .text.HAL_MspDeInit:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:44     .text.HAL_MspDeInit:0000000000000000 HAL_MspDeInit
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:57     .text.HAL_DeInit:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:63     .text.HAL_DeInit:0000000000000000 HAL_DeInit
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:99     .text.HAL_DeInit:0000000000000020 $d
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:104    .text.HAL_InitTick:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:110    .text.HAL_InitTick:0000000000000000 HAL_InitTick
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:187    .text.HAL_InitTick:0000000000000044 $d
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:194    .text.HAL_Init:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:200    .text.HAL_Init:0000000000000000 HAL_Init
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:244    .text.HAL_IncTick:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:250    .text.HAL_IncTick:0000000000000000 HAL_IncTick
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:270    .text.HAL_IncTick:0000000000000010 $d
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:276    .text.HAL_GetTick:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:282    .text.HAL_GetTick:0000000000000000 HAL_GetTick
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:298    .text.HAL_GetTick:0000000000000008 $d
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:303    .text.HAL_GetTickPrio:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:309    .text.HAL_GetTickPrio:0000000000000000 HAL_GetTickPrio
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:324    .text.HAL_GetTickPrio:0000000000000008 $d
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:329    .text.HAL_SetTickFreq:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:335    .text.HAL_SetTickFreq:0000000000000000 HAL_SetTickFreq
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:392    .text.HAL_SetTickFreq:0000000000000024 $d
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:398    .text.HAL_GetTickFreq:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:404    .text.HAL_GetTickFreq:0000000000000000 HAL_GetTickFreq
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:419    .text.HAL_GetTickFreq:0000000000000008 $d
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:424    .text.HAL_Delay:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:430    .text.HAL_Delay:0000000000000000 HAL_Delay
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:483    .text.HAL_Delay:0000000000000024 $d
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:488    .text.HAL_SuspendTick:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:494    .text.HAL_SuspendTick:0000000000000000 HAL_SuspendTick
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:512    .text.HAL_ResumeTick:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:518    .text.HAL_ResumeTick:0000000000000000 HAL_ResumeTick
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:536    .text.HAL_GetHalVersion:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:542    .text.HAL_GetHalVersion:0000000000000000 HAL_GetHalVersion
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:556    .text.HAL_GetHalVersion:0000000000000004 $d
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:561    .text.HAL_GetREVID:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:567    .text.HAL_GetREVID:0000000000000000 HAL_GetREVID
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:584    .text.HAL_GetREVID:0000000000000008 $d
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:589    .text.HAL_GetDEVID:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:595    .text.HAL_GetDEVID:0000000000000000 HAL_GetDEVID
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:612    .text.HAL_GetDEVID:000000000000000c $d
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:617    .text.HAL_GetUIDw0:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:623    .text.HAL_GetUIDw0:0000000000000000 HAL_GetUIDw0
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:638    .text.HAL_GetUIDw0:0000000000000008 $d
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:643    .text.HAL_GetUIDw1:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:649    .text.HAL_GetUIDw1:0000000000000000 HAL_GetUIDw1
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:664    .text.HAL_GetUIDw1:0000000000000008 $d
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:669    .text.HAL_GetUIDw2:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:675    .text.HAL_GetUIDw2:0000000000000000 HAL_GetUIDw2
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:690    .text.HAL_GetUIDw2:0000000000000008 $d
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:695    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:701    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000000000000 HAL_DBGMCU_EnableDBGSleepMode
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:718    .text.HAL_DBGMCU_EnableDBGSleepMode:000000000000000c $d
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s 			page 28
 
 
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:723    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:729    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000000000000 HAL_DBGMCU_DisableDBGSleepMode
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:746    .text.HAL_DBGMCU_DisableDBGSleepMode:000000000000000c $d
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:751    .text.HAL_DBGMCU_EnableDBGStopMode:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:757    .text.HAL_DBGMCU_EnableDBGStopMode:0000000000000000 HAL_DBGMCU_EnableDBGStopMode
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:774    .text.HAL_DBGMCU_EnableDBGStopMode:000000000000000c $d
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:779    .text.HAL_DBGMCU_DisableDBGStopMode:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:785    .text.HAL_DBGMCU_DisableDBGStopMode:0000000000000000 HAL_DBGMCU_DisableDBGStopMode
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:802    .text.HAL_DBGMCU_DisableDBGStopMode:000000000000000c $d
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:807    .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:813    .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000000000000 HAL_DBGMCU_EnableDBGStandbyMode
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:830    .text.HAL_DBGMCU_EnableDBGStandbyMode:000000000000000c $d
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:835    .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:841    .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000000000000 HAL_DBGMCU_DisableDBGStandbyMode
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:858    .text.HAL_DBGMCU_DisableDBGStandbyMode:000000000000000c $d
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:877    .data.uwTickFreq:0000000000000000 uwTickFreq
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:884    .data.uwTickPrio:0000000000000000 uwTickPrio
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:870    .bss.uwTick:0000000000000000 uwTick
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:866    .bss.uwTick:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:873    .data.uwTickFreq:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\ccq7kkSK.s:880    .data.uwTickPrio:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:723    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:729    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000000000000 HAL_DBGMCU_DisableDBGSleepMode
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:746    .text.HAL_DBGMCU_DisableDBGSleepMode:000000000000000c $d
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:751    .text.HAL_DBGMCU_EnableDBGStopMode:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:757    .text.HAL_DBGMCU_EnableDBGStopMode:0000000000000000 HAL_DBGMCU_EnableDBGStopMode
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:774    .text.HAL_DBGMCU_EnableDBGStopMode:000000000000000c $d
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:779    .text.HAL_DBGMCU_DisableDBGStopMode:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:785    .text.HAL_DBGMCU_DisableDBGStopMode:0000000000000000 HAL_DBGMCU_DisableDBGStopMode
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:802    .text.HAL_DBGMCU_DisableDBGStopMode:000000000000000c $d
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:807    .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:813    .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000000000000 HAL_DBGMCU_EnableDBGStandbyMode
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:830    .text.HAL_DBGMCU_EnableDBGStandbyMode:000000000000000c $d
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:835    .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:841    .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000000000000 HAL_DBGMCU_DisableDBGStandbyMode
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:858    .text.HAL_DBGMCU_DisableDBGStandbyMode:000000000000000c $d
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:877    .data.uwTickFreq:0000000000000000 uwTickFreq
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:884    .data.uwTickPrio:0000000000000000 uwTickPrio
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:870    .bss.uwTick:0000000000000000 uwTick
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:866    .bss.uwTick:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:873    .data.uwTickFreq:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccX0T7lg.s:880    .data.uwTickPrio:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 HAL_SYSTICK_Config

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
   30:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** #include <string.h>
   31:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
   32:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** /* Defining MPU_WRAPPERS_INCLUDED_FROM_API_FILE prevents task.h from redefining
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 2
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 2
 
 
   33:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** all the API functions to use the MPU wrappers.  That should only be done when
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
   87:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** deleted the RAM that was allocated dynamically is freed again and no attempt is
   88:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** made to free the RAM that was allocated statically.
   89:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** tskSTATIC_AND_DYNAMIC_ALLOCATION_POSSIBLE is only true if it is possible for a
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 3
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 3
 
 
   90:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** task to be created using either statically or dynamically allocated RAM.  Note
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  144:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			uxTopReadyPriority = ( uxPriority );														\
  145:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		}																								\
  146:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	} /* taskRECORD_READY_PRIORITY */
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 4
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 4
 
 
  147:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  201:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	#define taskRESET_READY_PRIORITY( uxPriority )														\
  202:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	{																									\
  203:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		if( listCURRENT_LIST_LENGTH( &( pxReadyTasksLists[ ( uxPriority ) ] ) ) == ( UBaseType_t ) 0 )	\
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 5
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 5
 
 
  204:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		{																								\
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  258:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** #if( configUSE_16_BIT_TICKS == 1 )
  259:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	#define taskEVENT_LIST_ITEM_VALUE_IN_USE	0x8000U
  260:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** #else
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 6
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 6
 
 
  261:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	#define taskEVENT_LIST_ITEM_VALUE_IN_USE	0x80000000UL
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  315:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		Note Newlib support has been included by popular demand, but is not
  316:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		used by the FreeRTOS maintainers themselves.  FreeRTOS is not
  317:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		responsible for resulting newlib operation.  User must be familiar with
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 7
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 7
 
 
  318:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		newlib and must provide system-wide implementations of the necessary
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  372:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** PRIVILEGED_DATA static volatile UBaseType_t uxCurrentNumberOfTasks 	= ( UBaseType_t ) 0U;
  373:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** PRIVILEGED_DATA static volatile TickType_t xTickCount 				= ( TickType_t ) configINITIAL_TICK_COUNT
  374:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** PRIVILEGED_DATA static volatile UBaseType_t uxTopReadyPriority 		= tskIDLE_PRIORITY;
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 8
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 8
 
 
  375:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** PRIVILEGED_DATA static volatile BaseType_t xSchedulerRunning 		= pdFALSE;
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  429:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
  430:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** /*
  431:Middlewares/Third_Party/FreeRTOS/Source/tasks.c ****  * Utility to ready all the lists used by the scheduler.  This is called
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 9
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 9
 
 
  432:Middlewares/Third_Party/FreeRTOS/Source/tasks.c ****  * automatically upon the creation of the first task.
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  486:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
  487:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** #endif
  488:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 10
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 10
 
 
  489:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** /*
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  543:Middlewares/Third_Party/FreeRTOS/Source/tasks.c ****  * dynamically to fill in the structure's members.
  544:Middlewares/Third_Party/FreeRTOS/Source/tasks.c ****  */
  545:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** static void prvInitialiseNewTask( 	TaskFunction_t pxTaskCode,
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 11
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 11
 
 
  546:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 									const char * const pcName, 		/*lint !e971 Unqualified char types are allowed for strings a
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  600:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		if( ( pxTaskBuffer != NULL ) && ( puxStackBuffer != NULL ) )
  601:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		{
  602:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			/* The memory used for the task's TCB and stack are passed into this
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 12
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 12
 
 
  603:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			function - use them. */
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  657:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			prvInitialiseNewTask(	pxTaskDefinition->pvTaskCode,
  658:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 									pxTaskDefinition->pcName,
  659:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 									( uint32_t ) pxTaskDefinition->usStackDepth,
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 13
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 13
 
 
  660:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 									pxTaskDefinition->pvParameters,
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  714:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				xReturn = pdPASS;
  715:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			}
  716:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 14
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 14
 
 
  717:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  771:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				pxNewTCB = ( TCB_t * ) pvPortMalloc( sizeof( TCB_t ) ); /*lint !e961 MISRA exception as the cas
  772:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
  773:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				if( pxNewTCB != NULL )
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 15
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 15
 
 
  774:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				{
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  828:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
  829:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	#if( portUSING_MPU_WRAPPERS == 1 )
  830:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		/* Should the task be created in privileged mode? */
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 16
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 16
 
 
  831:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		BaseType_t xRunPrivileged;
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  885:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	for( x = ( UBaseType_t ) 0; x < ( UBaseType_t ) configMAX_TASK_NAME_LEN; x++ )
  886:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	{
  887:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		pxNewTCB->pcTaskName[ x ] = pcName[ x ];
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 17
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 17
 
 
  888:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  942:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	#if ( configUSE_APPLICATION_TASK_TAG == 1 )
  943:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	{
  944:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		pxNewTCB->pxTaskTag = NULL;
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 18
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 18
 
 
  945:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	}
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  999:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	{
 1000:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		pxNewTCB->pxTopOfStack = pxPortInitialiseStack( pxTopOfStack, pxTaskCode, pvParameters, xRunPrivi
 1001:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 19
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 19
 
 
 1002:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	#else /* portUSING_MPU_WRAPPERS */
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1056:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				}
 1057:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				else
 1058:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				{
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 20
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 20
 
 
 1059:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					mtCOVERAGE_TEST_MARKER();
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1113:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			being deleted. */
 1114:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			pxTCB = prvGetTCBFromHandle( xTaskToDelete );
 1115:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 21
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 21
 
 
 1116:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			/* Remove task from the ready list. */
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1170:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				prvResetNextTaskUnblockTime();
 1171:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			}
 1172:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 22
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 22
 
 
 1173:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			traceTASK_DELETE( pxTCB );
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1227:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				else
 1228:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				{
 1229:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					mtCOVERAGE_TEST_MARKER();
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 23
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 23
 
 
 1230:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				}
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1284:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	BaseType_t xAlreadyYielded = pdFALSE;
 1285:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
 1286:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		/* A delay time of zero just forces a reschedule. */
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 24
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 24
 
 
 1287:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		if( xTicksToDelay > ( TickType_t ) 0U )
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1341:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		{
 1342:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			taskENTER_CRITICAL();
 1343:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			{
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 25
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 25
 
 
 1344:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				pxStateList = ( List_t * ) listLIST_ITEM_CONTAINER( &( pxTCB->xStateListItem ) );
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1398:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	UBaseType_t uxTaskPriorityGet( TaskHandle_t xTask )
 1399:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	{
 1400:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	TCB_t *pxTCB;
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 26
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 26
 
 
 1401:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	UBaseType_t uxReturn;
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1455:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** #endif /* INCLUDE_uxTaskPriorityGet */
 1456:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** /*-----------------------------------------------------------*/
 1457:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 27
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 27
 
 
 1458:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** #if ( INCLUDE_vTaskPrioritySet == 1 )
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1512:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 						{
 1513:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 							mtCOVERAGE_TEST_MARKER();
 1514:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 						}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 28
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 28
 
 
 1515:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					}
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1569:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				}
 1570:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				else
 1571:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				{
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 29
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 29
 
 
 1572:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					mtCOVERAGE_TEST_MARKER();
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1626:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	TCB_t *pxTCB;
 1627:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
 1628:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		taskENTER_CRITICAL();
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 30
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 30
 
 
 1629:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		{
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1683:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		{
 1684:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			mtCOVERAGE_TEST_MARKER();
 1685:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 31
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 31
 
 
 1686:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1733:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		/* It does not make sense to check if the calling task is suspended. */
 1734:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		configASSERT( xTask );
   34              		.loc 1 1734 3 view .LVU3
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 32
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 32
 
 
   35 0000 28B1     		cbz	r0, .L8
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
   29:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** #ifndef PORTMACRO_H
   30:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** #define PORTMACRO_H
   31:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 33
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 33
 
 
   32:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** #ifdef __cplusplus
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
   86:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 	__asm volatile( "dsb" ::: "memory" );										\
   87:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 	__asm volatile( "isb" );													\
   88:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** }
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 34
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 34
 
 
   89:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  143:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 	/* Store/clear the ready priorities in a bit map. */
  144:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 	#define portRECORD_READY_PRIORITY( uxPriority, uxReadyPriorities ) ( uxReadyPriorities ) |= ( 1UL 
  145:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 	#define portRESET_READY_PRIORITY( uxPriority, uxReadyPriorities ) ( uxReadyPriorities ) &= ~( 1UL 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 35
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 35
 
 
  146:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
   59              		.syntax unified
   60              	@ 195 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h" 1
   61 000e 4FF05003 			mov r3, #80												
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 36
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 36
 
 
   62 0012 83F31188 		msr basepri, r3											
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  102              	.L7:
 1745:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				{
 1746:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					xReturn = pdTRUE;
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 37
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 37
 
 
  103              		.loc 1 1746 14 view .LVU27
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1779:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		currently executing task. */
 1780:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		if( ( pxTCB != NULL ) && ( pxTCB != pxCurrentTCB ) )
 1781:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		{
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 38
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 38
 
 
 1782:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			taskENTER_CRITICAL();
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1836:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		permanently enabled, even when the RTOS kernel is in a critical section,
 1837:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		but cannot make any calls to FreeRTOS API functions.  If configASSERT()
 1838:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		is defined in FreeRTOSConfig.h then
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 39
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 39
 
 
 1839:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		portASSERT_IF_INTERRUPT_PRIORITY_INVALID() will result in an assertion
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1893:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** /*-----------------------------------------------------------*/
 1894:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
 1895:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** void vTaskStartScheduler( void )
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 40
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 40
 
 
 1896:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** {
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1950:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
 1951:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	if( xReturn == pdPASS )
 1952:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	{
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 41
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 41
 
 
 1953:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		/* freertos_tasks_c_additions_init() should only be called if the user
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 2007:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	}
 2008:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
 2009:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	/* Prevent compiler warnings if INCLUDE_xTaskGetIdleTaskHandle is set to 0,
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 42
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 42
 
 
 2010:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	meaning xIdleTaskHandle is not used anywhere else. */
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 2064:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			{
 2065:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				uxHigherPriorityReadyTasks = pdTRUE;
 2066:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 43
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 43
 
 
 2067:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		}
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 2121:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				/* Move any readied tasks from the pending list into the
 2122:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				appropriate ready list. */
 2123:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				while( listLIST_IS_EMPTY( &xPendingReadyList ) == pdFALSE )
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 44
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 44
 
 
 2124:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				{
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 2178:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					{
 2179:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 						mtCOVERAGE_TEST_MARKER();
 2180:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 45
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 45
 
 
 2181:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				}
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 2235:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	failure if a FreeRTOS API function is called from an interrupt that has been
 2236:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	assigned a priority above the configured maximum system call priority.
 2237:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	Only FreeRTOS functions that end in FromISR can be called from interrupts
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 46
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 46
 
 
 2238:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	that have been assigned a priority at or (logically) below the maximum
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 2292:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
 2293:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				/* Check each character in the name looking for a match or
 2294:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				mismatch. */
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 47
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 47
 
 
 2295:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				for( x = ( UBaseType_t ) 0; x < ( UBaseType_t ) configMAX_TASK_NAME_LEN; x++ )
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 2349:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			do
 2350:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			{
 2351:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				uxQueue--;
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 48
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 48
 
 
 2352:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				pxTCB = prvSearchForNameWithinSingleList( ( List_t * ) &( pxReadyTasksLists[ uxQueue ] ), pcNam
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 2406:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
 2407:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		vTaskSuspendAll();
 2408:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		{
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 49
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 49
 
 
 2409:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			/* Is there a space in the array for each task in the system? */
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 2463:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			{
 2464:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				mtCOVERAGE_TEST_MARKER();
 2465:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 50
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 50
 
 
 2466:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		}
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 2520:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			if( eTaskGetState( xTask ) == eBlocked )
 2521:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			{
 2522:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				xReturn = pdPASS;
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 51
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 51
 
 
 2523:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 2577:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		return xReturn;
 2578:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	}
 2579:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 52
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 52
 
 
 2580:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** #endif /* INCLUDE_xTaskAbortDelay */
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 2634:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					at which the task at the head of the delayed list must
 2635:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					be removed from the Blocked state. */
 2636:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					pxTCB = ( TCB_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxDelayedTaskList );
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 53
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 53
 
 
 2637:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					xItemValue = listGET_LIST_ITEM_VALUE( &( pxTCB->xStateListItem ) );
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 2691:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			}
 2692:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		}
 2693:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 54
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 54
 
 
 2694:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		/* Tasks of equal priority to the currently running task will share
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 2748:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	}
 2749:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	#endif /* configUSE_PREEMPTION */
 2750:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 55
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 55
 
 
 2751:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	return xSwitchRequired;
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 2805:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		taskEXIT_CRITICAL();
 2806:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
 2807:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		return xReturn;
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 56
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 56
 
 
 2808:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	}
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 2862:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				#else
 2863:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					ulTotalRunTime = portGET_RUN_TIME_COUNTER_VALUE();
 2864:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				#endif
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 57
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 57
 
 
 2865:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 2919:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** /*-----------------------------------------------------------*/
 2920:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
 2921:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** void vTaskPlaceOnUnorderedEventList( List_t * pxEventList, const TickType_t xItemValue, const TickT
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 58
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 58
 
 
 2922:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** {
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 2976:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** /*-----------------------------------------------------------*/
 2977:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
 2978:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** BaseType_t xTaskRemoveFromEventList( const List_t * const pxEventList )
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 59
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 59
 
 
 2979:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** {
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 3033:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		normally left unchanged, because it is automatically reset to a new
 3034:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		value when the tick count equals xNextTaskUnblockTime.  However if
 3035:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		tickless idling is used it might be more important to enter sleep mode
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 60
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 60
 
 
 3036:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		at the earliest possible time - so reset xNextTaskUnblockTime here to
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 3090:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** /*-----------------------------------------------------------*/
 3091:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
 3092:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** void vTaskInternalSetTimeOutState( TimeOut_t * const pxTimeOut )
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 61
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 61
 
 
 3093:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** {
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 3147:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			*pxTicksToWait -= xElapsedTime;
 3148:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			vTaskInternalSetTimeOutState( pxTimeOut );
 3149:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			xReturn = pdFALSE;
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 62
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 62
 
 
 3150:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		}
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 3204:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
 3205:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** #endif /* configUSE_TRACE_FACILITY */
 3206:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 63
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 63
 
 
 3207:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** /*
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 3261:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			}
 3262:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			else
 3263:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			{
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 64
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 64
 
 
 3264:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				mtCOVERAGE_TEST_MARKER();
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 3318:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					else
 3319:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					{
 3320:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 						mtCOVERAGE_TEST_MARKER();
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 65
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 65
 
 
 3321:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					}
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 3375:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** #if ( configNUM_THREAD_LOCAL_STORAGE_POINTERS != 0 )
 3376:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
 3377:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	void vTaskSetThreadLocalStoragePointer( TaskHandle_t xTaskToSet, BaseType_t xIndex, void *pvValue 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 66
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 66
 
 
 3378:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	{
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 3432:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** UBaseType_t uxPriority;
 3433:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
 3434:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	for( uxPriority = ( UBaseType_t ) 0U; uxPriority < ( UBaseType_t ) configMAX_PRIORITIES; uxPriorit
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 67
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 67
 
 
 3435:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	{
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 3489:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** /*-----------------------------------------------------------*/
 3490:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
 3491:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** #if( configUSE_TRACE_FACILITY == 1 )
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 68
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 68
 
 
 3492:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 3546:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 						vTaskSuspendAll();
 3547:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 						{
 3548:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 							if( listLIST_ITEM_CONTAINER( &( pxTCB->xEventListItem ) ) != NULL )
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 69
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 69
 
 
 3549:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 							{
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 3603:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			{
 3604:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				listGET_OWNER_OF_NEXT_ENTRY( pxNextTCB, pxList );
 3605:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				vTaskGetInfo( ( TaskHandle_t ) pxNextTCB, &( pxTaskStatusArray[ uxTask ] ), pdTRUE, eState );
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 70
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 70
 
 
 3606:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				uxTask++;
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  153 000a A52A     		cmp	r2, #165
  154 000c FAD0     		beq	.L14
 3630:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 71
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 71
 
 
 3631:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 3668:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** #if ( INCLUDE_vTaskDelete == 1 )
 3669:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
 3670:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	static void prvDeleteTCB( TCB_t *pxTCB )
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 72
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 72
 
 
 3671:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	{
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 3725:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** {
  174              		.loc 1 3725 1 is_stmt 1 view -0
  175              		.cfi_startproc
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 73
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 73
 
 
  176              		@ args = 0, pretend = 0, frame = 0
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  210              		.loc 1 3745 1 view .LVU61
  211 0020 7047     		bx	lr
  212              	.L19:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 74
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 74
 
 
  213 0022 00BF     		.align	2
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  261              		.loc 1 847 12 view .LVU69
  262 0018 206B     		ldr	r0, [r4, #48]
  263              	.LVL20:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 75
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 75
 
 
  847:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	}
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  892:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		{
  300              		.loc 1 892 5 view .LVU88
  301 0048 13B1     		cbz	r3, .L22
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 76
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 76
 
 
  898:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		}
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  338              	.LVL28:
  926:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
  339              		.loc 1 926 2 view .LVU107
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 77
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 77
 
 
  340 006a 04F11800 		add	r0, r4, #24
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1018:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** /*-----------------------------------------------------------*/
  377              		.loc 1 1018 1 is_stmt 0 view .LVU125
  378 0098 BDE8F087 		pop	{r4, r5, r6, r7, r8, r9, r10, pc}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 78
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 78
 
 
 1018:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** /*-----------------------------------------------------------*/
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  424              		.loc 1 3434 2 is_stmt 0 discriminator 1 view .LVU136
  425 0016 372C     		cmp	r4, #55
  426 0018 F5D9     		bls	.L30
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 79
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 79
 
 
 3439:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	vListInitialise( &xDelayedTaskList2 );
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  470 0060 00000000 		.word	.LANCHOR2
  471 0064 00000000 		.word	.LANCHOR8
  472              		.cfi_endproc
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 80
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 80
 
 
  473              	.LFE42:
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1053:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				{
  517              		.loc 1 1053 21 is_stmt 0 view .LVU160
  518 001c 1E4B     		ldr	r3, .L42+4
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 81
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 81
 
 
  519 001e 1B68     		ldr	r3, [r3]
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  556 0042 E06A     		ldr	r0, [r4, #44]
  557 0044 174B     		ldr	r3, .L42+16
  558 0046 1B68     		ldr	r3, [r3]
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 82
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 82
 
 
  559 0048 9842     		cmp	r0, r3
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  598              		.loc 1 1090 4 view .LVU192
  599              		.syntax unified
  600              	@ 1090 "Middlewares/Third_Party/FreeRTOS/Source/tasks.c" 1
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 83
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 83
 
 
  601 0082 BFF34F8F 		dsb
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  650              		.cfi_offset 14, -4
  651 0002 0446     		mov	r4, r0
 3675:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 84
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 84
 
 
  652              		.loc 1 3675 3 is_stmt 1 view .LVU200
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  693 0024 006B     		ldr	r0, [r0, #48]
  694              	.LVL50:
 3701:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				vPortFree( pxTCB );
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 85
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 85
 
 
  695              		.loc 1 3701 5 is_stmt 0 view .LVU216
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  740              		.cfi_def_cfa_offset 8
  741              		.cfi_offset 4, -8
  742              		.cfi_offset 14, -4
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 86
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 86
 
 
  743              	.L54:
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  784              	.LBE118:
 3488:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** /*-----------------------------------------------------------*/
  785              		.loc 1 3488 1 view .LVU241
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 87
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 87
 
 
  786 003a 10BD     		pop	{r4, pc}
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  833              		.loc 1 3258 8 is_stmt 0 view .LVU250
  834 0006 074B     		ldr	r3, .L65
  835 0008 1B68     		ldr	r3, [r3]
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 88
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 88
 
 
 3258:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			{
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 3761:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
 3762:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** #endif /* ( ( INCLUDE_xTaskGetCurrentTaskHandle == 1 ) || ( configUSE_MUTEXES == 1 ) ) */
 3763:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** /*-----------------------------------------------------------*/
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 89
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 89
 
 
 3764:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 3818:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				{
 3819:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					mtCOVERAGE_TEST_MARKER();
 3820:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 90
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 90
 
 
 3821:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 3875:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	}
 3876:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
 3877:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** #endif /* configUSE_MUTEXES */
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 91
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 91
 
 
 3878:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** /*-----------------------------------------------------------*/
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 3932:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					in an order different to that in which they were taken.
 3933:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					If a context switch did not occur when the first mutex was
 3934:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					returned, even if a task was waiting on it, then a context
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 92
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 92
 
 
 3935:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					switch should occur when the last mutex is returned whether
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 3989:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			{
 3990:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				/* Only disinherit if no other mutexes are held.  This is a
 3991:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				simplification in the priority inheritance implementation.  If
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 93
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 93
 
 
 3992:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				the task that holds the mutex is also holding other mutexes then
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 4046:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				}
 4047:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			}
 4048:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			else
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 94
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 94
 
 
 4049:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			{
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 4103:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				{
 4104:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					portENABLE_INTERRUPTS();
 4105:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 95
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 95
 
 
 4106:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				else
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 4160:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		 * PLEASE NOTE:
 4161:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		 *
 4162:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		 * This function is provided for convenience only, and is used by many
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 96
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 96
 
 
 4163:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		 * of the demo applications.  Do not consider it to be part of the
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 4217:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
 4218:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					case eDeleted:		cStatus = tskDELETED_CHAR;
 4219:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 										break;
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 97
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 97
 
 
 4220:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 4274:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		 *
 4275:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		 * vTaskGetRunTimeStats() has a dependency on the sprintf() C library
 4276:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		 * function that might bloat the code size, use a lot of stack, and
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 98
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 98
 
 
 4277:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		 * provide different results on different platforms.  An alternative,
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 4331:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 						{
 4332:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 							/* sizeof( int ) == sizeof( long ) so a smaller
 4333:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 							printf() library can be used. */
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 99
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 99
 
 
 4334:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 							sprintf( pcWriteBuffer, "\t%u\t\t%u%%\r\n", ( unsigned int ) pxTaskStatusArray[ x ].ulRunTim
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 4388:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** /*-----------------------------------------------------------*/
 4389:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
 4390:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** #if ( configUSE_MUTEXES == 1 )
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 100
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 100
 
 
 4391:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 4445:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		{
 4446:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			traceTASK_NOTIFY_TAKE();
 4447:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			ulReturn = pxCurrentTCB->ulNotifiedValue;
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 101
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 101
 
 
 4448:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 4502:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					application code should ever do. */
 4503:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					portYIELD_WITHIN_API();
 4504:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 102
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 102
 
 
 4505:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				else
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 4559:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	TCB_t * pxTCB;
 4560:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	BaseType_t xReturn = pdPASS;
 4561:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	uint8_t ucOriginalNotifyState;
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 103
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 103
 
 
 4562:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 4616:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				prvAddTaskToReadyList( pxTCB );
 4617:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
 4618:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				/* The task should not have been on an event list. */
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 104
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 104
 
 
 4619:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				configASSERT( listLIST_ITEM_CONTAINER( &( pxTCB->xEventListItem ) ) == NULL );
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 4673:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		maximum	system call (or maximum API call) interrupt priority.
 4674:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		Interrupts that are	above the maximum system call priority are keep
 4675:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		permanently enabled, even when the RTOS kernel is in a critical section,
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 105
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 105
 
 
 4676:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		but cannot make any calls to FreeRTOS API functions.  If configASSERT()
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 4730:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					updated. */
 4731:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					break;
 4732:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 106
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 106
 
 
 4733:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 4787:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	void vTaskNotifyGiveFromISR( TaskHandle_t xTaskToNotify, BaseType_t *pxHigherPriorityTaskWoken )
 4788:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	{
 4789:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	TCB_t * pxTCB;
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 107
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 107
 
 
 4790:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	uint8_t ucOriginalNotifyState;
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 4844:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
 4845:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				if( pxTCB->uxPriority > pxCurrentTCB->uxPriority )
 4846:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				{
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 108
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 108
 
 
 4847:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					/* The notified task has a priority above the currently
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 4901:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
 4902:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** #endif /* configUSE_TASK_NOTIFICATIONS */
 4903:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** /*-----------------------------------------------------------*/
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 109
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 109
 
 
 4904:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 4929:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	{
 4930:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		mtCOVERAGE_TEST_MARKER();
  901              		.loc 1 4930 27 is_stmt 1 view .LVU264
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 110
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 110
 
 
 4931:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	}
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 4957:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			}
 4958:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			else
 4959:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			{
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 111
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 111
 
 
 4960:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				/* The wake time has not overflowed, so the current block list
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 5014:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	#endif /* INCLUDE_vTaskSuspend */
 5015:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** }
  930              		.loc 1 5015 1 view .LVU275
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 112
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 112
 
 
  931 0034 70BD     		pop	{r4, r5, r6, pc}
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  972 0062 E7E7     		b	.L67
  973              	.L74:
  974              		.align	2
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 113
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 113
 
 
  975              	.L73:
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  1021              		.loc 1 594 20 is_stmt 0 discriminator 2 view .LVU299
  1022 000c 5C25     		movs	r5, #92
  1023 000e 0495     		str	r5, [sp, #16]
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 114
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 114
 
 
  595:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		}
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  1067 0028 4FF05003 			mov r3, #80												
  1068 002c 83F31188 		msr basepri, r3											
  1069 0030 BFF36F8F 		isb														
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 115
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 115
 
 
  1070 0034 BFF34F8F 		dsb														
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  595:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		}
  1115              		.loc 1 595 44 view .LVU326
  1116              	.LBE126:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 116
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 116
 
 
  600:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		{
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  1162              	.LFB5:
  732:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	TCB_t *pxNewTCB;
  1163              		.loc 1 732 2 is_stmt 1 view -0
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 117
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 117
 
 
  1164              		.cfi_startproc
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  1206              	.LVL87:
  773:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				{
  1207              		.loc 1 773 5 is_stmt 1 view .LVU351
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 118
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 118
 
 
  773:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				{
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  1249              		.loc 1 782 6 is_stmt 1 view .LVU364
  1250 0050 4846     		mov	r0, r9
  1251              	.LVL92:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 119
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 119
 
 
  782:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				}
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  1299 0000 38B5     		push	{r3, r4, r5, lr}
  1300              	.LCFI15:
  1301              		.cfi_def_cfa_offset 16
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 120
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 120
 
 
  1302              		.cfi_offset 3, -16
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1142:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			{
  1341              		.loc 1 1142 4 is_stmt 1 view .LVU389
 1142:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			{
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 121
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 121
 
 
  1342              		.loc 1 1142 14 is_stmt 0 view .LVU390
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1114:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
  1383              		.loc 1 1114 12 discriminator 1 view .LVU404
  1384 0054 124B     		ldr	r3, .L104+4
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 122
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 122
 
 
  1385 0056 1C68     		ldr	r4, [r3]
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  1430              		.loc 1 1183 5 is_stmt 1 discriminator 1 view .LVU415
 1183:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				portYIELD_WITHIN_API();
  1431              		.loc 1 1183 5 discriminator 1 view .LVU416
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 123
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 123
 
 
 1183:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				portYIELD_WITHIN_API();
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  1479              		.cfi_startproc
  1480              		@ args = 0, pretend = 0, frame = 0
  1481              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 124
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 124
 
 
 1328:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	eTaskState eReturn;
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  1520 001c AB42     		cmp	r3, r5
  1521 001e 1FD0     		beq	.L112
 1348:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			{
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 125
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 125
 
 
  1522              		.loc 1 1348 62 discriminator 1 view .LVU442
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  1566              	.LBE131:
 1333:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
  1567              		.loc 1 1333 3 is_stmt 1 discriminator 1 view .LVU455
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 126
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 126
 
 
 1333:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  1609 006a F8E7     		b	.L109
  1610              	.L123:
  1611              		.align	2
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 127
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 127
 
 
  1612              	.L122:
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  1658              	.LVL126:
 1412:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	}
  1659              		.loc 1 1412 3 discriminator 4 view .LVU479
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 128
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 128
 
 
 1413:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  196:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 	(
  197:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 		"	mov %0, %1												\n" \
  198:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 		"	msr basepri, %0											\n" \
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 129
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 129
 
 
  199:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 		"	isb														\n" \
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1448:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		}
  1733              		.loc 1 1448 13 is_stmt 0 discriminator 4 view .LVU497
  1734 001e E06A     		ldr	r0, [r4, #44]
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 130
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 130
 
 
  1735              	.LVL133:
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1461:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	TCB_t *pxTCB;
  1780              		.loc 1 1461 2 is_stmt 1 view -0
  1781              		.cfi_startproc
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 131
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 131
 
 
  1782              		@ args = 0, pretend = 0, frame = 0
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  1823              		.cfi_offset 6, -8
  1824              		.cfi_offset 14, -4
  1825 0018 0546     		mov	r5, r0
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 132
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 132
 
 
  1826 001a 0C46     		mov	r4, r1
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  1862 0036 DB6A     		ldr	r3, [r3, #44]
 1507:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 						{
  1863              		.loc 1 1507 9 view .LVU538
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 133
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 133
 
 
  1864 0038 A342     		cmp	r3, r4
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  1903 0056 EC64     		str	r4, [r5, #76]
 1566:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				{
  1904              		.loc 1 1566 5 is_stmt 1 view .LVU554
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 134
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 134
 
 
 1566:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				{
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  1944              		.loc 1 1604 6 view .LVU569
  1945              	@ 1604 "Middlewares/Third_Party/FreeRTOS/Source/tasks.c" 1
  1946 0086 BFF36F8F 		isb
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 135
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 135
 
 
  1947              	@ 0 "" 2
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1595:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				}
  1988              		.loc 1 1595 6 view .LVU583
 1595:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 136
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 136
 
 
  1989              		.loc 1 1595 6 view .LVU584
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  2039              		.cfi_offset 14, -4
 1773:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
  2040              		.loc 1 1773 2 is_stmt 1 view .LVU591
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 137
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 137
 
 
  2041              	.LVL160:
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  2079              		.loc 2 193 1 view .LVU607
  195:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 	(
  2080              		.loc 2 195 2 view .LVU608
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 138
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 138
 
 
  2081              		.syntax unified
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  2123 004c 2946     		mov	r1, r5
  2124 004e 0D4B     		ldr	r3, .L166+8
  2125 0050 03EB8000 		add	r0, r3, r0, lsl #2
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 139
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 139
 
 
  2126 0054 FFF7FEFF 		bl	vListInsertEnd
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  2173              	.LVL169:
  2174              	.LFB18:
 1826:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	BaseType_t xYieldRequired = pdFALSE;
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 140
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 140
 
 
  2175              		.loc 1 1826 2 view -0
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  223:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** }
  2218              		.loc 2 223 2 discriminator 2 view .LVU642
  223:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** }
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 141
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 141
 
 
  2219              		.loc 2 223 2 is_stmt 0 discriminator 2 view .LVU643
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  2258 0042 FFF7FEFF 		bl	uxListRemove
  2259              	.LVL175:
 1872:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 142
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 142
 
 
  2260              		.loc 1 1872 6 is_stmt 1 view .LVU659
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1831:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
  2304              		.loc 1 1831 3 is_stmt 1 view .LVU672
  2305              	.LBB145:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 143
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 143
 
 
  2306              	.LBI145:
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  2350 009c 00000000 		.word	.LANCHOR4
  2351 00a0 00000000 		.word	.LANCHOR1
  2352              		.cfi_endproc
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 144
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 144
 
 
  2353              	.LFE18:
@@ -8638,7 +8638,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  2398 0014 059B     		ldr	r3, [sp, #20]
  2399 0016 0293     		str	r3, [sp, #8]
  2400 0018 069B     		ldr	r3, [sp, #24]
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 145
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 145
 
 
  2401 001a 0193     		str	r3, [sp, #4]
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  2443              		.cfi_restore_state
  2444              	.LBB148:
 1923:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 146
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 146
 
 
  2445              		.loc 1 1923 4 is_stmt 1 view .LVU705
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1979:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
  2487              		.loc 1 1979 3 is_stmt 1 view .LVU718
 1979:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 147
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 147
 
 
  2488              		.loc 1 1979 14 is_stmt 0 view .LVU719
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  2530 0084 00000000 		.word	.LC0
  2531 0088 00000000 		.word	prvIdleTask
  2532 008c 00000000 		.word	.LANCHOR17
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 148
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 148
 
 
  2533 0090 00000000 		.word	.LANCHOR3
@@ -8878,7 +8878,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  2581              		.loc 1 2022 2 is_stmt 1 view .LVU739
  2582 0018 FFF7FEFF 		bl	vPortEndScheduler
  2583              	.LVL192:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 149
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 149
 
 
 2023:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** /*----------------------------------------------------------*/
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 2214:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	{
  2636              		.loc 1 2214 32 view .LVU746
 2216:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 150
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 150
 
 
  2637              		.loc 1 2216 3 view .LVU747
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 2249:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
  2682              		.loc 1 2249 2 is_stmt 1 view .LVU759
 2251:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** }
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 151
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 151
 
 
  2683              		.loc 1 2251 2 view .LVU760
@@ -9058,7 +9058,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 2265:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
  2735              		.loc 1 2265 1 view .LVU767
 2269:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	configASSERT( pxTCB );
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 152
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 152
 
 
  2736              		.loc 1 2269 2 view .LVU768
@@ -9118,7 +9118,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  2778              		.loc 2 195 2 is_stmt 0 view .LVU780
  2779              	.LBE157:
  2780              	.LBE156:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 153
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 153
 
 
 2270:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	return &( pxTCB->pcTaskName[ 0 ] );
@@ -9178,7 +9178,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  2826              	.LBB158:
 2597:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
  2827              		.loc 1 2597 3 is_stmt 1 view .LVU792
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 154
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 154
 
 
 2597:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
@@ -9238,7 +9238,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 2605:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		}
  2869              		.loc 1 2605 4 is_stmt 1 discriminator 1 view .LVU806
 2605:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 155
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 155
 
 
  2870              		.loc 1 2605 4 discriminator 1 view .LVU807
@@ -9298,7 +9298,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  2910              	.LBB162:
 2699:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			{
  2911              		.loc 1 2699 4 is_stmt 1 view .LVU822
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 156
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 156
 
 
 2699:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			{
@@ -9358,7 +9358,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  2952 007a 6368     		ldr	r3, [r4, #4]
  2953              	.LVL212:
 2639:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					{
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 157
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 157
 
 
  2954              		.loc 1 2639 6 is_stmt 1 view .LVU837
@@ -9418,7 +9418,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  2993 00aa 1748     		ldr	r0, .L238+28
  2994 00ac 1044     		add	r0, r0, r2
  2995 00ae FFF7FEFF 		bl	vListInsertEnd
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 158
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 158
 
 
  2996              	.LVL215:
@@ -9478,7 +9478,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  3036              		.loc 1 2647 7 is_stmt 0 view .LVU866
  3037              	.LBE163:
 2727:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 159
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 159
 
 
  3038              		.loc 1 2727 3 is_stmt 1 view .LVU867
@@ -9538,7 +9538,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  3086              	xTaskResumeAll:
  3087              	.LFB22:
 2100:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** TCB_t *pxTCB = NULL;
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 160
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 160
 
 
  3088              		.loc 1 2100 1 is_stmt 1 view -0
@@ -9598,7 +9598,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  3131 0018 FEE7     		b	.L242
  3132              	.L241:
 2106:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 161
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 161
 
 
  3133              		.loc 1 2106 38 discriminator 2 view .LVU888
@@ -9658,7 +9658,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  3171 003e 284B     		ldr	r3, .L257+8
  3172 0040 DB68     		ldr	r3, [r3, #12]
 2125:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					( void ) uxListRemove( &( pxTCB->xEventListItem ) );
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 162
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 162
 
 
  3173              		.loc 1 2125 12 view .LVU905
@@ -9718,7 +9718,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 2132:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					{
  3214              		.loc 1 2132 8 discriminator 3 view .LVU919
  3215 007a 9A42     		cmp	r2, r3
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 163
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 163
 
 
  3216 007c DCD3     		bcc	.L244
@@ -9778,7 +9778,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  3255 00a0 C3F8042D 		str	r2, [r3, #3332]
 2190:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				}
  3256              		.loc 1 2190 6 view .LVU935
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 164
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 164
 
 
  3257              		.syntax unified
@@ -9838,7 +9838,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  3297              	.L256:
 2175:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					}
  3298              		.loc 1 2175 7 is_stmt 1 view .LVU950
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 165
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 165
 
 
 2175:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					}
@@ -9898,7 +9898,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  3346              		.loc 1 1199 2 is_stmt 1 view -0
  3347              		.cfi_startproc
  3348              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 166
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 166
 
 
  3349              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -9958,7 +9958,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1204:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		configASSERT( uxSchedulerSuspended == 0 );
  3391              		.loc 1 1204 3 discriminator 2 view .LVU972
 1204:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		configASSERT( uxSchedulerSuspended == 0 );
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 167
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 167
 
 
  3392              		.loc 1 1204 3 discriminator 2 view .LVU973
@@ -10018,7 +10018,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  195:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 	(
  3433              		.loc 2 195 2 view .LVU987
  3434              		.syntax unified
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 168
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 168
 
 
  3435              	@ 195 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h" 1
@@ -10078,7 +10078,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1223:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				{
  3475              		.loc 1 1223 7 is_stmt 0 view .LVU1002
  3476 0056 A342     		cmp	r3, r4
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 169
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 169
 
 
  3477 0058 01D8     		bhi	.L267
@@ -10138,7 +10138,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  3514 0072 2C60     		str	r4, [r5]
 1250:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			{
  3515              		.loc 1 1250 4 is_stmt 1 view .LVU1020
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 170
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 170
 
 
  3516              	.L270:
@@ -10198,7 +10198,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  3556              	.L272:
  3557              	.LBB175:
 1248:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 171
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 171
 
 
  3558              		.loc 1 1248 4 is_stmt 1 view .LVU1035
@@ -10258,7 +10258,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  191:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** {
  3605              		.loc 2 191 30 view .LVU1045
  3606              	.LBB177:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 172
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 172
 
 
  193:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 
@@ -10318,7 +10318,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  3646 002e 48B9     		cbnz	r0, .L278
  3647              	.LVL262:
  3648              	.L279:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 173
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 173
 
 
 1314:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		}
@@ -10378,7 +10378,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  3695 0004 1BB1     		cbz	r3, .L287
 2851:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	}
  3696              		.loc 1 2851 3 is_stmt 1 view .LVU1071
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 174
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 174
 
 
 2851:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	}
@@ -10438,7 +10438,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  193:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 
  3737              		.loc 2 193 1 view .LVU1086
  195:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 	(
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 175
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 175
 
 
  3738              		.loc 2 195 2 view .LVU1087
@@ -10498,7 +10498,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  3784 0068 094A     		ldr	r2, .L297+16
  3785 006a 1160     		str	r1, [r2]
  3786              	.LBE181:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 176
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 176
 
 
 2890:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		traceTASK_SWITCHED_IN();
@@ -10558,7 +10558,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  3835 0000 38B5     		push	{r3, r4, r5, lr}
  3836              	.LCFI32:
  3837              		.cfi_def_cfa_offset 16
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 177
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 177
 
 
  3838              		.cfi_offset 3, -16
@@ -10618,7 +10618,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1661:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				{
  3877              		.loc 1 1661 5 view .LVU1119
 1661:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				{
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 178
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 178
 
 
  3878              		.loc 1 1661 14 is_stmt 0 view .LVU1120
@@ -10678,7 +10678,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  3918 004a 0023     		movs	r3, #0
  3919 004c 84F85830 		strb	r3, [r4, #88]
  3920 0050 EEE7     		b	.L302
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 179
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 179
 
 
  3921              	.L312:
@@ -10738,7 +10738,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  3963              	.LBE185:
  3964              	.LBE184:
 1692:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				portYIELD_WITHIN_API();
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 180
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 180
 
 
  3965              		.loc 1 1692 5 is_stmt 1 discriminator 1 view .LVU1147
@@ -10798,7 +10798,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 1710:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				}
  4006              		.loc 1 1710 6 is_stmt 1 view .LVU1161
  4007 00a8 FFF7FEFF 		bl	vTaskSwitchContext
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 181
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 181
 
 
  4008              	.LVL281:
@@ -10858,7 +10858,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  4055              	.LVL284:
 2917:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** }
  4056              		.loc 1 2917 2 is_stmt 1 discriminator 2 view .LVU1171
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 182
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 182
 
 
  4057 0010 0121     		movs	r1, #1
@@ -10918,7 +10918,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  4103              		.align	1
  4104              		.global	vTaskPlaceOnUnorderedEventList
  4105              		.syntax unified
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 183
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 183
 
 
  4106              		.thumb
@@ -10978,7 +10978,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  4151              		.loc 2 195 2 is_stmt 0 view .LVU1190
  4152              	.LBE189:
  4153              	.LBE188:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 184
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 184
 
 
 2927:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
@@ -11038,7 +11038,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  4196              		.loc 1 2927 43 discriminator 2 view .LVU1202
 2932:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
  4197              		.loc 1 2932 2 discriminator 2 view .LVU1203
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 185
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 185
 
 
  4198 0032 084B     		ldr	r3, .L332+4
@@ -11098,7 +11098,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 2948:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		configASSERT( pxEventList );
  4245              		.loc 1 2948 2 is_stmt 0 view .LVU1213
  4246 0000 38B5     		push	{r3, r4, r5, lr}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 186
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 186
 
 
  4247              	.LCFI38:
@@ -11158,7 +11158,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  4288              	.LBI192:
  191:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** {
  4289              		.loc 2 191 30 view .LVU1227
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 187
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 187
 
 
  4290              	.LBB193:
@@ -11218,7 +11218,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  4338              		.cfi_offset 4, -12
  4339              		.cfi_offset 5, -8
  4340              		.cfi_offset 14, -4
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 188
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 188
 
 
 2980:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** BaseType_t xReturn;
@@ -11278,7 +11278,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  4378 0028 01D9     		bls	.L347
 3003:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	}
  4379              		.loc 1 3003 3 discriminator 1 view .LVU1253
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 189
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 189
 
 
  4380 002a 134B     		ldr	r3, .L353+4
@@ -11338,7 +11338,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  193:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 
  4421              		.loc 2 193 1 view .LVU1267
  195:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 	(
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 190
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 190
 
 
  4422              		.loc 2 195 2 view .LVU1268
@@ -11398,7 +11398,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  4469              		.section	.text.vTaskRemoveFromUnorderedEventList,"ax",%progbits
  4470              		.align	1
  4471              		.global	vTaskRemoveFromUnorderedEventList
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 191
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 191
 
 
  4472              		.syntax unified
@@ -11458,7 +11458,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 3052:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
  4518              		.loc 1 3052 2 is_stmt 1 discriminator 1 view .LVU1286
 3052:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 192
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 192
 
 
  4519              		.loc 1 3052 2 discriminator 1 view .LVU1287
@@ -11518,7 +11518,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  4557              		.loc 1 3067 2 discriminator 3 view .LVU1303
 3067:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
  4558              		.loc 1 3067 2 discriminator 3 view .LVU1304
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 193
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 193
 
 
  4559 003e 00EB8000 		add	r0, r0, r0, lsl #2
@@ -11578,7 +11578,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  4601              	.LVL328:
  4602              		.thumb
  4603              		.syntax unified
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 194
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 194
 
 
  4604              	.L359:
@@ -11638,7 +11638,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  4650              		.loc 1 3085 3 discriminator 2 view .LVU1326
 3085:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		pxTimeOut->xTimeOnEntering = xTickCount;
  4651              		.loc 1 3085 29 is_stmt 0 discriminator 2 view .LVU1327
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 195
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 195
 
 
  4652 000a 094B     		ldr	r3, .L372
@@ -11698,7 +11698,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 3082:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	taskENTER_CRITICAL();
  4695              		.loc 1 3082 2 discriminator 1 view .LVU1339
  4696 002c FEE7     		b	.L368
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 196
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 196
 
 
  4697              	.L373:
@@ -11758,7 +11758,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  4749              	.LFB37:
 3101:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** BaseType_t xReturn;
  4750              		.loc 1 3101 1 is_stmt 1 view -0
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 197
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 197
 
 
  4751              		.cfi_startproc
@@ -11818,7 +11818,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  4790 0018 B2F1FF3F 		cmp	r2, #-1
  4791 001c 27D0     		beq	.L385
 3135:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		{
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 198
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 198
 
 
  4792              		.loc 1 3135 3 is_stmt 1 view .LVU1362
@@ -11878,7 +11878,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  4833              	.LBB204:
  193:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 
  4834              		.loc 2 193 1 view .LVU1376
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 199
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 199
 
 
  195:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 	(
@@ -11938,7 +11938,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  4880              	.L381:
  195:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 	(
  4881              		.loc 2 195 2 is_stmt 0 view .LVU1386
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 200
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 200
 
 
  4882              	.LBE206:
@@ -11998,7 +11998,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  4921 0074 2046     		mov	r0, r4
  4922 0076 70BD     		pop	{r4, r5, r6, pc}
  4923              	.LVL351:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 201
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 201
 
 
  4924              	.L386:
@@ -12058,7 +12058,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  4976              	.LVL353:
  4977              	.LFB39:
 3172:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	UBaseType_t uxReturn;
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 202
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 202
 
 
  4978              		.loc 1 3172 2 is_stmt 1 view -0
@@ -12118,7 +12118,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 3196:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
  5022              		.loc 1 3196 2 view .LVU1421
 3198:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		{
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 203
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 203
 
 
  5023              		.loc 1 3198 3 view .LVU1422
@@ -12178,7 +12178,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 3500:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		pxTaskStatus->pcTaskName = ( const char * ) &( pxTCB->pcTaskName [ 0 ] );
  5069              		.loc 1 3500 3 is_stmt 1 discriminator 4 view .LVU1433
 3500:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		pxTaskStatus->pcTaskName = ( const char * ) &( pxTCB->pcTaskName [ 0 ] );
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 204
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 204
 
 
  5070              		.loc 1 3500 25 is_stmt 0 discriminator 4 view .LVU1434
@@ -12238,7 +12238,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 3531:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			{
  5105              		.loc 1 3531 4 is_stmt 1 view .LVU1454
 3531:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			{
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 205
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 205
 
 
  5106              		.loc 1 3531 14 is_stmt 0 view .LVU1455
@@ -12298,7 +12298,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  5145 0046 0023     		movs	r3, #0
  5146              	.LVL368:
 3533:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 206
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 206
 
 
  5147              		.loc 1 3533 33 view .LVU1471
@@ -12358,7 +12358,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  5187 006e 2084     		strh	r0, [r4, #32]	@ movhi
  5188 0070 E5E7     		b	.L402
  5189              	.L416:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 207
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 207
 
 
  5190 0072 00BF     		.align	2
@@ -12418,7 +12418,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  5237 0010 5B68     		ldr	r3, [r3, #4]
  5238 0012 4B60     		str	r3, [r1, #4]
 3596:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 208
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 208
 
 
  5239              		.loc 1 3596 4 view .LVU1495
@@ -12478,7 +12478,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 3606:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			} while( pxNextTCB != pxFirstTCB );
  5282              		.loc 1 3606 5 is_stmt 1 discriminator 3 view .LVU1507
 3606:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			} while( pxNextTCB != pxFirstTCB );
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 209
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 209
 
 
  5283              		.loc 1 3606 11 is_stmt 0 discriminator 3 view .LVU1508
@@ -12538,7 +12538,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  5328              		.cfi_startproc
  5329              		@ args = 0, pretend = 0, frame = 0
  5330              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 210
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 210
 
 
 2404:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	UBaseType_t uxTask = 0, uxQueue = configMAX_PRIORITIES;
@@ -12598,7 +12598,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  5371              		.loc 1 2417 16 discriminator 1 view .LVU1533
  5372 001e 04EB8401 		add	r1, r4, r4, lsl #2
  5373 0022 0122     		movs	r2, #1
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 211
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 211
 
 
  5374 0024 1D4B     		ldr	r3, .L429+4
@@ -12658,7 +12658,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 2430:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				}
  5415              		.loc 1 2430 16 view .LVU1547
  5416 0064 0422     		movs	r2, #4
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 212
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 212
 
 
  5417 0066 1049     		ldr	r1, .L429+16
@@ -12718,7 +12718,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  5456              		.loc 1 2470 2 is_stmt 0 view .LVU1562
  5457 0092 2046     		mov	r0, r4
  5458 0094 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 213
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 213
 
 
  5459              	.LVL405:
@@ -12778,7 +12778,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  5504              		.loc 1 3660 30 is_stmt 0 discriminator 4 view .LVU1573
  5505 0006 186B     		ldr	r0, [r3, #48]
  5506 0008 FFF7FEFF 		bl	prvTaskCheckFreeStackSpace
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 214
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 214
 
 
  5507              	.LVL408:
@@ -12838,7 +12838,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  5553              		.cfi_endproc
  5554              	.LFE50:
  5556              		.section	.text.xTaskGetSchedulerState,"ax",%progbits
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 215
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 215
 
 
  5557              		.align	1
@@ -12898,7 +12898,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  5599              		.align	2
  5600              	.L445:
  5601 0018 00000000 		.word	.LANCHOR11
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 216
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 216
 
 
  5602 001c 00000000 		.word	.LANCHOR16
@@ -12958,7 +12958,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  5646              		.loc 1 3813 11 is_stmt 0 view .LVU1608
  5647 0014 8269     		ldr	r2, [r0, #24]
 3813:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				{
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 217
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 217
 
 
  5648              		.loc 1 3813 7 view .LVU1609
@@ -13018,7 +13018,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  5689 0046 FFF7FEFF 		bl	uxListRemove
  5690              	.LVL418:
 3832:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 218
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 218
 
 
  5691              		.loc 1 3832 31 is_stmt 1 view .LVU1623
@@ -13078,7 +13078,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 3852:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				{
  5732              		.loc 1 3852 7 view .LVU1637
  5733 007c 9A42     		cmp	r2, r3
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 219
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 219
 
 
  5734 007e 03D3     		bcc	.L455
@@ -13138,7 +13138,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  5781              		.thumb
  5782              		.thumb_func
  5784              	xTaskPriorityDisinherit:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 220
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 220
 
 
  5785              	.LVL426:
@@ -13198,7 +13198,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  5828              		.syntax unified
  5829              	.L466:
  195:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 	(
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 221
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 221
 
 
  5830              		.loc 2 195 2 is_stmt 0 view .LVU1657
@@ -13258,7 +13258,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 3895:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
  5870              		.loc 1 3895 4 discriminator 2 view .LVU1672
 3895:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 222
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 222
 
 
  5871              		.loc 1 3895 28 is_stmt 0 discriminator 2 view .LVU1673
@@ -13318,7 +13318,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 3921:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
  5908              		.loc 1 3921 24 view .LVU1691
  5909 0054 E062     		str	r0, [r4, #44]
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 223
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 223
 
 
 3926:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					prvAddTaskToReadyList( pxTCB );
@@ -13378,7 +13378,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  5953              		.cfi_offset 3, -16
  5954              		.cfi_offset 4, -12
  5955              		.cfi_offset 5, -8
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 224
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 224
 
 
  5956              		.cfi_offset 14, -4
@@ -13438,7 +13438,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  6002 0008 036D     		ldr	r3, [r0, #80]
  6003 000a 43B9     		cbnz	r3, .L482
 3972:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 225
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 225
 
 
  6004              		.loc 1 3972 4 view .LVU1713
@@ -13498,7 +13498,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  6044 0026 E16A     		ldr	r1, [r4, #44]
  6045              	.LVL441:
 3988:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			{
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 226
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 226
 
 
  6046              		.loc 1 3988 6 view .LVU1728
@@ -13558,7 +13558,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  6084              		.loc 1 4025 6 view .LVU1744
 4025:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					{
  6085              		.loc 1 4025 10 is_stmt 0 view .LVU1745
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 227
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 227
 
 
  6086 0048 6269     		ldr	r2, [r4, #20]
@@ -13618,7 +13618,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  6126 007e D7E7     		b	.L480
  6127              	.LVL450:
  6128              	.L494:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 228
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 228
 
 
 3999:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
@@ -13678,7 +13678,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  6175              		.align	1
  6176              		.global	uxTaskResetEventItemValue
  6177              		.syntax unified
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 229
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 229
 
 
  6178              		.thumb
@@ -13738,7 +13738,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 4396:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		{
  6226              		.loc 1 4396 3 view .LVU1778
 4396:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		{
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 230
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 230
 
 
  6227              		.loc 1 4396 20 is_stmt 0 view .LVU1779
@@ -13798,7 +13798,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  6274              		.cfi_offset 5, -8
  6275              		.cfi_offset 14, -4
  6276 0002 0546     		mov	r5, r0
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 231
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 231
 
 
  6277 0004 0C46     		mov	r4, r1
@@ -13858,7 +13858,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  6314              	.LVL458:
 4449:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			{
  6315              		.loc 1 4449 4 is_stmt 1 view .LVU1806
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 232
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 232
 
 
 4449:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			{
@@ -13918,7 +13918,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  6354 0056 4FF08052 		mov	r2, #268435456
  6355 005a C3F8042D 		str	r2, [r3, #3332]
 4430:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 233
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 233
 
 
  6356              		.loc 1 4430 6 view .LVU1823
@@ -13978,7 +13978,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  6404              		.cfi_def_cfa_offset 24
  6405              		.cfi_offset 3, -24
  6406              		.cfi_offset 4, -20
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 234
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 234
 
 
  6407              		.cfi_offset 5, -16
@@ -14038,7 +14038,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  6447              		.loc 1 4512 29 is_stmt 1 view .LVU1845
 4515:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
  6448              		.loc 1 4515 3 view .LVU1846
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 235
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 235
 
 
  6449 0032 FFF7FEFF 		bl	vPortExitCritical
@@ -14098,7 +14098,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  6488              	.LVL469:
 4549:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	}
  6489              		.loc 1 4549 3 view .LVU1862
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 236
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 236
 
 
 4550:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
@@ -14158,7 +14158,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  6532              	.LVL474:
 4542:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			}
  6533              		.loc 1 4542 13 view .LVU1875
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 237
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 237
 
 
  6534 0092 DFE7     		b	.L515
@@ -14218,7 +14218,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  6581              	.LVL478:
 4568:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			{
  6582              		.loc 1 4568 4 discriminator 2 view .LVU1885
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 238
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 238
 
 
 4568:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			{
@@ -14278,7 +14278,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  6624 0038 BFF36F8F 		isb														
  6625 003c BFF34F8F 		dsb														
  6626              	
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 239
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 239
 
 
  6627              	@ 0 "" 2
@@ -14338,7 +14338,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  6665              		.loc 1 4656 2 is_stmt 0 view .LVU1914
  6666 0052 2046     		mov	r0, r4
  6667 0054 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 240
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 240
 
 
  6668              	.LVL487:
@@ -14398,7 +14398,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  6705              		.loc 1 4560 13 view .LVU1931
  6706 006e ECE7     		b	.L526
  6707              	.LVL493:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 241
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 241
 
 
  6708              	.L536:
@@ -14458,7 +14458,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  6749              		.loc 1 4619 5 discriminator 3 view .LVU1944
  6750 009e AB6A     		ldr	r3, [r5, #40]
  6751 00a0 43B1     		cbz	r3, .L534
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 242
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 242
 
 
 4619:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
@@ -14518,7 +14518,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  6792 00c4 4FF08052 		mov	r2, #268435456
  6793 00c8 C3F8042D 		str	r2, [r3, #3332]
 4641:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 243
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 243
 
 
  6794              		.loc 1 4641 6 view .LVU1959
@@ -14578,7 +14578,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  6841              		.cfi_offset 5, -20
  6842              		.cfi_offset 6, -16
  6843              		.cfi_offset 7, -12
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 244
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 244
 
 
  6844              		.cfi_offset 8, -8
@@ -14638,7 +14638,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  6884              		.loc 1 4696 35 view .LVU1982
  6885 002a 2360     		str	r3, [r4]
  6886              	.L546:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 245
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 245
 
 
 4699:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			pxTCB->ucNotifyState = taskNOTIFICATION_RECEIVED;
@@ -14698,7 +14698,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  6932              	.LVL506:
  6933              		.thumb
  6934              		.syntax unified
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 246
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 246
 
 
  6935              	.L545:
@@ -14758,7 +14758,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  6975              	.LBI229:
  227:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** {
  6976              		.loc 2 227 30 view .LVU2006
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 247
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 247
 
 
  6977              	.LBB230:
@@ -14818,7 +14818,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  7018              	.LVL516:
  7019              	.L548:
 4717:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					{
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 248
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 248
 
 
  7020              		.loc 1 4717 6 is_stmt 1 view .LVU2022
@@ -14878,7 +14878,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  7060 0094 4FF05003 			mov r3, #80												
  7061 0098 83F31188 		msr basepri, r3											
  7062 009c BFF36F8F 		isb														
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 249
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 249
 
 
  7063 00a0 BFF34F8F 		dsb														
@@ -14938,7 +14938,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 4746:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				}
  7103              		.loc 1 4746 6 discriminator 3 view .LVU2051
  7104 00c2 00EB8000 		add	r0, r0, r0, lsl #2
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 250
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 250
 
 
  7105 00c6 3146     		mov	r1, r6
@@ -14998,7 +14998,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  7146 00f8 0122     		movs	r2, #1
  7147 00fa 1A60     		str	r2, [r3]
  7148 00fc B2E7     		b	.L553
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 251
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 251
 
 
  7149              	.L567:
@@ -15058,7 +15058,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  7196              		.loc 1 4813 3 discriminator 2 view .LVU2073
 4815:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 		{
  7197              		.loc 1 4815 3 discriminator 2 view .LVU2074
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 252
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 252
 
 
  7198              	.LBB233:
@@ -15118,7 +15118,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  7237              		.loc 1 4828 6 is_stmt 0 discriminator 2 view .LVU2089
  7238 0032 012B     		cmp	r3, #1
  7239 0034 0BD0     		beq	.L580
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 253
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 253
 
 
  7240              	.LVL533:
@@ -15178,7 +15178,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
 4793:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
  7285              		.loc 1 4793 3 is_stmt 1 discriminator 1 view .LVU2101
 4793:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 254
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 254
 
 
  7286              		.loc 1 4793 3 discriminator 1 view .LVU2102
@@ -15238,7 +15238,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  7326 0064 144B     		ldr	r3, .L581
  7327 0066 1B68     		ldr	r3, [r3]
 4833:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 				{
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 255
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 255
 
 
  7328              		.loc 1 4833 7 discriminator 2 view .LVU2117
@@ -15298,7 +15298,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  7368              		.loc 1 4849 8 is_stmt 0 view .LVU2131
  7369 009c 45B1     		cbz	r5, .L577
 4851:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 					}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 256
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 256
 
 
  7370              		.loc 1 4851 7 is_stmt 1 view .LVU2132
@@ -15358,7 +15358,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  7420              		.cfi_offset 14, -4
 4878:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 	BaseType_t xReturn;
  7421              		.loc 1 4878 2 is_stmt 1 view .LVU2139
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 257
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 257
 
 
 4879:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 
@@ -15418,7 +15418,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  7461              		.loc 1 4889 26 is_stmt 0 view .LVU2154
  7462 0024 0023     		movs	r3, #0
  7463 0026 84F85830 		strb	r3, [r4, #88]
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 258
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 258
 
 
 4890:Middlewares/Third_Party/FreeRTOS/Source/tasks.c **** 			}
@@ -15478,7 +15478,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  7526              	uxPendedTicks:
  7527 0000 00000000 		.space	4
  7528              		.section	.bss.uxSchedulerSuspended,"aw",%nobits
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 259
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 259
 
 
  7529              		.align	2
@@ -15538,7 +15538,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  7590      00000000 
  7590      00000000 
  7591              		.section	.bss.xSchedulerRunning,"aw",%nobits
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 260
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 260
 
 
  7592              		.align	2
@@ -15585,239 +15585,239 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 1
  7635              		.file 10 "Middlewares/Third_Party/FreeRTOS/Source/include/portable.h"
  7636              		.file 11 "Middlewares/Third_Party/FreeRTOS/Source/include/timers.h"
  7637              		.file 12 "c:\\st\\stm32cubeide_1.10.1\\stm32cubeide\\plugins\\com.st.stm32cube.ide.mcu.externaltoo
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 261
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 261
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 tasks.c
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:18     .text.prvTaskIsTaskSuspended:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:23     .text.prvTaskIsTaskSuspended:0000000000000000 prvTaskIsTaskSuspended
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:113    .text.prvTaskIsTaskSuspended:0000000000000038 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:119    .text.prvTaskCheckFreeStackSpace:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:124    .text.prvTaskCheckFreeStackSpace:0000000000000000 prvTaskCheckFreeStackSpace
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:167    .text.prvResetNextTaskUnblockTime:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:172    .text.prvResetNextTaskUnblockTime:0000000000000000 prvResetNextTaskUnblockTime
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:215    .text.prvResetNextTaskUnblockTime:0000000000000024 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:221    .text.prvInitialiseNewTask:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:226    .text.prvInitialiseNewTask:0000000000000000 prvInitialiseNewTask
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:384    .text.prvInitialiseTaskLists:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:389    .text.prvInitialiseTaskLists:0000000000000000 prvInitialiseTaskLists
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:464    .text.prvInitialiseTaskLists:0000000000000048 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:476    .text.prvAddNewTaskToReadyList:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:481    .text.prvAddNewTaskToReadyList:0000000000000000 prvAddNewTaskToReadyList
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:623    .text.prvAddNewTaskToReadyList:0000000000000094 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:633    .text.prvDeleteTCB:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:638    .text.prvDeleteTCB:0000000000000000 prvDeleteTCB
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:716    .text.prvCheckTasksWaitingTermination:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:721    .text.prvCheckTasksWaitingTermination:0000000000000000 prvCheckTasksWaitingTermination
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:798    .text.prvCheckTasksWaitingTermination:0000000000000040 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:805    .text.prvIdleTask:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:810    .text.prvIdleTask:0000000000000000 prvIdleTask
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:859    .text.prvIdleTask:0000000000000024 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:864    .text.prvAddCurrentTaskToDelayedList:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:869    .text.prvAddCurrentTaskToDelayedList:0000000000000000 prvAddCurrentTaskToDelayedList
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:976    .text.prvAddCurrentTaskToDelayedList:0000000000000064 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:986    .text.xTaskCreateStatic:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:992    .text.xTaskCreateStatic:0000000000000000 xTaskCreateStatic
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:1154   .text.xTaskCreate:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:1160   .text.xTaskCreate:0000000000000000 xTaskCreate
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:1285   .text.vTaskDelete:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:1291   .text.vTaskDelete:0000000000000000 vTaskDelete
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:1458   .text.vTaskDelete:000000000000009c $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:1469   .text.eTaskGetState:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:1475   .text.eTaskGetState:0000000000000000 eTaskGetState
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:1613   .text.eTaskGetState:000000000000006c $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:1622   .text.uxTaskPriorityGet:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:1628   .text.uxTaskPriorityGet:0000000000000000 uxTaskPriorityGet
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:1674   .text.uxTaskPriorityGet:000000000000001c $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:1679   .text.uxTaskPriorityGetFromISR:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:1685   .text.uxTaskPriorityGetFromISR:0000000000000000 uxTaskPriorityGetFromISR
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:1766   .text.uxTaskPriorityGetFromISR:000000000000002c $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:1771   .text.vTaskPrioritySet:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:1777   .text.vTaskPrioritySet:0000000000000000 vTaskPrioritySet
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2012   .text.vTaskPrioritySet:00000000000000c8 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2019   .text.vTaskResume:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2025   .text.vTaskResume:0000000000000000 vTaskResume
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2159   .text.vTaskResume:000000000000007c $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2166   .text.xTaskResumeFromISR:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2172   .text.xTaskResumeFromISR:0000000000000000 xTaskResumeFromISR
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2347   .text.xTaskResumeFromISR:0000000000000090 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2356   .rodata.vTaskStartScheduler.str1.4:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2360   .text.vTaskStartScheduler:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2366   .text.vTaskStartScheduler:0000000000000000 vTaskStartScheduler
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 262
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:18     .text.prvTaskIsTaskSuspended:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:23     .text.prvTaskIsTaskSuspended:0000000000000000 prvTaskIsTaskSuspended
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:113    .text.prvTaskIsTaskSuspended:0000000000000038 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:119    .text.prvTaskCheckFreeStackSpace:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:124    .text.prvTaskCheckFreeStackSpace:0000000000000000 prvTaskCheckFreeStackSpace
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:167    .text.prvResetNextTaskUnblockTime:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:172    .text.prvResetNextTaskUnblockTime:0000000000000000 prvResetNextTaskUnblockTime
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:215    .text.prvResetNextTaskUnblockTime:0000000000000024 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:221    .text.prvInitialiseNewTask:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:226    .text.prvInitialiseNewTask:0000000000000000 prvInitialiseNewTask
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:384    .text.prvInitialiseTaskLists:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:389    .text.prvInitialiseTaskLists:0000000000000000 prvInitialiseTaskLists
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:464    .text.prvInitialiseTaskLists:0000000000000048 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:476    .text.prvAddNewTaskToReadyList:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:481    .text.prvAddNewTaskToReadyList:0000000000000000 prvAddNewTaskToReadyList
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:623    .text.prvAddNewTaskToReadyList:0000000000000094 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:633    .text.prvDeleteTCB:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:638    .text.prvDeleteTCB:0000000000000000 prvDeleteTCB
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:716    .text.prvCheckTasksWaitingTermination:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:721    .text.prvCheckTasksWaitingTermination:0000000000000000 prvCheckTasksWaitingTermination
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:798    .text.prvCheckTasksWaitingTermination:0000000000000040 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:805    .text.prvIdleTask:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:810    .text.prvIdleTask:0000000000000000 prvIdleTask
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:859    .text.prvIdleTask:0000000000000024 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:864    .text.prvAddCurrentTaskToDelayedList:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:869    .text.prvAddCurrentTaskToDelayedList:0000000000000000 prvAddCurrentTaskToDelayedList
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:976    .text.prvAddCurrentTaskToDelayedList:0000000000000064 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:986    .text.xTaskCreateStatic:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:992    .text.xTaskCreateStatic:0000000000000000 xTaskCreateStatic
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:1154   .text.xTaskCreate:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:1160   .text.xTaskCreate:0000000000000000 xTaskCreate
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:1285   .text.vTaskDelete:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:1291   .text.vTaskDelete:0000000000000000 vTaskDelete
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:1458   .text.vTaskDelete:000000000000009c $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:1469   .text.eTaskGetState:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:1475   .text.eTaskGetState:0000000000000000 eTaskGetState
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:1613   .text.eTaskGetState:000000000000006c $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:1622   .text.uxTaskPriorityGet:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:1628   .text.uxTaskPriorityGet:0000000000000000 uxTaskPriorityGet
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:1674   .text.uxTaskPriorityGet:000000000000001c $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:1679   .text.uxTaskPriorityGetFromISR:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:1685   .text.uxTaskPriorityGetFromISR:0000000000000000 uxTaskPriorityGetFromISR
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:1766   .text.uxTaskPriorityGetFromISR:000000000000002c $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:1771   .text.vTaskPrioritySet:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:1777   .text.vTaskPrioritySet:0000000000000000 vTaskPrioritySet
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2012   .text.vTaskPrioritySet:00000000000000c8 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2019   .text.vTaskResume:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2025   .text.vTaskResume:0000000000000000 vTaskResume
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2159   .text.vTaskResume:000000000000007c $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2166   .text.xTaskResumeFromISR:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2172   .text.xTaskResumeFromISR:0000000000000000 xTaskResumeFromISR
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2347   .text.xTaskResumeFromISR:0000000000000090 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2356   .rodata.vTaskStartScheduler.str1.4:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2360   .text.vTaskStartScheduler:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2366   .text.vTaskStartScheduler:0000000000000000 vTaskStartScheduler
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 262
 
 
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2530   .text.vTaskStartScheduler:0000000000000084 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2540   .text.vTaskEndScheduler:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2546   .text.vTaskEndScheduler:0000000000000000 vTaskEndScheduler
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2589   .text.vTaskEndScheduler:0000000000000020 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2594   .text.vTaskSuspendAll:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2600   .text.vTaskSuspendAll:0000000000000000 vTaskSuspendAll
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2617   .text.vTaskSuspendAll:000000000000000c $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2622   .text.xTaskGetTickCount:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2628   .text.xTaskGetTickCount:0000000000000000 xTaskGetTickCount
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2649   .text.xTaskGetTickCount:0000000000000008 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2654   .text.xTaskGetTickCountFromISR:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2660   .text.xTaskGetTickCountFromISR:0000000000000000 xTaskGetTickCountFromISR
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2689   .text.xTaskGetTickCountFromISR:000000000000000c $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2694   .text.uxTaskGetNumberOfTasks:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2700   .text.uxTaskGetNumberOfTasks:0000000000000000 uxTaskGetNumberOfTasks
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2716   .text.uxTaskGetNumberOfTasks:0000000000000008 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2721   .text.pcTaskGetName:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2727   .text.pcTaskGetName:0000000000000000 pcTaskGetName
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2788   .text.pcTaskGetName:0000000000000024 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2793   .text.xTaskIncrementTick:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:2799   .text.xTaskIncrementTick:0000000000000000 xTaskIncrementTick
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:3065   .text.xTaskIncrementTick:00000000000000ec $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:3080   .text.xTaskResumeAll:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:3086   .text.xTaskResumeAll:0000000000000000 xTaskResumeAll
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:3325   .text.xTaskResumeAll:00000000000000d8 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:3337   .text.vTaskDelayUntil:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:3343   .text.vTaskDelayUntil:0000000000000000 vTaskDelayUntil
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:3566   .text.vTaskDelayUntil:000000000000009c $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:3573   .text.vTaskDelay:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:3579   .text.vTaskDelay:0000000000000000 vTaskDelay
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:3672   .text.vTaskDelay:0000000000000048 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:3677   .text.vTaskSwitchContext:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:3683   .text.vTaskSwitchContext:0000000000000000 vTaskSwitchContext
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:3810   .text.vTaskSwitchContext:0000000000000080 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:3821   .text.vTaskSuspend:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:3827   .text.vTaskSuspend:0000000000000000 vTaskSuspend
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4015   .text.vTaskSuspend:00000000000000b0 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4024   .text.vTaskPlaceOnEventList:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4030   .text.vTaskPlaceOnEventList:0000000000000000 vTaskPlaceOnEventList
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4098   .text.vTaskPlaceOnEventList:000000000000002c $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4103   .text.vTaskPlaceOnUnorderedEventList:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4109   .text.vTaskPlaceOnUnorderedEventList:0000000000000000 vTaskPlaceOnUnorderedEventList
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4226   .text.vTaskPlaceOnUnorderedEventList:0000000000000050 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4232   .text.vTaskPlaceOnEventListRestricted:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4238   .text.vTaskPlaceOnEventListRestricted:0000000000000000 vTaskPlaceOnEventListRestricted
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4315   .text.vTaskPlaceOnEventListRestricted:0000000000000034 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4320   .text.xTaskRemoveFromEventList:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4326   .text.xTaskRemoveFromEventList:0000000000000000 xTaskRemoveFromEventList
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4460   .text.xTaskRemoveFromEventList:0000000000000074 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4470   .text.vTaskRemoveFromUnorderedEventList:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4476   .text.vTaskRemoveFromUnorderedEventList:0000000000000000 vTaskRemoveFromUnorderedEventList
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4615   .text.vTaskRemoveFromUnorderedEventList:0000000000000074 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4624   .text.vTaskSetTimeOutState:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4630   .text.vTaskSetTimeOutState:0000000000000000 vTaskSetTimeOutState
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4700   .text.vTaskSetTimeOutState:0000000000000030 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4706   .text.vTaskInternalSetTimeOutState:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4712   .text.vTaskInternalSetTimeOutState:0000000000000000 vTaskInternalSetTimeOutState
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 263
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2530   .text.vTaskStartScheduler:0000000000000084 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2540   .text.vTaskEndScheduler:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2546   .text.vTaskEndScheduler:0000000000000000 vTaskEndScheduler
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2589   .text.vTaskEndScheduler:0000000000000020 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2594   .text.vTaskSuspendAll:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2600   .text.vTaskSuspendAll:0000000000000000 vTaskSuspendAll
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2617   .text.vTaskSuspendAll:000000000000000c $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2622   .text.xTaskGetTickCount:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2628   .text.xTaskGetTickCount:0000000000000000 xTaskGetTickCount
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2649   .text.xTaskGetTickCount:0000000000000008 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2654   .text.xTaskGetTickCountFromISR:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2660   .text.xTaskGetTickCountFromISR:0000000000000000 xTaskGetTickCountFromISR
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2689   .text.xTaskGetTickCountFromISR:000000000000000c $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2694   .text.uxTaskGetNumberOfTasks:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2700   .text.uxTaskGetNumberOfTasks:0000000000000000 uxTaskGetNumberOfTasks
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2716   .text.uxTaskGetNumberOfTasks:0000000000000008 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2721   .text.pcTaskGetName:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2727   .text.pcTaskGetName:0000000000000000 pcTaskGetName
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2788   .text.pcTaskGetName:0000000000000024 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2793   .text.xTaskIncrementTick:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:2799   .text.xTaskIncrementTick:0000000000000000 xTaskIncrementTick
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:3065   .text.xTaskIncrementTick:00000000000000ec $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:3080   .text.xTaskResumeAll:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:3086   .text.xTaskResumeAll:0000000000000000 xTaskResumeAll
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:3325   .text.xTaskResumeAll:00000000000000d8 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:3337   .text.vTaskDelayUntil:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:3343   .text.vTaskDelayUntil:0000000000000000 vTaskDelayUntil
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:3566   .text.vTaskDelayUntil:000000000000009c $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:3573   .text.vTaskDelay:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:3579   .text.vTaskDelay:0000000000000000 vTaskDelay
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:3672   .text.vTaskDelay:0000000000000048 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:3677   .text.vTaskSwitchContext:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:3683   .text.vTaskSwitchContext:0000000000000000 vTaskSwitchContext
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:3810   .text.vTaskSwitchContext:0000000000000080 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:3821   .text.vTaskSuspend:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:3827   .text.vTaskSuspend:0000000000000000 vTaskSuspend
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4015   .text.vTaskSuspend:00000000000000b0 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4024   .text.vTaskPlaceOnEventList:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4030   .text.vTaskPlaceOnEventList:0000000000000000 vTaskPlaceOnEventList
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4098   .text.vTaskPlaceOnEventList:000000000000002c $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4103   .text.vTaskPlaceOnUnorderedEventList:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4109   .text.vTaskPlaceOnUnorderedEventList:0000000000000000 vTaskPlaceOnUnorderedEventList
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4226   .text.vTaskPlaceOnUnorderedEventList:0000000000000050 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4232   .text.vTaskPlaceOnEventListRestricted:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4238   .text.vTaskPlaceOnEventListRestricted:0000000000000000 vTaskPlaceOnEventListRestricted
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4315   .text.vTaskPlaceOnEventListRestricted:0000000000000034 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4320   .text.xTaskRemoveFromEventList:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4326   .text.xTaskRemoveFromEventList:0000000000000000 xTaskRemoveFromEventList
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4460   .text.xTaskRemoveFromEventList:0000000000000074 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4470   .text.vTaskRemoveFromUnorderedEventList:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4476   .text.vTaskRemoveFromUnorderedEventList:0000000000000000 vTaskRemoveFromUnorderedEventList
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4615   .text.vTaskRemoveFromUnorderedEventList:0000000000000074 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4624   .text.vTaskSetTimeOutState:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4630   .text.vTaskSetTimeOutState:0000000000000000 vTaskSetTimeOutState
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4700   .text.vTaskSetTimeOutState:0000000000000030 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4706   .text.vTaskInternalSetTimeOutState:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4712   .text.vTaskInternalSetTimeOutState:0000000000000000 vTaskInternalSetTimeOutState
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 263
 
 
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4735   .text.vTaskInternalSetTimeOutState:0000000000000010 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4741   .text.xTaskCheckForTimeOut:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4747   .text.xTaskCheckForTimeOut:0000000000000000 xTaskCheckForTimeOut
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4934   .text.xTaskCheckForTimeOut:000000000000007c $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4941   .text.vTaskMissedYield:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4947   .text.vTaskMissedYield:0000000000000000 vTaskMissedYield
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4964   .text.vTaskMissedYield:0000000000000008 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4969   .text.uxTaskGetTaskNumber:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:4975   .text.uxTaskGetTaskNumber:0000000000000000 uxTaskGetTaskNumber
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:5008   .text.vTaskSetTaskNumber:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:5014   .text.vTaskSetTaskNumber:0000000000000000 vTaskSetTaskNumber
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:5039   .text.vTaskGetInfo:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:5045   .text.vTaskGetInfo:0000000000000000 vTaskGetInfo
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:5192   .text.vTaskGetInfo:0000000000000074 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:5197   .text.prvListTasksWithinSingleList:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:5202   .text.prvListTasksWithinSingleList:0000000000000000 prvListTasksWithinSingleList
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:5318   .text.uxTaskGetSystemState:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:5324   .text.uxTaskGetSystemState:0000000000000000 uxTaskGetSystemState
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:5464   .text.uxTaskGetSystemState:0000000000000098 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:5474   .text.uxTaskGetStackHighWaterMark:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:5480   .text.uxTaskGetStackHighWaterMark:0000000000000000 uxTaskGetStackHighWaterMark
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:5522   .text.uxTaskGetStackHighWaterMark:0000000000000014 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:5527   .text.xTaskGetCurrentTaskHandle:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:5533   .text.xTaskGetCurrentTaskHandle:0000000000000000 xTaskGetCurrentTaskHandle
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:5552   .text.xTaskGetCurrentTaskHandle:0000000000000008 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:5557   .text.xTaskGetSchedulerState:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:5563   .text.xTaskGetSchedulerState:0000000000000000 xTaskGetSchedulerState
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:5601   .text.xTaskGetSchedulerState:0000000000000018 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:5607   .text.xTaskPriorityInherit:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:5613   .text.xTaskPriorityInherit:0000000000000000 xTaskPriorityInherit
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:5771   .text.xTaskPriorityInherit:000000000000008c $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:5778   .text.xTaskPriorityDisinherit:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:5784   .text.xTaskPriorityDisinherit:0000000000000000 xTaskPriorityDisinherit
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:5965   .text.xTaskPriorityDisinherit:0000000000000084 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:5972   .text.vTaskPriorityDisinheritAfterTimeout:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:5978   .text.vTaskPriorityDisinheritAfterTimeout:0000000000000000 vTaskPriorityDisinheritAfterTimeout
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:6168   .text.vTaskPriorityDisinheritAfterTimeout:0000000000000094 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:6175   .text.uxTaskResetEventItemValue:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:6181   .text.uxTaskResetEventItemValue:0000000000000000 uxTaskResetEventItemValue
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:6208   .text.uxTaskResetEventItemValue:0000000000000014 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:6213   .text.pvTaskIncrementMutexHeldCount:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:6219   .text.pvTaskIncrementMutexHeldCount:0000000000000000 pvTaskIncrementMutexHeldCount
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:6250   .text.pvTaskIncrementMutexHeldCount:0000000000000018 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:6255   .text.ulTaskNotifyTake:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:6261   .text.ulTaskNotifyTake:0000000000000000 ulTaskNotifyTake
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:6383   .text.ulTaskNotifyTake:0000000000000074 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:6388   .text.xTaskNotifyWait:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:6394   .text.xTaskNotifyWait:0000000000000000 xTaskNotifyWait
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:6538   .text.xTaskNotifyWait:0000000000000094 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:6543   .text.xTaskGenericNotify:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:6549   .text.xTaskGenericNotify:0000000000000000 xTaskGenericNotify
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:6606   .text.xTaskGenericNotify:000000000000002c $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:6611   .text.xTaskGenericNotify:0000000000000030 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:6810   .text.xTaskGenericNotify:00000000000000d8 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:6817   .text.xTaskGenericNotifyFromISR:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:6823   .text.xTaskGenericNotifyFromISR:0000000000000000 xTaskGenericNotifyFromISR
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:6902   .text.xTaskGenericNotifyFromISR:0000000000000042 $d
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 264
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4735   .text.vTaskInternalSetTimeOutState:0000000000000010 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4741   .text.xTaskCheckForTimeOut:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4747   .text.xTaskCheckForTimeOut:0000000000000000 xTaskCheckForTimeOut
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4934   .text.xTaskCheckForTimeOut:000000000000007c $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4941   .text.vTaskMissedYield:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4947   .text.vTaskMissedYield:0000000000000000 vTaskMissedYield
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4964   .text.vTaskMissedYield:0000000000000008 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4969   .text.uxTaskGetTaskNumber:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:4975   .text.uxTaskGetTaskNumber:0000000000000000 uxTaskGetTaskNumber
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:5008   .text.vTaskSetTaskNumber:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:5014   .text.vTaskSetTaskNumber:0000000000000000 vTaskSetTaskNumber
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:5039   .text.vTaskGetInfo:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:5045   .text.vTaskGetInfo:0000000000000000 vTaskGetInfo
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:5192   .text.vTaskGetInfo:0000000000000074 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:5197   .text.prvListTasksWithinSingleList:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:5202   .text.prvListTasksWithinSingleList:0000000000000000 prvListTasksWithinSingleList
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:5318   .text.uxTaskGetSystemState:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:5324   .text.uxTaskGetSystemState:0000000000000000 uxTaskGetSystemState
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:5464   .text.uxTaskGetSystemState:0000000000000098 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:5474   .text.uxTaskGetStackHighWaterMark:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:5480   .text.uxTaskGetStackHighWaterMark:0000000000000000 uxTaskGetStackHighWaterMark
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:5522   .text.uxTaskGetStackHighWaterMark:0000000000000014 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:5527   .text.xTaskGetCurrentTaskHandle:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:5533   .text.xTaskGetCurrentTaskHandle:0000000000000000 xTaskGetCurrentTaskHandle
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:5552   .text.xTaskGetCurrentTaskHandle:0000000000000008 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:5557   .text.xTaskGetSchedulerState:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:5563   .text.xTaskGetSchedulerState:0000000000000000 xTaskGetSchedulerState
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:5601   .text.xTaskGetSchedulerState:0000000000000018 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:5607   .text.xTaskPriorityInherit:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:5613   .text.xTaskPriorityInherit:0000000000000000 xTaskPriorityInherit
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:5771   .text.xTaskPriorityInherit:000000000000008c $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:5778   .text.xTaskPriorityDisinherit:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:5784   .text.xTaskPriorityDisinherit:0000000000000000 xTaskPriorityDisinherit
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:5965   .text.xTaskPriorityDisinherit:0000000000000084 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:5972   .text.vTaskPriorityDisinheritAfterTimeout:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:5978   .text.vTaskPriorityDisinheritAfterTimeout:0000000000000000 vTaskPriorityDisinheritAfterTimeout
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:6168   .text.vTaskPriorityDisinheritAfterTimeout:0000000000000094 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:6175   .text.uxTaskResetEventItemValue:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:6181   .text.uxTaskResetEventItemValue:0000000000000000 uxTaskResetEventItemValue
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:6208   .text.uxTaskResetEventItemValue:0000000000000014 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:6213   .text.pvTaskIncrementMutexHeldCount:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:6219   .text.pvTaskIncrementMutexHeldCount:0000000000000000 pvTaskIncrementMutexHeldCount
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:6250   .text.pvTaskIncrementMutexHeldCount:0000000000000018 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:6255   .text.ulTaskNotifyTake:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:6261   .text.ulTaskNotifyTake:0000000000000000 ulTaskNotifyTake
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:6383   .text.ulTaskNotifyTake:0000000000000074 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:6388   .text.xTaskNotifyWait:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:6394   .text.xTaskNotifyWait:0000000000000000 xTaskNotifyWait
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:6538   .text.xTaskNotifyWait:0000000000000094 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:6543   .text.xTaskGenericNotify:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:6549   .text.xTaskGenericNotify:0000000000000000 xTaskGenericNotify
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:6606   .text.xTaskGenericNotify:000000000000002c $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:6611   .text.xTaskGenericNotify:0000000000000030 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:6810   .text.xTaskGenericNotify:00000000000000d8 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:6817   .text.xTaskGenericNotifyFromISR:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:6823   .text.xTaskGenericNotifyFromISR:0000000000000000 xTaskGenericNotifyFromISR
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:6902   .text.xTaskGenericNotifyFromISR:0000000000000042 $d
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 264
 
 
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:6907   .text.xTaskGenericNotifyFromISR:0000000000000046 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7152   .text.xTaskGenericNotifyFromISR:0000000000000100 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7162   .text.vTaskNotifyGiveFromISR:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7168   .text.vTaskNotifyGiveFromISR:0000000000000000 vTaskNotifyGiveFromISR
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7392   .text.vTaskNotifyGiveFromISR:00000000000000b8 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7402   .text.xTaskNotifyStateClear:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7408   .text.xTaskNotifyStateClear:0000000000000000 xTaskNotifyStateClear
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7474   .text.xTaskNotifyStateClear:0000000000000030 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7484   .bss.pxCurrentTCB:0000000000000000 pxCurrentTCB
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7480   .bss.pxCurrentTCB:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7487   .bss.pxDelayedTaskList:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7491   .bss.pxDelayedTaskList:0000000000000000 pxDelayedTaskList
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7494   .bss.pxOverflowDelayedTaskList:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7498   .bss.pxOverflowDelayedTaskList:0000000000000000 pxOverflowDelayedTaskList
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7501   .bss.pxReadyTasksLists:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7505   .bss.pxReadyTasksLists:0000000000000000 pxReadyTasksLists
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7508   .bss.uxCurrentNumberOfTasks:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7512   .bss.uxCurrentNumberOfTasks:0000000000000000 uxCurrentNumberOfTasks
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7515   .bss.uxDeletedTasksWaitingCleanUp:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7519   .bss.uxDeletedTasksWaitingCleanUp:0000000000000000 uxDeletedTasksWaitingCleanUp
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7522   .bss.uxPendedTicks:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7526   .bss.uxPendedTicks:0000000000000000 uxPendedTicks
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7529   .bss.uxSchedulerSuspended:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7533   .bss.uxSchedulerSuspended:0000000000000000 uxSchedulerSuspended
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7536   .bss.uxTaskNumber:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7540   .bss.uxTaskNumber:0000000000000000 uxTaskNumber
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7543   .bss.uxTopReadyPriority:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7547   .bss.uxTopReadyPriority:0000000000000000 uxTopReadyPriority
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7550   .bss.xDelayedTaskList1:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7554   .bss.xDelayedTaskList1:0000000000000000 xDelayedTaskList1
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7557   .bss.xDelayedTaskList2:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7561   .bss.xDelayedTaskList2:0000000000000000 xDelayedTaskList2
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7564   .bss.xIdleTaskHandle:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7568   .bss.xIdleTaskHandle:0000000000000000 xIdleTaskHandle
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7571   .bss.xNextTaskUnblockTime:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7575   .bss.xNextTaskUnblockTime:0000000000000000 xNextTaskUnblockTime
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7578   .bss.xNumOfOverflows:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7582   .bss.xNumOfOverflows:0000000000000000 xNumOfOverflows
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7585   .bss.xPendingReadyList:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7589   .bss.xPendingReadyList:0000000000000000 xPendingReadyList
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7592   .bss.xSchedulerRunning:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7596   .bss.xSchedulerRunning:0000000000000000 xSchedulerRunning
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7599   .bss.xSuspendedTaskList:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7603   .bss.xSuspendedTaskList:0000000000000000 xSuspendedTaskList
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7606   .bss.xTasksWaitingTermination:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7610   .bss.xTasksWaitingTermination:0000000000000000 xTasksWaitingTermination
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7613   .bss.xTickCount:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7617   .bss.xTickCount:0000000000000000 xTickCount
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7620   .bss.xYieldPending:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\cccVUq0b.s:7624   .bss.xYieldPending:0000000000000000 xYieldPending
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:6907   .text.xTaskGenericNotifyFromISR:0000000000000046 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7152   .text.xTaskGenericNotifyFromISR:0000000000000100 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7162   .text.vTaskNotifyGiveFromISR:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7168   .text.vTaskNotifyGiveFromISR:0000000000000000 vTaskNotifyGiveFromISR
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7392   .text.vTaskNotifyGiveFromISR:00000000000000b8 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7402   .text.xTaskNotifyStateClear:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7408   .text.xTaskNotifyStateClear:0000000000000000 xTaskNotifyStateClear
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7474   .text.xTaskNotifyStateClear:0000000000000030 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7484   .bss.pxCurrentTCB:0000000000000000 pxCurrentTCB
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7480   .bss.pxCurrentTCB:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7487   .bss.pxDelayedTaskList:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7491   .bss.pxDelayedTaskList:0000000000000000 pxDelayedTaskList
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7494   .bss.pxOverflowDelayedTaskList:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7498   .bss.pxOverflowDelayedTaskList:0000000000000000 pxOverflowDelayedTaskList
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7501   .bss.pxReadyTasksLists:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7505   .bss.pxReadyTasksLists:0000000000000000 pxReadyTasksLists
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7508   .bss.uxCurrentNumberOfTasks:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7512   .bss.uxCurrentNumberOfTasks:0000000000000000 uxCurrentNumberOfTasks
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7515   .bss.uxDeletedTasksWaitingCleanUp:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7519   .bss.uxDeletedTasksWaitingCleanUp:0000000000000000 uxDeletedTasksWaitingCleanUp
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7522   .bss.uxPendedTicks:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7526   .bss.uxPendedTicks:0000000000000000 uxPendedTicks
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7529   .bss.uxSchedulerSuspended:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7533   .bss.uxSchedulerSuspended:0000000000000000 uxSchedulerSuspended
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7536   .bss.uxTaskNumber:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7540   .bss.uxTaskNumber:0000000000000000 uxTaskNumber
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7543   .bss.uxTopReadyPriority:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7547   .bss.uxTopReadyPriority:0000000000000000 uxTopReadyPriority
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7550   .bss.xDelayedTaskList1:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7554   .bss.xDelayedTaskList1:0000000000000000 xDelayedTaskList1
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7557   .bss.xDelayedTaskList2:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7561   .bss.xDelayedTaskList2:0000000000000000 xDelayedTaskList2
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7564   .bss.xIdleTaskHandle:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7568   .bss.xIdleTaskHandle:0000000000000000 xIdleTaskHandle
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7571   .bss.xNextTaskUnblockTime:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7575   .bss.xNextTaskUnblockTime:0000000000000000 xNextTaskUnblockTime
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7578   .bss.xNumOfOverflows:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7582   .bss.xNumOfOverflows:0000000000000000 xNumOfOverflows
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7585   .bss.xPendingReadyList:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7589   .bss.xPendingReadyList:0000000000000000 xPendingReadyList
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7592   .bss.xSchedulerRunning:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7596   .bss.xSchedulerRunning:0000000000000000 xSchedulerRunning
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7599   .bss.xSuspendedTaskList:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7603   .bss.xSuspendedTaskList:0000000000000000 xSuspendedTaskList
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7606   .bss.xTasksWaitingTermination:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7610   .bss.xTasksWaitingTermination:0000000000000000 xTasksWaitingTermination
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7613   .bss.xTickCount:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7617   .bss.xTickCount:0000000000000000 xTickCount
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7620   .bss.xYieldPending:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s:7624   .bss.xYieldPending:0000000000000000 xYieldPending
 
 UNDEFINED SYMBOLS
 memset
@@ -15825,7 +15825,7 @@ vListInitialiseItem
 pxPortInitialiseStack
 vListInitialise
 vPortEnterCritical
-ARM GAS  C:\Users\marce\AppData\Local\Temp\cccVUq0b.s 			page 265
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccHhHcQw.s 			page 265
 
 
 vListInsertEnd

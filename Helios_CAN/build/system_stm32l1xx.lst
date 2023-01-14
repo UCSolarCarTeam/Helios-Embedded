@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s 			page 1
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccmmqV82.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s 			page 1
   30:Core/Src/system_stm32l1xx.c ****   *                        opensource.org/licenses/BSD-3-Clause
   31:Core/Src/system_stm32l1xx.c ****   *
   32:Core/Src/system_stm32l1xx.c ****   ******************************************************************************
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s 			page 2
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccmmqV82.s 			page 2
 
 
   33:Core/Src/system_stm32l1xx.c ****   */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s 			page 1
   87:Core/Src/system_stm32l1xx.c ****      in Sram else user remap will be done in Flash. */
   88:Core/Src/system_stm32l1xx.c **** /* #define VECT_TAB_SRAM */
   89:Core/Src/system_stm32l1xx.c **** #if defined(VECT_TAB_SRAM)
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s 			page 3
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccmmqV82.s 			page 3
 
 
   90:Core/Src/system_stm32l1xx.c **** #define VECT_TAB_BASE_ADDRESS   SRAM_BASE       /*!< Vector Table base address field.
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s 			page 1
  144:Core/Src/system_stm32l1xx.c **** 
  145:Core/Src/system_stm32l1xx.c **** /**
  146:Core/Src/system_stm32l1xx.c ****   * @}
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s 			page 4
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccmmqV82.s 			page 4
 
 
  147:Core/Src/system_stm32l1xx.c ****   */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s 			page 1
  184:Core/Src/system_stm32l1xx.c ****   *           constant and the selected clock source:
  185:Core/Src/system_stm32l1xx.c ****   *             
  186:Core/Src/system_stm32l1xx.c ****   *           - If SYSCLK source is MSI, SystemCoreClock will contain the MSI 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s 			page 5
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccmmqV82.s 			page 5
 
 
  187:Core/Src/system_stm32l1xx.c ****   *             value as defined by the MSI range.
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s 			page 1
   69 0014 1D       		.byte	(.L7-.L5)/2
   70 0015 43       		.byte	(.L3-.L5)/2
   71 0016 43       		.byte	(.L3-.L5)/2
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s 			page 6
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccmmqV82.s 			page 6
 
 
   72 0017 43       		.byte	(.L3-.L5)/2
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s 			page 1
  241:Core/Src/system_stm32l1xx.c ****         SystemCoreClock = (((HSI_VALUE) * pllmul) / plldiv);
  242:Core/Src/system_stm32l1xx.c ****       }
  243:Core/Src/system_stm32l1xx.c ****       else
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s 			page 7
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccmmqV82.s 			page 7
 
 
  244:Core/Src/system_stm32l1xx.c ****       {
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s 			page 1
  135              		.loc 1 227 23 is_stmt 0 view .LVU29
  136 0052 184B     		ldr	r3, .L11+4
  137              	.LVL11:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s 			page 8
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccmmqV82.s 			page 8
 
 
  227:Core/Src/system_stm32l1xx.c ****       break;
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s 			page 1
  176 0074 07D1     		bne	.L10
  241:Core/Src/system_stm32l1xx.c ****       }
  177              		.loc 1 241 9 is_stmt 1 view .LVU46
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s 			page 9
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccmmqV82.s 			page 9
 
 
  241:Core/Src/system_stm32l1xx.c ****       }
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s 			page 1
  218              		.loc 1 251 7 is_stmt 1 view .LVU60
  251:Core/Src/system_stm32l1xx.c ****       break;
  219              		.loc 1 251 50 is_stmt 0 view .LVU61
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s 			page 10
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccmmqV82.s 			page 10
 
 
  220 009e 0133     		adds	r3, r3, #1
@@ -598,33 +598,33 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s 			page 1
  274      30
  275              		.text
  276              	.Letext0:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s 			page 11
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccmmqV82.s 			page 11
 
 
  277              		.file 2 "c:\\st\\stm32cubeide_1.10.1\\stm32cubeide\\plugins\\com.st.stm32cube.ide.mcu.externaltool
  278              		.file 3 "c:\\st\\stm32cubeide_1.10.1\\stm32cubeide\\plugins\\com.st.stm32cube.ide.mcu.externaltool
  279              		.file 4 "Drivers/CMSIS/Device/ST/STM32L1xx/Include/system_stm32l1xx.h"
  280              		.file 5 "Drivers/CMSIS/Device/ST/STM32L1xx/Include/stm32l152xe.h"
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s 			page 12
+ARM GAS  C:\Users\marce\AppData\Local\Temp\ccmmqV82.s 			page 12
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 system_stm32l1xx.c
-C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s:18     .text.SystemInit:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s:24     .text.SystemInit:0000000000000000 SystemInit
-C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s:38     .text.SystemCoreClockUpdate:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s:44     .text.SystemCoreClockUpdate:0000000000000000 SystemCoreClockUpdate
-C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s:65     .text.SystemCoreClockUpdate:0000000000000010 $d
-C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s:234    .text.SystemCoreClockUpdate:00000000000000b0 $d
-C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s:266    .rodata.APBPrescTable:0000000000000000 APBPrescTable
-C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s:259    .rodata.AHBPrescTable:0000000000000000 AHBPrescTable
-C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s:273    .rodata.PLLMulTable:0000000000000000 PLLMulTable
-C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s:252    .data.SystemCoreClock:0000000000000000 SystemCoreClock
-C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s:248    .data.SystemCoreClock:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s:255    .rodata.AHBPrescTable:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s:263    .rodata.APBPrescTable:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s:269    .rodata.PLLMulTable:0000000000000000 $d
-C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s:78     .text.SystemCoreClockUpdate:000000000000001d $d
-C:\Users\marce\AppData\Local\Temp\ccOQWTTU.s:78     .text.SystemCoreClockUpdate:000000000000001e $t
+C:\Users\marce\AppData\Local\Temp\ccmmqV82.s:18     .text.SystemInit:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccmmqV82.s:24     .text.SystemInit:0000000000000000 SystemInit
+C:\Users\marce\AppData\Local\Temp\ccmmqV82.s:38     .text.SystemCoreClockUpdate:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\ccmmqV82.s:44     .text.SystemCoreClockUpdate:0000000000000000 SystemCoreClockUpdate
+C:\Users\marce\AppData\Local\Temp\ccmmqV82.s:65     .text.SystemCoreClockUpdate:0000000000000010 $d
+C:\Users\marce\AppData\Local\Temp\ccmmqV82.s:234    .text.SystemCoreClockUpdate:00000000000000b0 $d
+C:\Users\marce\AppData\Local\Temp\ccmmqV82.s:266    .rodata.APBPrescTable:0000000000000000 APBPrescTable
+C:\Users\marce\AppData\Local\Temp\ccmmqV82.s:259    .rodata.AHBPrescTable:0000000000000000 AHBPrescTable
+C:\Users\marce\AppData\Local\Temp\ccmmqV82.s:273    .rodata.PLLMulTable:0000000000000000 PLLMulTable
+C:\Users\marce\AppData\Local\Temp\ccmmqV82.s:252    .data.SystemCoreClock:0000000000000000 SystemCoreClock
+C:\Users\marce\AppData\Local\Temp\ccmmqV82.s:248    .data.SystemCoreClock:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccmmqV82.s:255    .rodata.AHBPrescTable:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccmmqV82.s:263    .rodata.APBPrescTable:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccmmqV82.s:269    .rodata.PLLMulTable:0000000000000000 $d
+C:\Users\marce\AppData\Local\Temp\ccmmqV82.s:78     .text.SystemCoreClockUpdate:000000000000001d $d
+C:\Users\marce\AppData\Local\Temp\ccmmqV82.s:78     .text.SystemCoreClockUpdate:000000000000001e $t
 
 NO UNDEFINED SYMBOLS

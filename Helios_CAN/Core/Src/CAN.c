@@ -1,5 +1,15 @@
 #include "CAN.h"
 
+//TODO ADD A FUNCTION THAT CHECKS FOR WHAT CHANNELS AVAILABLE FOR SENDING AND
+//A FUNCTION THAT CALLS THE ABOVE FUNCTION AND THE RELEVANT SENDCANMESSAGE FUNCTION
+//(extended vs regular CAN)
+
+//TODO: Test receiving interrupt and task
+
+//TODO: Comment the heck out of everything
+
+//TODO:write a how to use README that includes creating CANRXInterruptTask, mutex and queue as well as adding CAN.C and CAN.h
+
 /**
  * @brief write to registry in CAN IC
  * @param address: hex address of the register
@@ -138,6 +148,12 @@ void sendExtendedCANMessage(uint8_t channel, uint64_t ID, uint8_t DLC, uint8_t* 
 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 4, TXBNEID0); //ED 7-0
 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 5, TXBNDLC);  //DLC
 
+	CAN_IC_READ_REGISTER(initialBufferAddress + 1, &TXBNSIDH); // SD 10-3
+	CAN_IC_READ_REGISTER(initialBufferAddress + 2, &TXBNSIDL); //SD 2-0, ED 17-16
+	CAN_IC_READ_REGISTER(initialBufferAddress + 3, &TXBNEID8); //ED 15-8
+	CAN_IC_READ_REGISTER(initialBufferAddress + 4, &TXBNEID0); //ED 7-0
+	CAN_IC_READ_REGISTER(initialBufferAddress + 5, &TXBNDLC);  //DLC
+
 	uint8_t initialDataBufferAddress = initialBufferAddress + 6;
 	for(int i = 0; i < DLC; i++)
 	{
@@ -220,6 +236,8 @@ void CANRXInterruptTask(void const* arg)
 
 	osMutexRelease(SPIMutexHandle);
 
+
+	//this is not necessary, this was for testing
 	if(ID == 0xCCCCCCC)
 	{
 		blueStatus = data[0];

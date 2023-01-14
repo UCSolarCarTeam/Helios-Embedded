@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
   30:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****   * @{
   31:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****   */
   32:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 2
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 2
 
 
   33:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c **** /** @defgroup PWR PWR
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
   27              		.loc 1 86 1 view -0
   28              		.cfi_startproc
   29              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 3
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 3
 
 
   30              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
    3:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @brief    CMSIS compiler GCC header file
    4:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @version  V5.0.4
    5:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @date     09. April 2018
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 4
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 4
 
 
    6:Drivers/CMSIS/Include/cmsis_gcc.h ****  ******************************************************************************/
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
   60:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
   61:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __PACKED
   62:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __PACKED                               __attribute__((packed, aligned(1)))
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 5
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 5
 
 
   63:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  117:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  118:Drivers/CMSIS/Include/cmsis_gcc.h **** /* ###########################  Core Function Access  ########################### */
  119:Drivers/CMSIS/Include/cmsis_gcc.h **** /** \ingroup  CMSIS_Core_FunctionInterface
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 6
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 6
 
 
  120:Drivers/CMSIS/Include/cmsis_gcc.h ****     \defgroup CMSIS_Core_RegAccFunctions CMSIS Core Register Access Functions
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  174:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  175:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  176:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 7
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 7
 
 
  177:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Control Register
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  231:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               xPSR Register value
  232:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  233:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_xPSR(void)
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 8
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 8
 
 
  234:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  288:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  289:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __TZ_set_PSP_NS(uint32_t topOfProcStack)
  290:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 9
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 9
 
 
  291:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR psp_ns, %0" : : "r" (topOfProcStack) : );
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  345:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR msp_ns, %0" : : "r" (topOfMainStack) : );
  346:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  347:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 10
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 10
 
 
  348:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  402:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  403:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  404:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 11
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 11
 
 
  405:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  459:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Base Priority register value
  460:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  461:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_BASEPRI(void)
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 12
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 12
 
 
  462:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  516:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __set_BASEPRI_MAX(uint32_t basePri)
  517:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  518:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR basepri_max, %0" : : "r" (basePri) : "memory");
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 13
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 13
 
 
  519:Drivers/CMSIS/Include/cmsis_gcc.h **** }
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  573:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
  574:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  575:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif /* ((defined (__ARM_ARCH_7M__      ) && (__ARM_ARCH_7M__      == 1)) || \
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 14
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 14
 
 
  576:Drivers/CMSIS/Include/cmsis_gcc.h ****            (defined (__ARM_ARCH_7EM__     ) && (__ARM_ARCH_7EM__     == 1)) || \
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  630:Drivers/CMSIS/Include/cmsis_gcc.h ****   Devices without ARMv8-M Main Extensions (i.e. Cortex-M23) lack the non-secure
  631:Drivers/CMSIS/Include/cmsis_gcc.h ****   Stack Pointer Limit register hence the write is silently ignored in non-secure
  632:Drivers/CMSIS/Include/cmsis_gcc.h ****   mode.
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 15
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 15
 
 
  633:Drivers/CMSIS/Include/cmsis_gcc.h ****   
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  687:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, msplim" : "=r" (result) );
  688:Drivers/CMSIS/Include/cmsis_gcc.h ****   return result;
  689:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 16
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 16
 
 
  690:Drivers/CMSIS/Include/cmsis_gcc.h **** }
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  744:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    MainStackPtrLimit  Main Stack Pointer value to set
  745:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  746:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __TZ_set_MSPLIM_NS(uint32_t MainStackPtrLimit)
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 17
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 17
 
 
  747:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  801:Drivers/CMSIS/Include/cmsis_gcc.h **** #else
  802:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc", "memory");
  803:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 18
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 18
 
 
  804:Drivers/CMSIS/Include/cmsis_gcc.h **** #else
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  858:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  859:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  860:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 19
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 19
 
 
  861:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Instruction Synchronization Barrier
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  915:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Reverses the byte order within each halfword of a word. For example, 0x12345678 becomes 
  916:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    value  Value to reverse
  917:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Reversed value
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 20
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 20
 
 
  918:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  972:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __BKPT(value)                       __ASM volatile ("bkpt "#value)
  973:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  974:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 21
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 21
 
 
  975:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
   95              		.cfi_endproc
   96              	.LFE73:
   98              		.section	.text.HAL_PWR_DisableBkUpAccess,"ax",%progbits
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 22
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 22
 
 
   99              		.align	1
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  139 0018 1A60     		str	r2, [r3]
  115:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c **** }
  140              		.loc 1 115 1 view .LVU23
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 23
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 23
 
 
  141 001a 7047     		bx	lr
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  158:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c **** 
  159:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****       (+) The main internal regulator can be configured to have a tradeoff between
  160:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****           performance and power consumption when the device does not operate at
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 24
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 24
 
 
  161:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****           the maximum frequency. This is done through __HAL_PWR_VOLTAGESCALING_CONFIG()
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  215:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****    *** Low power sleep mode ***
  216:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****    ============================
  217:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****     [..]
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 25
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 25
 
 
  218:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****       (+) Entry:
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  272:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****         (++) The Standby mode is entered using the HAL_PWR_EnterSTANDBYMode() function.
  273:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****       (+) Exit:
  274:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****         (++) WKUP pin rising edge, RTC alarm (Alarm A and Alarm B), RTC wakeup,
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 26
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 26
 
 
  275:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****              tamper event, time-stamp event, external reset in NRST pin, IWDG reset.
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  329:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c **** 
  330:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c **** /**
  331:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****   * @brief  Configures the voltage threshold detected by the Power Voltage Detector(PVD).
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 27
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 27
 
 
  332:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****   * @param  sConfigPVD pointer to an PWR_PVDTypeDef structure that contains the configuration
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  353:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****   /* Configure interrupt mode */
  354:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****   if((sConfigPVD->Mode & PVD_MODE_IT) == PVD_MODE_IT)
  188              		.loc 1 354 3 view .LVU34
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 28
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 28
 
 
  189              		.loc 1 354 17 is_stmt 0 view .LVU35
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  226 0066 4368     		ldr	r3, [r0, #4]
  227              		.loc 1 371 5 view .LVU48
  228 0068 13F0020F 		tst	r3, #2
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 29
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 29
 
 
  229 006c 04D0     		beq	.L6
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  269              		.syntax unified
  270              	@ 988 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  271 0002 93FAA3F3 		rbit r3, r3
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 30
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 30
 
 
  272              	@ 0 "" 2
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  315 0000 1023     		movs	r3, #16
  316              		.syntax unified
  317              	@ 988 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 31
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 31
 
 
  318 0002 93FAA3F3 		rbit r3, r3
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  357              	.LBB22:
  358              	.LBI22:
  981:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 32
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 32
 
 
  359              		.loc 2 981 31 view .LVU74
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  400              		.cfi_startproc
  401              		@ args = 0, pretend = 0, frame = 0
  402              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 33
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 33
 
 
  403              		@ link register save eliminated.
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  433:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****   * @note  In Sleep mode, all I/O pins keep the same state as in Run mode.
  434:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****   * @param Regulator: Specifies the regulator state in SLEEP mode.
  435:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****   *         This parameter can be one of the following values:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 34
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 34
 
 
  436:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****   *            @arg PWR_MAINREGULATOR_ON: SLEEP mode with regulator ON
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  470              		.loc 1 467 5 is_stmt 1 view .LVU100
  471              		.syntax unified
  472              	@ 467 "Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c" 1
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 35
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 35
 
 
  473 001a 40BF     		sev
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  482:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****   * @param Regulator: Specifies the regulator state in Stop mode.
  483:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****   *          This parameter can be one of the following values:
  484:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****   *            @arg PWR_MAINREGULATOR_ON: Stop mode with regulator ON
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 36
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 36
 
 
  485:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****   *            @arg PWR_LOWPOWERREGULATOR_ON: Stop mode with low power regulator ON
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  539 001a 40BF     		sev
  540              	@ 0 "" 2
  514:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****     __WFE();
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 37
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 37
 
 
  541              		.loc 1 514 5 view .LVU113
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  526:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****   *            Alarm out, or RTC clock calibration out.
  527:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****   *          - WKUP pin 1 (PA0) if enabled.
  528:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****   *          - WKUP pin 2 (PC13) if enabled.
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 38
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 38
 
 
  529:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****   *          - WKUP pin 3 (PE6) if enabled.
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  622              		.thumb_func
  624              	HAL_PWR_EnableSleepOnExit:
  625              	.LFB83:
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 39
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 39
 
 
  547:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c **** 
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  657              		@ frame_needed = 0, uses_anonymous_args = 0
  658              		@ link register save eliminated.
  572:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****   /* Clear SLEEPONEXIT bit of Cortex System Control Register */
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 40
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 40
 
 
  573:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****   CLEAR_BIT(SCB->SCR, ((uint32_t)SCB_SCR_SLEEPONEXIT_Msk));
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  701              		.section	.text.HAL_PWR_DisableSEVOnPend,"ax",%progbits
  702              		.align	1
  703              		.global	HAL_PWR_DisableSEVOnPend
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 41
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 41
 
 
  704              		.syntax unified
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  611:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****   /* Check PWR exti flag */
  612:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****   if(__HAL_PWR_PVD_EXTI_GET_FLAG() != RESET)
  613:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****   {
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 42
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 42
 
 
  614:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c ****     /* PWR PVD interrupt user callback */
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  772 000a 00D1     		bne	.L52
  773              	.L49:
  620:Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_pwr.c **** 
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 43
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 43
 
 
  774              		.loc 1 620 1 view .LVU141
@@ -2550,56 +2550,56 @@ ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 1
  798              		.file 6 "Drivers/CMSIS/Device/ST/STM32L1xx/Include/stm32l152xe.h"
  799              		.file 7 "Drivers/CMSIS/Device/ST/STM32L1xx/Include/stm32l1xx.h"
  800              		.file 8 "Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_pwr.h"
-ARM GAS  C:\Users\marce\AppData\Local\Temp\ccTigw7S.s 			page 44
+ARM GAS  C:\Users\marce\AppData\Local\Temp\cczpQurV.s 			page 44
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32l1xx_hal_pwr.c
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:18     .text.HAL_PWR_DeInit:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:24     .text.HAL_PWR_DeInit:0000000000000000 HAL_PWR_DeInit
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:46     .text.HAL_PWR_DeInit:0000000000000014 $d
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:51     .text.HAL_PWR_EnableBkUpAccess:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:57     .text.HAL_PWR_EnableBkUpAccess:0000000000000000 HAL_PWR_EnableBkUpAccess
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:99     .text.HAL_PWR_DisableBkUpAccess:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:105    .text.HAL_PWR_DisableBkUpAccess:0000000000000000 HAL_PWR_DisableBkUpAccess
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:146    .text.HAL_PWR_ConfigPVD:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:152    .text.HAL_PWR_ConfigPVD:0000000000000000 HAL_PWR_ConfigPVD
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:241    .text.HAL_PWR_ConfigPVD:000000000000007c $d
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:247    .text.HAL_PWR_EnablePVD:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:253    .text.HAL_PWR_EnablePVD:0000000000000000 HAL_PWR_EnablePVD
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:294    .text.HAL_PWR_DisablePVD:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:300    .text.HAL_PWR_DisablePVD:0000000000000000 HAL_PWR_DisablePVD
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:341    .text.HAL_PWR_EnableWakeUpPin:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:347    .text.HAL_PWR_EnableWakeUpPin:0000000000000000 HAL_PWR_EnableWakeUpPin
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:385    .text.HAL_PWR_EnableWakeUpPin:0000000000000014 $d
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:390    .text.HAL_PWR_DisableWakeUpPin:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:396    .text.HAL_PWR_DisableWakeUpPin:0000000000000000 HAL_PWR_DisableWakeUpPin
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:434    .text.HAL_PWR_DisableWakeUpPin:0000000000000014 $d
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:439    .text.HAL_PWR_EnterSLEEPMode:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:445    .text.HAL_PWR_EnterSLEEPMode:0000000000000000 HAL_PWR_EnterSLEEPMode
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:499    .text.HAL_PWR_EnterSLEEPMode:0000000000000028 $d
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:505    .text.HAL_PWR_EnterSTOPMode:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:511    .text.HAL_PWR_EnterSTOPMode:0000000000000000 HAL_PWR_EnterSTOPMode
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:571    .text.HAL_PWR_EnterSTOPMode:0000000000000030 $d
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:577    .text.HAL_PWR_EnterSTANDBYMode:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:583    .text.HAL_PWR_EnterSTANDBYMode:0000000000000000 HAL_PWR_EnterSTANDBYMode
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:612    .text.HAL_PWR_EnterSTANDBYMode:0000000000000018 $d
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:618    .text.HAL_PWR_EnableSleepOnExit:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:624    .text.HAL_PWR_EnableSleepOnExit:0000000000000000 HAL_PWR_EnableSleepOnExit
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:641    .text.HAL_PWR_EnableSleepOnExit:000000000000000c $d
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:646    .text.HAL_PWR_DisableSleepOnExit:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:652    .text.HAL_PWR_DisableSleepOnExit:0000000000000000 HAL_PWR_DisableSleepOnExit
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:669    .text.HAL_PWR_DisableSleepOnExit:000000000000000c $d
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:674    .text.HAL_PWR_EnableSEVOnPend:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:680    .text.HAL_PWR_EnableSEVOnPend:0000000000000000 HAL_PWR_EnableSEVOnPend
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:697    .text.HAL_PWR_EnableSEVOnPend:000000000000000c $d
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:702    .text.HAL_PWR_DisableSEVOnPend:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:708    .text.HAL_PWR_DisableSEVOnPend:0000000000000000 HAL_PWR_DisableSEVOnPend
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:725    .text.HAL_PWR_DisableSEVOnPend:000000000000000c $d
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:730    .text.HAL_PWR_PVDCallback:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:736    .text.HAL_PWR_PVDCallback:0000000000000000 HAL_PWR_PVDCallback
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:749    .text.HAL_PWR_PVD_IRQHandler:0000000000000000 $t
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:755    .text.HAL_PWR_PVD_IRQHandler:0000000000000000 HAL_PWR_PVD_IRQHandler
-C:\Users\marce\AppData\Local\Temp\ccTigw7S.s:789    .text.HAL_PWR_PVD_IRQHandler:000000000000001c $d
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:18     .text.HAL_PWR_DeInit:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:24     .text.HAL_PWR_DeInit:0000000000000000 HAL_PWR_DeInit
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:46     .text.HAL_PWR_DeInit:0000000000000014 $d
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:51     .text.HAL_PWR_EnableBkUpAccess:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:57     .text.HAL_PWR_EnableBkUpAccess:0000000000000000 HAL_PWR_EnableBkUpAccess
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:99     .text.HAL_PWR_DisableBkUpAccess:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:105    .text.HAL_PWR_DisableBkUpAccess:0000000000000000 HAL_PWR_DisableBkUpAccess
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:146    .text.HAL_PWR_ConfigPVD:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:152    .text.HAL_PWR_ConfigPVD:0000000000000000 HAL_PWR_ConfigPVD
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:241    .text.HAL_PWR_ConfigPVD:000000000000007c $d
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:247    .text.HAL_PWR_EnablePVD:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:253    .text.HAL_PWR_EnablePVD:0000000000000000 HAL_PWR_EnablePVD
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:294    .text.HAL_PWR_DisablePVD:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:300    .text.HAL_PWR_DisablePVD:0000000000000000 HAL_PWR_DisablePVD
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:341    .text.HAL_PWR_EnableWakeUpPin:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:347    .text.HAL_PWR_EnableWakeUpPin:0000000000000000 HAL_PWR_EnableWakeUpPin
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:385    .text.HAL_PWR_EnableWakeUpPin:0000000000000014 $d
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:390    .text.HAL_PWR_DisableWakeUpPin:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:396    .text.HAL_PWR_DisableWakeUpPin:0000000000000000 HAL_PWR_DisableWakeUpPin
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:434    .text.HAL_PWR_DisableWakeUpPin:0000000000000014 $d
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:439    .text.HAL_PWR_EnterSLEEPMode:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:445    .text.HAL_PWR_EnterSLEEPMode:0000000000000000 HAL_PWR_EnterSLEEPMode
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:499    .text.HAL_PWR_EnterSLEEPMode:0000000000000028 $d
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:505    .text.HAL_PWR_EnterSTOPMode:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:511    .text.HAL_PWR_EnterSTOPMode:0000000000000000 HAL_PWR_EnterSTOPMode
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:571    .text.HAL_PWR_EnterSTOPMode:0000000000000030 $d
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:577    .text.HAL_PWR_EnterSTANDBYMode:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:583    .text.HAL_PWR_EnterSTANDBYMode:0000000000000000 HAL_PWR_EnterSTANDBYMode
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:612    .text.HAL_PWR_EnterSTANDBYMode:0000000000000018 $d
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:618    .text.HAL_PWR_EnableSleepOnExit:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:624    .text.HAL_PWR_EnableSleepOnExit:0000000000000000 HAL_PWR_EnableSleepOnExit
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:641    .text.HAL_PWR_EnableSleepOnExit:000000000000000c $d
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:646    .text.HAL_PWR_DisableSleepOnExit:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:652    .text.HAL_PWR_DisableSleepOnExit:0000000000000000 HAL_PWR_DisableSleepOnExit
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:669    .text.HAL_PWR_DisableSleepOnExit:000000000000000c $d
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:674    .text.HAL_PWR_EnableSEVOnPend:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:680    .text.HAL_PWR_EnableSEVOnPend:0000000000000000 HAL_PWR_EnableSEVOnPend
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:697    .text.HAL_PWR_EnableSEVOnPend:000000000000000c $d
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:702    .text.HAL_PWR_DisableSEVOnPend:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:708    .text.HAL_PWR_DisableSEVOnPend:0000000000000000 HAL_PWR_DisableSEVOnPend
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:725    .text.HAL_PWR_DisableSEVOnPend:000000000000000c $d
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:730    .text.HAL_PWR_PVDCallback:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:736    .text.HAL_PWR_PVDCallback:0000000000000000 HAL_PWR_PVDCallback
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:749    .text.HAL_PWR_PVD_IRQHandler:0000000000000000 $t
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:755    .text.HAL_PWR_PVD_IRQHandler:0000000000000000 HAL_PWR_PVD_IRQHandler
+C:\Users\marce\AppData\Local\Temp\cczpQurV.s:789    .text.HAL_PWR_PVD_IRQHandler:000000000000001c $d
 
 NO UNDEFINED SYMBOLS

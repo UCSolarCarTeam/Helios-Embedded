@@ -81,7 +81,7 @@ void Error_Handler(void);
 #define LED_RED_Pin GPIO_PIN_12
 #define LED_RED_GPIO_Port GPIOC
 /* USER CODE BEGIN Private defines */
-
+static const unsigned int TASK_QUEUE_TIMEOUT = 0; // 0ms
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
