@@ -37,6 +37,7 @@ BUILD_DIR = build
 # C sources
 C_SOURCES =  \
 Core/Src/main.c \
+Core/Src/ReadWriteEEPROMTask.c \
 Core/Src/freertos.c \
 Core/Src/stm32l1xx_it.c \
 Core/Src/stm32l1xx_hal_msp.c \
