@@ -100,7 +100,7 @@ void ConfigureCANSPI(void)
   */
 void sendCANMessage(uint8_t channel, uint16_t ID, uint8_t DLC, uint8_t* data)
 {
-	uint8_t initialBufferAddress = 0x20 + 16*(channel); //TXB0CTRL for channel 1, TXB1CTRL for channel 2, TXB2CTRL for channel 3
+	uint8_t initialBufferAddress = TXB0CTRL + 16*(channel); //TXB0CTRL for channel 1, TXB1CTRL for channel 2, TXB2CTRL for channel 3
 
 	uint8_t sendCommand = 0x81; //instruction to send CAN message on buffer 1
 
