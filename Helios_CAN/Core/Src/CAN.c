@@ -1,7 +1,7 @@
 #include "CAN.h"
 
 //TODO ADD A FUNCTION THAT CHECKS FOR WHAT CHANNELS AVAILABLE FOR SENDING AND
-//A FUNCTION THAT CALLS THE ABOVE FUNCTION AND THE RELEVANT SENDCANMESSAGE FUNCTION
+//TODO A FUNCTION THAT CALLS THE ABOVE FUNCTION AND THE RELEVANT SENDCANMESSAGE FUNCTION
 //(extended vs regular CAN)
 
 //TODO: Test receiving interrupt and task
@@ -67,9 +67,9 @@ void CAN_IC_WRITE_REGISTER(uint8_t address, uint8_t value)
 void ConfigureCANSPI(void)
 {
 	uint8_t resetCommand = 0xa0; //instruction to reset IC to default
-	uint8_t CNF1 = 0x00; //BRP = 0 to make tq = 250ns and a SJW of 1Tq
-	uint8_t CNF2 = 0xd8; //PRSEG = 0, PHSEG1 = 3, SAM = 0, BTLMODE = 1
-	uint8_t CNF3 = 0x01; //WAFKIL disabled, PHSEG2 = 2 (BTL enabled) but PHSEG = 1 makes it backwards compatible???? wat
+	uint8_t CONFIG_CNF1 = 0x00; //BRP = 0 to make tq = 250ns and a SJW of 1Tq
+	uint8_t CONFIG_CNF2 = 0xd8; //PRSEG = 0, PHSEG1 = 3, SAM = 0, BTLMODE = 1
+	uint8_t CONFIG_CNF3 = 0x01; //WAFKIL disabled, PHSEG2 = 2 (BTL enabled) but PHSEG = 1 makes it backwards compatible???? wat
 
 	HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_RESET);
 	HAL_SPI_Transmit(&hspi1, &resetCommand, 1, 100U);  //reset IC to default
@@ -77,18 +77,18 @@ void ConfigureCANSPI(void)
 
 	CAN_IC_WRITE_REGISTER(0x0f, 0x80); //Ensure IC is in configuration mode
 
-	CAN_IC_WRITE_REGISTER(0x2a, CNF1); //configure CNF1
-	CAN_IC_WRITE_REGISTER(0x29, CNF2); //configure CNF2
-	CAN_IC_WRITE_REGISTER(0x28, CNF3); //configure CNF3
+	CAN_IC_WRITE_REGISTER(CNF1, CONFIG_CNF1); //configure CNF1
+	CAN_IC_WRITE_REGISTER(CNF2, CONFIG_CNF2); //configure CNF2
+	CAN_IC_WRITE_REGISTER(CNF3, CONFIG_CNF3); //configure CNF3
 
-	CAN_IC_WRITE_REGISTER(0x2b, 0xff); //configure interrupts, currently enable error and and wakeup INT
-	CAN_IC_WRITE_REGISTER(0x2c, 0x00); //clear INTE flags
+	CAN_IC_WRITE_REGISTER(CANINTE, 0xff); //configure interrupts, currently enable error and and wakeup INT
+	CAN_IC_WRITE_REGISTER(CANINTF, 0x00); //clear INTE flags
 									   //this should be a bit-wise clear in any other case to avoid unintentionally clearing flags
 
 	CAN_IC_WRITE_REGISTER(0x0c, 0x0f); //set up RX0BF and RX1BF as interrupt pins
 
-	CAN_IC_WRITE_REGISTER(0x60, 0x60); //accept any message on buffer 0
-	CAN_IC_WRITE_REGISTER(0x70, 0x60); //accept any message on buffer 1
+	CAN_IC_WRITE_REGISTER(RXB0CTRL, 0x60); //accept any message on buffer 0
+	CAN_IC_WRITE_REGISTER(RXB1CTRL, 0x60); //accept any message on buffer 1
 
 	CAN_IC_WRITE_REGISTER(0x0f, 0x04); //Put IC in normal operation mode with CLKOUT pin enable and 1:1 prescaler
 }
@@ -100,7 +100,7 @@ void ConfigureCANSPI(void)
   */
 void sendCANMessage(uint8_t channel, uint16_t ID, uint8_t DLC, uint8_t* data)
 {
-	uint8_t initialBufferAddress = 0x20 + 16*(channel); //0x30 for channel 1, 0x40 for channel 2, 0x50 for channel 3
+	uint8_t initialBufferAddress = 0x20 + 16*(channel); //TXB0CTRL for channel 1, TXB1CTRL for channel 2, TXB2CTRL for channel 3
 
 	uint8_t sendCommand = 0x81; //instruction to send CAN message on buffer 1
 
@@ -132,7 +132,7 @@ void sendCANMessage(uint8_t channel, uint16_t ID, uint8_t DLC, uint8_t* data)
   */
 void sendExtendedCANMessage(uint8_t channel, uint64_t ID, uint8_t DLC, uint8_t* data)
 {
-	uint8_t initialBufferAddress = 0x30 + 16*(channel); //0x30 for channel 1, 0x40 for channel 2, 0x50 for channel 3
+	uint8_t initialBufferAddress = TXB0CTRL + 16*(channel); //TXB0CTRL for channel 1, TXB1CTRL for channel 2, TXB2CTRL for channel 3
 
 	uint8_t sendCommand = 0x80 +  (1 << channel); //instruction to send CAN message on channel
 
@@ -176,7 +176,7 @@ void sendExtendedCANMessage(uint8_t channel, uint64_t ID, uint8_t DLC, uint8_t* 
   */
 void receiveCANMessage(uint8_t channel, uint32_t* ID, uint8_t* DLC, uint8_t* data)
 {
-	uint8_t initialBufferAddress = 0x60 + 16*(channel); //0x60 for channel 1, 0x70 for channel 2
+	uint8_t initialBufferAddress = RXB0CTRL + 16*(channel); //RXB0CTRL for channel 1, RXB1CTRL for channel 2
 
 	uint8_t RXBNSIDH = 0;
 	uint8_t RXBNSIDL = 0;
@@ -208,7 +208,7 @@ void receiveCANMessage(uint8_t channel, uint32_t* ID, uint8_t* DLC, uint8_t* dat
 		CAN_IC_READ_REGISTER(initialDataBufferAddress + i, (data++)); //read from relevant data registers
 	}
 
-	CAN_IC_WRITE_REGISTER_BITWISE(0x2c, channel + 1, channel + 1); //clear interrupts
+	CAN_IC_WRITE_REGISTER_BITWISE(CANINTF, channel + 1, channel + 1); //clear interrupts
 
 	return;
 }
