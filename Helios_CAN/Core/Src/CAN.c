@@ -125,6 +125,31 @@ void sendCANMessage(uint8_t channel, uint16_t ID, uint8_t DLC, uint8_t* data)
 	HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_SET);
 }
 
+
+uint8_t checkAvailableTXChannel() 
+{
+    uint8_t available;
+
+    while (1)   //or some other loop
+    {
+        uint8_t TXB0Status = TXB0CTRL >> 3;
+        uint8_t TXB1Status = TXB1CTRL >> 3;
+        uint8_t TXB2Status = TXB2CTRL >> 3;
+
+        if (TXB0Status) {
+            available = TXB0CTRL;
+            break;
+        } else if (TXB1Status) {
+            available = TXB1CTRL;
+            break;
+        } else if (TXB2Status) {
+            available = TXB2CTRL;
+            break;
+        }
+    }
+    return available;
+}
+
 /**
   * @brief send CAN message with extended identifier
   * @param None
