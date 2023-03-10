@@ -132,9 +132,17 @@ uint8_t checkAvailableTXChannel()
 
     while (1)   //or some other loop
     {
-        uint8_t TXB0Status = TXB0CTRL >> 3;
-        uint8_t TXB1Status = TXB1CTRL >> 3;
-        uint8_t TXB2Status = TXB2CTRL >> 3;
+        uint8_t TXB0Status;
+        uint8_t TXB1Status;
+        uint8_t TXB2Status;
+
+        CAN_IC_READ_REGISTER(TXB0CTRL, TXB0Status);
+        CAN_IC_READ_REGISTER(TXB1CTRL, TXB1Status);
+        CAN_IC_READ_REGISTER(TXB2CTRL, TXB2Status);
+
+        TXB0Status = TXB0Status >> 3;
+        TXB1Status = TXB1Status >> 3;
+        TXB2Status = TXB2Status >> 3;
 
         if (TXB0Status) {
             available = TXB0CTRL;
