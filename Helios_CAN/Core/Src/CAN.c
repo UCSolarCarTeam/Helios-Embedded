@@ -1,7 +1,7 @@
 #include "CAN.h"
 
-//TODO ADD A FUNCTION THAT CHECKS FOR WHAT CHANNELS AVAILABLE FOR SENDING AND
-//TODO A FUNCTION THAT CALLS THE ABOVE FUNCTION AND THE RELEVANT SENDCANMESSAGE FUNCTION
+//TODO: ADD A FUNCTION THAT CHECKS FOR WHAT CHANNELS AVAILABLE FOR SENDING AND
+//TODO: A FUNCTION THAT CALLS THE ABOVE FUNCTION AND THE RELEVANT SENDCANMESSAGE FUNCTION
 //(extended vs regular CAN)
 
 //TODO: Test receiving interrupt and task
@@ -11,14 +11,15 @@
 //TODO:write a how to use README that includes creating CANRXInterruptTask, mutex and queue as well as adding CAN.C and CAN.h
 
 /**
- * @brief write to registry in CAN IC
+ * @brief write to registry in CAN IC       //FIXME: is this read or write... 
  * @param address: hex address of the register
  * 		  value: value to be written to the register
  * @retval None
  */
 void CAN_IC_READ_REGISTER(uint8_t address, uint8_t* buffer)
 {
-	uint8_t packet[3] = {0x03, address};
+	uint8_t packet[3] = {0x03, address};    //FIXME: why is size of list 3 but only initialized to two values?
+    //FIXME: why is it 0x03
 
 	HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_RESET); //set CS pin low
 	HAL_SPI_Transmit(&hspi1, packet, 2, 100U); //transmit
@@ -27,7 +28,7 @@ void CAN_IC_READ_REGISTER(uint8_t address, uint8_t* buffer)
 }
 
 /**
- * @brief write to a spicific series of bits in a register in CAN IC
+ * @brief write to a specific series of bits in a register in CAN IC
  * @param address: hex address of the register
  * 		  mask: bit mask
  * 		  value: value to be written to the register
@@ -104,6 +105,7 @@ void sendCANMessage(uint8_t channel, uint16_t ID, uint8_t DLC, uint8_t* data)
 
 	uint8_t sendCommand = 0x81; //instruction to send CAN message on buffer 1
 
+    //FIXME: what is this
 	uint8_t TXBNSIDH = (ID & 0b11111111000) >> 3;
 	uint8_t TXBNSIDL = ((ID & 0b111) << 5);
 	uint8_t TXBNDLC = DLC & 0x0f;
@@ -128,9 +130,9 @@ void sendCANMessage(uint8_t channel, uint16_t ID, uint8_t DLC, uint8_t* data)
 
 uint8_t checkAvailableTXChannel() 
 {
-    uint8_t available;
+    uint32_t prevWakeTime = xTaskGetTickCount();
 
-    while (1)   //or some other loop
+    for (;;)
     {
         uint8_t TXB0Status;
         uint8_t TXB1Status;
@@ -144,18 +146,15 @@ uint8_t checkAvailableTXChannel()
         TXB1Status = TXB1Status >> 3;
         TXB2Status = TXB2Status >> 3;
 
-        if (TXB0Status) {
-            available = TXB0CTRL;
-            break;
-        } else if (TXB1Status) {
-            available = TXB1CTRL;
-            break;
-        } else if (TXB2Status) {
-            available = TXB2CTRL;
-            break;
+        if (!TXB0Status) {
+            return TXB0CTRL;
+        } else if (!TXB1Status) {
+            return TXB1CTRL;
+        } else if (!TXB2Status) {
+            return TXB2CTRL;
         }
+        osDelayUntil(prevWakeTime);
     }
-    return available;
 }
 
 /**
