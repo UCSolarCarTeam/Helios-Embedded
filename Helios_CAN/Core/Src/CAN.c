@@ -13,7 +13,7 @@
 /**
  * @brief write to registry in CAN IC       //FIXME: is this read or write... 
  * @param address: hex address of the register
- * 		  value: value to be written to the register
+ * 		  bufffer: to store value read
  * @retval None
  */
 void CAN_IC_READ_REGISTER(uint8_t address, uint8_t* buffer)
@@ -140,20 +140,24 @@ uint8_t checkAvailableTXChannel()
         uint8_t TXB2Status;
 
         CAN_IC_READ_REGISTER(TXB0CTRL, TXB0Status);
-        CAN_IC_READ_REGISTER(TXB1CTRL, TXB1Status);
-        CAN_IC_READ_REGISTER(TXB2CTRL, TXB2Status);
+        if (!TXB0Status) {
+            return TXB0CTRL;
+        }
 
+        CAN_IC_READ_REGISTER(TXB1CTRL, TXB1Status);
+        if (!TXB1Status) {
+            return TXB1CTRL;
+        }
+        
+        CAN_IC_READ_REGISTER(TXB2CTRL, TXB2Status);
+        if (!TXB2Status) {
+            return TXB2CTRL;
+        }   
         TXB0Status = TXB0Status >> 3;
         TXB1Status = TXB1Status >> 3;
         TXB2Status = TXB2Status >> 3;
 
-        if (!TXB0Status) {
-            return TXB0CTRL;
-        } else if (!TXB1Status) {
-            return TXB1CTRL;
-        } else if (!TXB2Status) {
-            return TXB2CTRL;
-        }
+        prevWakeTime += TX_CHANNEL_CHECK_DELAY;
         osDelayUntil(prevWakeTime);
     }
 }
@@ -165,7 +169,8 @@ uint8_t checkAvailableTXChannel()
   */
 void sendExtendedCANMessage(uint8_t channel, uint64_t ID, uint8_t DLC, uint8_t* data)
 {
-	uint8_t initialBufferAddress = TXB0CTRL + 16*(channel); //TXB0CTRL for channel 1, TXB1CTRL for channel 2, TXB2CTRL for channel 3
+	// uint8_t initialBufferAddress = TXB0CTRL + 16*(channel); //TXB0CTRL for channel 1, TXB1CTRL for channel 2, TXB2CTRL for channel 3
+    uint8_t initialBufferAddress = checkAvailableTXChannel();
 
 	uint8_t sendCommand = 0x80 +  (1 << channel); //instruction to send CAN message on channel
 
