@@ -12,17 +12,6 @@ typedef struct {
     uint8_t data[8];
 } CANMsg;
 
-struct node {
-    CANMsg msg;
-    struct node *next;
-};
-
-struct queue {
-    int count;
-    node *front;
-    node *rear;
-};
-
 // https://www.codesdope.com/blog/article/making-a-queue-using-linked-list-in-c/
 
 #define TX_CHANNEL_CHECK_DELAY 10
@@ -38,6 +27,7 @@ void receiveCANMessage(uint8_t channel, uint32_t* ID, uint8_t* DLC, uint8_t* dat
 extern SPI_HandleTypeDef hspi1;
 extern osMutexId_t SPIMutexHandle;
 extern osMessageQueueId_t CANInterruptQueue;
+extern osMessageQueueId_t CANTxMessageQueue;
 
 extern uint8_t blueStatus;
 extern uint8_t greenStatus;

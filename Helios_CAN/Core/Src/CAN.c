@@ -103,33 +103,32 @@ void ConfigureCANSPI(void)
 
 //todo: make sendtxtask and a queue for it like the old mcu
 
-
-
 /**
   * @brief send CAN message
   * @param None
   * @retval None
   */
-void sendCANMessage(uint16_t ID, uint8_t DLC, uint8_t* data)
+void sendCANMessage(CANMsg *msg)
 {
-	// uint8_t initialBufferAddress = TXB0CTRL + 16*(channel); //TXB0CTRL for channel 1, TXB1CTRL for channel 2, TXB2CTRL for channel 3
     uint8_t initialBufferAddress = checkAvailableTXChannel();
+
+    osMessageQueueGet(CANTxMessageQueue, msg, NULL, osWaitForever);
 
 	uint8_t sendCommand = 0x81; //instruction to send CAN message on buffer 1
 
     //FIXME: what is this
-	uint8_t TXBNSIDH = (ID & 0b11111111000) >> 3;
-	uint8_t TXBNSIDL = ((ID & 0b111) << 5);
-	uint8_t TXBNDLC = DLC & 0x0f;
+	uint8_t TXBNSIDH = (msg->ID & 0b11111111000) >> 3;
+	uint8_t TXBNSIDL = ((msg->ID & 0b111) << 5);
+	uint8_t TXBNDLC = msg->DLC & 0x0f;
 
 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 1, TXBNSIDH); // SD 10-3
 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 2, TXBNSIDL); //SD 2-0
 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 5, TXBNDLC);  //DLC
 
 	uint8_t initialDataBufferAddress = initialBufferAddress + 6;
-	for(int i = 0; i < DLC; i++)
+	for(int i = 0; i < msg->DLC; i++)
 	{
-		CAN_IC_WRITE_REGISTER(initialDataBufferAddress + i, data[i]); //write to relevant data registers
+		CAN_IC_WRITE_REGISTER(initialDataBufferAddress + i, msg->data[i]); //write to relevant data registers
 	}
 
 	CAN_IC_WRITE_REGISTER_BITWISE(initialBufferAddress, 0x02, 0x02); //set transmit buffer priority to 4 (max)
