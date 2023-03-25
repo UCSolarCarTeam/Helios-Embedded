@@ -10,6 +10,13 @@
 
 //TODO:write a how to use README that includes creating CANRXInterruptTask, mutex and queue as well as adding CAN.C and CAN.h
 
+
+//todo: adc
+// 1. enable on stm32cubemx
+// 2. use a pin that goes onto the header
+// 3  ways: to do adc
+// 4. convert will pulling
+
 /**
  * @brief write to registry in CAN IC       //FIXME: is this read or write... 
  * @param address: hex address of the register
@@ -94,6 +101,10 @@ void ConfigureCANSPI(void)
 	CAN_IC_WRITE_REGISTER(0x0f, 0x04); //Put IC in normal operation mode with CLKOUT pin enable and 1:1 prescaler
 }
 
+//todo: make sendtxtask and a queue for it like the old mcu
+
+
+
 /**
   * @brief send CAN message
   * @param None
@@ -148,7 +159,7 @@ uint8_t checkAvailableTXChannel()
         if (!TXB1Status) {
             return TXB1CTRL;
         }
-        
+
         CAN_IC_READ_REGISTER(TXB2CTRL, TXB2Status);
         if (!TXB2Status) {
             return TXB2CTRL;

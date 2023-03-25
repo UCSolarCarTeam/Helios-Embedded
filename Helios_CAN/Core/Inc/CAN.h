@@ -5,6 +5,26 @@
 #include "cmsis_os.h"
 #include "Registers.h"
 
+typedef struct {
+    uint8_t DLC;
+    uint16_t ID;
+    uint64_t extendedID;
+    uint8_t data[8];
+} CANMsg;
+
+struct node {
+    CANMsg msg;
+    struct node *next;
+};
+
+struct queue {
+    int count;
+    node *front;
+    node *rear;
+};
+
+// https://www.codesdope.com/blog/article/making-a-queue-using-linked-list-in-c/
+
 #define TX_CHANNEL_CHECK_DELAY 10
 
 void CAN_IC_READ_REGISTER(uint8_t address, uint8_t* buffer);
