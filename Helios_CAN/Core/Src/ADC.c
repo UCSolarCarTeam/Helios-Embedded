@@ -1,5 +1,5 @@
 #include "ADC.h"
-#include <math>
+#include <math.h>
 
 // ADC conversion by polling:
 // - Activate the ADC peripheral and start conversions using function HAL_ADC_Start()
