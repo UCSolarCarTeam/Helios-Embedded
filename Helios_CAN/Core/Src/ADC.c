@@ -11,9 +11,11 @@
 // create buffer or somting
 
 #define ADC_TIMEOUT 10      //in milliseconds
+#define ADC_DELAY 10
 
 uint32_t getVoltage() {
-    uint32_t voltage = 0xDEAD;
+    
+    uint32_t voltage = 0;
 
     if (HAL_ADC_Start(&hadc) == HAL_OK) {
             if (HAL_ADC_PollForConversion(&hadc, ADC_TIMEOUT) == HAL_OK) {
@@ -31,6 +33,18 @@ void sendVoltage() {
     //todo: send the voltage value through can to the motors
     //todo: just send it as data to 0x012?
 
+    uint32_t voltage = getVoltage();
+
+    //todo actually properly do these stuff
+    CANMsg msg = {
+        8, 
+        0x012,
+        0,
+        voltage;
+    };
+
+    sendCANMessage(&msg);
+
     //can info: 
     // • protocol: CAN 2.0 A,
     // • typical baud rate: 125 kbps, (125, 250, 500)
@@ -41,5 +55,7 @@ void sendVoltage() {
     // (hex) and Baud rate=125000
     // • 0x100 (Hex) and 0x101 (hex) CAN addresses are reserved for motor bootloader
     // communication
+
+
 
 }
