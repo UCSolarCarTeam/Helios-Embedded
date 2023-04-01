@@ -23,6 +23,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "CAN.h"
+#include "ADC.h"
 #include "BlueSwitchTask.h"
 #include "GreenSwitchTask.h"
 /* USER CODE END Includes */
@@ -416,6 +417,7 @@ void StartDefaultTask(void *argument)
   {
 	  osDelay(10);
 	  CAN_IC_WRITE_REGISTER(0x2c, 0x00); //clear interrupts
+      getVoltage(hadc);
   }
   /* USER CODE END 5 */
 }

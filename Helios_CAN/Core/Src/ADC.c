@@ -1,4 +1,5 @@
 #include "ADC.h"
+#include <math>
 
 // ADC conversion by polling:
 // - Activate the ADC peripheral and start conversions using function HAL_ADC_Start()
@@ -26,6 +27,11 @@ uint32_t getVoltage() {
     }
 
     //todo: do something with the value to get the voltage
+
+    voltage = voltage * 3.3f / powf(2.0, 12.0);
+    // 3.3 / 2^(adc bits) = voltagestep
+
+    // voltage * voltageStep
     return voltage;
 }
 
@@ -35,12 +41,16 @@ void sendVoltage() {
 
     uint32_t voltage = getVoltage();
 
+    uint8_t data[8];
+
+    data[0] = voltage 
+
     //todo actually properly do these stuff
     CANMsg msg = {
         8, 
         0x012,
         0,
-        voltage;
+        data
     };
 
     sendCANMessage(&msg);
