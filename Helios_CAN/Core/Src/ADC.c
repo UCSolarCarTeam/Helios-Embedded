@@ -14,13 +14,13 @@
 #define ADC_TIMEOUT 10      //in milliseconds
 #define ADC_DELAY 10
 
-uint32_t getVoltage() {
+float getVoltage() {
     
-    uint32_t voltage = 0;
+    uint32_t binaryVoltage = 0;
 
     if (HAL_ADC_Start(&hadc) == HAL_OK) {
             if (HAL_ADC_PollForConversion(&hadc, ADC_TIMEOUT) == HAL_OK) {
-                voltage = HAL_ADC_GetValue(&hadc);
+            	binaryVoltage = HAL_ADC_GetValue(&hadc);
             }       
 
         HAL_ADC_Stop(&hadc);
@@ -28,7 +28,7 @@ uint32_t getVoltage() {
 
     //todo: do something with the value to get the voltage
 
-    voltage = voltage * 3.3f / powf(2.0, 12.0);
+    float voltage = binaryVoltage * 3.09f / powf(2.0, 12.0);
     // 3.3 / 2^(adc bits) = voltagestep
 
     // voltage * voltageStep
@@ -39,21 +39,21 @@ void sendVoltage() {
     //todo: send the voltage value through can to the motors
     //todo: just send it as data to 0x012?
 
-    uint32_t voltage = getVoltage();
-
-    uint8_t data[8];
-
-    data[0] = voltage 
-
-    //todo actually properly do these stuff
-    CANMsg msg = {
-        8, 
-        0x012,
-        0,
-        data
-    };
-
-    sendCANMessage(&msg);
+//    uint32_t voltage = getVoltage();
+//
+//    uint8_t data[8];
+//
+//    data[0] = voltage;
+//
+//    //todo actually properly do these stuff
+//    CANMsg msg = {
+//        8,
+//        0x012,
+//        0,
+//        data
+//    };
+//
+//    sendCANMessage(&msg);
 
     //can info: 
     // • protocol: CAN 2.0 A,
@@ -66,6 +66,6 @@ void sendVoltage() {
     // • 0x100 (Hex) and 0x101 (hex) CAN addresses are reserved for motor bootloader
     // communication
 
-
+	//control using speed mode, 0 min 3.09V max speed.
 
 }

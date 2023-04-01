@@ -6,4 +6,4 @@
 
 extern ADC_HandleTypeDef hadc;
 
-uint32_t getVoltage();  
+float getVoltage();

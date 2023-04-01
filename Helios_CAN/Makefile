@@ -68,6 +68,7 @@ Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c \
 Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c \
 Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c \
 Core/Src/CAN.c \
+Core/Src/ADC.c \
 Core/Src/BlueSwitchTask.c \
 Core/Src/GreenSwitchTask.c \
 Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_adc.c \

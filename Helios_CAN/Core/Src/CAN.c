@@ -110,6 +110,7 @@ void ConfigureCANSPI(void)
   */
 void sendCANMessage(CANMsg *msg)
 {
+	//todo: fix this later to update the channel;
     uint8_t initialBufferAddress = checkAvailableTXChannel();
 
     osMessageQueueGet(CANTxMessageQueue, msg, NULL, osWaitForever);
@@ -149,23 +150,26 @@ uint8_t checkAvailableTXChannel()
         uint8_t TXB1Status;
         uint8_t TXB2Status;
 
-        CAN_IC_READ_REGISTER(TXB0CTRL, TXB0Status);
-        if (!TXB0Status) {
-            return TXB0CTRL;
-        }
-
-        CAN_IC_READ_REGISTER(TXB1CTRL, TXB1Status);
-        if (!TXB1Status) {
-            return TXB1CTRL;
-        }
-
-        CAN_IC_READ_REGISTER(TXB2CTRL, TXB2Status);
-        if (!TXB2Status) {
-            return TXB2CTRL;
-        }   
+        CAN_IC_READ_REGISTER(TXB0CTRL, &TXB0Status);
         TXB0Status = TXB0Status >> 3;
+
+        if (!TXB0Status) {
+            return 0;
+        }
+
+        CAN_IC_READ_REGISTER(TXB1CTRL, &TXB1Status);
         TXB1Status = TXB1Status >> 3;
+
+        if (!TXB1Status) {
+            return 1;
+        }
+
+        CAN_IC_READ_REGISTER(TXB2CTRL, &TXB2Status);
         TXB2Status = TXB2Status >> 3;
+
+        if (!TXB2Status) {
+            return 2;
+        }   
 
         prevWakeTime += TX_CHANNEL_CHECK_DELAY;
         osDelayUntil(prevWakeTime);
@@ -177,19 +181,19 @@ uint8_t checkAvailableTXChannel()
   * @param None
   * @retval None
   */
-void sendExtendedCANMessage(CANMsg msg)
+void sendExtendedCANMessage(CANMsg *msg)
 {
 	// uint8_t initialBufferAddress = TXB0CTRL + 16*(channel); //TXB0CTRL for channel 1, TXB1CTRL for channel 2, TXB2CTRL for channel 3
-    uint8_t initialBufferAddress = checkAvailableTXChannel();
+    uint8_t channel = checkAvailableTXChannel();
+	uint8_t initialBufferAddress = TXB0CTRL + 16*(channel);
     
     osMessageQueueGet(CANTxMessageQueue, msg, NULL, osWaitForever);
-
     //todo: FIX THIS CHANNEL!
 	uint8_t sendCommand = 0x80 +  (1 << channel); //instruction to send CAN message on channel
 
 	uint8_t TXBNEID0 = msg->extendedID & 0xff;
 	uint8_t TXBNEID8 = (msg->extendedID >> 8) & 0xff;
-	uint8_t TXBNSIDL = (((msg->extendedID >> 18) & 0x07) << 5) | 0b00001000 | ((ID >> 16) & 0x03);
+	uint8_t TXBNSIDL = (((msg->extendedID >> 18) & 0x07) << 5) | 0b00001000 | ((msg->ID >> 16) & 0x03);
 	uint8_t TXBNSIDH = (msg->extendedID >> 21) & 0xff;
 	uint8_t TXBNDLC = msg->DLC & 0x0f;
 

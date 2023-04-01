@@ -413,11 +413,12 @@ void StartDefaultTask(void *argument)
 	uint8_t buffer[8] = {0};
 	uint8_t data[1] = {0x0}; */
   /* Infinite loop */
+	float volt;
   for(;;)
   {
 	  osDelay(10);
 	  CAN_IC_WRITE_REGISTER(0x2c, 0x00); //clear interrupts
-      getVoltage(hadc);
+      volt = getVoltage();
   }
   /* USER CODE END 5 */
 }

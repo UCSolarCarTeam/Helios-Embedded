@@ -26,7 +26,7 @@ void greenSwitchTask(void const* arg)
     	}
 
     	if (osMutexWait(SPIMutexHandle, 0) == osOK) {
-			sendExtendedCANMessage(1, GREEN_LED_EXID, 1, data);
+//			sendExtendedCANMessage(1, GREEN_LED_EXID, 1, data);
 		}
 
     	osMutexRelease(SPIMutexHandle);
