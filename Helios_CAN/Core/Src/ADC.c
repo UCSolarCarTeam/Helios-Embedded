@@ -53,7 +53,7 @@ int16_t getTorque() {
 
     float slope = 1.0 * (MAX_TORQUE - MIN_TORQUE) / (MAX_VOLTAGE - MIN_VOLTAGE);
 
-    return MAX_TORQUE + slope * (volt - MIN_VOTLAGE);
+    return MIN_TORQUE + slope * (volt - MIN_VOTLAGE);
 }
 
 //ADC to torque
@@ -86,11 +86,13 @@ void sendMotorInfo(MotorInfo* motorInfo) {
 	int16_t torque = getTorque();
 
 	//need to check if button set, if button set do speed?
-	if (button set) {
+	if (HAL_GPIO_ReadPin(SPEED_TORQUE_GPIO_Port, SPEED_TORQUE_Pin)) {
 		motorInfo->controlValue = speed;
-		//other info
+		motorInfo->controlMode = 2;
+
 	} else {
 		motorInfo->controlValue = torque;
+		motorInfo->controlMode = 1;
 	}
 
 	uint8_t data[8];
