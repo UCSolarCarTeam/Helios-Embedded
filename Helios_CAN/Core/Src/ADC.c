@@ -73,8 +73,43 @@ int16_t getSpeed() {
     // }
 //}
 
+void sendSpeed(MotorInfo* motorInfo) {
+	int16_t speed = getSpeed();
+
+	uint8_t data[8];
+
+	//break the value into 2 as byte 1 and 2 is for the speed
+
+	data[0] = motorInfo->controlValue && 0xFF;
+	data[1] = motorInfo->controlValue >> 8;
+
+	// third one
+	// bit 0, 1 for controlMode
+	// bit 2 - 4 for motorMode
+	// bit 5 for swEnable
+	// bit 7 for debug mode
+
+	uint8_t mode;
+	mode = motorInfo->controlMode;
+	mode &= motorInfo->motorMode << 2;
+	mode &= motorInfo->swEnable << 5;
+	mode &= motorInfo>debugMode << 7;
+
+	data[2] = mode;
+
+	CANMsg msg = {
+		8,
+		0x012,
+		0,
+		data
+	};
+
+	sendCANMessage(&msg);
+}
+
 
 void sendVoltage() {
+
     //todo: send the voltage value through can to the motors
     //todo: just send it as data to 0x012?
 
