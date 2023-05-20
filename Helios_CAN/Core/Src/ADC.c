@@ -73,7 +73,7 @@ int16_t getSpeed() {
     // }
 //}
 
-void sendSpeed(MotorInfo* motorInfo) {
+void sendMotorInfo(MotorInfo* motorInfo) {
 	int16_t speed = getSpeed();
 
 	uint8_t data[8];
