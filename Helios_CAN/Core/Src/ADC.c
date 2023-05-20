@@ -14,6 +14,9 @@
 #define ADC_TIMEOUT 10      //in milliseconds
 #define ADC_DELAY 10
 
+
+//min voltage = 0
+// max voltage = 3.09
 float getVoltage() {
     
     uint32_t binaryVoltage = 0;
@@ -30,10 +33,46 @@ float getVoltage() {
 
     float voltage = binaryVoltage * 3.09f / powf(2.0, 12.0);
     // 3.3 / 2^(adc bits) = voltagestep
-
     // voltage * voltageStep
     return voltage;
 }
+
+
+//ADC to speed, signed 16 bit -10000 to 10000 for Speed control 10 * RPM
+// Map to min and max voltage
+int16_t getSpeed() {
+    float volt = getVoltage();
+
+    float slope = 1.0 * (MAX_SPEED - MIN_SPEED) / (MAX_VOLTAGE - MIN_VOLTAGE);
+
+    return MIN_SPEED + slope * (volt - MIN_VOTLAGE);
+}
+
+//ADC to torque
+//in percentages -100 to 100
+//int16_t getTorque() {
+//
+//
+//
+//}
+
+//float getCurrent() {
+    // To avoid a software overcurrent, our motor config
+    // is set to have 100 A max current, we scale it so we send 69 A
+    // on full pedal press
+
+    // if ((accelPercentage - NON_ZERO_THRESHOLD) > 0 )
+    // {
+    //     return (accelPercentage - NON_ZERO_THRESHOLD)
+    //            / (MAX_PEDAL_THRESHOLD - NON_ZERO_THRESHOLD)
+    //            * MOTOR_PERCENTAGE_REDUCER;
+    // }
+    // else
+    // {
+    //     return 0.0;
+    // }
+//}
+
 
 void sendVoltage() {
     //todo: send the voltage value through can to the motors
