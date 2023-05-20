@@ -91,9 +91,9 @@ void sendSpeed(MotorInfo* motorInfo) {
 
 	uint8_t mode;
 	mode = motorInfo->controlMode;
-	mode &= motorInfo->motorMode << 2;
-	mode &= motorInfo->swEnable << 5;
-	mode &= motorInfo>debugMode << 7;
+	mode |= motorInfo->motorMode << 2;
+	mode |= motorInfo->swEnable << 5;
+	mode |= motorInfo>debugMode << 7;
 
 	data[2] = mode;
 
