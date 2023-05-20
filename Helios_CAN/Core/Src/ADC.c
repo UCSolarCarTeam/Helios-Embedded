@@ -48,6 +48,14 @@ int16_t getSpeed() {
     return MIN_SPEED + slope * (volt - MIN_VOTLAGE);
 }
 
+int16_t getTorque() {
+    float volt = getVoltage();
+
+    float slope = 1.0 * (MAX_TORQUE - MIN_TORQUE) / (MAX_VOLTAGE - MIN_VOLTAGE);
+
+    return MAX_TORQUE + slope * (volt - MIN_VOTLAGE);
+}
+
 //ADC to torque
 //in percentages -100 to 100
 //int16_t getTorque() {
@@ -75,6 +83,15 @@ int16_t getSpeed() {
 
 void sendMotorInfo(MotorInfo* motorInfo) {
 	int16_t speed = getSpeed();
+	int16_t torque = getTorque();
+
+	//need to check if button set, if button set do speed?
+	if (button set) {
+		motorInfo->controlValue = speed;
+		//other info
+	} else {
+		motorInfo->controlValue = torque;
+	}
 
 	uint8_t data[8];
 

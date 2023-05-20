@@ -9,6 +9,9 @@
 #define MIN_VOLTAGE 0
 #define MAX_SPEED 10000
 #define MIN_SPEED -10000
+#define MAX_TORQUE 100
+#define MIN_TORQUE -100
+
 
 extern ADC_HandleTypeDef hadc;
 
