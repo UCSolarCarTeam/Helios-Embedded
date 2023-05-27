@@ -34,6 +34,13 @@ float getVoltage() {
     float voltage = binaryVoltage * 3.09f / powf(2.0, 12.0);
     // 3.3 / 2^(adc bits) = voltagestep
     // voltage * voltageStep
+
+    //todo: the adc manual, check the voltage reference.
+    // check if there is an output pin that i can probe and see what the voltage reference is actually?
+
+    //because this 3.09 should 3 or 3.3 because that is what the stm board takes in (marcelo's assumption)
+    // 3.12
+
     return voltage;
 }
 
@@ -46,6 +53,9 @@ int16_t getSpeed() {
     float slope = 1.0 * (MAX_SPEED - MIN_SPEED) / (MAX_VOLTAGE - MIN_VOLTAGE);
 
     return MIN_SPEED + slope * (volt - MIN_VOTLAGE);
+
+
+    //make a scaling factor so that we can just change the scaling factor
 }
 
 int16_t getTorque() {
@@ -56,42 +66,17 @@ int16_t getTorque() {
     return MIN_TORQUE + slope * (volt - MIN_VOTLAGE);
 }
 
-//ADC to torque
-//in percentages -100 to 100
-//int16_t getTorque() {
-//
-//
-//
-//}
-
-//float getCurrent() {
-    // To avoid a software overcurrent, our motor config
-    // is set to have 100 A max current, we scale it so we send 69 A
-    // on full pedal press
-
-    // if ((accelPercentage - NON_ZERO_THRESHOLD) > 0 )
-    // {
-    //     return (accelPercentage - NON_ZERO_THRESHOLD)
-    //            / (MAX_PEDAL_THRESHOLD - NON_ZERO_THRESHOLD)
-    //            * MOTOR_PERCENTAGE_REDUCER;
-    // }
-    // else
-    // {
-    //     return 0.0;
-    // }
-//}
 
 void sendMotorInfo(MotorInfo* motorInfo) {
-	int16_t speed = getSpeed();
-	int16_t torque = getTorque();
 
 	//need to check if button set, if button set do speed?
 	if (HAL_GPIO_ReadPin(SPEED_TORQUE_GPIO_Port, SPEED_TORQUE_Pin)) {
-		motorInfo->controlValue = speed;
+		motorInfo->controlValue = getSpeed();
 		motorInfo->controlMode = 2;
 
+
 	} else {
-		motorInfo->controlValue = torque;
+		motorInfo->controlValue = getTorque();
 		motorInfo->controlMode = 1;
 	}
 
@@ -112,18 +97,31 @@ void sendMotorInfo(MotorInfo* motorInfo) {
 	mode = motorInfo->controlMode;
 	mode |= motorInfo->motorMode << 2;
 	mode |= motorInfo->swEnable << 5;
-	mode |= motorInfo>debugMode << 7;
+	mode |= motorInfo->debugMode << 7;
 
 	data[2] = mode;
 
 	CANMsg msg = {
 		8,
-		0x012,
+		0x012,		//todo: make a macro to differentiate between motor 1 and 2 address, values should come from electrical
+					//todo: button motor one or motor 2 to be controlled
+					// todo: make the task to do the sloshing
+					// the one being controlled gets 0 torque, the other one gets whatever (the actual pretention meter thing)
+
+					//task starting
+					// input torque value for one motor
+					// we decide speed value and regen for the other
+					//torque in mechanical is like current is electrical
+					// check that graph to see if we can use the graph to decide what speed values it should have based on the torque and te current
+					// slowly decrease
 		0,
 		data
 	};
 
 	sendCANMessage(&msg);
+
+	//todo: have an emergency thing that sets everything to 0
+	// another button that is an emergency brake tht sets everything to 0
 }
 
 
