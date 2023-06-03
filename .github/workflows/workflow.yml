@@ -1,4 +1,4 @@
-name: Template workflow
+name: Embedded workflow
 
 on:
   # Comment this out if you only want Github Actions
