@@ -70,6 +70,8 @@ void Error_Handler(void);
 #define GND_GPIO_Port GPIOB
 #define VDD_Pin GPIO_PIN_13
 #define VDD_GPIO_Port GPIOB
+#define MOTOR_CONTROL_Pin GPIO_PIN_6
+#define MOTOR_CONTROL_GPIO_Port GPIOC
 #define SPEED_TORQUE_Pin GPIO_PIN_7
 #define SPEED_TORQUE_GPIO_Port GPIOC
 #define BLUE_SWITCH_Pin GPIO_PIN_8

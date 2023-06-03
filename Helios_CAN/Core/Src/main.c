@@ -377,8 +377,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : SPEED_TORQUE_Pin BLUE_SWITCH_Pin GREEN_SWITCH_Pin */
-  GPIO_InitStruct.Pin = SPEED_TORQUE_Pin|BLUE_SWITCH_Pin|GREEN_SWITCH_Pin;
+  /*Configure GPIO pins : MOTOR_CONTROL_Pin SPEED_TORQUE_Pin BLUE_SWITCH_Pin GREEN_SWITCH_Pin */
+  GPIO_InitStruct.Pin = MOTOR_CONTROL_Pin|SPEED_TORQUE_Pin|BLUE_SWITCH_Pin|GREEN_SWITCH_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
