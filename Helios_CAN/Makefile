@@ -71,6 +71,7 @@ Core/Src/CAN.c \
 Core/Src/ADC.c \
 Core/Src/BlueSwitchTask.c \
 Core/Src/GreenSwitchTask.c \
+Core/Src/MotorTestTask.c \
 Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_adc.c \
 Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_hal_adc_ex.c
 

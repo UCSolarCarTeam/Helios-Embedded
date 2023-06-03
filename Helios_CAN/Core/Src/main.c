@@ -73,6 +73,12 @@ const osThreadAttr_t blueSwitchTask_attributes = {
   .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityNormal,
 };
+osThreadId_t MotorTestTaskHandle;
+const osThreadAttr_t MotorTestTask_attributes = {
+  .name = "MotorTestTask",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityNormal,
+};
 
 osMessageQueueId_t CANInterruptQueue;
 osMessageQueueId_t CANTxMessageQueue;
@@ -161,6 +167,7 @@ int main(void)
   /* USER CODE BEGIN RTOS_THREADS */
   greenSwitchTaskHandle = osThreadNew((osThreadFunc_t)greenSwitchTask, NULL, &greenSwitchTask_attributes);
   blueSwitchTaskHandle = osThreadNew((osThreadFunc_t)blueSwitchTask, NULL, &greenSwitchTask_attributes);
+  MotorTestTaskHandle = osThreadNew((osThreadFunc_t)MotorTestTask, NULL, &motorTestngTask_attributes);
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_EVENTS */

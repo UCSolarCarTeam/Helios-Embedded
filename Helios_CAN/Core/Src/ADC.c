@@ -54,8 +54,9 @@ int16_t getSpeed() {
 
     return MIN_SPEED + slope * (volt - MIN_VOTLAGE);
 
-
     //make a scaling factor so that we can just change the scaling factor
+    // so we can shrink the range down?
+    // or is it like we want 70% and that should return a value between those ranges?
 }
 
 int16_t getTorque() {
