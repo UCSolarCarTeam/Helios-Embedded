@@ -12,5 +12,5 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Run template workflow
-        run: echo This is a template, please update this.
+      - name: Build application
+        run: make
