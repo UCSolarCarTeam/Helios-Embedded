@@ -41,30 +41,47 @@ float getVoltage() {
     //because this 3.09 should 3 or 3.3 because that is what the stm board takes in (marcelo's assumption)
     // 3.12
 
+    voltage = voltage / MAX_VOLTAGE; // scale voltage to a decimal
+
     return voltage;
 }
 
+
+//todo: scale voltage down to a percentage!!
 
 //ADC to speed, signed 16 bit -10000 to 10000 for Speed control 10 * RPM
 // Map to min and max voltage
 int16_t getSpeed() {
     float volt = getVoltage();
 
-    float slope = 1.0 * (MAX_SPEED - MIN_SPEED) / (MAX_VOLTAGE - MIN_VOLTAGE);
-
-    return MIN_SPEED + slope * (volt - MIN_VOTLAGE);
+//    float slope = 1.0 * (MAX_SPEED - MIN_SPEED) / (MAX_VOLTAGE - MIN_VOLTAGE);
+//
+//    return MIN_SPEED + slope * (volt - MIN_VOTLAGE);
 
     //make a scaling factor so that we can just change the scaling factor
-    // so we can shrink the range down?
-    // or is it like we want 70% and that should return a value between those ranges?
+    float rangeScalingFactor = 1;
+
+    float maxSpeed = MAX_SPEED * rangeScalingFactor;
+    float minSpeed = MIN_SPEED * rangeScalingFactor;
+
+    return volt * (maxSpeed - minSpeed) + minSpeed;
+
 }
 
 int16_t getTorque() {
     float volt = getVoltage();
 
-    float slope = 1.0 * (MAX_TORQUE - MIN_TORQUE) / (MAX_VOLTAGE - MIN_VOLTAGE);
+//    float slope = 1.0 * (MAX_TORQUE - MIN_TORQUE) / (MAX_VOLTAGE - MIN_VOLTAGE);
+//
+//    return MIN_TORQUE + slope * (volt - MIN_VOTLAGE);
 
-    return MIN_TORQUE + slope * (volt - MIN_VOTLAGE);
+    float rangeScalingFactor = 1;
+
+    float maxSpeed = MAX_TORQUE * rangeScalingFactor;
+    float minSpeed = MIN_TORQUE * rangeScalingFactor;
+
+    return volt * (maxSpeed - minSpeed) + minSpeed;
+
 }
 
 
