@@ -2,20 +2,20 @@
 
 //TODO: ADD A FUNCTION THAT CHECKS FOR WHAT CHANNELS AVAILABLE FOR SENDING AND
 //TODO: A FUNCTION THAT CALLS THE ABOVE FUNCTION AND THE RELEVANT SENDCANMESSAGE FUNCTION
-//(extended vs regular CAN)
+//		(extended vs regular CAN) Done (tbc)
 
-//TODO: Test receiving interrupt and task
+//TODO: Create CanTxGatekeeperTask (so only one task can access the SPI-CAN peripheral at once)
+//		Test it by creating the freertos task handle
 
-//TODO: Comment the heck out of everything
+//TODO: Test receiving interrupt and task (tbd)
 
-//TODO:write a how to use README that includes creating CANRXInterruptTask, mutex and queue as well as adding CAN.C and CAN.h
+//TODO: Once a CanTxGatekeeperTask is added, a mutex will be needed to avoid race condition 
+//		of the SPI peripheral between CANTxGatekeeper and CANRxInterruptTask 
 
+//TODO: Comment the heck out of everything (tbc)
 
-//todo: adc
-// 1. enable on stm32cubemx
-// 2. use a pin that goes onto the header
-// 3  ways: to do adc
-// 4. convert will pulling
+//TODO: write a how to use README that includes creating CANRXInterruptTask, 
+//		mutex and queue as well as adding CAN.C and CAN.h (tbd)
 
 /**
  * @brief write to registry in CAN IC       //FIXME: is this read or write... 
@@ -101,7 +101,7 @@ void ConfigureCANSPI(void)
 	CAN_IC_WRITE_REGISTER(0x0f, 0x04); //Put IC in normal operation mode with CLKOUT pin enable and 1:1 prescaler
 }
 
-//todo: make sendtxtask and a queue for it like the old mcu
+//TODO: make sendtxtask and a queue for it like the old mcu
 
 /**
   * @brief send CAN message
@@ -110,16 +110,14 @@ void ConfigureCANSPI(void)
   */
 void sendCANMessage(CANMsg *msg)
 {
-	//todo: fix this later to update the channel;
     uint8_t initialBufferAddress = checkAvailableTXChannel();
 
     osMessageQueueGet(CANTxMessageQueue, msg, NULL, osWaitForever);
 
 	uint8_t sendCommand = 0x81; //instruction to send CAN message on buffer 1
 
-    //FIXME: what is this
-	uint8_t TXBNSIDH = (msg->ID & 0b11111111000) >> 3;
-	uint8_t TXBNSIDL = ((msg->ID & 0b111) << 5);
+	uint8_t TXBNSIDH = (msg->ID & 0b11111111000) >> 3; //mask upper ID register
+	uint8_t TXBNSIDL = ((msg->ID & 0b111) << 5); //mask lower ID register
 	uint8_t TXBNDLC = msg->DLC & 0x0f;
 
 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 1, TXBNSIDH); // SD 10-3
@@ -142,7 +140,7 @@ void sendCANMessage(CANMsg *msg)
 
 uint8_t checkAvailableTXChannel() 
 {
-    uint32_t prevWakeTime = xTaskGetTickCount();
+    uint32_t prevWakeTime = xTaskGetTickCount(); //Delay is fine if we have a CanTxGatekeeperTask
 
     for (;;)
     {
@@ -150,22 +148,22 @@ uint8_t checkAvailableTXChannel()
         uint8_t TXB1Status;
         uint8_t TXB2Status;
 
-        CAN_IC_READ_REGISTER(TXB0CTRL, &TXB0Status);
-        TXB0Status = TXB0Status >> 3;
+        CAN_IC_READ_REGISTER(TXB0CTRL, &TXB0Status); 
+        TXB0Status = TXB0Status >> 3; //Not masking out bits
 
         if (!TXB0Status) {
             return 0;
         }
 
         CAN_IC_READ_REGISTER(TXB1CTRL, &TXB1Status);
-        TXB1Status = TXB1Status >> 3;
+        TXB1Status = TXB1Status >> 3; //Not masking out bits
 
         if (!TXB1Status) {
             return 1;
         }
 
         CAN_IC_READ_REGISTER(TXB2CTRL, &TXB2Status);
-        TXB2Status = TXB2Status >> 3;
+        TXB2Status = TXB2Status >> 3; //Not masking out bits
 
         if (!TXB2Status) {
             return 2;
@@ -268,7 +266,7 @@ void receiveCANMessage(uint8_t channel, uint32_t* ID, uint8_t* DLC, uint8_t* dat
 	return;
 }
 
-void CANRXInterruptTask(void const* arg)
+void CANRxInterruptTask(void const* arg)
 {
 	uint16_t GPIO_Pin = 0;
 	osMessageQueueGet(CANInterruptQueue, &GPIO_Pin, 0, osWaitForever);
