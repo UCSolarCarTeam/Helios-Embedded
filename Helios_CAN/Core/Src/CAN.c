@@ -110,11 +110,13 @@ void ConfigureCANSPI(void)
   */
 void sendCANMessage(CANMsg *msg)
 {
-    uint8_t initialBufferAddress = checkAvailableTXChannel();
+	uint8_t channel = checkAvailableTXChannel();
+    uint8_t initialBufferAddress = TXB0CTRL + 16*(channel);
 
     osMessageQueueGet(CANTxMessageQueue, msg, NULL, osWaitForever);
 
-	uint8_t sendCommand = 0x81; //instruction to send CAN message on buffer 1
+	//depends on channel used
+	uint8_t sendCommand = 0x80 + (0x01 < channel); //instruction to send CAN message on buffer 1
 
 	uint8_t TXBNSIDH = (msg->ID & 0b11111111000) >> 3; //mask upper ID register
 	uint8_t TXBNSIDL = ((msg->ID & 0b111) << 5); //mask lower ID register
@@ -200,13 +202,7 @@ void sendExtendedCANMessage(CANMsg *msg)
 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 3, TXBNEID8); //ED 15-8
 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 4, TXBNEID0); //ED 7-0
 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 5, TXBNDLC);  //DLC
-
-	CAN_IC_READ_REGISTER(initialBufferAddress + 1, &TXBNSIDH); // SD 10-3
-	CAN_IC_READ_REGISTER(initialBufferAddress + 2, &TXBNSIDL); //SD 2-0, ED 17-16
-	CAN_IC_READ_REGISTER(initialBufferAddress + 3, &TXBNEID8); //ED 15-8
-	CAN_IC_READ_REGISTER(initialBufferAddress + 4, &TXBNEID0); //ED 7-0
-	CAN_IC_READ_REGISTER(initialBufferAddress + 5, &TXBNDLC);  //DLC
-
+	
 	uint8_t initialDataBufferAddress = initialBufferAddress + 6;
 	for(int i = 0; i < msg->DLC; i++)
 	{
