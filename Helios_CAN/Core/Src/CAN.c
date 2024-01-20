@@ -202,7 +202,7 @@ void sendExtendedCANMessage(CANMsg *msg)
 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 3, TXBNEID8); //ED 15-8
 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 4, TXBNEID0); //ED 7-0
 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 5, TXBNDLC);  //DLC
-	
+
 	uint8_t initialDataBufferAddress = initialBufferAddress + 6;
 	for(int i = 0; i < msg->DLC; i++)
 	{
@@ -250,6 +250,9 @@ void receiveCANMessage(uint8_t channel, uint32_t* ID, uint8_t* DLC, uint8_t* dat
 	}
 
 	*DLC = RXBDLC & 0x0f;
+	if(*DLC > 8){
+		*DLC = 0;
+	}
 
 	uint8_t initialDataBufferAddress = initialBufferAddress + 6;
 	for(int i = 0; i < *DLC; i++)
