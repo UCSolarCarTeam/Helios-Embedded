@@ -26,9 +26,8 @@ void blueSwitchTask(void const* arg)
     	}
 
     	if (osMutexWait(SPIMutexHandle, 0) == osOK) {
-//    		sendExtendedCANMessage(0, BLUE_LED_EXID, 1, data);
+    		sendExtendedCANMessage(0, BLUE_LED_EXID, 1, data);
+			osMutexRelease(SPIMutexHandle);
     	}
-
-    	osMutexRelease(SPIMutexHandle);
     }
 }
