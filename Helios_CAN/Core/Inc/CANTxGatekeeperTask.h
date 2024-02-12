@@ -5,14 +5,14 @@
  *      Author: MacKante
  */
 
-#ifndef CORE_INC_CANTXGATEKEEPERTASK_H_
-#define CORE_INC_CANCANTXGATEKEEPERTASK_H_
 
-#include "stm32l1xx.h"
-#include "stm32l1xx_hal_gpio.h"
-#include "CAN.h"
+#pragma once
+
 #include "cmsis_os.h"
-#include "main.h"
+#include "CAN.h"
+ 
+void CanTxGatekeeperTask(void* arg);
 
-
-#endif /* CORE_INC_CANTRANSMITTASK_H_ */
+extern SPI_HandleTypeDef hspi1;
+extern osMutexId_t SPIMutexHandle;
+extern osMessageQueueId_t CANTxMessageQueue;

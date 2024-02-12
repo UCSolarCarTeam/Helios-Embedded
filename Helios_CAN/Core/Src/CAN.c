@@ -213,7 +213,7 @@ void sendExtendedCANMessage(CANMsg *msg)
     //todo: FIX THIS CHANNEL!
 
 	uint8_t sendCommand = 0x80 +  (1 << channel); //instruction to send CAN message on channel
-	uint8_t TXBNEID0 = msg->extendedID & 0xff;
+	uint8_t TXBNEID0 = msg->extendedID & 0xFF;
 	uint8_t TXBNEID8 = (msg->extendedID >> 8) & 0xff;
 	uint8_t TXBNSIDL = (((msg->extendedID >> 18) & 0x07) << 5) | 0b00001000 | ((msg->ID >> 16) & 0x03);
 	uint8_t TXBNSIDH = (msg->extendedID >> 21) & 0xff;
@@ -281,13 +281,11 @@ void receiveCANMessage(uint8_t channel, uint32_t* ID, uint8_t* DLC, uint8_t* dat
 	}
 
 	CAN_IC_WRITE_REGISTER_BITWISE(CANINTF, channel + 1, channel + 1); //clear interrupts
-
 	return;
 }
 
 
-
-void CANRxInterruptTask(void const* arg)
+void CANRxInterrupt(void const* arg)
 {
 	uint16_t GPIO_Pin = 0;
 	osMessageQueueGet(CANInterruptQueue, &GPIO_Pin, 0, osWaitForever);
@@ -326,8 +324,24 @@ void CANRxInterruptTask(void const* arg)
 	#endif
 }
 
-void CanTxGatekeeperTask(void const* arg) {
-// get from queue
-// determine what kind of message to send, then call appropriate function
+void CanTxGatekeeper(CANMsg *msg) {
+	// Acquire message to send from queue
+	osMessageQueueGet(CANTxMessageQueue, msg, NULL, osWaitForever);
+
+	// Wait for mutex
+	if ( osMutexWait(SPIMutexHandle, 0) == osOK ) 
+	{	
+		// check if CAN message is standard/extended
+		// if extendedID == 0, then message is standard
+		if (msg->extendedID == 0)
+		{
+			sendCANMessage(msg);
+		}
+		else
+		{
+			sendExtendedCANMessage(msg);
+		}
+		osMutexRelease(SPIMutexHandle);
+	}
 
 }
