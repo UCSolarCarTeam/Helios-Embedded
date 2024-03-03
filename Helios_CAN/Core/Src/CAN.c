@@ -213,11 +213,12 @@ void sendExtendedCANMessage(CANMsg *msg)
     //todo: FIX THIS CHANNEL!
 
 	uint8_t sendCommand = 0x80 +  (1 << channel); //instruction to send CAN message on channel
+
+	uint8_t TXBNSIDH = (msg->extendedID >> 21) & 0xFF;
+	uint8_t TXBNSIDL = (((msg->extendedID >> 18) & 0x07) << 5) | 0x08 | ((msg->ID >> 16) & 0x03);
+	uint8_t TXBNEID8 = (msg->extendedID >> 8) & 0xFF;
 	uint8_t TXBNEID0 = msg->extendedID & 0xFF;
-	uint8_t TXBNEID8 = (msg->extendedID >> 8) & 0xff;
-	uint8_t TXBNSIDL = (((msg->extendedID >> 18) & 0x07) << 5) | 0b00001000 | ((msg->ID >> 16) & 0x03);
-	uint8_t TXBNSIDH = (msg->extendedID >> 21) & 0xff;
-	uint8_t TXBNDLC = msg->DLC & 0x0f;
+	uint8_t TXBNDLC = msg->DLC & 0x0F;
 
 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 1, TXBNSIDH); // SD 10-3
 	CAN_IC_WRITE_REGISTER(initialBufferAddress + 2, TXBNSIDL); // SD 2-0, ED 17-16
@@ -231,7 +232,7 @@ void sendExtendedCANMessage(CANMsg *msg)
 		CAN_IC_WRITE_REGISTER(initialDataBufferAddress + i, msg->data[i]); //write to relevant data registers
 	}
 
-	CAN_IC_WRITE_REGISTER_BITWISE(initialBufferAddress, 0x02, 0x02); //set transmit buffer priority to 4 (max)
+	CAN_IC_WRITE_REGISTER_BITWISE(initialBufferAddress, 0x03, 0x03); //set transmit buffer priority to 3 (max)
 
 	HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_RESET);
 	HAL_SPI_Transmit(&hspi1, &sendCommand, 1, 100U);  //Send command to transmit
@@ -310,7 +311,7 @@ void CANRxInterrupt(void const* arg)
 
 	// TODO: write documentation on how to use this for the above code
 	//this is not necessary, this was for testing
-	#if 0
+	#if 1
 	if(ID == 0xCCCCCCC)
 	{
 		blueStatus = data[0];
@@ -322,26 +323,4 @@ void CANRxInterrupt(void const* arg)
 		HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
 	}
 	#endif
-}
-
-void CanTxGatekeeper(CANMsg *msg) {
-	// Acquire message to send from queue
-	osMessageQueueGet(CANTxMessageQueue, msg, NULL, osWaitForever);
-
-	// Wait for mutex
-	if ( osMutexWait(SPIMutexHandle, 0) == osOK ) 
-	{	
-		// check if CAN message is standard/extended
-		// if extendedID == 0, then message is standard
-		if (msg->extendedID == 0)
-		{
-			sendCANMessage(msg);
-		}
-		else
-		{
-			sendExtendedCANMessage(msg);
-		}
-		osMutexRelease(SPIMutexHandle);
-	}
-
 }

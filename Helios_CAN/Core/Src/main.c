@@ -79,6 +79,18 @@ const osThreadAttr_t MotorTestTask_attributes = {
   .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityNormal,
 };
+osThreadId_t canTxGateKeeperTaskHandle;
+const osThreadAttr_t canTxGateKeeperTask_attributes = {
+  .name = "canTxGateKeeperTask",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityAboveNormal1,
+};
+osThreadId_t canRxInterruptTaskHandle;
+const osThreadAttr_t canRXInterruptTask_attributes = {
+  .name = "canRxInterruptTask",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityAboveNormal1,  
+};
 
 osMessageQueueId_t CANInterruptQueue;
 osMessageQueueId_t CANTxMessageQueue;
@@ -158,6 +170,7 @@ int main(void)
 
   /* USER CODE BEGIN RTOS_QUEUES */
   CANInterruptQueue = osMessageQueueNew(CAN_INTERRUPT_QUEUE_COUNT, sizeof(uint16_t), NULL);
+  CANTxMessageQueue = osMessageQueueNew(10, sizeof(CANMsg), NULL);
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
@@ -168,6 +181,7 @@ int main(void)
   greenSwitchTaskHandle = osThreadNew((osThreadFunc_t)greenSwitchTask, NULL, &greenSwitchTask_attributes);
   blueSwitchTaskHandle = osThreadNew((osThreadFunc_t)blueSwitchTask, NULL, &greenSwitchTask_attributes);
   MotorTestTaskHandle = osThreadNew((osThreadFunc_t)MotorTestTask, NULL, &motorTestngTask_attributes);
+  cantx
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_EVENTS */

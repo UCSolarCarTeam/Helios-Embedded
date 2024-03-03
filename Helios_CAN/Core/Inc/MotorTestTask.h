@@ -7,7 +7,7 @@
 #define MOTOR_1	0xDEAD
 
 
-struct MotorInfo {
+typedef struct {
 	//input to motors
 	int16_t controlValue;
 	uint8_t controlMode;
@@ -25,9 +25,8 @@ struct MotorInfo {
 	uint16_t absPosition;
 	uint64_t warningCode;
 	uint64_t errorCode;
-};
+} MotorInfo;
 
 
 void sendMotorInfo(MotorInfo* motorInfo);
-
 void motorTestTask();
